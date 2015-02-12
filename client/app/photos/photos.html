@@ -1,10 +1,9 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
 
-<div class="members-only">
-  <h2><a href="/members">> Members Only</a><a href="/photos"> > Photos</a></h2>
-</div>
-
 <div class="container-fluid" ng-show="isLoggedIn()">
+  <div class="section-header">
+    <h3><a href="/">> Home</a><a href="/photos"> > Photos</a></h3>
+  </div>
   <div masonry ng-hide="!galleryMode" >
   <!-- <masonry ng-hide="!galleryMode" > -->
     <div ng-repeat="photo in photos" class="masonry-brick" >

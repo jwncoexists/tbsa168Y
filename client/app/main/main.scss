@@ -1,31 +1,4 @@
-body {
-  font-family: 'Raleway';
-}
 
-.container-fluid {
-  margin-top: 30px;
-}
-
-h1, h2, h3, h4, h5 {
-  font-family: $base-font-family;
-  font-weight: 700;
-  color: $text-color-highlight;
-}
-
-
-.members-only {
-  h1, h2, h3, h4 {
-    margin-left: 20px;
-    color: $text-color-highlight;
-    font-family: $base-font-family;
-    font-weight: 400;
-    a {
-      color: $text-color-highlight;
-      text-decoration: none;
-    }
-    margin-bottom: 20px;
-  }
-}
 
 .member-button{
   img {
@@ -60,7 +33,7 @@ h1, h2, h3, h4, h5 {
     // color: $logo-main-color;
   }
   p {
-    font-family: 'Raleway', sans-serif;
+    font-family: $base-font-family;
     // font-family: 'Oswald', sans-serif;
     color: $text-color;
   }
@@ -94,12 +67,11 @@ h1, h2, h3, h4, h5 {
   .point {
     h2, p {
       text-align: center;
-      // font-family: 'Raleway';
       font-family: $base-font-family;
       color: $text-color-highlight;
     }
     p {
-      font-family: 'Raleway', sans-serif;
+      font-family: $base-font-family;
       font-size: 14px;
       color: $text-color-light;
       text-align: left;

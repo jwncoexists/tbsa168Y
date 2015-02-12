@@ -2,7 +2,8 @@
 .hero-unit.fallen {
   background: url('../assets/images/color-splash.jpg') no-repeat center/cover;
   padding: 40px;
-  div {
+  border-radius: 5px;
+  .hero-text-block {
     margin: 0;
     padding: 10px;
     background: rgba(white, .8);
@@ -13,9 +14,13 @@
 
 .person-table {
   width: 50%;
+  margin-left: 40px;
 }
 .image-col {
   width: 75px;
+  img {
+    border-radius: 50%;
+  }
 }
 
 .fallen-filter {

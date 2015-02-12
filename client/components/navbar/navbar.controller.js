@@ -3,36 +3,38 @@
 angular.module('tbsa168App')
   .controller('NavbarCtrl', function ($scope, $location, Auth) {
     $scope.menu =
-    [{
-      'title': 'Home',
+    [
+    {
+      'title': 'HOME',
       'link': '/',
       'membersOnly': false
     },
     {
-      'title': 'Photos',
+      'title': 'PHOTOS',
       'link': '/photos',
       'membersOnly': true
     },
     {
-      'title': 'Newsletters',
+      'title': 'NEWSLETTERS',
       'link': '/newsletters',
       'membersOnly': true
     },
     {
-      'title': 'Locate Classmates',
-      'link': 'https://public.tableausoftware.com/views/TBSA1-68_0/TBSA1-68?:showVizHome=no#1',
-      'membersOnly': true
-    },
-    {
-      'title': 'For our Fallen',
+      'title': 'OUR FALLEN',
       'link': '/fallen',
       'membersOnly': true
     },
-  {
-    'title': 'Contact',
-    'link': '/contact',
-    'membersOnly': false
-  }
+    {
+      'title': 'CLASSMATE MAP',
+      'link': 'https://public.tableausoftware.com/views/TBSA1-68_0/TBSA1-68?:showVizHome=no#1',
+      'membersOnly': true
+    },
+
+    {
+      'title': 'CONTACT',
+      'link': '/contact',
+      'membersOnly': false
+    }
 
     ];
 

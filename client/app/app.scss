@@ -20,11 +20,60 @@ $text-color: #343434;
 $text-color-highlight: #20306A;
 $text-color-light: #565656;
 $nl-header-color: #F8CA00;
-$base-font-family: 'Oswald', sans-serif;
+$base-font-family: 'Lato', sans-serif;
+$other-font-family: Georgia;
 
 // for grids
 $base-image-width: 255px;
 $base-image-height: 255px;
+
+body {
+  font-family: $base-font-family;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $base-font-family;
+  font-weight: 300;
+  color: $text-color-highlight;
+}
+
+.section-header {
+  font-family: $base-font-family;
+  margin-bottom: 30px;
+  text-align: left;
+  a {
+  color: rgb(100, 100, 100);
+  font-weight: 300;
+  font-style: italic;
+  font-size: 27px;
+  border-bottom: 1px solid #b3b3b3;
+  padding-bottom: 0px;
+  display: inline-block;
+  // margin:0;
+  }
+}
+.subsection-header {
+  font-family: $base-font-family;
+  margin-bottom: 30px;
+  text-align: left;
+  color: rgb(100, 100, 100);
+  font-weight: 300;
+  font-size: 27px;
+  padding-bottom: 0px;
+  display: inline-block;
+    // margin:0;
+}
+
+.container-fluid {
+  margin-top: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.navbar {
+  font-size: 13px;
+  // font-weight: bold;
+}
 
 // Component styles are injected through grunt
 // injector

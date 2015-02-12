@@ -1,3 +1,62 @@
-<div class="col-md-12">
-This is the fallen view.
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<div class="members-only">
+  <h2><a href="/members">> Members Only</a><a href="/fallen"> > For our Fallen</a></h2>
 </div>
+
+<div class="container-fluid" ng-show="isLoggedIn()">
+  <p>
+    Basic Class 1-68 will conduct a reunion of classmates in late April, 2015
+    at Fredericksburg, Virginia. It has been nearly 48 years
+    since we were together at Quantico -- a special occasion indeed.
+    Sadly, 49 members of our class of 219 are no longer with us.
+    We lost some in combat and others later in life. Each was taken too soon.
+  </p>
+
+  <p>
+    Our mission is to contact the families of each of our 49 fallen to:
+    <ul>
+      <li>Assure them that they are remembered.
+        We Marines have all sworn a solemn oath to honor
+        those who have gone before us. Fittingly, the most important
+        facet of our reunion is fulfilling this commitment to the
+        families of our fallen Marine brothers; and
+      </li>
+      <li>Invite their family members to participate in reunion activities with us.
+        memorial service that we will hold at the Vietnam Wall.
+        Several of our widows have signed up early to join us and
+        we hope many more will do so; and
+      </li>
+      <li>Gather life information about each of our fallen for a class booklet
+        to be shared among our class members. There are many biographical
+        gaps to be filled and shared among old friends who have lost touch
+        over the many years.
+      </li>
+    </ul>
+  </p>
+
+  <p>
+    We have located all but one of the living members of our class,
+    a heroic undertaking after all these years. Locating the families
+    of our fallen remains a huge challenge.
+  </p>
+
+  <p>We are starting our family outreach search with this website and our
+    Facebook page. Please contact us to let us know that we have reached
+    one of our family members and to re-join our Marine Corps family.
+  </p>
+
+  <p>
+    Dick Kurth is our point man for this mission.
+  </p>
+
+  <p>
+    We look forward to your joining us.
+  </p>
+</div>
+
+<div class="container-fluid" ng-show="!isLoggedIn()">
+  <p>Please log in to view this area.</p>
+</div>
+
+<div ng-include="'components/footer/footer.html'"></div>

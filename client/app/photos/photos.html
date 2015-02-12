@@ -6,11 +6,13 @@
 
 <div class="container-fluid" ng-show="isLoggedIn()">
   <div masonry ng-hide="!galleryMode" >
+  <!-- <masonry ng-hide="!galleryMode" > -->
     <div ng-repeat="photo in photos" class="masonry-brick" >
       <!-- <img ng-src="{{photo.path}}" ng-click="goToState(photo._id, photo.stateName, photo.stateParams)"> -->
       <img ng-src="{{photo.path}}" ng-click="clickGalleryImage($event, $index)">
     </div>
   </div>
+  <!-- </masonry> -->
 
   <div class="full-size-photo animate-show-hide" ng-hide="galleryMode">
     <p class="next-prev-controls">
@@ -30,4 +32,4 @@
   <p>Please log in to view the TBS Reunion Photographs.</p>
 </div>
 
-<div ng-include="'components/navbar/footer.html'"></div>
+<div ng-include="'components/footer/footer.html'"></div>

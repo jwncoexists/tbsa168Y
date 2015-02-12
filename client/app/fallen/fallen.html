@@ -47,7 +47,7 @@
 
 <div class="container-fluid fallen-list" ng-show="isLoggedIn()">
   <div ng-show="isLoggedIn()">
-    <h2 class="subsection-header">Our Deceased</h2>
+    <h2 class="subsection-header">Our Fallen</h2>
   </div>
   <div class="fallen-filter">
     Find: <input type="text" class="fallen-input" data-ng-model="fallen.filterStr" />
@@ -56,8 +56,8 @@
     <tr ng-repeat="person in fallenList | filter:fallen.filterStr" class="person">
       <td class="image-col"><img ng-src="{{person.photo}}"></td>
       <td class="info-col">
-        <strong>{{ person.name }}</strong><br>
-        {{ person.platoon }} Platoon<br>
+        <strong>{{ person.name }}</strong>, {{ person.platoon }} Platoon<br>
+        {{ person.date }}<br>
         {{ person.restingPlace}}
       </td>
     </tr>

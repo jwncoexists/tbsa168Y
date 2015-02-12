@@ -14,7 +14,7 @@ var Person = require('./person.model');
 
 // Get list of persons
 exports.index = function(req, res) {
-  Person.find(function (err, persons) {
+  Person.find().sort({name: 'asc'}).exec(function (err, persons) {
     if(err) { return handleError(res, err); }
     return res.json(200, persons);
   });

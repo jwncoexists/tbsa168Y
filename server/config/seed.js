@@ -186,56 +186,56 @@ Person.find({}).remove(function() {
 
   // 3rd Platoon
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/03-laslie-joe.png",
     name: "Laslie, Joe",
     date: "26 May 1968",
     restingPlace: "Attapulgus Methodist Ch Cem, GA",
     platoon: "3rd"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/03-johnson-ron.png",
     name: "Johnson, Ron",
     date: "02 Oct 2010",
     restingPlace: "Quantico Nat'l Cem, VA",
     platoon: "3rd"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/03-jones-bill.png",
     name: "Jones, Bill",
     date: "14 Sep 2002",
     restingPlace: "unk: Hometown - Morganza, LA",
     platoon: "3rd"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/03-jones-stu.png",
     name: "Jones, Stu",
     date: "20 Aug 1977",
     restingPlace: "unk: Hometown - Boston, MA",
     platoon: "3rd"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/03-kozobarich-larry.png",
     name: "Kozobarich, Larry",
     date: "13 Jun 2007",
     restingPlace: "Resurrection Catholic Cem, OH",
     platoon: "3rd"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/03-larrison-jack.png",
     name: "Larrison, Jack",
     date: "10 Jan 1999",
     restingPlace: "Bay Pines Nat'l Cem, FL",
     platoon: "3rd"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/03-mcclung-mike.png",
     name: "McClung, Mike",
     date: "02 Jul 2013",
     restingPlace: "Arlington Nat'l Cem, VA",
     platoon: "3rd"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/03-mccormack-orval.png",
     name: "McCormack, Orval",
     date: "01 Oct 2002",
     restingPlace: "Quantico Nat'l Cem, VA",
@@ -251,56 +251,56 @@ Person.find({}).remove(function() {
     platoon: "4th"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/04-pearson-tom.png",
     name: "Pearson, Tom",
     date: "23 Jan 1968",
     restingPlace: "Fort Rosecrans Nat'l Cem, SD CA",
     platoon: "4th"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/04-ranstead-terry.png",
     name: "Ranstead, Terry",
     date: "22 Jan 1968",
     restingPlace: "Fairview Cem, Vinita, OK",
     platoon: "4th"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/04-ross-gray.png",
     name: "Ross, Gray",
     date: "15 Jun 1968",
     restingPlace: "Fort Donelson Nat'l Cemetery, TN",
     platoon: "4th"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/04-belser-joe.png",
     name: "Belser, Joe",
     date: "15 Oct 1989",
     restingPlace: "Greenlawn Mem Park, W Columbia, SC",
     platoon: "4th"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/04-moran-donald.png",
     name: "Moran, Donald",
     date: "25 Jun 2007",
     restingPlace: "Ft Snelling Nat'l Cem, MN",
     platoon: "4th"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/04-neal-rich.png",
     name: "Neal, Rich",
     date: "30 Jul 2001",
     restingPlace: "Bayview Memor Park, FL",
     platoon: "4th"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/04-pfeiffer-george.png",
     name: "Pfeiffer, George",
     date: "14 Nov 1998",
     restingPlace: "Plano Mutual Cemetery, TX",
     platoon: "4th"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/04-radcliffe-harry.png",
     name: "Radcliffe, Harry",
     date: "08 Jun 2013",
     restingPlace: "Beachwood Cem, MI",
@@ -309,49 +309,49 @@ Person.find({}).remove(function() {
 
   // 5th Platoon
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/05-spindler-john.png",
     name: "Spindler, John",
     date: "21 Apr 1968",
     restingPlace: "Courts of the MIssing, MIA Mem, HI",
     platoon: "5th"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/05-sandberg-mike.png",
     name: "Sandberg, Michael",
     date: "03 Nov 1973",
     restingPlace: "unk: last residence, U of A Tucson, AZ",
     platoon: "5th"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/05-sergo-dick.png",
     name: "Sergo, Dick",
     date: "08 Nov 2001",
     restingPlace: "Arlington Nat'l Cem, VA",
     platoon: "5th"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/05-stjohn-larry.png",
     name: "St. John, Larry",
     date: "05 Dec 2011",
     restingPlace: "CCre: Mem Serv VFW Post 8207, FL",
     platoon: "5th"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/05-tritsch-john.png",
     name: "Tritsch, John",
     date: "03 Nov 1992",
     restingPlace: "Arlington Nat'l Cem, VA",
     platoon: "5th"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/05-ulrich-carl.png",
     name: "Ulrich, Carl",
     date: "10 Dec 2010",
     restingPlace: "unk: Belmont United Met Ch, Richmond",
     platoon: "5th"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/05-wilbur-dave.png",
     name: "Wilbur, Dave",
     date: "21 Apr 2001",
     restingPlace: "unk: Hometown - Claremont, NH",

@@ -47,16 +47,17 @@
 
 <div class="container-fluid fallen-list" ng-show="isLoggedIn()">
   <div ng-show="isLoggedIn()">
-    <h2 class="subsection-header">Our Fallen</h2>
+    <h2 class="subsection-header">Our Fallen Brothers</h2>
   </div>
-  <div class="fallen-filter">
-    Find: <input type="text" class="fallen-input" data-ng-model="fallen.filterStr" />
+  <div class="form-group fallen-filter">
+    <label for="fallen-input">Find: </label>
+    <input type="text" id="fallen-input" placeholder="Enter NAME, or PLATOON # (e.g. 'casey' or '3rd')" class="fallen-input" data-ng-model="fallen.filterStr" />
   </div>
   <table class="table table-bordered person-table">
     <tr ng-repeat="person in fallenList | filter:fallen.filterStr" class="person">
       <td class="image-col"><img ng-src="{{person.photo}}"></td>
       <td class="info-col">
-        <strong>{{ person.name }}</strong>, {{ person.platoon }} Platoon<br>
+        <strong>{{ person.name }}, {{ person.platoon }} Platoon</strong><br>
         {{ person.date }}<br>
         {{ person.restingPlace}}
       </td>

@@ -1,0 +1,33 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<div class="members-only">
+  <h2><a href="/members">> Members Only</a><a href="/photos"> > Photos</a></h2>
+</div>
+
+<div class="container-fluid" ng-show="isLoggedIn()">
+  <div masonry ng-hide="!galleryMode" >
+    <div ng-repeat="photo in photos" class="masonry-brick" >
+      <!-- <img ng-src="{{photo.path}}" ng-click="goToState(photo._id, photo.stateName, photo.stateParams)"> -->
+      <img ng-src="{{photo.path}}" ng-click="clickGalleryImage($event, $index)">
+    </div>
+  </div>
+
+  <div class="full-size-photo animate-show-hide" ng-hide="galleryMode">
+    <p class="next-prev-controls">
+      <span class="fa fa-chevron-left" ng-click="goToPrevious()"></span>
+      <span ng-click="goToPrevious()">Previous</span>
+      <span>  |  </span>
+      <span ng-click="toggleGalleryMode(-1)"> Return to Gallery </span>
+      <span>  |  </span>
+      <span ng-click="goToNext()">Next</span>
+      <span class="fa fa-chevron-right" ng-click="goToNext()"></span>
+    </p>
+    <img ng-src="{{clickedPhoto.path}}" ng-click="toggleGalleryMode(-1)">
+  </div>
+</div>
+
+<div class="container-fluid" ng-show="!isLoggedIn()">
+  <p>Please log in to view the TBS Reunion Photographs.</p>
+</div>
+
+<div ng-include="'components/navbar/footer.html'"></div>

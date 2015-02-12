@@ -1,0 +1,41 @@
+$icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
+$fa-font-path: "/bower_components/font-awesome/fonts";
+
+@import 'bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
+@import 'font-awesome/scss/font-awesome';
+
+/**
+ * App-wide Styles
+ */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+$logo-main-color: #DD151E;
+$text-color: #343434;
+$text-color-highlight: #20306A;
+$text-color-light: #565656;
+$nl-header-color: #F8CA00;
+$base-font-family: 'Oswald', sans-serif;
+
+// for grids
+$base-image-width: 255px;
+$base-image-height: 255px;
+
+// Component styles are injected through grunt
+// injector
+@import 'account/login/login.scss';
+@import 'admin/admin.scss';
+@import 'contact/contact.scss';
+@import 'fallen/fallen.scss';
+@import 'main/main.scss';
+@import 'newsletters/newsletters.scss';
+@import 'photos/photos.scss';
+@import 'contactUs/contactUs.scss';
+@import 'footer/footer.scss';
+@import 'modal/modal.scss';
+// endinjector

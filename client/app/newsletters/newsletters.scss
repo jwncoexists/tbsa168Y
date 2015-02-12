@@ -1,0 +1,23 @@
+// Newsletters
+.newsletter {
+  display: inline-block;
+  width: 15vw;
+  height: 15vw;
+  border: 1px solid $text-color-light;
+  background-color: $nl-header-color;
+  margin-right: 5vw;
+  border-radius: 10px;
+  &:hover {
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid $logo-main-color;
+  }
+  .newsletter-text {
+    margin-top: 3vw;
+    text-align: center;
+    color: $text-color-light;
+    .newsletter-header {
+      color: $logo-main-color;
+    }
+  }
+}

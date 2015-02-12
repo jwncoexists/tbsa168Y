@@ -1,0 +1,117 @@
+body {
+  font-family: 'Raleway';
+}
+
+.container-fluid {
+  margin-top: 30px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $base-font-family;
+  font-weight: 700;
+  color: $text-color-highlight;
+}
+
+.members-only {
+  h1, h2, h3, h4 {
+    margin-left: 20px;
+    color: $text-color-highlight;
+    font-family: $base-font-family;
+    font-weight: 400;
+    a {
+      color: $text-color-highlight;
+      text-decoration: none;
+    }
+    margin-bottom: 20px;
+  }
+}
+
+.member-button{
+  img {
+    display: inline-block;
+    float: right;
+  }
+}
+.logo {
+  margin-top: 10px;
+  float: left;
+}
+
+.hero-unit {
+  position: relative;
+  width: 100%;
+  padding: 80px;
+
+  h1, h2, h3, .lead {
+    margin: 0;
+    padding: 30px;
+    background: rgba(white, .75);
+    text-align: center;
+    border-radius: 5px;
+  }
+  h1, h2, h3 {
+    // font: 700 5vw 'Oswald';
+    font-family: $base-font-family;
+    // font-size: 4em;
+    color: $text-color-highlight;
+    text-align: center;
+    border-bottom: 2px solid black;
+    // color: $logo-main-color;
+  }
+  p {
+    font-family: 'Raleway', sans-serif;
+    // font-family: 'Oswald', sans-serif;
+    color: $text-color;
+  }
+  a {
+    margin-top: 10px;
+  }
+  .btn-contact {
+    background: $logo-main-color;
+    color: white;
+    margin-left: 5px;
+  }
+}
+
+.hero-unit.home {
+  background: url('../assets/images/vietnam-memoria-ed.png') no-repeat center/cover;
+}
+
+.hero-unit.member {
+  background: url('../assets/images/rappahannock2.png') no-repeat center/cover;
+}
+
+.photo-credit {
+  margin: 0;
+  padding: 0;
+  // font-family: 'Montserrat';
+  font-family: $base-font-family;
+  text-align: center;
+  font-size: 10px;
+  color: text-color;
+
+}
+.selling-points {
+  margin: 10px 0;
+  .point {
+    h2, p {
+      text-align: center;
+      // font-family: 'Raleway';
+      font-family: $base-font-family;
+      color: $text-color-highlight;
+    }
+    p {
+      font-family: 'Raleway', sans-serif;
+      font-size: 14px;
+      color: $text-color-light;
+      text-align: left;
+    }
+  }
+}
+
+.footer {
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 70px;
+    border-top: 1px solid #E5E5E5;
+}

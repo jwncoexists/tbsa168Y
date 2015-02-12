@@ -1,0 +1,27 @@
+
+.hero-unit.fallen {
+  background: url('../assets/images/color-splash.jpg') no-repeat center/cover;
+  padding: 40px;
+  div {
+    margin: 0;
+    padding: 10px;
+    background: rgba(white, .8);
+    text-align: left;
+    border-radius: 5px;
+  }
+}
+
+.person-table {
+  width: 50%;
+}
+.image-col {
+  width: 75px;
+}
+
+.fallen-filter {
+  margin-bottom: 20px;
+}
+
+input.fallen-input {
+  width: 45%;
+}

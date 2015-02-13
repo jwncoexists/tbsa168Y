@@ -19,8 +19,6 @@ angular.module('tbsa168App')
         scope.sendMsg = function () {
           $http.post('api/emails',
             {
-              // recipient: 'TBSreunion.Dave@gmail.com;jenniferwnelson@sbcglobal.net',
-              recipient: 'jenniferwnelson@sbcglobal.net',
               sender: scope.user.email,
               subject: 'TBS-A-1-68 Reunion Website Inquiry from ' + scope.user.name,
               msg: scope.user.body

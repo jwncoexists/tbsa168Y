@@ -45,6 +45,7 @@ Setup the following (2) environment variables for MailGun:
 
 - MGMAIL_KEY - your mailgun API key
 - MGMAIL_DOMAIN - your mailgun Domain name
+  MGMAIL_RECIPIENTS - list of email addresses separated by semicolons of people you want the contact inquiries to go to
 
 ### Directory Structure
 

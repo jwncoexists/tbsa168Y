@@ -15,7 +15,7 @@ var mongoose = require('mongoose');
 var mailgun = require('mailgun-js')(
   {
     apiKey: process.env.MGMAIL_KEY,
-    domain: process.env.MGMAIL_DOMAIN
+    domain: process.env.MGMAIL_DOMAIN,
   }
 );
 
@@ -41,11 +41,11 @@ exports.create = function(req, res) {
 
   var data = {
     from: req.body.sender,
-    to: req.body.recipient,
+    to:   process.env.MGMAIL_RECIPIENTS,
     subject: req.body.subject,
     text: req.body.msg
   };
-  console.log('sending email', req.body.recipient, req.body.subject, req.body.msg);
+  console.log('sending email', data.to, req.body.subject, req.body.msg);
 
   mailgun.messages().send(data, function (err, body) {
     if(err) {

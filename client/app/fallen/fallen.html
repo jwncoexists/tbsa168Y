@@ -55,7 +55,7 @@
   </div>
   <table class="table table-bordered person-table">
     <tr ng-repeat="person in fallenList | filter:fallen.filterStr" class="person">
-      <td class="image-col"><img ng-src="{{person.photo}}"></td>
+      <td class="image-col"><img ng-src="{{ person.photo }}" /></td>
       <td class="info-col">
         <strong>{{ person.name }}, {{ person.platoon }} Platoon</strong><br>
         {{ person.date }}<br>

@@ -17,9 +17,11 @@ angular.module('tbsa168App')
         .then( function() {
           // Account created, redirect to home
           $location.path('/');
+          toastr.info('Registration successful.');
         })
         .catch( function(err) {
           err = err.data;
+          toastr.info('Error when registering new user.');
           $scope.errors = {};
 
           // Update validity of form fields that match the mongoose errors

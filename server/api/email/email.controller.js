@@ -47,8 +47,9 @@ exports.create = function(req, res) {
   };
   console.log('sending email', req.body.recipient, req.body.subject, req.body.msg);
 
-  mailgun.messages().send(data, function (error, body) {
-
+  mailgun.messages().send(data, function (err, body) {
+    if(err) { return handleError(res, err); }
+       return res.json(201, email);
   });
   // Email.create(req.body, function(err, email) {
   //   if(err) { return handleError(res, err); }

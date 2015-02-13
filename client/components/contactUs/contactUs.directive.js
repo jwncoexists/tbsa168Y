@@ -26,13 +26,15 @@ angular.module('tbsa168App')
             }).success(function(data) {
               scope.success = true;
               scope.error = false;
+              toastr.info('Your message has been sent to the reunion committee!');
             }).error(function(data, status, headers, config) {
               // called asynchronously if an error occurs
               // or server returns response with an error status.
               scope.success = false;
               scope.error = true;
+              toastr.info('An unexpected error was encountered sending message to reunion committee!');
             });
-            toastr.info('Your message has been sent to the reunion committee!');
+            // toastr.info('Your message has been sent to the reunion committee!');
             $location.path('/');
 
 

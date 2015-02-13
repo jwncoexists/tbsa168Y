@@ -31,8 +31,6 @@ __For Mac/Linux/Nitrous.io__
 ```bash
 $ pwd # make sure you're in the project directory
 $ (sudo) npm install
-$ (sudo) npm install mailgun
-$ (sudo) npm install mailgun-js
 $ bower install
 ```
 

@@ -10,34 +10,46 @@ app.controller('PhotosCtrl', ['$scope', 'Auth',
 
     // initialize list of photos
     var item = {
-      path: "/assets/images/photos/TBS A1-68 1st Platoon-edited.jpg",
-      displayName: "1st Platoon"
+      image: "/assets/images/photos/TBS A1-68 1st Platoon-edited.jpg",
+      thumb: "/assets/images/photos/TBS A1-68 1st Platoon-edited-thumb.jpg",
+      name: "1st Platoon"
     };
     $scope.photos.push (item);
     item = {
-      path: "/assets/images/photos/TBS A1-68 2nd Platoon-edited.jpg",
-      displayName: "2nd Platoon"
+      image: "/assets/images/photos/TBS A1-68 2nd Platoon-edited.jpg",
+      thumb: "/assets/images/photos/TBS A1-68 2nd Platoon-edited-thumb.jpg",
+      name: "2nd Platoon"
     };
     $scope.photos.push (item);
     $scope.photos.push ({
-      path: "/assets/images/photos/TBS A1-68 3rd Platoon-edited.jpg",
-      displayName: "3rd Platoon"
+      image: "/assets/images/photos/TBS A1-68 3rd Platoon-edited.jpg",
+      thumb: "/assets/images/photos/TBS A1-68 3rd Platoon-edited-thumb.jpg",
+      info: "Quantico, VA",
+      name: "3rd Platoon"
     });
     $scope.photos.push ({
-      path: "/assets/images/photos/TBS A1-68 4th Platoon-edited.jpg",
-      displayName: "4th Platoon"
+      image: "/assets/images/photos/TBS A1-68 4th Platoon-edited.jpg",
+      thumb: "/assets/images/photos/TBS A1-68 4th Platoon-edited-thumb.jpg",
+      info: "Quantico, VA",
+      name: "4th Platoon"
     });
     $scope.photos.push ({
-      path: "/assets/images/photos/TBS A1-68 5th Platoon-edited.jpg",
-      displayName: "5th Platoon"
+      image: "/assets/images/photos/TBS A1-68 5th Platoon-edited.jpg",
+      thumb: "/assets/images/photos/TBS A1-68 5th Platoon-edited-thumb.jpg",
+      info: "Quantico, VA",
+      name: "5th Platoon"
     });
     $scope.photos.push ({
-      path: "/assets/images/photos/TBS A1-68 Staff-1.jpg",
-      displayName: "Staff"
+      image: "/assets/images/photos/TBS A1-68 Staff-1.jpg",
+      thumb: "/assets/images/photos/TBS A1-68 Staff-1-thumb.jpg",
+      info: "Quantico, VA",
+      name: "Staff"
     });
     $scope.photos.push ({
-      path: "/assets/images/photos/TBS A1-68 Staff-2.jpg",
-      displayName: "Staff"
+      image: "/assets/images/photos/TBS A1-68 Staff-2.jpg",
+      thumb: "/assets/images/photos/TBS A1-68 Staff-2-thumb.jpg",
+      info: "Quantico, VA",
+      name: "Staff"
     });
 
     //

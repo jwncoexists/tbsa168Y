@@ -16,9 +16,12 @@ angular.module('tbsa168App')
         .then( function() {
           // Logged in, redirect to home
           $location.path('/');
+          toastr.info('Welcome to the TBS A-1-68 Reunion Members-Only Area.');
         })
         .catch( function(err) {
+          $location.path('/login');
           $scope.errors.other = err.message;
+          toastr.error(err.message + " Verify login information and try again. Click 'Contact' on the menu to send us a message if you continue having problems.");
         });
       }
     };

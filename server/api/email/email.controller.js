@@ -49,21 +49,16 @@ exports.create = function(req, res) {
 
   mailgun.messages().send(data, function (err, body) {
     if(err) {
-      // res.render('error', { error : err});
       console.log("error sending email: ", err);
-      return res.send(201);
+      return res.send(500, err);
     }
     else {
-      // res.render('submitted', { email : req.params.mail });
       console.log('email sent successfully');
       return res.send(200);
     }
 
   });
-  // Email.create(req.body, function(err, email) {
-  //   if(err) { return handleError(res, err); }
-  //   return res.json(201, email);
-  // });
+
 };
 
 // Updates an existing email in the DB.

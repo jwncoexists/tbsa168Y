@@ -392,18 +392,27 @@ Person.find({}).remove(function() {
 // });
 
 User.find({}).remove(function() {
-  User.create({
+  User.create(
+  {
     provider: 'local',
     name: 'Test User',
     email: 'test@test.com',
     password: 'test'
-  }, {
+  },
+  {
+    provider: 'local',
+    name: 'Dave Peters',
+    email: 'dwpeters@san.rr.com',
+    password: '0109999'
+  },
+  {
     provider: 'local',
     role: 'admin',
     name: 'Admin',
     email: 'admin@admin.com',
     password: 'admin'
-  }, function() {
+  },
+  function() {
       console.log('finished populating users');
     }
   );

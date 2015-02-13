@@ -1,6 +1,6 @@
-## San Diego Wedding Planning Application
+## tbsa168Y USMC Reunsion Web Application
 
-This application provides a central resource for people planning weddings.
+This application is for a military reunion.
 
 It uses:
 
@@ -10,9 +10,9 @@ It uses:
 - Sass/CSS for styling
 - HTML for markup
 - Mongodb for storing data
-- Susy & Masonry for grid layouts
-- Angular Material Design for navigation components and page styles
+- Masonry for grid layouts
 - Angular animation
+- Mailgun for emails
 
 __Note:__ While everything here should work fine with your computer, there may be some setup required for MongoDB. Try running the app without doing any separate installation, but if it doesn't work, try the following: If you're running Mac OSX, then you can follow [these instructions](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-os-x/) for getting Mongo setup. If you're running a Linux server (like Vagrant or Nitrous), you can make a run at [these instructions](http://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/).
 
@@ -30,7 +30,9 @@ __For Mac/Linux/Nitrous.io__
 
 ```bash
 $ pwd # make sure you're in the project directory
-$ npm install
+$ (sudo) npm install
+$ (sudo) npm install mailgun
+$ (sudo) npm install mailgun-js
 $ bower install
 ```
 
@@ -40,6 +42,11 @@ __For Windows/Vagrant__
 $ npm install --no-bin-links
 $ bower install
 ```
+### Configuration
+Setup the following (2) environment variables for MailGun:
+
+- MGMAIL_KEY - your mailgun API key
+- MGMAIL_DOMAIN - your mailgun Domain name
 
 ### Directory Structure
 
@@ -79,38 +86,19 @@ The app uses [Grunt](http://gruntjs.com/) for running tasks, including running t
 $ grunt serve -d
 ```
 
-The app should auto-reload everytime you change and save anything in the `client` directory (no need to refresh the page). The app runs on `localhost:9000`. It should open the page automatically in Google Chrome on start, but if it doesn't, you can navigate to the site manually.
+The app should auto-reload everytime you change and save anything
+in the `client` directory (no need to refresh the page).
+The app runs on `localhost:9000`. It should open the page automatically
+in Google Chrome on start, but if it doesn't, you can navigate to the
+site manually.
 
-### Backend Data Models
-
-The backend Mongo Database is configured with the following data models:
-
-
-Thing:
-name: String,
-address1: String,
-address2: String,
-city: String,
-state: String,
-zip: String,
-website: String,
-phone: String,
-fax: String,
-email: String,
-info: String,
-image: String,
-keywords: [String],
-active: { type: Boolean, default: true }  
 
 ### Routes/API Endpoints
 
   The base route for making HTTP request is `/api/tasks`. The app supports the standard simple HTTP actions for handling data:
 
-  - `POST` to `/api/things` to create a venue or vendor
-  - `GET` to `/api/things` to query a list of all venues/vendors
-  - `GET` to `/api/things/:id` for querying a single venue/vendor
-  - `PUT` to `/api/things` to update a specific venue/vendor
-  - `DELETE` to `/api/things/:id` to delete a venue/vendor
+  - `POST` to `/api/emails/msg` to send an email
+
 
 ### Screenshots
 

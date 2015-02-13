@@ -7,19 +7,19 @@ app.controller('NewslettersCtrl', ['$scope', 'Auth',
     $scope.isLoggedIn = Auth.isLoggedIn;
     $scope.newsletters = [];
     var item = {
-      path: "/assets/files/Newsletter-20140914.pdf",
+      path: "/assets/images/Newsletter-20140914.pdf",
       displayName: "Sep 9, 2014",
       description: ""
     };
     $scope.newsletters.push (item);
     item = {
-      path: "/assets/files/Newsletter-20141110.pdf",
+      path: "/assets/images/Newsletter-20141110.pdf",
       displayName: "Nov 10, 2014",
       description: ""
     };
     $scope.newsletters.push (item);
     item = {
-      path: "/assets/files/Newsletter-20141224.pdf",
+      path: "/assets/images/Newsletter-20141224.pdf",
       displayName: "Dec 24, 2014",
       description: ""
     };

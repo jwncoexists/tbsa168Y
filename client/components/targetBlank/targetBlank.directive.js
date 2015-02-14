@@ -10,6 +10,8 @@ angular.module('tbsa168App')
         var href = attrs.ngHref;
         if(href.indexOf('http') > -1) {
           element.attr("target", "_blank");
+          // element.attr('ng-href', "/");
+          // element.attr('onclick', "window.open('" + href + "', 'newwindow', 'width=300, height=250')");
         } else {
           element.attr("target", "self");
         }

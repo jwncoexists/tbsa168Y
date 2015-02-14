@@ -37,7 +37,6 @@ angular.module('tbsa168App')
     }
 
     ];
-
     $scope.isCollapsed = true;
     $scope.isLoggedIn = Auth.isLoggedIn;
     $scope.isAdmin = Auth.isAdmin;

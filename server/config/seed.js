@@ -106,77 +106,77 @@ Person.find({}).remove(function() {
 
   // *** 2nd platoon
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/02-decraene-alan.png",
     name: "DeCraene, Alan",
     date: "16 Feb 1970",
     restingPlace: "Centre County Mem Park, PA",
     platoon: "2nd"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/02-eckenrode-dave.png",
     name: "Eckenrode, Dave",
     date: "21 Jul 1968",
     restingPlace: "Centre County Mem Park, PA",
     platoon: "2nd"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/02-gates-albert.png",
     name: "Gates, Albert",
     date: "07 Mar 1970",
     restingPlace: "Courts of the MIssing, MIA Mem, HI",
     platoon: "2nd"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/02-gibson-carl.png",
     name: "Gibson, Carl",
     date: "30 Apr 1968",
     restingPlace: "Univ of VA Confederate Cem, VA",
     platoon: "2nd"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/02-hagan-bob.png",
     name: "Hagan, Bob",
     date: "31 Mar 1978",
     restingPlace: "Arlington Nat'l Cem, VA",
     platoon: "2nd"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/02-donnelly-rick.png",
     name: "Donnelly, Rick",
     date: "10 Apr 1994",
     restingPlace: "Arlington Nat'l Cem, VA",
     platoon: "2nd"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/02-dopher-robert.png",
     name: "Dopher, Robert",
     date: "30 Aug 2010",
     restingPlace: "Highland Lawn Cemetery, IN",
     platoon: "2nd"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/02-evans-mike.png",
     name: "Evans, Mike",
     date: "16 Mar 2006",
     restingPlace: "Evergreen Cem, KY",
     platoon: "2nd"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/02-ferguson-michael.png",
     name: "Ferguson, Michael",
     date: "25 Jan 2002",
     restingPlace: "Dallas Ft Worth Nat'l Cem, TX",
     platoon: "2nd"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/02-ganter-bill.png",
     name: "Ganter, Bill",
     date: "03 Aug 2007",
     restingPlace: "Richmond, KY",
     platoon: "2nd"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/02-hansen-bob.png",
     name: "Hansen, Bob",
     date: "04 Jan 2009",
     restingPlace: "Arlington Nat'l Cem, VA",

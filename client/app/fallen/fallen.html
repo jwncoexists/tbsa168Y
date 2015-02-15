@@ -51,7 +51,7 @@
   </div>
   <div class="form-group fallen-filter">
     <label for="fallen-input">Find: </label>
-    <input type="text" id="fallen-input" placeholder="Enter search critera like a name or platoon#" class="fallen-input" data-ng-model="fallen.filterStr" />
+    <input type="text" id="fallen-input" placeholder="Enter search critera like a name or platoon" class="fallen-input" data-ng-model="fallen.filterStr" />
   </div>
   <table class="table table-bordered person-table">
     <tr ng-repeat="person in fallenList | filter:fallen.filterStr" class="person">

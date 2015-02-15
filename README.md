@@ -1,6 +1,6 @@
 ## tbsa168Y USMC Reunsion Web Application
 
-This application is for a military reunion.
+This application is for a mobile-friendly, military reunion website.
 
 It uses:
 
@@ -41,7 +41,8 @@ $ npm install --no-bin-links
 $ bower install
 ```
 ### Configuration
-Setup the following (2) environment variables for MailGun:
+Setup a MailGun account, and define your domain.  Then setup the following
+environment variables for MailGun on your server:
 
 - MGMAIL_KEY - your mailgun API key
 - MGMAIL_DOMAIN - your mailgun Domain name

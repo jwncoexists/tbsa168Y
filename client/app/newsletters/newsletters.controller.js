@@ -8,7 +8,7 @@ app.controller('NewslettersCtrl', ['$scope', 'Auth',
     $scope.newsletters = [];
     var item = {
       path: "/assets/images/Newsletter-20140914.pdf",
-      displayName: "Sep 9, 2014",
+      displayName: "Sep 28, 2014",
       description: ""
     };
     $scope.newsletters.push (item);
@@ -24,5 +24,10 @@ app.controller('NewslettersCtrl', ['$scope', 'Auth',
       description: ""
     };
     $scope.newsletters.push (item);
+
+    $scope.clickNewsletter = function(nl) {
+      window.open(nl.path, "TBS Newsletter", "width=400, height=400");
+      toastr.info('Newsletter opened in a separate browser window.');
+    }
 
 }]);

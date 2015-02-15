@@ -1,21 +1,21 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
 
 
-
 <div class="container-fluid" ng-show="isLoggedIn()">
   <div class="section-header">
     <h3><a href="/">> Home</a><a href="/newsletters"> > Newsletters</a></h3>
   </div>
-  <div ng-repeat="nl in newsletters" class="newsletter">
-    <a ng-href="{{ nl.path }}" target="_blank">
-      <div class="newsletter-text">
-        <div class="newsletter-header">
-          TBS 1-68<br>
-          Reunion Newlsetter<br><br>
+  <div class="newsletter-container">
+    <div ng-repeat="nl in newsletters" class="newsletter" ng-click="clickNewsletter(nl)" >
+        <div class="newsletter-text">
+          <div class="newsletter-header">
+            TBS 1-68<br>
+            REUNION NEWSLETTER<br><br>
+          </div>
+          <strong>Issue #{{ $index+1 }}:<br> {{ nl.displayName }}</strong>
         </div>
-        <strong>Issue #{{ $index+1 }}: {{ nl.displayName }}</strong>
-      </div>
-    </a>
+
+    </div>
   </div>
 </div>
 

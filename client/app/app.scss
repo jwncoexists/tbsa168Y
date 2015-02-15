@@ -73,6 +73,23 @@ h1, h2, h3, h4, h5 {
 
 .navbar {
   font-size: 13px;
+  navbar-option {
+    color: #777;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    line-height: 20px;
+    position: relative;
+    display: block;
+    background: transparent;
+    text-align: match-parent;
+    &:hover {
+      cursor: pointer;
+      color: #555;
+      // background-color: #e7e7e7;
+    }
+  }
   // font-weight: bold;
 }
 

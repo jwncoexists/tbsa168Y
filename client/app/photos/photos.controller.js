@@ -28,469 +28,377 @@ app.controller('PhotosCtrl', ['$scope', 'Auth',
       thumb: "/assets/images/photos/TBS A1-68 2nd Platoon-edited-thumb.jpg",
       name: "2nd Platoon",
       regions: [
-        // row 1
+        // ***** row 1 *******
         {
-          name: "J. Ehmer",
+          name: "Jim Ehmer",
           xmin: 75,
           width: 65,
-          xmax: 141,
           ymin: 300,
-          ymax: 520,
           height: 220,
           active: false
         },
         {
-          name: "W. Friese",
+          name: "Bill Friese",
           xmin: 142,
-          xmax: 207,
           ymin: 300,
-          ymax: 520,
           width: 65,
           height: 220,
           active: false
         },
         {
-          name: "M. Fergus",
+          name: "Mike Ferguson",
           xmin: 208,
-          xmax: 270,
           ymin: 300,
-          ymax: 520,
           width: 62,
           height: 220,
           active: false
         },
         {
-          name: "C. Gibson",
+          name: "Reed Gibson",
           xmin: 271,
-          xmax: 327,
           ymin: 300,
-          ymax: 520,
           width: 56,
           height: 220,
           active: false
         },
         {
-          name: "K. Dobbins",
+          name: "Kent Dobbins",
           xmin: 328,
-          xmax: 388,
           ymin: 300,
-          ymax: 520,
           width: 60,
           height: 220,
           active: false
         },
         {
-          name: "J. Gies",
+          name: "Jack Gies",
           xmin: 389,
-          xmax: 453,
           ymin: 300,
-          ymax: 520,
           width: 64,
           height: 220,
           active: false
         },
         {
-          name: "A. Gordon",
+          name: "Adrian Gordon",
           xmin: 454,
-          xmax: 505,
           ymin: 300,
-          ymax: 520,
           width: 51,
           height: 220,
           active: false
         },
         {
-          name: "J. Gettman",
+          name: "Jim Gettman",
           xmin: 505,
-          xmax: 571,
           ymin: 300,
-          ymax: 520,
           width: 66,
           height: 220,
           active: false
         },
         {
-          name: "L. Fuch",
+          name: "Len Fuchs",
           xmin: 572,
-          xmax: 635,
           ymin: 300,
-          ymax: 520,
           width: 63,
           height: 220,
           active: false
         },
         {
-          name: "J. Hansen",
+          name: "Jeff Hansen",
           xmin: 636,
-          xmax: 697,
           ymin: 300,
-          ymax: 520,
           width: 61,
           height: 220,
           active: false
         },
         {
-          name: "R. Dopher",
+          name: "Rob Dopher",
           xmin: 698,
-          xmax: 754,
           ymin: 300,
-          ymax: 520,
           width: 66,
           height: 220,
           active: false
         },
-        // row 2
+        // ***** row 2 *******
         {
-          name: "Capt. McMahon",
+          name: "Capt. Daniel McMahon",
           xmin: 35,
-          xmax: 115,
-          ymin: 230,
-          ymax: 299,
+          ymin: 215,
           width: 80,
+          height: 85,
+          active: false
+        },
+        {
+          name: "Dalton Ellis",
+          xmin: 116,
+          ymin: 230,
+          width: 64,
           height: 69,
           active: false
         },
         {
-          name: "D. Ellis",
-          xmin: 116,
-          xmax: 180,
-          ymin: 240,
-          ymax: 299,
-          width: 64,
-          height: 59,
-          active: false
-        },
-        {
-          name: "P. Finneran",
+          name: "Pat Finneran",
           xmin: 181,
-          xmax: 241,
-          ymin: 240,
-          ymax: 299,
-          width: 60,
+          ymin: 225,
+          width: 74,
           height: 59,
           active: false
         },
         {
-          name: "J. Feltner",
+          name: "Jon Feltner",
           xmin: 242,
-          xmax: 300,
           ymin: 240,
-          ymax: 299,
           width: 58,
           height: 59,
           active: false
         },
         {
-          name: "J. Fogg",
+          name: "John Fogg",
           xmin: 301,
-          xmax: 355,
-          ymin: 240,
-          ymax: 299,
+          ymin: 230,
           width: 54,
-          height: 59,
+          height: 69,
           active: false
         },
         {
-          name: "S. Easton",
+          name: "Sam Easton",
           xmin: 356,
-          xmax: 415,
-          ymin: 240,
-          ymax: 299,
+          ymin: 230,
           width: 59,
-          height: 59,
+          height: 69,
           active: false
         },
         {
-          name: "M. Delong",
+          name: "Mike DeLong",
           xmin: 416,
-          xmax: 484,
-          ymin: 240,
-          ymax: 299,
+          ymin: 230,
           width: 68,
-          height: 59,
+          height: 69,
           active: false
         },
         {
-          name: "M. Evans",
+          name: "Mike Evans",
           xmin: 485,
-          xmax: 545,
-          ymin: 240,
-          ymax: 299,
+          ymin: 230,
           width: 60,
-          height: 59,
+          height: 69,
           active: false
         },
         {
-          name: "W. Etter",
+          name: "Bill Etter",
           xmin: 546,
-          xmax: 605,
           ymin: 240,
-          ymax: 299,
           width: 59,
           height: 59,
           active: false
         },
         {
-          name: "H. Cross",
+          name: "Terry Cross",
           xmin: 606,
-          xmax: 665,
           ymin: 240,
-          ymax: 299,
           width: 59,
           height: 59,
           active: false
         },
         {
-          name: "A. Gates",
+          name: "Al Gates",
           xmin: 666,
-          xmax: 735,
           ymin: 240,
-          ymax: 299,
           width: 69,
           height: 59,
           active: false
         },
-        // row 3
+        // ***** row 3 *******
         {
-          name: "T. Deggend",
+          name: "Buck Deggendorf",
           xmin: 160,
-          xmax: 201,
-          ymin: 220,
-          ymax: 275,
+          ymin: 210,
           width: 41,
-          height: 55,
+          height: 65,
           active: false
         },
         {
-          name: "S. Freiherr",
+          name: "Steve Freiherr",
           xmin: 227,
-          xmax: 259,
-          ymin: 220,
-          ymax: 275,
+          ymin: 210,
           width: 32,
-          height: 55,
+          height: 65,
           active: false
         },
         {
-          name: "K. Doyle",
+          name: "Kevin Doyle",
           xmin: 282,
-          xmax: 319,
           ymin: 220,
-          ymax: 275,
           width: 37,
           height: 55,
           active: false
         },
         {
-          name: "G. Getgood",
+          name: "Fraser Getgood",
           xmin: 343,
-          xmax: 375,
-          ymin: 210,
-          ymax: 275,
+          ymin: 200,
           width: 32,
           height: 65,
           active: false
         },
         {
-          name: "W. Donnelly",
+          name: "Rick Donnelly",
           xmin: 399,
-          xmax: 434,
-          ymin: 210,
-          ymax: 275,
+          ymin: 200,
           width: 35,
           height: 65,
           active: false
         },
         {
-          name: "C. Eisenbach",
+          name: "Ike Eisenbach",
           xmin: 466,
-          xmax: 500,
-          ymin: 210,
-          ymax: 275,
+          ymin: 200,
           width: 34,
-          height: 65,
+          height: 75,
           active: false
         },
         {
-          name: "T. Hammett",
+          name: "Ted Hammett",
           xmin: 525,
-          xmax: 556,
-          ymin: 220,
-          ymax: 275,
+          ymin: 210,
           width: 31,
-          height: 55,
+          height: 65,
           active: false
         },
         {
-          name: "D. Gee",
+          name: "David Gee",
           xmin: 586,
-          xmax: 620,
           ymin: 210,
-          ymax: 275,
           width: 34,
           height: 65,
           active: false
         },
         {
-          name: "W. Ganter",
+          name: "Bill Ganter",
           xmin: 648,
-          xmax: 484,
           ymin: 210,
-          ymax: 275,
           width: 34,
           height: 65,
           active: false
         },
         {
-          name: "S. Hadar",
+          name: "Steve Hadar",
           xmin: 713,
-          xmax: 767,
           ymin: 210,
-          ymax: 275,
           width: 54,
           height: 65,
           active: false
         },
-        // row 4
+        // ***** row 4 *******
         {
-          name: "P. Daigle",
+          name: "Paul Daigle",
           xmin: 125,
-          xmax: 165,
           ymin: 190,
-          ymax: 235,
           width: 40,
           height: 45,
           active: false
         },
         {
-          name: "A. Greishaber",
+          name: "Al Greishaber",
           xmin: 190,
-          xmax: 232,
           ymin: 190,
-          ymax: 235,
           width: 42,
           height: 45,
           active: false
         },
         {
-          name: "F. Emmett",
+          name: "Fred Emmett",
           xmin: 250,
-          xmax: 288,
           ymin: 190,
-          ymax: 235,
           width: 38,
           height: 45,
           active: false
         },
         {
-          name: "R. Cronin",
+          name: "Rich Cronin",
           xmin: 290,
-          xmax: 330,
           ymin: 190,
-          ymax: 235,
           width: 40,
           height: 45,
           active: false
         },
         {
-          name: "J. Foresman",
+          name: "Jim Foresman",
           xmin: 370,
-          xmax: 403,
           ymin: 190,
-          ymax: 235,
           width: 33,
           height: 45,
           active: false
         },
         {
-          name: "R. Crew",
+          name: "Randy Crew",
           xmin: 428,
-          xmax: 462,
           ymin: 190,
-          ymax: 235,
           width: 33,
           height: 45,
           active: false
         },
         {
-          name: "R. Gleisberg",
+          name: "Bob Gleisberg",
           xmin: 489,
-          xmax: 522,
-          ymin: 190,
-          ymax: 235,
+          ymin: 180,
           width: 33,
-          height: 45,
+          height: 55,
           active: false
         },
         {
-          name: "C. Davis",
+          name: "Crane Davis",
           xmin: 545,
-          xmax: 585,
           ymin: 190,
-          ymax: 235,
           width: 40,
           height: 45,
           active: false
         },
         {
-          name: "A. DeCreane",
+          name: "Al DeCreane",
           xmin: 608,
-          xmax: 650,
           ymin: 190,
-          ymax: 235,
           width: 42,
           height: 45,
           active: false
         },
         {
-          name: "F. Franzen",
+          name: "Rick Franzen",
           xmin: 675,
-          xmax: 715,
           ymin: 190,
-          ymax: 235,
           width: 40,
           height: 45,
           active: false
         },
-        // row 5
+        // ***** row 5 *******
         {
-          name: "C. Greenfield",
+          name: "Charles Greenfield",
           xmin: 330,
-          xmax: 370,
-          ymin: 170,
-          ymax: 220,
+          ymin: 160,
           width: 40,
-          height: 50,
+          height: 60,
           active: false
         },
         {
-          name: "W. Dakin",
+          name: "Bill Dakin",
           xmin: 390,
-          xmax: 420,
-          ymin: 170,
-          ymax: 220,
+          ymin: 160,
           width: 30,
-          height: 50,
+          height: 60,
           active: false
         },
         {
-          name: "J. Hagan",
+          name: "Bob Hagan",
           xmin: 450,
-          xmax: 490,
-          ymin: 170,
-          ymax: 220,
+          ymin: 160,
           width: 40,
-          height: 50,
+          height: 60,
           active: false
         },
         {
-          name: "D. Eckenrode",
+          name: "Dave Eckenrode",
           xmin: 518,
-          xmax: 553,
-          ymin: 170,
-          ymax: 220,
+          ymin: 160,
           width: 40,
-          height: 50,
+          height: 60,
           active: false
         },
       ]
@@ -501,7 +409,381 @@ app.controller('PhotosCtrl', ['$scope', 'Auth',
       thumb: "/assets/images/photos/TBS A1-68 3rd Platoon-edited-thumb.jpg",
       info: "Quantico, VA",
       name: "3rd Platoon",
-      regions: []
+      regions: [
+        // ***** row 1 *******
+        {
+          name: "Butch Holden",
+          xmin: 100,
+          width: 70,
+          ymin: 305,
+          height: 195,
+          active: false
+        },
+        {
+          name: "Tom Igoe",
+          xmin: 171,
+          width: 56,
+          ymin: 305,
+          height: 195,
+          active: false
+        },
+        {
+          name: "Jay Jacobson",
+          xmin: 228,
+          width: 50,
+          ymin: 305,
+          height: 195,
+          active: false
+        },
+        {
+          name: "John Hudock",
+          xmin: 279,
+          width: 52,
+          ymin: 305,
+          height: 195,
+          active: false
+        },
+        {
+          name: "Victor Hebert",
+          xmin: 334,
+          width: 55,
+          ymin: 305,
+          height: 195,
+          active: false
+        },
+        {
+          name: "Dan Indgjer",
+          xmin: 390,
+          width: 57,
+          ymin: 305,
+          height: 195,
+          active: false
+        },
+        {
+          name: "Floyd Henry",
+          xmin: 448,
+          width: 57,
+          ymin: 305,
+          height: 195,
+          active: false
+        },
+        {
+          name: "JJ Huber",
+          xmin: 506,
+          width: 59,
+          ymin: 305,
+          height: 195,
+          active: false
+        },
+        {
+          name: "Rick Huntington",
+          xmin: 566,
+          width: 59,
+          ymin: 305,
+          height: 195,
+          active: false
+        },
+        {
+          name: "Carl Hasdovic",
+          xmin: 626,
+          width: 54,
+          ymin: 305,
+          height: 195,
+          active: false
+        },
+        {
+          name: "Bob Hansen",
+          xmin: 681,
+          width: 57,
+          ymin: 305,
+          height: 195,
+          active: false
+        },
+        // ***** row 2 *******
+        {
+          name: "Capt Timothy McTigue",
+          xmin: 45,
+          width: 60,
+          ymin: 235,
+          height: 100,
+          active: false
+        },
+        {
+          name: "Ivan Jones",
+          xmin: 106,
+          width: 59,
+          ymin: 250,
+          height: 65,
+          active: false
+        },
+        {
+          name: "John Masters",
+          xmin: 166,
+          width: 59,
+          ymin: 250,
+          height: 65,
+          active: false
+        },
+        {
+          name: "Al Kyle",
+          xmin: 226,
+          width: 59,
+          ymin: 250,
+          height: 65,
+          active: false
+        },
+        {
+          name: "Ron Kapchus",
+          xmin: 286,
+          width: 55,
+          ymin: 250,
+          height: 65,
+          active: false
+        },
+        {
+          name: "Bill Keefe",
+          xmin: 336,
+          width: 55,
+          ymin: 240,
+          height: 65,
+          active: false
+        },
+        {
+          name: "John Kispert",
+          xmin: 391,
+          width: 54,
+          ymin: 240,
+          height: 65,
+          active: false
+        },
+        {
+          name: "Stu Jones",
+          xmin: 450,
+          width: 58,
+          ymin: 250,
+          height: 65,
+          active: false
+        },
+        {
+          name: "Dave Kiser",
+          xmin: 516,
+          width: 60,
+          ymin: 245,
+          height: 65,
+          active: false
+        },
+        {
+          name: "Jack Kemeny",
+          xmin: 585,
+          width: 56,
+          ymin: 235,
+          height: 65,
+          active: false
+        },
+        {
+          name: "Bob Koury",
+          xmin: 645,
+          width: 61,
+          ymin: 225,
+          height: 65,
+          active: false
+        },
+        {
+          name: "Capt Dave Downing",
+          xmin: 725,
+          width: 55,
+          ymin: 225,
+          height: 95,
+          active: false
+        },
+        // ***** row 3 *******
+        {
+          name: "Jack Larrison",
+          xmin: 145,
+          width: 35,
+          ymin: 235,
+          height: 53,
+          active: false
+        },
+        {
+          name: "Russ Johnson",
+          xmin: 206,
+          width: 36,
+          ymin: 230,
+          height: 58,
+          active: false
+        },
+        {
+          name: "Bill Jones",
+          xmin: 266,
+          width: 32,
+          ymin: 230,
+          height: 53,
+          active: false
+        },
+        {
+          name: "Rich Liebler",
+          xmin: 323,
+          width: 30,
+          ymin: 230,
+          height: 53,
+          active: false
+        },
+        {
+          name: "Orval McCormack",
+          xmin: 380,
+          width: 28,
+          ymin: 218,
+          height: 58,
+          active: false
+        },
+        {
+          name: "Eric Lewis",
+          xmin: 433,
+          width: 37,
+          ymin: 230,
+          height: 58,
+          active: false
+        },
+        {
+          name: "Larry Kosobarich",
+          xmin: 495,
+          width: 38,
+          ymin: 225,
+          height: 58,
+          active: false
+        },
+        {
+          name: "John Karch",
+          xmin: 558,
+          width: 36,
+          ymin: 225,
+          height: 53,
+          active: false
+        },
+        {
+          name: "Drew Ley",
+          xmin: 624,
+          width: 31,
+          ymin: 225,
+          height: 53,
+          active: false
+        },
+        // ***** row 4 *******
+        {
+          name: "Gerald Keys",
+          xmin: 120,
+          width: 33,
+          ymin: 210,
+          height: 40,
+          active: false
+        },
+        {
+          name: "Ed Kenney",
+          xmin: 172,
+          width: 37,
+          ymin: 210,
+          height: 40,
+          active: false
+        },
+        {
+          name: "Jerry Lamp",
+          xmin: 235,
+          width: 33,
+          ymin: 210,
+          height: 40,
+          active: false
+        },
+        {
+          name: "Joe Laslie",
+          xmin: 296,
+          width: 33,
+          ymin: 205,
+          height: 45,
+          active: false
+        },
+        {
+          name: "John Lancaster",
+          xmin: 356,
+          width: 28,
+          ymin: 195,
+          height: 50,
+          active: false
+        },
+        {
+          name: "Jim Lewis",
+          xmin: 411,
+          width: 32,
+          ymin: 205,
+          height: 40,
+          active: false
+        },
+        {
+          name: "Mike McClung",
+          xmin: 465,
+          width: 43,
+          ymin: 195,
+          height: 45,
+          active: false
+        },
+        {
+          name: "Dick Kurth",
+          xmin: 527,
+          width: 46,
+          ymin: 190,
+          height: 50,
+          active: false
+        },
+        {
+          name: "Dave Hauntz",
+          xmin: 589,
+          width: 56,
+          ymin: 185,
+          height: 50,
+          active: false
+        },
+        // ***** row 5 *******
+        {
+          name: "Bill Kenerly",
+          xmin: 261,
+          width: 31,
+          ymin: 190,
+          height: 42,
+          active: false
+        },
+        {
+          name: "Bob Lloyd",
+          xmin: 325,
+          width: 30,
+          ymin: 190,
+          height: 42,
+          active: false
+        },
+        {
+          name: "Russ Johnson",
+          xmin: 382,
+          width: 33,
+          ymin: 180,
+          height: 48,
+          active: false
+        },
+        {
+          name: "Ron Johnson",
+          xmin: 439,
+          width: 32,
+          ymin: 180,
+          height: 48,
+          active: false
+        },
+        {
+          name: "Beirne Lovely",
+          xmin: 498,
+          width: 40,
+          ymin: 180,
+          height: 45,
+          active: false
+        }
+      ]
     });
     $scope.photos.push ({
       image: "/assets/images/photos/TBS A1-68 4th Platoon-edited.jpg",
@@ -560,7 +842,6 @@ app.controller('PhotosCtrl', ['$scope', 'Auth',
       $scope.clickedPhoto = $scope.photos[$scope.clickedIndex];
     };
     $scope.getRegionStyle = function(region) {
-      console.log('getting style for: ', region);
       var style = {
         'position': 'absolute',
         // 'display': 'inline',
@@ -569,32 +850,13 @@ app.controller('PhotosCtrl', ['$scope', 'Auth',
         'width': region.width + 'px',
         'height': region.height + 'px',
         'color': 'yellow',
-
         'border': 'solid 1px black',
         'opacity': region.active == true ? 1 : 0,
         'font-size': '1em',
         'z-index': 500 };
-
-      console.log('style =', style);
       return style;
     }
-    $scope.setNameInfo = function(event) {
-      console.log('entering setNameInfo: ', event);
-      var regions = $scope.photos[$scope.clickedIndex].regions;
-      var xpos = event.clientX;
-      var ypos = event.clientY;
-      var i = 0;
-      var found = false;
-      while (i < regions.length && !found) {
-        if (xpos >= regions[i].xmin && xpos <= regions[i].xmax &&
-            ypos >= regions[i].ymin && ypos <= regions[i].ymax) {
-          name = regions[i].name;
-        }
-        i++
-      };
-      if (!found) { name = undefined };
-      console.log('leaving setNameInfo, found =', found);
-    }
+
     $scope.setRegionActive = function(region) {
       console.log('entering setRegionActive ', region);
       region.active = true;

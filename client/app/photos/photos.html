@@ -25,15 +25,13 @@
     </p>
     <div class="image">
       <img ng-src="{{clickedPhoto.image}}">
+      <!-- divs for all the peoples names in the photos -->
       <div ng-repeat="region in clickedPhoto.regions">
-        <!-- <div ng-style="getRegionStyle(region)">{{region.name}}</div> -->
         <div ng-mouseenter="setRegionActive(region)"
              ng-mouseleave="setRegionInactive(region)" ng-style="getRegionStyle(region)" >
           <div class="photo-names">{{region.name}}</span>
         </div>
       </div>
-      <!-- <img ng-src="{{clickedPhoto.image}}" ng-mouseover="setNameInfo($event)"> -->
-    <!-- <show-name name="name", xmin="xmin", xmax="xmax", ymin="ymin", ymax="ymax", ng-show="name"></show-name> -->
     </div>
   </div>
 </div>

@@ -790,7 +790,389 @@ app.controller('PhotosCtrl', ['$scope', 'Auth',
       thumb: "/assets/images/photos/TBS A1-68 4th Platoon-edited-thumb.jpg",
       info: "Quantico, VA",
       name: "4th Platoon",
-      regions: []
+      regions: [
+      // ***** row 1 *******
+        {
+          name: "Dave Ralston",
+          xmin: 110,
+          width: 76,
+          ymin: 257,
+          height: 205,
+          active: false
+        },
+        {
+          name: "Greg McDonough",
+          xmin: 182,
+          width: 52,
+          ymin: 257,
+          height: 205,
+          active: false
+        },
+        {
+          name: "Jerry Paccassi",
+          xmin: 234,
+          width: 61,
+          ymin: 257,
+          height: 205,
+          active: false
+        },
+        {
+          name: "Dave Raper",
+          xmin: 298,
+          width: 56,
+          ymin: 257,
+          height: 205,
+          active: false
+        },
+        {
+          name: "George McGaughey",
+          xmin: 358,
+          width: 60,
+          ymin: 247,
+          height: 215,
+          active: false
+        },
+        {
+          name: "JJ O'Brien",
+          xmin: 419,
+          width: 57,
+          ymin: 257,
+          height: 205,
+          active: false
+        },
+        {
+          name: "Jim O’Brien",
+          xmin: 477,
+          width: 59,
+          ymin: 257,
+          height: 205,
+          active: false
+        },
+        {
+          name: "Bob O’Rourke",
+          xmin: 537,
+          width: 62,
+          ymin: 257,
+          height: 205,
+          active: false
+        },
+        {
+          name: "Matt Parker",
+          xmin: 600,
+          width: 53,
+          ymin: 257,
+          height: 205,
+          active: false
+        },
+        {
+          name: "George Philip",
+          xmin: 654,
+          width: 58,
+          ymin: 257,
+          height: 205,
+          active: false
+        },
+        {
+          name: "Skip Ringo",
+          xmin: 713,
+          width: 64,
+          ymin: 257,
+          height: 205,
+          active: false
+        },
+        // ***** row 2 *******
+        {
+          name: "Captain Eaton",
+          xmin: 31,
+          width: 69,
+          ymin: 182,
+          height: 95,
+          active: false
+        },
+        {
+          name: "Jack Powers",
+          xmin: 113,
+          width: 61,
+          ymin: 188,
+          height: 67,
+          active: false
+        },
+        {
+          name: "Terry Ranstead",
+          xmin: 175,
+          width: 61,
+          ymin: 193,
+          height: 67,
+          active: false
+        },
+        {
+          name: "Tom Nunziato",
+          xmin: 237,
+          width: 63,
+          ymin: 188,
+          height: 67,
+          active: false
+        },
+        {
+          name: "Dave Purvis",
+          xmin: 301,
+          width: 49,
+          ymin: 188,
+          height: 67,
+          active: false
+        },
+        {
+          name: "Tom McEntire",
+          xmin: 360,
+          width: 52,
+          ymin: 196,
+          height: 67,
+          active: false
+        },
+        {
+          name: "Monty Nelson",
+          xmin: 419,
+          width: 55,
+          ymin: 190,
+          height: 65,
+          active: false
+        },
+        {
+          name: "Dave Moran",
+          xmin: 485,
+          width: 58,
+          ymin: 196,
+          height: 67,
+          active: false
+        },
+        {
+          name: "Mike Morrow",
+          xmin: 551,
+          width: 51,
+          ymin: 194,
+          height: 67,
+          active: false
+        },
+        {
+          name: "Gray Ross",
+          xmin: 609,
+          width: 53,
+          ymin: 198,
+          height: 62,
+          active: false
+        },
+        {
+          name: "Jim McIntire",
+          xmin: 670,
+          width: 56,
+          ymin: 194,
+          height: 67,
+          active: false
+        },
+        // ***** row 3 *******
+        {
+          name: "John Narney",
+          xmin: 158,
+          width: 34,
+          ymin: 182,
+          height: 47,
+          active: false
+        },
+        {
+          name: "George Pfeiffer",
+          xmin: 217,
+          width: 41,
+          ymin: 175,
+          height: 54,
+          active: false
+        },
+        {
+          name: "Paul Parker",
+          xmin: 281,
+          width: 32,
+          ymin: 182,
+          height: 47,
+          active: false
+        },
+        {
+          name: "Dan McMurray",
+          xmin: 339,
+          width: 36,
+          ymin: 175,
+          height: 54,
+          active: false
+        },
+        {
+          name: "Jim Muir",
+          xmin: 401,
+          width: 34,
+          ymin: 182,
+          height: 47,
+          active: false
+        },
+        {
+          name: "Harry Radcliffe",
+          xmin: 461,
+          width: 35,
+          ymin: 175,
+          height: 52,
+          active: false
+        },
+        {
+          name: "Dave Peters",
+          xmin: 523,
+          width: 37,
+          ymin: 180,
+          height: 49,
+          active: false
+        },
+        {
+          name: "Duncan Ragsdale",
+          xmin: 586,
+          width: 35,
+          ymin: 172,
+          height: 56,
+          active: false
+        },
+        {
+          name: "Rich Neal",
+          xmin: 646,
+          width: 38,
+          ymin: 182,
+          height: 47,
+          active: false
+        },
+        // ***** row 4 *******
+        {
+          name: "Bob Reid",
+          xmin: 184,
+          width: 38,
+          ymin: 152,
+          height: 40,
+          active: false
+        },
+        {
+          name: "Tony Pesavento",
+          xmin: 254,
+          width: 36,
+          ymin: 144,
+          height: 48,
+          active: false
+        },
+        {
+          name: "Dave Peake",
+          xmin: 313,
+          width: 33,
+          ymin: 152,
+          height: 40,
+          active: false
+        },
+        {
+          name: "Jim McKelligon",
+          xmin: 374,
+          width: 30,
+          ymin: 152,
+          height: 50,
+          active: false
+        },
+        {
+          name: "Doug O’Connor",
+          xmin: 437,
+          width: 34,
+          ymin: 150,
+          height: 54,
+          active: false
+        },
+        {
+          name: "Travis Piper",
+          xmin: 502,
+          width: 27,
+          ymin: 160,
+          height: 43,
+          active: false
+        },
+        {
+          name: "Rich Metli",
+          xmin: 549,
+          width: 24,
+          ymin: 157,
+          height: 48,
+          active: false
+        },
+        {
+          name: "Ray Norton",
+          xmin: 611,
+          width: 29,
+          ymin: 152,
+          height: 48,
+          active: false
+        },
+        {
+          name: "Robert Newlin",
+          xmin: 673,
+          width: 28,
+          ymin: 155,
+          height: 49,
+          active: false
+        },
+        // ***** row 4 *******
+        {
+          name: "Bob Packard",
+          xmin: 221,
+          width: 30,
+          ymin: 145,
+          height: 38,
+          active: false
+        },
+        {
+          name: "Joe Belser",
+          xmin: 288,
+          width: 29,
+          ymin: 139,
+          height: 39,
+          active: false
+        },
+        {
+          name: "Tom Pearson",
+          xmin: 350,
+          width: 29,
+          ymin: 138,
+          height: 49,
+          active: false
+        },
+        {
+          name: "Joe Renaghan",
+          xmin: 410,
+          width: 30,
+          ymin: 148,
+          height: 48,
+          active: false
+        },
+        {
+          name: "Nat Reed",
+          xmin: 479,
+          width: 25,
+          ymin: 154,
+          height: 42,
+          active: false
+        },
+        {
+          name: "Joe Milum",
+          xmin: 574,
+          width: 34,
+          ymin: 131,
+          height: 54,
+          active: false
+        },
+        {
+          name: "Chip Mills",
+          xmin: 641,
+          width: 33,
+          ymin: 144,
+          height: 42,
+          active: false
+        },
+      ]
     });
     $scope.photos.push ({
       image: "/assets/images/photos/TBS A1-68 5th Platoon-edited.jpg",

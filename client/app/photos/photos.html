@@ -23,7 +23,18 @@
       <span ng-click="goToNext()">Next</span>
       <span class="fa fa-chevron-right" ng-click="goToNext()"></span>
     </p>
-    <img ng-src="{{clickedPhoto.image}}" ng-click="toggleGalleryMode(-1)">
+    <div class="image">
+      <img ng-src="{{clickedPhoto.image}}">
+      <div ng-repeat="region in clickedPhoto.regions">
+        <!-- <div ng-style="getRegionStyle(region)">{{region.name}}</div> -->
+        <div ng-mouseenter="setRegionActive(region)"
+             ng-mouseleave="setRegionInactive(region)" ng-style="getRegionStyle(region)" >
+          <div class="photo-names">{{region.name}}</span>
+        </div>
+      </div>
+      <!-- <img ng-src="{{clickedPhoto.image}}" ng-mouseover="setNameInfo($event)"> -->
+    <!-- <show-name name="name", xmin="xmin", xmax="xmax", ymin="ymin", ymax="ymax", ng-show="name"></show-name> -->
+    </div>
   </div>
 </div>
 

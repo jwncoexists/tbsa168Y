@@ -28,6 +28,7 @@ masonry {
 .full-size-photo {
   img {
     max-width: 100%;
+
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -45,6 +46,25 @@ masonry {
 
 .next-prev-controls {
   font-size: 20px;
+}
+
+.image {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  img {
+    min-width: 100%;
+  }
+}
+.photo-names {
+  position: relative;
+  margin-top: -25px;
+  margin-left: -25px;
+  margin-right: -25px;
+  text-align: center;
+  background: black;
+  border-radius: 10%;
+
 }
 
 .animate-show-hide.ng-hide-add,

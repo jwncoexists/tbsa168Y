@@ -19,7 +19,6 @@
 
       <ul class="nav navbar-nav navbar-right">
         <li ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">
-            <!-- <a ng-href="{{item.link}}" ng-hide="(!isLoggedIn() && item.membersOnly)" target-blank>{{item.title}}</a> -->
             <navbar-option ng-click="clickIt(item.link)" ng-hide="(!isLoggedIn() && item.membersOnly)">{{item.title}}</navbar-option>
         </li>
         <li ng-show="isAdmin()" ng-class="{active: isActive('/admin')}"><a href="/admin">Admin</a></li>

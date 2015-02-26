@@ -1179,7 +1179,340 @@ app.controller('PhotosCtrl', ['$scope', 'Auth',
       thumb: "/assets/images/photos/TBS A1-68 5th Platoon-edited-thumb.jpg",
       info: "Quantico, VA",
       name: "5th Platoon",
-      regions: []
+      regions: [
+        // ***** row 1 *******
+        {
+          name: "Mike Williams",
+          xmin: 98,
+          width: 73,
+          ymin: 295,
+          height: 208,
+          active: false
+        },
+        {
+          name: "Mike Sandberg",
+          xmin: 172,
+          width: 53,
+          ymin: 295,
+          height: 208,
+          active: false
+        },
+        {
+          name: "Denny Rydstrom",
+          xmin: 226,
+          width: 66,
+          ymin: 295,
+          height: 208,
+          active: false
+        },
+        {
+          name: "Jim Sanborn",
+          xmin: 293,
+          width: 53,
+          ymin: 295,
+          height: 208,
+          active: false
+        },
+        {
+          name: "Chuck Steele",
+          xmin: 347,
+          width: 62,
+          ymin: 295,
+          height: 208,
+          active: false
+        },
+        {
+          name: "Jim Williams",
+          xmin: 410,
+          width: 47,
+          ymin: 295,
+          height: 208,
+          active: false
+        },
+        {
+          name: "Larry St. John",
+          xmin: 458,
+          width: 63,
+          ymin: 295,
+          height: 208,
+          active: false
+        },
+        {
+          name: "Moe Trail",
+          xmin: 522,
+          width: 53,
+          ymin: 295,
+          height: 208,
+          active: false
+        },
+        {
+          name: "Jules Selden",
+          xmin: 578,
+          width: 50,
+          ymin: 295,
+          height: 208,
+          active: false
+        },
+        {
+          name: "Al Woods",
+          xmin: 639,
+          width: 59,
+          ymin: 295,
+          height: 208,
+          active: false
+        },
+        {
+          name: "John Tritsch",
+          xmin: 699,
+          width: 65,
+          ymin: 295,
+          height: 208,
+          active: false
+        },
+        // ***** row 2 *******
+        {
+          name: "Capt James D. Jones",
+          xmin: 34,
+          width: 65,
+          ymin: 207,
+          height: 100,
+          active: false
+        },
+        {
+          name: "Bruce Wiggins",
+          xmin: 99,
+          width: 53,
+          ymin: 225,
+          height: 73,
+          active: false
+        },
+        {
+          name: "Ed Wietecha",
+          xmin: 155,
+          width: 60,
+          ymin: 225,
+          height: 73,
+          active: false
+        },
+        {
+          name: "Jack Sammons",
+          xmin: 216,
+          width: 58,
+          ymin: 225,
+          height: 73,
+          active: false
+        },
+        {
+          name: "Jim Seagraves",
+          xmin: 275,
+          width: 62,
+          ymin: 225,
+          height: 73,
+          active: false
+        },
+        {
+          name: "Ben Warren",
+          xmin: 338,
+          width: 65,
+          ymin: 225,
+          height: 73,
+          active: false
+        },
+        {
+          name: "Dick Sergo",
+          xmin: 404,
+          width: 55,
+          ymin: 225,
+          height: 73,
+          active: false
+        },
+        {
+          name: "Carl Ulrich",
+          xmin: 460,
+          width: 60,
+          ymin: 225,
+          height: 73,
+          active: false
+        },
+        {
+          name: "John Schmid",
+          xmin: 521,
+          width: 69,
+          ymin: 225,
+          height: 73,
+          active: false
+        },
+        {
+          name: "Mike/Duke Wenzel",
+          xmin: 591,
+          width: 65,
+          ymin: 225,
+          height: 73,
+          active: false
+        },
+        {
+          name: "(Wild) Bill Tehan",
+          xmin: 657,
+          width: 63,
+          ymin: 225,
+          height: 73,
+          active: false
+        },
+        {
+          name: "Ken Shackelford",
+          xmin: 721,
+          width: 70,
+          ymin: 225,
+          height: 73,
+          active: false
+        },
+        // ***** row 3 *******
+        {
+          name: "Bob Waller",
+          xmin: 135,
+          width: 40,
+          ymin: 207,
+          height: 55,
+          active: false
+        },
+        {
+          name: "??",
+          xmin: 204,
+          width: 27,
+          ymin: 212,
+          height: 50,
+          active: false
+        },
+        {
+          name: "Wazzo Wzorek",
+          xmin: 255,
+          width: 31,
+          ymin: 200,
+          height: 55,
+          active: false
+        },
+        {
+          name: "JT Williamson",
+          xmin: 316,
+          width: 39,
+          ymin: 212,
+          height: 50,
+          active: false
+        },
+        {
+          name: "Andy Solum",
+          xmin: 383,
+          width: 31,
+          ymin: 207,
+          height: 50,
+          active: false
+        },
+        {
+          name: "John Spindler",
+          xmin: 444,
+          width: 32,
+          ymin: 200,
+          height: 55,
+          active: false
+        },
+        {
+          name: "Mike Smith",
+          xmin: 505,
+          width: 36,
+          ymin: 207,
+          height: 55,
+          active: false
+        },
+        {
+          name: "Bob Stocker",
+          xmin: 573,
+          width: 40,
+          ymin: 212,
+          height: 50,
+          active: false
+        },
+        {
+          name: "Dave Wilbur",
+          xmin: 639,
+          width: 39,
+          ymin: 212,
+          height: 50,
+          active: false
+        },
+        {
+          name: "Tom Wilkerson",
+          xmin: 703,
+          width: 36,
+          ymin: 204,
+          height: 50,
+          active: false
+        },
+        // ***** row 4 *******
+        {
+          name: "Ben Trout",
+          xmin: 225,
+          width: 31,
+          ymin: 183,
+          height: 46,
+          active: false
+        },
+        {
+          name: "Ed Shore",
+          xmin: 280,
+          width: 38,
+          ymin: 183,
+          height: 46,
+          active: false
+        },
+        {
+          name: "Courtney Tucker",
+          xmin: 350,
+          width: 35,
+          ymin: 173,
+          height: 48,
+          active: false
+        },
+        {
+          name: "Clint Smith",
+          xmin: 417,
+          width: 30,
+          ymin: 183,
+          height: 46,
+          active: false
+        },
+        {
+          name: "Bob Winn",
+          xmin: 475,
+          width: 33,
+          ymin: 183,
+          height: 46,
+          active: false
+        },
+        {
+          name: "Tom Trompeter",
+          xmin: 537,
+          width: 42,
+          ymin: 175,
+          height: 50,
+          active: false
+        },
+        {
+          name: "Larry Webster",
+          xmin: 605,
+          width: 36,
+          ymin: 180,
+          height: 48,
+          active: false
+        },
+        {
+          name: "Bob Sook",
+          xmin: 670,
+          width: 35,
+          ymin: 183,
+          height: 46,
+          active: false
+        },
+      ]
     });
     $scope.photos.push ({
       image: "/assets/images/photos/TBS A1-68 Staff-1.jpg",

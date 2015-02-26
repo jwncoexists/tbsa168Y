@@ -353,7 +353,7 @@ app.controller('PhotosCtrl', ['$scope', 'Auth',
           active: false
         },
         {
-          name: "Al DeCreane",
+          name: "Al DeCraene",
           xmin: 608,
           ymin: 190,
           width: 42,

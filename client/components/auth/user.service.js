@@ -12,6 +12,13 @@ angular.module('tbsa168App')
           controller:'password'
         }
       },
+      updateLoginCnt: {
+        method: 'PUT',
+        params: {
+          id: '@_id',
+          controller:'logincnt'
+        }
+      },
       get: {
         method: 'GET',
         params: {

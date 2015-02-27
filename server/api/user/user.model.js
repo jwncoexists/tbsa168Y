@@ -13,7 +13,8 @@ var UserSchema = new Schema({
   },
   hashedPassword: String,
   provider: String,
-  salt: String
+  salt: String,
+  loginCnt: { type: Number, default: 0 }
 });
 
 /**
@@ -36,6 +37,7 @@ UserSchema
   .get(function() {
     return {
       'name': this.name,
+      'loginCnt' : this.loginCnt,
       'role': this.role
     };
   });
@@ -46,6 +48,7 @@ UserSchema
   .get(function() {
     return {
       '_id': this._id,
+      'loginCnt' : this.loginCnt,
       'role': this.role
     };
   });

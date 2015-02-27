@@ -14,6 +14,8 @@ angular.module('tbsa168App')
           password: $scope.user.password
         })
         .then( function() {
+          // update login count
+          Auth.incrementLoginCnt();
           // Logged in, redirect to home
           $location.path('/');
           toastr.info('Welcome to the TBS A-1-68 Reunion Members-Only Area.');

@@ -100,6 +100,26 @@ angular.module('tbsa168App')
       getCurrentUser: function() {
         return currentUser;
       },
+      incrementLoginCnt: function(callback) {
+        var user = currentUser;
+        var cb = callback || angular.noop;
+        var loginCnt = user.loginCnt || 0;
+
+        if (user) {
+          if (!user.loginCnt) {
+            user.loginCnt = 0;
+          };
+          user.loginCnt ++;
+          $http.put("api/users/" + user._id +"/logincnt", {loginCnt: user.loginCnt}).
+          success(function() {
+            console.log('successfully incremented loginCnt');
+            return cb(user);
+          }).
+          error(function() {
+            return cb(err);
+          });
+        };
+      }, // incrementLoginCnt
 
       /**
        * Check if a user is logged in

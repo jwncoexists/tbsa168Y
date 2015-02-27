@@ -79,6 +79,19 @@ exports.changePassword = function(req, res, next) {
   });
 };
 
+// Updates user login count
+exports.updateLoginCnt = function(req, res) {
+  var userId = req.user._id;
+  User.findById(userId, function (err, user) {
+    if (err) { return handleError(res, err); }
+    if(!user) { return res.send(404); }
+    user.loginCnt = req.body.loginCnt;
+    user.save(function (err) {
+      if (err) { return handleError(res, err); }
+      return res.json(200, user);
+    });
+  });
+};
 /**
  * Get my info
  */

@@ -1376,7 +1376,7 @@ app.controller('PhotosCtrl', ['$scope', 'Auth',
           active: false
         },
         {
-          name: "??",
+          name: "Wazzo Wzorek",
           xmin: 204,
           width: 27,
           ymin: 212,
@@ -1384,7 +1384,7 @@ app.controller('PhotosCtrl', ['$scope', 'Auth',
           active: false
         },
         {
-          name: "Wazzo Wzorek",
+          name: "Jeff Zimmerman",
           xmin: 255,
           width: 31,
           ymin: 200,

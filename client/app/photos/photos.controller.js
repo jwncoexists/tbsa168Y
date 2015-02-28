@@ -20,7 +20,365 @@ app.controller('PhotosCtrl', ['$scope', 'Auth',
       image: "/assets/images/photos/TBS A1-68 1st Platoon-edited.jpg",
       thumb: "/assets/images/photos/TBS A1-68 1st Platoon-edited-thumb.jpg",
       name: "1st Platoon",
-      regions: []
+      regions: [
+        // ***** row 1 *******
+        {
+          name: "Ron Burton",
+          xmin: 73,
+          width: 64,
+          ymin: 294,
+          height: 206,
+          active: false
+        },
+        {
+          name: "Jim Brinson",
+          xmin: 138,
+          width: 62,
+          ymin: 294,
+          height: 206,
+          active: false
+        },
+        {
+          name: "John Banning",
+          xmin: 201,
+          width: 55,
+          ymin: 294,
+          height: 206,
+          active: false
+        },
+        {
+          name: "Bern Bradstreet",
+          xmin: 257,
+          width: 57,
+          ymin: 294,
+          height: 206,
+          active: false
+        },
+        {
+          name: "Les Amick",
+          xmin: 315,
+          width: 65,
+          ymin: 294,
+          height: 206,
+          active: false
+        },
+        {
+          name: "Capt Sid Chapin",
+          xmin: 381,
+          width: 60,
+          ymin: 294,
+          height: 206,
+          active: false
+        },
+        {
+          name: "Merritt Chafey",
+          xmin: 441,
+          width: 71,
+          ymin: 294,
+          height: 206,
+          active: false
+        },
+        {
+          name: "Joe Allen",
+          xmin: 513,
+          width: 55,
+          ymin: 294,
+          height: 206,
+          active: false
+        },
+        {
+          name: "John Carlin",
+          xmin: 569,
+          width: 65,
+          ymin: 294,
+          height: 206,
+          active: false
+        },
+        {
+          name: "Bob Casey",
+          xmin: 635,
+          width: 60,
+          ymin: 294,
+          height: 206,
+          active: false
+        },
+        {
+          name: "Gary Andresen",
+          xmin: 696,
+          width: 62,
+          ymin: 294,
+          height: 206,
+          active: false
+        },
+        // ***** row 2 *******
+        {
+          name: "Rod Arena",
+          xmin: 61,
+          width: 64,
+          ymin: 226,
+          height: 62,
+          active: false
+        },
+        {
+          name: "Randy Champe",
+          xmin: 126,
+          width: 64,
+          ymin: 226,
+          height: 62,
+          active: false
+        },
+        {
+          name: "Dave Baker",
+          xmin: 191,
+          width: 65,
+          ymin: 236,
+          height: 60,
+          active: false
+        },
+        {
+          name: "Jim Beaver",
+          xmin: 257,
+          width: 56,
+          ymin: 236,
+          height: 60,
+          active: false
+        },
+        {
+          name: "John Ames (Anuszewski)",
+          xmin: 314,
+          width: 66,
+          ymin: 206,
+          height: 80,
+          active: false
+        },
+        {
+          name: "Dave Boillot",
+          xmin: 381,
+          width: 62,
+          ymin: 236,
+          height: 60,
+          active: false
+        },
+        {
+          name: "Ken Bruner",
+          xmin: 444,
+          width: 59,
+          ymin: 236,
+          height: 60,
+          active: false
+        },
+        {
+          name: "Rick Brasch",
+          xmin: 504,
+          width: 56,
+          ymin: 236,
+          height: 60,
+          active: false
+        },
+        {
+          name: "John Basel",
+          xmin: 572,
+          width: 66,
+          ymin: 220,
+          height: 70,
+          active: false
+        },
+        {
+          name: "Paul Budd",
+          xmin: 658,
+          width: 70,
+          ymin: 208,
+          height: 80,
+          active: false
+        },
+        // ***** row 3 *******
+        {
+          name: "Rufus Artmann",
+          xmin: 25,
+          width: 50,
+          ymin: 209,
+          height: 63,
+          active: false
+        },
+        {
+          name: "Peter Ackly",
+          xmin: 109,
+          width: 38,
+          ymin: 209,
+          height: 63,
+          active: false
+        },
+        {
+          name: "Peter Colt",
+          xmin: 174,
+          width: 36,
+          ymin: 209,
+          height: 63,
+          active: false
+        },
+        {
+          name: "Cliff Brahmstad",
+          xmin: 237,
+          width: 36,
+          ymin: 209,
+          height: 63,
+          active: false
+        },
+        {
+          name: "Joel Brummel",
+          xmin: 303,
+          width: 33,
+          ymin: 195,
+          height: 63,
+          active: false
+        },
+        {
+          name: "Bill Black",
+          xmin: 362,
+          width: 38,
+          ymin: 200,
+          height: 63,
+          active: false
+        },
+        {
+          name: "Robert Chisea",
+          xmin: 426,
+          width: 36,
+          ymin: 185,
+          height: 63,
+          active: false
+        },
+        {
+          name: "Mike Barretti",
+          xmin: 488,
+          width: 33,
+          ymin: 195,
+          height: 73,
+          active: false
+        },
+        {
+          name: "Chuck Collins",
+          xmin: 549,
+          width: 42,
+          ymin: 209,
+          height: 63,
+          active: false
+        },
+        {
+          name: "Mark Byrd",
+          xmin: 620,
+          width: 46,
+          ymin: 195,
+          height: 63,
+          active: false
+        },
+        // ***** row 4 *******
+        {
+          name: "Rob Barnes",
+          xmin: 80,
+          width: 35,
+          ymin: 194,
+          height: 42,
+          active: false
+        },
+        {
+          name: "John Cochenour",
+          xmin: 146,
+          width: 33,
+          ymin: 188,
+          height: 52,
+          active: false
+        },
+        {
+          name: "Bruce Cheever",
+          xmin: 209,
+          width: 32,
+          ymin: 182,
+          height: 55,
+          active: false
+        },
+        {
+          name: "Chuck Carver",
+          xmin: 271,
+          width: 38,
+          ymin: 193,
+          height: 48,
+          active: false
+        },
+        {
+          name: "John Clark",
+          xmin: 335,
+          width: 33,
+          ymin: 180,
+          height: 50,
+          active: false
+        },
+        {
+          name: "Paul Caswell",
+          xmin: 398,
+          width: 32,
+          ymin: 185,
+          height: 50,
+          active: false
+        },
+        {
+          name: "Dick Averitt",
+          xmin: 459,
+          width: 40,
+          ymin: 168,
+          height: 56,
+          active: false
+        },
+        {
+          name: "Owen Chambers",
+          xmin: 518,
+          width: 44,
+          ymin: 162,
+          height: 62,
+          active: false
+        },
+        {
+          name: "C. Richard Cooper",
+          xmin: 587,
+          width: 38,
+          ymin: 165,
+          height: 56,
+          active: false
+        },
+        // ***** row 5 *******
+        {
+          name: "Joe Burkhart",
+          xmin: 116,
+          width: 31,
+          ymin: 160,
+          height: 60,
+          active: false
+        },
+        {
+          name: "Mike Connor",
+          xmin: 177,
+          width: 34,
+          ymin: 174,
+          height: 46,
+          active: false
+        },
+        {
+          name: "Don Buzney",
+          xmin: 239,
+          width: 39,
+          ymin: 178,
+          height: 52,
+          active: false
+        },
+        {
+          name: "Dave Collins",
+          xmin: 305,
+          width: 36,
+          ymin: 170,
+          height: 46,
+          active: false
+        }
+      ]
     };
     $scope.photos.push (item);
     item = {

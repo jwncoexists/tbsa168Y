@@ -12,7 +12,7 @@ var User = require('../api/user/user.model');
 Person.find({}).remove(function() {
   Person.create(
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/01-allen-joe.png",
     name: "Allen, Joe",
     date: "24 May 1968",
     restingPlace: "Long Beach City Cem, MS",
@@ -20,84 +20,84 @@ Person.find({}).remove(function() {
   },
 
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/01-barnes-rob.png",
     name: "Barnes, Rob",
     date: "30 May 1968",
     restingPlace: "Santa Fe Natl Cem, NM",
     platoon: "1st"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/02-cross-terry.png",
     name: "Cross, Terry",
     date: "04 Mar 1968",
     restingPlace: "Oakdale Cem, LA",
     platoon: "1st"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/01-baker-dave.png",
     name: "Baker, David",
     date: "13 Nov 1980",
     restingPlace: "Pax River Helo Accid, MD",
     platoon: "1st"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/01-casey-bob.png",
     name: "Casey, Robert",
     date: "26 Aug 1969",
     restingPlace: "Long Island Nat'l Cem, NY",
     platoon: "1st"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/01-cooper-coop.png",
     name: "Cooper, Coop",
     date: "25 Nov 1968",
     restingPlace: "Arlington Nat'l Cem, VA",
     platoon: "1st"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/01-banning-john.png",
     name: "Banning, John",
     date: "04 Nov 1973",
     restingPlace: "Arlington Nat'l Cem, VA",
     platoon: "1st"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/01-brinson-jim.png",
     name: "Brinson, Jim",
     date: "12 Oct 2006",
     restingPlace: "Millen Cemetery, GA",
     platoon: "1st"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/01-burkhart-joe.png",
     name: "Burkhart, Joseph",
     date: "22 May 1995",
     restingPlace: "unk: res at death, Tampa,  FL",
     platoon: "1st"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/01-chafey-merritt.png",
     name: "Chafey, Merritt",
     date: "26 Jun 2005",
     restingPlace: "Arlington Nat'l Cem, VA",
     platoon: "1st"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/01-chambers-owen.png",
     name: "Chambers, Owen",
     date: "19 Jun 1982",
     restingPlace: "Unk: Parents @: Beaufort Nat'l Cem, SC",
     platoon: "1st"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/01-champe-randy.png",
     name: "Champe, Randy",
     date: "13 Jun 1991",
     restingPlace: "Santa Fe Natl Cem, NM",
     platoon: "1st"
   },
   {
-    photo: "/assets/images/no-photo.png",
+    photo: "/assets/images/01-chisea-robert.png",
     name: "Chisea, Robert",
     date: "218 Aug 1991",
     restingPlace: "Unk: last known address: Adel, IA",

@@ -356,7 +356,7 @@ First Lieutenant De Craene is honored on the Vietnam Veteran\'s Memorial, VVM Wa
 -   Purple Heart  \n\
 -   Vietnam Campaign Medal  \n\
 -   Vietnam Service Medal  \n\n\
-Second Lietenant Second Lieutenant Eckenrode is honored on the Vietnam \
+Second Lieutenant Eckenrode is honored on the Vietnam \
     Veteran\'s Memorial, VVM Wall, Panel 51w, Line 25.'),
     bioPhoto: "/assets/images/02-eckenrode-dave2.jpg",
   },

@@ -8,6 +8,7 @@
 var Person = require('../api/person/person.model');
 var Thing = require('../api/thing/thing.model');
 var User = require('../api/user/user.model');
+var markdown = require( "markdown" ).markdown;
 
 Person.find({}).remove(function() {
   Person.create(
@@ -16,7 +17,62 @@ Person.find({}).remove(function() {
     name: "Allen, Joe",
     date: "24 May 1968",
     restingPlace: "Long Beach City Cem, MS",
-    platoon: "1st"
+    platoon: "1st",
+    bio: 'Second Lieutenant John Joe Ebert Allen was awarded a  silver star \
+    for gallantry in action during the vietnam war.  \n  \n*"The President of \
+    the United States of America takes pride in presenting the Silver Star \
+    (Posthumously) to Second Lieutenant Joe Ebert Allen (MCSN: 0-103089), \
+    United States Marine Corps, for conspicuous gallantry and intrepidity \
+    in action while serving as a Platoon Commander with Company D, First \
+    Battalion, Fifth Marines, FIRST Marine Division (Rein.), FMF, in connection \
+    with combat operations against the enemy in the Republic of Vietnam. \
+    On the evening of 24 May 1968, Second Lieutenant Allen\'s platoon \
+    established an ambush on a suspected enemy infiltration route in Thua \
+    Thien Province. Alertly observing a numerically superior North Vietnamese \
+    Army force moving near his position, he immediately adjusted mortar fire \
+    on the enemy and quickly led his platoon to an advantageous position \
+    from which the Marines commenced delivering accurate fire upon the \
+    hostile force. Although painfully wounded in the initial moments of the \
+    fire fight, he boldly moved among his men, shouting words of encouragement \
+    and directing their fire. Realizing the seriousness of the situation, \
+    Second Lieutenant Allen was maneuvering his squads into an assault \
+    formation when he sustained a second wound from an enemy hand grenade. \
+    Steadfastly refusing medical aid, he advanced to the most forward position \
+    and fearlessly led a determined assault on the enemy positions until he \
+    fell seriously injured by the hostile fire. Inspired by his bold leadership \
+    and resolute determination, his men continued the attack, killing ten enemy \
+    soldiers and seizing numerous weapons. By his courage, aggressive fighting \
+    spirit and unwavering devotion to duty, Second Lieutenant Allen upheld \
+    the highest traditions of the Marine Corps and of the United States Naval \
+    Service. He gallantly gave his life for his country."*',
+    bioHtml: markdown.toHTML('Second Lieutenant John Joe Ebert Allen was awarded a  silver star \
+    for gallantry in action during the vietnam war.  \n  \n*"The President of \
+    the United States of America takes pride in presenting the Silver Star \
+    (Posthumously) to Second Lieutenant Joe Ebert Allen (MCSN: 0-103089), \
+    United States Marine Corps, for conspicuous gallantry and intrepidity \
+    in action while serving as a Platoon Commander with Company D, First \
+    Battalion, Fifth Marines, FIRST Marine Division (Rein.), FMF, in connection \
+    with combat operations against the enemy in the Republic of Vietnam. \
+    On the evening of 24 May 1968, Second Lieutenant Allen\'s platoon \
+    established an ambush on a suspected enemy infiltration route in Thua \
+    Thien Province. Alertly observing a numerically superior North Vietnamese \
+    Army force moving near his position, he immediately adjusted mortar fire \
+    on the enemy and quickly led his platoon to an advantageous position \
+    from which the Marines commenced delivering accurate fire upon the \
+    hostile force. Although painfully wounded in the initial moments of the \
+    fire fight, he boldly moved among his men, shouting words of encouragement \
+    and directing their fire. Realizing the seriousness of the situation, \
+    Second Lieutenant Allen was maneuvering his squads into an assault \
+    formation when he sustained a second wound from an enemy hand grenade. \
+    Steadfastly refusing medical aid, he advanced to the most forward position \
+    and fearlessly led a determined assault on the enemy positions until he \
+    fell seriously injured by the hostile fire. Inspired by his bold leadership \
+    and resolute determination, his men continued the attack, killing ten enemy \
+    soldiers and seizing numerous weapons. By his courage, aggressive fighting \
+    spirit and unwavering devotion to duty, Second Lieutenant Allen upheld \
+    the highest traditions of the Marine Corps and of the United States Naval \
+    Service. He gallantly gave his life for his country."*'),
+    bioPhoto: "/assets/images/01-allen-joe2.jpg",
   },
 
   {
@@ -24,14 +80,41 @@ Person.find({}).remove(function() {
     name: "Barnes, Rob",
     date: "30 May 1968",
     restingPlace: "Santa Fe Natl Cem, NM",
-    platoon: "1st"
+    platoon: "1st",
+    bio: 'Second Lieutenant Robert Crozier Barnes, Jr. was born June 4th, 1944 in Carmi, Illinois. \
+    Service number 0102667. Enlisted in the Marine Corps. Served during the \
+    Vietnam Conflict. Rank of Second Lieutenant. Served with 1st Marine Division, \
+    1st Recon Battalion, B Company. Service occupation of Basic Infantry Officer. \
+    Casualty on May 30, 1968. This occurred in or around South Vietnam, \
+    Quang Nam province. Circumstances of death attributed to \
+    hostile action .. small arms fire. Earned the following awards: \
+    - National Defense Service Medal \
+    - Combat Infantryman Badge \
+    - Purple Heart \
+    - Vietnam Campaign Medal \
+    - Vietnam Service Medal \
+    He is honored on Panel 63W, Row 14 of the Vietnam Veterans Memorial.',
+    bioHtml: markdown.toHTML('Second Lieutenant Robert Crozier Barnes, Jr. was born June 4th, 1944 in Carmi, Illinois. \
+    Service number 0102667. Enlisted in the Marine Corps. Served during the \
+    Vietnam Conflict. Rank of Second Lieutenant. Served with 1st Marine Division, \
+    1st Recon Battalion, B Company. Service occupation of Basic Infantry Officer. \
+    Casualty on May 30, 1968. This occurred in or around South Vietnam, \
+    Quang Nam province. Circumstances of death attributed to \
+    hostile action .. small arms fire. Earned the following awards:  \n\n\
+-   National Defense Service Medal  \n\
+-   Combat Infantryman Badge  \n\
+-   Purple Heart  \n\
+-   Vietnam Campaign Medal  \n\
+-   Vietnam Service Medal  \n\n\
+Second Lietenant Barnes is honored on Panel 63W, Row 14 of the Vietnam Veterans Memorial.'),
+    bioPhoto: "/assets/images/01-barnes-rob2.jpg",
   },
   {
     photo: "/assets/images/02-cross-terry.png",
     name: "Cross, Terry",
     date: "04 Mar 1968",
     restingPlace: "Oakdale Cem, LA",
-    platoon: "1st"
+    platoon: "2nd"
   },
   {
     photo: "/assets/images/01-baker-dave.png",
@@ -59,14 +142,82 @@ Person.find({}).remove(function() {
     name: "Banning, John",
     date: "04 Nov 1973",
     restingPlace: "Arlington Nat'l Cem, VA",
-    platoon: "1st"
+    platoon: "1st",
+    bio: 'Second Lieutenant John Jacques Banning was awarded a  silver star \
+    for gallantry in action during the vietnam war.  \n  \n*"The President of \
+    the United States of America takes pleasure in presenting the Silver Star \
+    to Second Lieutenant John Jacques Banning (MCSN: 0-102452), United States \
+    Marine Corps, for conspicuous gallantry and intrepidity in action while \
+    serving as a Platoon Commander with Company A, First Tank Battalion, \
+    FIRST Marine Division (Rein.), FMF, in connection with combat operations \
+    against the enemy in the Republic of Vietnam. On the evening of 25 May 1968, \
+    while occupying a defensive position near Hue, Second Lieutenant Banning\'s \
+    unit was attached to elements of the U.S. Army\'s 101st Airborne Division \
+    when the driver of his tank suddenly observed a large North Vietnamese \
+    Army force silently approaching the perimeter and preparing to assault \
+    the friendly position. Realizing the seriousness of the situation, \
+    Second Lieutenant Banning directed his men to wait for the enemy to advance \
+    further before commencing fire. When approximately one-half of the enemy \
+    had penetrated the perimeter, he directed the delivery of a heavy volume \
+    of accurate fire on the hostile force. Ignoring the intense anti-tank \
+    rocket fire being directed at his tank, he skillfully utilized a night \
+    observation device which enabled him to pinpoint the North Vietnamese \
+    soldiers while continuing to direct his tank\'s suppressive fire, forcing \
+    the enemy to flee in panic and confusion. His heroic and timely actions \
+    inspired all who served with him and were instrumental in his crew \
+    accounting for twelve North Vietnamese soldiers confirmed killed and \
+    numerous weapons captured. By his courage, aggressive leadership and \
+    unwavering devotion to duty in the face of great personal danger, \
+    Second Lieutenant Banning upheld the highest traditions of the Marine \
+    Corps and of the United States Naval Service."*',
+    bioHtml: markdown.toHTML('Second Lieutenant John Jacques Banning was awarded a  silver star \
+    for gallantry in action during the vietnam war.  \n  \n*"The President of \
+    the United States of America takes pleasure in presenting the Silver Star \
+    to Second Lieutenant John Jacques Banning (MCSN: 0-102452), United States \
+    Marine Corps, for conspicuous gallantry and intrepidity in action while \
+    serving as a Platoon Commander with Company A, First Tank Battalion, \
+    FIRST Marine Division (Rein.), FMF, in connection with combat operations \
+    against the enemy in the Republic of Vietnam. On the evening of 25 May 1968, \
+    while occupying a defensive position near Hue, Second Lieutenant Banning\'s \
+    unit was attached to elements of the U.S. Army\'s 101st Airborne Division \
+    when the driver of his tank suddenly observed a large North Vietnamese \
+    Army force silently approaching the perimeter and preparing to assault \
+    the friendly position. Realizing the seriousness of the situation, \
+    Second Lieutenant Banning directed his men to wait for the enemy to advance \
+    further before commencing fire. When approximately one-half of the enemy \
+    had penetrated the perimeter, he directed the delivery of a heavy volume \
+    of accurate fire on the hostile force. Ignoring the intense anti-tank \
+    rocket fire being directed at his tank, he skillfully utilized a night \
+    observation device which enabled him to pinpoint the North Vietnamese \
+    soldiers while continuing to direct his tank\'s suppressive fire, forcing \
+    the enemy to flee in panic and confusion. His heroic and timely actions \
+    inspired all who served with him and were instrumental in his crew \
+    accounting for twelve North Vietnamese soldiers confirmed killed and \
+    numerous weapons captured. By his courage, aggressive leadership and \
+    unwavering devotion to duty in the face of great personal danger, \
+    Second Lieutenant Banning upheld the highest traditions of the Marine \
+    Corps and of the United States Naval Service."*')
   },
   {
     photo: "/assets/images/01-brinson-jim.png",
     name: "Brinson, Jim",
     date: "12 Oct 2006",
     restingPlace: "Millen Cemetery, GA",
-    platoon: "1st"
+    platoon: "1st",
+    bio: 'Colonel James A. Brinson was the son of James A. Brinson Sr. and Frances \
+    Lovett Brinson, and a brother to Bobby. He was a retired colonel of the U.S. \
+    Marine Corp and spent the last 10 years of his life in Buford, GA. \
+    He served in Vietnam, and was awarded several medals, including two purple \
+    hearts. Col. Brinson married Donna Brinson of Buford, and they had a son, \
+    Christopher J. Brinson. Col. Brinson was a member of the Masonic Lodge \
+    242 and a member of the Celebration Baptist Church in Hoschton.',
+    bioHtml: markdown.toHTML('Colonel James A. Brinson was the son of James A. Brinson Sr. and Frances \
+    Lovett Brinson, and a brother to Bobby. He was a retired colonel of the U.S. \
+    Marine Corp and spent the last 10 years of his life in Buford, GA. \
+    He served in Vietnam, and was awarded several medals, including two purple \
+    hearts. Col. Brinson married Donna Brinson of Buford, and they had a son, \
+    Christopher J. Brinson. Col. Brinson was a member of the Masonic Lodge \
+    242 and a member of the Celebration Baptist Church in Hoschton.')
   },
   {
     photo: "/assets/images/01-burkhart-joe.png",
@@ -94,7 +245,44 @@ Person.find({}).remove(function() {
     name: "Champe, Randy",
     date: "13 Jun 1991",
     restingPlace: "Santa Fe Natl Cem, NM",
-    platoon: "1st"
+    platoon: "1st",
+    bio: 'Los Angeles Police Officer Randy Champe was operating \
+    a police helicopter, "Air 12", when it suffered a mechanical failure and crashed near Vernon Street \
+    and Raymond Avenue. Both crew members were killed, as well as a civilian \
+    on the ground.  \n\nMore than 2,000 law enforcement officers from throughout \
+    Southern California converged on the Hollywood Hills to honor them. \
+    More than 30 helicopters saluted the fallen officers with a 10-minute \
+    flyover as part of the smoggy morning ceremony at Forest Lawn Memorial Park \
+    cemetery. The memorial service opened with a bagpipe rendition of \
+    "Amazing Grace" and ended 90 minutes later with the somber blasts of "Taps" \
+    from a gleaming trumpet.  \n\nPolice and military honor guards paid tribute \
+    to the two officers with a 21-gun salute, followed by the ceremonial folding \
+    of the American flags that had been draped over the caskets. Gates and \
+    Capt. Robert Woods, commanding officer of the Air Support Division, \
+    presented the flags to Sue Champe, and Lynette Howe the widows.  \n\nChampe, \
+    a 17-year veteran and the helicopter\'s TFO, served as a Marine in Vietnam.  \n\nIn \
+    memory of the two officers, Police Department officials said the unit \
+    designation "Air 12," which had been assigned to Champe and Howe, will no \
+    longer be used by the department.',
+    bioHtml: markdown.toHTML('Los Angeles Police Officer Randy Champe was operating \
+    a police helicopter, "Air 12", when it suffered a mechanical failure and crashed near Vernon Street \
+    and Raymond Avenue. Both crew members were killed, as well as a civilian \
+    on the ground.  \n\nMore than 2,000 law enforcement officers from throughout \
+    Southern California converged on the Hollywood Hills to honor them. \
+    More than 30 helicopters saluted the fallen officers with a 10-minute \
+    flyover as part of the smoggy morning ceremony at Forest Lawn Memorial Park \
+    cemetery. The memorial service opened with a bagpipe rendition of \
+    "Amazing Grace" and ended 90 minutes later with the somber blasts of "Taps" \
+    from a gleaming trumpet.  \n\nPolice and military honor guards paid tribute \
+    to the two officers with a 21-gun salute, followed by the ceremonial folding \
+    of the American flags that had been draped over the caskets. Gates and \
+    Capt. Robert Woods, commanding officer of the Air Support Division, \
+    presented the flags to Sue Champe, and Lynette Howe the widows.  \n\nChampe, \
+    a 17-year veteran and the helicopter\'s TFO, served as a Marine in Vietnam.  \n\nIn \
+    memory of the two officers, Police Department officials said the unit \
+    designation "Air 12," which had been assigned to Champe and Howe, will no \
+    longer be used by the department.'),
+    bioPhoto: "/assets/images/01-champe-randy2.jpg",
   },
   {
     photo: "/assets/images/01-chisea-robert.png",
@@ -110,14 +298,67 @@ Person.find({}).remove(function() {
     name: "DeCraene, Alan",
     date: "16 Feb 1970",
     restingPlace: "Centre County Mem Park, PA",
-    platoon: "2nd"
+    platoon: "2nd",
+    bio: 'First Lieutenant Alan Charles De Craene was born in Kewanee, \
+    Illinois. He enlisted in the Marine Corps and served during the Vietnam Conflict. \
+    Rank of First Lieutenant. Served with III Marine Amphibious Force, 1st MAW, \
+    Marine Aircraft Group 16, HMM 161. Service occupation of Pilot H M M CH 46. \
+    He died on February 16, 1970. in or around South Vietnam, \
+    Thua Thien province. Circumstances of death are attributed to .. "Died through \
+    non-hostile action .. air crash on land". He earned the following awards:  \n\n\
+    -   National Defense Service Medal  \n\
+    -   Vietnam Campaign Medal  \n\
+    -   Vietnam Service Medal  \n\n\
+    First Lieutenant De Craene is honored on the Vietnam Veteran\'s Memorial, VVM Wall, Panel 13w, Line 19.',
+
+    bioHtml: markdown.toHTML('First Lieutenant Alan Charles De Craene was born in Kewanee, \
+    Illinois. He enlisted in the Marine Corps and served during the Vietnam Conflict. \
+    Rank of First Lieutenant. Served with III Marine Amphibious Force, 1st MAW, \
+    Marine Aircraft Group 16, HMM 161. Service occupation of Pilot H M M CH 46. \
+    He died on February 16, 1970. in or around South Vietnam, \
+    Thua Thien province. Circumstances of his death are attributed to .. "Died through \
+    non-hostile action .. air crash on land". He earned the following awards:  \n\n\
+-   National Defense Service Medal  \n\
+-   Vietnam Campaign Medal  \n\
+-   Vietnam Service Medal  \n\n\
+First Lieutenant De Craene is honored on the Vietnam Veteran\'s Memorial, VVM Wall, Panel 13w, Line 19.'),
+    bioPhoto: "/assets/images/02-decraene-alan2.jpg",
   },
   {
     photo: "/assets/images/02-eckenrode-dave.png",
     name: "Eckenrode, Dave",
     date: "21 Jul 1968",
     restingPlace: "Centre County Mem Park, PA",
-    platoon: "2nd"
+    platoon: "2nd",
+    bio:'Second Lieutenant David John Eckenrode was born in Bellefonte, \
+    Pennsylvania. Service number 0102675. He enlisted in the Marine Corps and \
+    served during the Vietnam Conflict. He achieved rank of Second Lieutenant and served \
+    with 7th Engineer Battalion, B Company. Second Lieutenant Eckenrode was \
+    killed on July 21, 1968 in or around South Vietnam, Quang Nam province. \
+    The circumstances of his death attributed are to .. \
+    "Died through hostile action .. explosive device". He earned the \
+    following awards:  \n\n\
+    -   National Defense Service Medal  \n\
+    -   Purple Heart  \n\
+    -   Vietnam Campaign Medal  \n\
+    -   Vietnam Service Medal  \n\n\
+    Second Lietenant Second Lieutenant Eckenrode is honored on the Vietnam \
+    Veteran\'s Memorial, VVM Wall, Panel 51w, Line 25.',
+    bioHtml: markdown.toHTML('Second Lieutenant David John Eckenrode was born in Bellefonte, \
+    Pennsylvania. Service number 0102675. He enlisted in the Marine Corps and \
+    served during the Vietnam Conflict. He achieved rank of Second Lieutenant and served \
+    with 7th Engineer Battalion, B Company. Second Lieutenant Eckenrode was \
+    killed on July 21, 1968 in or around South Vietnam, Quang Nam province. \
+    The circumstances of his death attributed are to .. \
+    "Died through hostile action .. explosive device". He earned the \
+    following awards:  \n\n\
+-   National Defense Service Medal  \n\
+-   Purple Heart  \n\
+-   Vietnam Campaign Medal  \n\
+-   Vietnam Service Medal  \n\n\
+Second Lietenant Second Lieutenant Eckenrode is honored on the Vietnam \
+    Veteran\'s Memorial, VVM Wall, Panel 51w, Line 25.'),
+    bioPhoto: "/assets/images/02-eckenrode-dave2.jpg",
   },
   {
     photo: "/assets/images/02-gates-albert.png",
@@ -152,7 +393,54 @@ Person.find({}).remove(function() {
     name: "Dopher, Robert",
     date: "30 Aug 2010",
     restingPlace: "Highland Lawn Cemetery, IN",
-    platoon: "2nd"
+    platoon: "2nd",
+    bio: 'Major Robert C. Dopher, Jr. of Satellite Beach, and formerly of \
+    Rolla, Missouri, passed away on August 30, 2010, at the age of 68 from \
+    Pulmonary Fibrosis. Bob was born in Terre Haute, IN, and graduated \
+    from Otter Creek High School. Upon graduation, he enlisted in the \
+    United State Marine Corps. During his career he was sent to Stanford \
+    University through Operation Bootstrap, officer candidate school, \
+    helicopter pilot training and missile design and technology school. \
+    As an OV 10, Huey and Cobra pilot he saw action around the world. \
+    He was involved in the evacuation of Viet Nam as the last pilot of a \
+    cobra helicopter out of the country. Over the course of his career, \
+    Bob earned Air Medal Strike/Flight Award (with numeral 7), Vietnamese \
+    Service Medal, Vietnamese Cross of Gallantry with Palm, Air Medal \
+    Bronze with V, Navy Unit Commendation, Armed Forces Expeditionary Medal, \
+    Sea Service Deployment Ribbon, Humanitarian Service Medal 3rd award \
+    and the Good Conduct Medal 3rd Award. After service to his country, \
+    he went on to earn his Master\'s degree in Computer Science at the \
+    University of Missouri – Rolla and then went onto to retire from the \
+    Electrical Engineering Department. Before being diagnosed with \
+    Pulmonary Fibrosis, one of his greatest joys was traveling the country \
+    in his motor home to see the wonderful sites our country has to offer. \
+    Bob was married to, Karen, of Satellite Beach for 39 years and they \
+    had four children: Cristopher of Brooklyn, New York, Rachel Walker of \
+    St Louis, and twins Becca and Marc of Greenville, SC.',
+    bioHtml: markdown.toHTML('Major Robert C. Dopher, Jr. of Satellite Beach, and formerly of \
+    Rolla, Missouri, passed away on August 30, 2010, at the age of 68 from \
+    Pulmonary Fibrosis. Bob was born in Terre Haute, IN, and graduated \
+    from Otter Creek High School. Upon graduation, he enlisted in the \
+    United State Marine Corps. During his career he was sent to Stanford \
+    University through Operation Bootstrap, officer candidate school, \
+    helicopter pilot training and missile design and technology school. \
+    As an OV 10, Huey and Cobra pilot he saw action around the world. \
+    He was involved in the evacuation of Viet Nam as the last pilot of a \
+    cobra helicopter out of the country. Over the course of his career, \
+    Bob earned Air Medal Strike/Flight Award (with numeral 7), Vietnamese \
+    Service Medal, Vietnamese Cross of Gallantry with Palm, Air Medal \
+    Bronze with V, Navy Unit Commendation, Armed Forces Expeditionary Medal, \
+    Sea Service Deployment Ribbon, Humanitarian Service Medal 3rd award \
+    and the Good Conduct Medal 3rd Award. After service to his country, \
+    he went on to earn his Master\'s degree in Computer Science at the \
+    University of Missouri – Rolla and then went onto to retire from the \
+    Electrical Engineering Department. Before being diagnosed with \
+    Pulmonary Fibrosis, one of his greatest joys was traveling the country \
+    in his motor home to see the wonderful sites our country has to offer. \
+    Bob was married to, Karen, of Satellite Beach for 39 years and they \
+    had four children: Cristopher of Brooklyn, New York, Rachel Walker of \
+    St Louis, and twins Becca and Marc of Greenville, SC.'),
+    bioPhoto: "/assets/images/02-dopher-robert2.jpg",
   },
   {
     photo: "/assets/images/02-evans-mike.png",
@@ -276,7 +564,75 @@ Person.find({}).remove(function() {
     name: "Belser, Joe",
     date: "15 Oct 1989",
     restingPlace: "Greenlawn Mem Park, W Columbia, SC",
-    platoon: "4th"
+    platoon: "4th",
+    bio: 'First Lieutenant Joseph H. Belser, Jr. was awarded a  silver star \
+    for gallantry in action during the vietnam war.  \n  \n*"The President of the United States of \
+    America takes pleasure in presenting the Silver Star to First Lieutenant \
+    Joseph H. Belser, Jr. (MCSN: 0-101738), United States Marine Corps, \
+    for conspicuous gallantry and intrepidity in action while serving as a \
+    Platoon Commander with Company K, Third Battalion, Twenty-Seventh Marines, \
+    FIRST Marine Division in connection with operations against the enemy in \
+    the Republic of Vietnam. On 24 May 1968 during Operation ALLEN BROOK in \
+    Quang Nam Province, Company K was attacking the village of Le Bac (1) \
+    which was well fortified and occupied by a large North Vietnamese Army \
+    force. As the company approached the area it came under intense automatic \
+    weapons fire and two platoons were separated from the remainder of the \
+    company. Assigned to assist the besieged units and in an attempt to \
+    envelop the enemy, First Lieutenant Belser moved his reserve platoon to \
+    within 300 meters of the hostile positions when the Marines encountered \
+    heavy fire which inflicted several casualties, including First Lieutenant Belser. \
+    Calmly informing his men of the situation, and although seriously wounded \
+    in the arm, he courageously moved across the fire-swept area from one \
+    position to another, encouraging his men and directing their fire while \
+    simultaneously keeping his commanding officer appraised of the situation. \
+    Under his courageous leadership, his men successfully repulsed repeated \
+    attempts by the enemy to overrun their position. Assisted by a platoon from \
+    Company M, First Lieutenant Belser utilized supporting arms fire, \
+    hand grenades and a smoke screen to withdraw his platoon along with their \
+    casualties to the company perimeter. Informed that Company M was heavily \
+    engaged with the enemy and had sustained numerous casualties, he refused \
+    to be evacuated for treatment of his injury and organized a group of Marines \
+    to retrieve the casualties. With complete disregard for his own safety, \
+    he made several trips into the fire-swept area until he was wounded in the \
+    leg by the intense enemy fire and subsequently evacuated. By his courage, \
+    dynamic leadership and selfless devotion to duty in the face of grave \
+    personal risk, First Lieutenant Belser inspired all who observed him and \
+    upheld the highest traditions of the Marine Corps and of the United States \
+    Naval Service."*',
+    bioHtml: markdown.toHTML('First Lieutenant Joseph H. Belser, Jr. was awarded a  silver star \
+    for gallantry in action during the vietnam war.  \n  \n*"The President of the United States of \
+    America takes pleasure in presenting the Silver Star to First Lieutenant \
+    Joseph H. Belser, Jr. (MCSN: 0-101738), United States Marine Corps, \
+    for conspicuous gallantry and intrepidity in action while serving as a \
+    Platoon Commander with Company K, Third Battalion, Twenty-Seventh Marines, \
+    FIRST Marine Division in connection with operations against the enemy in \
+    the Republic of Vietnam. On 24 May 1968 during Operation ALLEN BROOK in \
+    Quang Nam Province, Company K was attacking the village of Le Bac (1) \
+    which was well fortified and occupied by a large North Vietnamese Army \
+    force. As the company approached the area it came under intense automatic \
+    weapons fire and two platoons were separated from the remainder of the \
+    company. Assigned to assist the besieged units and in an attempt to \
+    envelop the enemy, First Lieutenant Belser moved his reserve platoon to \
+    within 300 meters of the hostile positions when the Marines encountered \
+    heavy fire which inflicted several casualties, including First Lieutenant Belser. \
+    Calmly informing his men of the situation, and although seriously wounded \
+    in the arm, he courageously moved across the fire-swept area from one \
+    position to another, encouraging his men and directing their fire while \
+    simultaneously keeping his commanding officer appraised of the situation. \
+    Under his courageous leadership, his men successfully repulsed repeated \
+    attempts by the enemy to overrun their position. Assisted by a platoon from \
+    Company M, First Lieutenant Belser utilized supporting arms fire, \
+    hand grenades and a smoke screen to withdraw his platoon along with their \
+    casualties to the company perimeter. Informed that Company M was heavily \
+    engaged with the enemy and had sustained numerous casualties, he refused \
+    to be evacuated for treatment of his injury and organized a group of Marines \
+    to retrieve the casualties. With complete disregard for his own safety, \
+    he made several trips into the fire-swept area until he was wounded in the \
+    leg by the intense enemy fire and subsequently evacuated. By his courage, \
+    dynamic leadership and selfless devotion to duty in the face of grave \
+    personal risk, First Lieutenant Belser inspired all who observed him and \
+    upheld the highest traditions of the Marine Corps and of the United States \
+    Naval Service."*')
   },
   {
     photo: "/assets/images/04-moran-donald.png",

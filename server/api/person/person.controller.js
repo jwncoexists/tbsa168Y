@@ -12,6 +12,9 @@
 var _ = require('lodash');
 var Person = require('./person.model');
 
+// support markdown for person.bio
+var markdown = require( "markdown" ).markdown;
+
 // Get list of persons
 exports.index = function(req, res) {
   Person.find().sort({name: 'asc'}).exec(function (err, persons) {
@@ -31,6 +34,10 @@ exports.show = function(req, res) {
 
 // Creates a new person in the DB.
 exports.create = function(req, res) {
+  // convert info from markdown to html if present
+  if (req.body.bio) {
+    req.body.bioHtml = markdown.toHTML(req.body.bio);
+  }
   Person.create(req.body, function(err, person) {
     if(err) { return handleError(res, err); }
     return res.json(201, person);
@@ -44,6 +51,10 @@ exports.update = function(req, res) {
     if (err) { return handleError(res, err); }
     if(!person) { return res.send(404); }
     var updated = _.merge(person, req.body);
+    // convert markdown to HTML
+    if (updated.body.bio) {
+      updated.body.bioHtml = markdown.toHTML(req.body.bio);
+    }
     updated.save(function (err) {
       if (err) { return handleError(res, err); }
       return res.json(200, person);

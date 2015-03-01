@@ -9,6 +9,9 @@ var PersonSchema = new Schema({
   photo: String,
   date: String,
   restingPlace: String,
+  bio: String,
+  bioHtml: String,
+  bioPhoto: String,
   active: Boolean
 });
 

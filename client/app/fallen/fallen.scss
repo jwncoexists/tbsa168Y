@@ -16,16 +16,23 @@ label {
   margin-right: 4px;
 }
 .person-table {
-  width: 50%;
-  margin-left: 40px;
+  // width: 90%;
+  // margin-left: 40px;
 }
 .image-col {
   width: 75px;
   img {
     border-radius: 50%;
+    float:left;
   }
 }
-
+.info-col {
+  img {
+    float: right;
+    margin-left: 10px;
+    border: 1px solid black;
+  }
+}
 .fallen-filter {
   margin-bottom: 20px;
 }

@@ -87,20 +87,20 @@ Person.find({}).remove(function() {
     1st Recon Battalion, B Company. Service occupation of Basic Infantry Officer. \
     Casualty on May 30, 1968. This occurred in or around South Vietnam, \
     Quang Nam province. Circumstances of death attributed to \
-    hostile action .. small arms fire. Earned the following awards: \
+    hostile action .. small arms fire. He earned the following awards: \
     - National Defense Service Medal \
     - Combat Infantryman Badge \
     - Purple Heart \
     - Vietnam Campaign Medal \
     - Vietnam Service Medal \
-    He is honored on Panel 63W, Row 14 of the Vietnam Veterans Memorial.',
+    Second Lieutenant Barnes is honored on Panel 63W, Row 14 of the Vietnam Veterans Memorial.',
     bioHtml: markdown.toHTML('Second Lieutenant Robert Crozier Barnes, Jr. was born June 4th, 1944 in Carmi, Illinois. \
     Service number 0102667. Enlisted in the Marine Corps. Served during the \
     Vietnam Conflict. Rank of Second Lieutenant. Served with 1st Marine Division, \
     1st Recon Battalion, B Company. Service occupation of Basic Infantry Officer. \
     Casualty on May 30, 1968. This occurred in or around South Vietnam, \
     Quang Nam province. Circumstances of death attributed to \
-    hostile action .. small arms fire. Earned the following awards:  \n\n\
+    hostile action .. small arms fire. He earned the following awards:  \n\n\
 -   National Defense Service Medal  \n\
 -   Combat Infantryman Badge  \n\
 -   Purple Heart  \n\
@@ -950,14 +950,76 @@ Second Lieutenant Eckenrode is honored on the Vietnam \
     name: "Ranstead, Terry",
     date: "22 Jan 1968",
     restingPlace: "Fairview Cem, Vinita, OK",
-    platoon: "4th"
+    platoon: "4th",
+    bio:'Second Lieutenant James Terry Ranstead from Miami, Oklahoma was \
+    born on January 29, 1943. He enlisted in the Marines on May 28, 1967 \
+    and served during the Vietnam Conflict. Second Lieutenant Ranstead served \
+    with 3rd Marine Division, 2nd Battalion, 3rd Marines, G Company. \
+    His service occupation was Basic Infantry Officer. On January 22, 1968 \
+    James was on a combat patrol when a mine was tripped killing him, \
+    5 kilometers south southeast of Tuy Loan Bridge in or around South Vietnam, \
+    Quang Nam province.  He earned the following awards:  \n\n\
+-   National Defense Service Medal  \n\
+-   Combat Infantryman Badge  \n\
+-   Purple Heart  \n\
+-   Vietnam Campaign Medal  \n\
+-   Vietnam Service Medal  \n\n\
+Second Lieutenant Ranstead is honored on the Vietnam Veteran\'s Memorial, \
+VVM Wall, Panel 35e, Line 11.',
+    bioHtml: markdown.toHTML('Second Lieutenant James Terry Ranstead from Miami, Oklahoma was \
+    born on January 29, 1943. He enlisted in the Marines on May 28, 1967 \
+    and served during the Vietnam Conflict. Second Lieutenant Ranstead served \
+    with 3rd Marine Division, 2nd Battalion, 3rd Marines, G Company. \
+    His service occupation was Basic Infantry Officer. On January 22, 1968 \
+    James was on a combat patrol when a mine was tripped killing him, \
+    5 kilometers south southeast of Tuy Loan Bridge in or around South Vietnam, \
+    Quang Nam province.  He earned the following awards:  \n\n\
+-   National Defense Service Medal  \n\
+-   Combat Infantryman Badge  \n\
+-   Purple Heart  \n\
+-   Vietnam Campaign Medal  \n\
+-   Vietnam Service Medal  \n\n\
+Second Lieutenant Ranstead is honored on the Vietnam Veteran\'s Memorial, \
+    VVM Wall, Panel 35e, Line 11.'),
+    bioPhoto: "/assets/images/04-ranstead-terry2.jpg",
   },
   {
     photo: "/assets/images/04-ross-gray.png",
     name: "Ross, Gray",
     date: "15 Jun 1968",
     restingPlace: "Fort Donelson Nat'l Cemetery, TN",
-    platoon: "4th"
+    platoon: "4th",
+    bio: 'Second Lieutenant William Gray Ross from Big Rock, Tennessee. \
+    He enlisted in the Marine Corps. \
+    and served during the Vietnam Conflict. Rank of Second Lieutenant. \
+    2Lt Ross served with 1st Marine Division, 3rd Battalion, 5th Marines, \
+    I Company. Service occupation of Infantry Officer. Second Lieutenant Ross died on June 15, \
+    1968 at the age of 23 in or around Quang Nam in South Vietnam.  \
+    Circumstances of his death are attributed to .. "Died through hostile \
+    action". He earned the following awards:  \n\n\
+-   National Defense Service Medal  \n\
+-   Combat Infantryman Badge  \n\
+-   Purple Heart  \n\
+-   Vietnam Campaign Medal  \n\
+-   Vietnam Service Medal  \n\n\
+Second Lieutenant Ross is honored on the Vietnam Veteran\'s Memorial, \
+    VVM Wall, Panel 57w, Line 31.',
+    bioHtml: markdown.toHTML('Second Lieutenant William Gray Ross is from Big Rock, Tennessee. \
+    He enlisted in the Marine Corps. \
+    and served during the Vietnam Conflict. Rank of Second Lieutenant. \
+    2Lt Ross served with 1st Marine Division, 3rd Battalion, 5th Marines, \
+    I Company. Service occupation of Infantry Officer. Second Lieutenant Ross died on June 15, \
+    1968 at the age of 23 in or around Quang Nam in South Vietnam.  \
+    Circumstances of his death are attributed to .. "Died through hostile \
+    action". He earned the following awards:  \n\n\
+-   National Defense Service Medal  \n\
+-   Combat Infantryman Badge  \n\
+-   Purple Heart  \n\
+-   Vietnam Campaign Medal  \n\
+-   Vietnam Service Medal  \n\n\
+Second Lieutenant Ross is honored on the Vietnam Veteran\'s Memorial, \
+    VVM Wall, Panel 57w, Line 31.'),
+    bioPhoto: "/assets/images/04-ross-gray2.jpg",
   },
   {
     photo: "/assets/images/04-belser-joe.png",
@@ -1167,14 +1229,60 @@ Second Lieutenant Eckenrode is honored on the Vietnam \
     name: "Spindler, John",
     date: "21 Apr 1968",
     restingPlace: "Courts of the MIssing, MIA Mem, HI",
-    platoon: "5th"
+    platoon: "5th",
+    bio: 'Second Lieutenant John Gates Spindler was born on February 1, 1946 \
+    in St. Louis MO to Leona (nee: Gates) Spindler and Phillip Spindler.  \
+    John Spindler enlisted in the United States Marine Corps Reserve through \
+    the Platoon Leaders/ Class (PLC) program on 14 Jan 1966. Second Lieutenant \
+    Spindler was a member of Company G, 2nd Battalion, 3rd Marines, \
+    3rd Marine Division. On April 21, 1968, he was killed by enemy artillery \
+    fire while fighting in Quang Tri Province, South Vietnam. His remains were \
+    not recovered. His name is inscribed on the Courts of the Missing at the \
+    Honolulu Memorial, and there is also a weapons display in his honor at \
+    the National Museum of the US Marines in Quantico. 2nd Lt. John Gates \
+    Spindler is also honored on Panel 51E, Row 25 of the Vietnam Veterans \
+    Memorial.',
+    bioHtml: markdown.toHTML('Second Lieutenant John Gates Spindler was born on February 1, 1946 \
+    in St. Louis MO to Leona (nee: Gates) Spindler and Phillip Spindler.  \
+    John Spindler enlisted in the United States Marine Corps Reserve through \
+    the Platoon Leaders/ Class (PLC) program on 14 Jan 1966. Second Lieutenant \
+    Spindler was a member of Company G, 2nd Battalion, 3rd Marines, \
+    3rd Marine Division. On April 21, 1968, he was killed by enemy artillery \
+    fire while fighting in Quang Tri Province, South Vietnam. His remains were \
+    not recovered. His name is inscribed on the Courts of the Missing at the \
+    Honolulu Memorial, and there is also a weapons display in his honor at \
+    the National Museum of the US Marines in Quantico. 2nd Lt. John Gates \
+    Spindler is also honored on Panel 51E, Row 25 of the Vietnam Veterans \
+    Memorial.'),
+    bioPhoto: "/assets/images/05-spindler-john2.jpg"
   },
   {
     photo: "/assets/images/05-sandberg-mike.png",
     name: "Sandberg, Michael",
     date: "03 Nov 1973",
     restingPlace: "unk: last residence, U of A Tucson, AZ",
-    platoon: "5th"
+    platoon: "5th",
+    bio: 'Captain Michael Bruce Sandberg was born on August 5, 1945 in \
+    Watonwan County, Minnesota.  He married Patricia Mays on Jun 1971 in \
+    Kaneohe, Oahu, Hawaii, daughter of Roderick Ainsworth Mays and Dorothy \
+    Ellen Perkins. They were married in a military ceremony at Kaneohe, \
+    Marine Corps Air Station on Oahu. There was a reception at the officers \
+    club. Captain Sandberg’s parents are William A and Madeleine (Wahl) \
+    Sandberg.  \n\nCaptain Sandberg, and his wife, Patricia Mays, were \
+    tragically shot and killed on November 3, 1973 in their Tucson condominium \
+    during a home invasion. Both Michael and Patricia were graduate students \
+    at the University of Arizona.',
+    bioHtml: markdown.toHTML('Captain Michael Bruce Sandberg was born on August 5, 1945 in \
+    Watonwan County, Minnesota.  He married Patricia Mays on Jun 1971 in \
+    Kaneohe, Oahu, Hawaii, daughter of Roderick Ainsworth Mays and Dorothy \
+    Ellen Perkins. They were married in a military ceremony at Kaneohe, \
+    Marine Corps Air Station on Oahu. There was a reception at the officers \
+    club. Captain Sandberg’s parents are William A and Madeleine (Wahl) \
+    Sandberg.  \n\nCaptain Sandberg, and his wife, Patricia Mays, were \
+    tragically shot and killed on November 3, 1973 in their Tucson condominium \
+    during a home invasion. Both Michael and Patricia were graduate students \
+    at the University of Arizona.'),
+    bioPhoto: "/assets/images/05-sandberg-mike2.png"
   },
   {
     photo: "/assets/images/05-sergo-dick.png",
@@ -1188,7 +1296,31 @@ Second Lieutenant Eckenrode is honored on the Vietnam \
     name: "St. John, Larry",
     date: "05 Dec 2011",
     restingPlace: "CCre: Mem Serv VFW Post 8207, FL",
-    platoon: "5th"
+    platoon: "5th",
+    bio: 'Larry David St. John of Longwood, FL was born in Shelby, OH on \
+    Sept. 2, 1941 to Elton and Betty St. John. Larry graduated from \
+    Shelby High School in 1959 and The Ohio State University in 1966. \
+    At OSU he met future wife, Zan, and they were married Dec. 23, 1966. \
+    Larry joined the Marine Corps and served from 1966-1970. He attained \
+    the rank of Captain, serving one tour in Vietnam, and earning two \
+    purple hearts and the bronze star. Following military service, \
+    Larry accepted a sales position with Ashland Petroleum Company \
+    where he remained employed for twenty years. The St. Johns have one \
+    daughter, Erin E. Hearon (Mike), residing in Hampton, VA; and \
+    four grandchildren, Brandon, Austin, Dylan and Kaitlyn. Larry also \
+    has a sister, Marsha Bell, of Sun Lakes, AZ.',
+    bioHtml: markdown.toHTML('Larry David St. John of Longwood, FL was born in Shelby, OH on \
+    Sept. 2, 1941 to Elton and Betty St. John. Larry graduated from \
+    Shelby High School in 1959 and The Ohio State University in 1966. \
+    At OSU he met future wife, Zan, and they were married Dec. 23, 1966. \
+    Larry joined the Marine Corps and served from 1966-1970. He attained \
+    the rank of Captain, serving one tour in Vietnam, and earning two \
+    purple hearts and the bronze star. Following military service, \
+    Larry accepted a sales position with Ashland Petroleum Company \
+    where he remained employed for twenty years. The St. Johns have one \
+    daughter, Erin E. Hearon (Mike), residing in Hampton, VA; and \
+    four grandchildren, Brandon, Austin, Dylan and Kaitlyn. Larry also \
+    has a sister, Marsha Bell, of Sun Lakes, AZ.')
   },
   {
     photo: "/assets/images/05-tritsch-john.png",

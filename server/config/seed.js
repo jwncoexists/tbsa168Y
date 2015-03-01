@@ -365,21 +365,131 @@ Second Lieutenant Eckenrode is honored on the Vietnam \
     name: "Gates, Albert",
     date: "07 Mar 1970",
     restingPlace: "Courts of the MIssing, MIA Mem, HI",
-    platoon: "2nd"
+    platoon: "2nd",
+    bio: 'Captain Albert Henry Gates Jr. was a member of the Marine Medium \
+    Helicopter Squadron 263, Marine Air Group 15, 9th Marine Amphibious \
+    Brigade. On March 7, 1970, he was aircraft commander of a Boeing Sea \
+    Knight Cargo Helicopter (CH-46D) flying near Da Nang, South Vietnam, \
+    when the aircraft crashed into the water killing him. His remains were \
+    not recovered. His name is inscribed on the Courts of the Missing at \
+    the Honolulu Memorial.  Captain Albert Henry Gates, Jr is is honored on \
+    Panel 13W, Row 92 of the Vietnam Veterans Memorial',
+    bioHtml: markdown.toHTML('Captain Albert Henry Gates Jr. was a member of the Marine Medium \
+    Helicopter Squadron 263, Marine Air Group 15, 9th Marine Amphibious \
+    Brigade. On March 7, 1970, he was aircraft commander of a Boeing Sea \
+    Knight Cargo Helicopter (CH-46D) flying near Da Nang, South Vietnam, \
+    when the aircraft crashed into the water killing him. His remains were \
+    not recovered. His name is inscribed on the Courts of the Missing at \
+    the Honolulu Memorial.  Captain Albert Henry Gates, Jr is is honored on \
+    Panel 13W, Row 92 of the Vietnam Veterans Memorial'),
+    bioPhoto: "/assets/images/02-gates-albert2.jpg",
   },
   {
     photo: "/assets/images/02-gibson-carl.png",
     name: "Gibson, Carl",
     date: "30 Apr 1968",
     restingPlace: "Univ of VA Confederate Cem, VA",
-    platoon: "2nd"
+    platoon: "2nd",
+    bio: 'Second Lieutenant Carl Reed Gibson was an 0801 artillery Forward \
+    Observer with the 3rd Battalion, 12th Marine Regiment, Third Marine \
+    Division,  III Marine Amphibious Force. Carl was born 31 May 1945 in \
+    Washington D.C., the son of Dr. and Mrs. Robert Carl Gibson.  Dr. Gibson \
+    was Director of Instruction in the Albemarle County School System in the \
+    late 50’s and early 60’s and was head of the Department of Education at \
+    George Mason College in Fairfax at the time of his son’s death. Carl \
+    graduated from Radford High School in 1963 and entered the University \
+    of Virginia where he was a member of the soccer team, circulation manager \
+    of the Cavalier Daily newspaper, and on the Dean’s List academically.  \
+    He was a member of Kappa Sigma fraternity, majored in Foreign Affairs, \
+    and attended UVa on a Navy ROTC Scholarship.  When he graduated in 1967 \
+    he was commander of the Navy ROTC Drill Team and the Drum and Bugle Corps,  \
+    which he was credited with organizing and training according to Major M. E. \
+    Morris, the 1967 Marine Officer Instructor at UVa.  Gibson was rated the \
+    top man in the battalion in ability and performance, and at his \
+    commissioning ceremony on 3 June 1967 he was presented a special leadership \
+    award –a Marine Officer’s Sword- in “recognition of his demonstrated \
+    outstanding leadership abilities and his many contributions which helped \
+    foster esprit de corps in the midshipman battalion.”  After graduation \
+    2Lt Gibson was sent to The Basic School at Quantico, Va and later to \
+    Artillery Officers School at Fort Sill, Oklahoma. Carl married Sallie \
+    Anne Guerrant of Falcon Drive, Charlottesville on March 12 1967.  \
+    She was a second year student at Mary Baldwin College in Staunton.  \n\n Carl \
+    arrived in Vietnam on 18 April 1968 and was assigned as an FO \
+    (Forward Observer) with the 12th Marines in support of BLT (Battalion \
+      Landing Team) 2/4.  "The Battle of Dai Do was known as Tet II and \
+      involved three Regiments/major elements of the 320th NVA Division which \
+      was trying to overrun the major supply bases at Dong Ha and Quang Tri.  \
+      Success would have undermined the entire DMZ (DeMilitarized Zone) defenses" \
+      according to the Commanding Officer of BLT 2/4,  then Lt. Col William \
+      Weise.  "Second Lieutenent Gibson participated and died in the Battle of \
+      Dai Do as an artillery FO providing much needed artillery fire support \
+      for the Marine infantrymen."  Carl is buried in the UVa Confederate \
+      Cemetery on Grounds at UVa in Charlottesville (at Alderman and McCormick).',
+    bioHtml: markdown.toHTML('Second Lieutenant Carl Reed Gibson was an 0801 artillery Forward \
+    Observer with the 3rd Battalion, 12th Marine Regiment, Third Marine \
+    Division,  III Marine Amphibious Force. Carl was born 31 May 1945 in \
+    Washington D.C., the son of Dr. and Mrs. Robert Carl Gibson.  Dr. Gibson \
+    was Director of Instruction in the Albemarle County School System in the \
+    late 50’s and early 60’s and was head of the Department of Education at \
+    George Mason College in Fairfax at the time of his son’s death. Carl \
+    graduated from Radford High School in 1963 and entered the University \
+    of Virginia where he was a member of the soccer team, circulation manager \
+    of the Cavalier Daily newspaper, and on the Dean’s List academically.  \
+    He was a member of Kappa Sigma fraternity, majored in Foreign Affairs, \
+    and attended UVa on a Navy ROTC Scholarship.  When he graduated in 1967 \
+    he was commander of the Navy ROTC Drill Team and the Drum and Bugle Corps,  \
+    which he was credited with organizing and training according to Major M. E. \
+    Morris, the 1967 Marine Officer Instructor at UVa.  Gibson was rated the \
+    top man in the battalion in ability and performance, and at his \
+    commissioning ceremony on 3 June 1967 he was presented a special leadership \
+    award –a Marine Officer’s Sword- in “recognition of his demonstrated \
+    outstanding leadership abilities and his many contributions which helped \
+    foster esprit de corps in the midshipman battalion.”  After graduation \
+    2Lt Gibson was sent to The Basic School at Quantico, Va and later to \
+    Artillery Officers School at Fort Sill, Oklahoma. Carl married Sallie \
+    Anne Guerrant of Falcon Drive, Charlottesville on March 12 1967.  \
+    She was a second year student at Mary Baldwin College in Staunton.  \n\n Carl \
+    arrived in Vietnam on 18 April 1968 and was assigned as an FO \
+    (Forward Observer) with the 12th Marines in support of BLT (Battalion \
+      Landing Team) 2/4.  "The Battle of Dai Do was known as Tet II and \
+      involved three Regiments/major elements of the 320th NVA Division which \
+      was trying to overrun the major supply bases at Dong Ha and Quang Tri.  \
+      Success would have undermined the entire DMZ (DeMilitarized Zone) defenses" \
+      according to the Commanding Officer of BLT 2/4,  then Lt. Col William \
+      Weise.  "Second Lieutenent Gibson participated and died in the Battle of \
+      Dai Do as an artillery FO providing much needed artillery fire support \
+      for the Marine infantrymen."  Carl is buried in the UVa Confederate \
+      Cemetery on Grounds at UVa in Charlottesville (at Alderman and McCormick).'),
+    bioPhoto: "/assets/images/02-gibson-carl2.jpg",
   },
   {
     photo: "/assets/images/02-hagan-bob.png",
     name: "Hagan, Bob",
     date: "31 Mar 1978",
     restingPlace: "Arlington Nat'l Cem, VA",
-    platoon: "2nd"
+    platoon: "2nd",
+    bio: 'Major John Robert Hagan born on August 22, 1945. His hometown was Savannah, GA, and he was awarded a  silver star \
+    for gallantry in action during the vietnam war.  \n  \n*"The President of \
+    the United States takes pleasure in presenting the Silver Star Medal to \
+    John R. Hagan (257666152), Second Lieutenant, U.S. Marine Corps, for \
+    conspicuous gallantry and intrepidity in action while serving with \
+    Company G, 2d Battalion, 9th Marines, 3d Marine Division (Rein.), FMF, \
+    in connection with combat operations against the enemy in the Republic \
+    of Vietnam on April 19, 1968. By his courage, aggressive fighting spirit \
+    and steadfast devotion to duty in the face of extreme personal danger, \
+    Second Lieutenant Hagan upheld the highest traditions of the Marine Corps \
+    and the United States Naval Service."*',
+    bioHtml: markdown.toHTML('Major John Robert Hagan born on August 22, 1945. His hometown was Savannah, GA, and he was awarded a  silver star \
+    for gallantry in action during the vietnam war.  \n  \n*"The President of \
+    the United States takes pleasure in presenting the Silver Star Medal to \
+    John R. Hagan (257666152), Second Lieutenant, U.S. Marine Corps, for \
+    conspicuous gallantry and intrepidity in action while serving with \
+    Company G, 2d Battalion, 9th Marines, 3d Marine Division (Rein.), FMF, \
+    in connection with combat operations against the enemy in the Republic \
+    of Vietnam on April 19, 1968. By his courage, aggressive fighting spirit \
+    and steadfast devotion to duty in the face of extreme personal danger, \
+    Second Lieutenant Hagan upheld the highest traditions of the Marine Corps \
+    and the United States Naval Service."*')
   },
   {
     photo: "/assets/images/02-donnelly-rick.png",
@@ -461,14 +571,110 @@ Second Lieutenant Eckenrode is honored on the Vietnam \
     name: "Ganter, Bill",
     date: "03 Aug 2007",
     restingPlace: "Richmond, KY",
-    platoon: "2nd"
+    platoon: "2nd",
+    bio: 'Lt. Col. William J. Ganter, Jr. (Ret.), 61, of Jacks Creek Road, \
+    Richmond, the husband of Sandra, was born January 13, 1946, in Oil City, \
+    PA, to Agnes Fiala Ganter Harvey and the late William James Ganter. \
+    He was a regional sales manger for ROI RAM Optical Instrumentation, \
+    a U. S. Marine veteran and Purple Heart recipient of Viet Nam and Desert \
+    Storm and a retired Colonel of the U. S. Army. Mr. Ganter was a member \
+    of the B P O E Lodge # 776 of Washington, PA, the V.F.W. Post # 2071 of \
+    Pennsylvania, the American Legion Post # 0179 of New Jersey and a former \
+    volunteer fireman.  \n\nIn addition to his loving wife, Sandra Kehler Ganter, \
+    of Richmond, KY, he is survived by his daughter, Rachel Elaine Ganter of \
+    North Webster, IN, his mother, Agnes Harvey of Wilmington, NC; one sister, \
+    Barbara (Philip) Blandine of Wilmington, NC; three brothers, \
+    Michael (Elizabeth) Ganter of Pittsburgh, PA, Harry (Linda) Ganter of \
+    Savannah, GA and Jeffrey Ganter of Yardley, PA; one aunt, Fredia Fischer \
+    of Orange City, FL; one uncle Robert (Eleanor) Ganter of Matawan, \
+    NJ and several nieces, nephews, cousins and friends.',
+    bioHtml: markdown.toHTML('Lt. Col. William J. Ganter, Jr. (Ret.), 61, of Jacks Creek Road, \
+    Richmond, the husband of Sandra, was born January 13, 1946, in Oil City, \
+    PA, to Agnes Fiala Ganter Harvey and the late William James Ganter. \
+    He was a regional sales manger for ROI RAM Optical Instrumentation, \
+    a U. S. Marine veteran and Purple Heart recipient of Viet Nam and Desert \
+    Storm and a retired Colonel of the U. S. Army. Mr. Ganter was a member \
+    of the B P O E Lodge # 776 of Washington, PA, the V.F.W. Post # 2071 of \
+    Pennsylvania, the American Legion Post # 0179 of New Jersey and a former \
+    volunteer fireman.  \n\nIn addition to his loving wife, Sandra Kehler Ganter, \
+    of Richmond, KY, he is survived by his daughter, Rachel Elaine Ganter of \
+    North Webster, IN, his mother, Agnes Harvey of Wilmington, NC; one sister, \
+    Barbara (Philip) Blandine of Wilmington, NC; three brothers, \
+    Michael (Elizabeth) Ganter of Pittsburgh, PA, Harry (Linda) Ganter of \
+    Savannah, GA and Jeffrey Ganter of Yardley, PA; one aunt, Fredia Fischer \
+    of Orange City, FL; one uncle Robert (Eleanor) Ganter of Matawan, \
+    NJ and several nieces, nephews, cousins and friends.')
   },
   {
-    photo: "/assets/images/02-hansen-bob.png",
+    photo: "/assets/images/03-hansen-bob.png",
     name: "Hansen, Bob",
     date: "04 Jan 2009",
     restingPlace: "Arlington Nat'l Cem, VA",
-    platoon: "2nd"
+    platoon: "3rd",
+    bio: 'Robert W. Hansen Colonel, USMC (Ret.) Robert W. Hansen, husband of \
+    Nancy (Eastham) Hansen; father of sons, Robert "Swede" Hansen and Alan \
+    "Alwood" Hansen, father-in-law of Kris (Barry) Hansen and Ashley (Garman) \
+    Hansen, died at home on January 4, 2009 of a sudden heart attack. Bob was \
+    a consummate family man who loved his wife, his sons, his daughters-in-law, \
+    his grandchildren, and his friends with unrelenting passion and care. Bob\'s \
+    huge smile would light up the room when he was with friends and family, \
+    and nothing made him happier than spending time with and hugging his four \
+    grandchildren: Madeline, Evan, Julia, and Travis. Bob had a tender heart \
+    and inspired those around him with his encouraging words and gratitude to \
+    God for all good things. While friends and family of Bob mourn his passing, \
+    his death is anything but sad for the trout of Northern Maryland and pesky \
+    squirrels impertinent enough to attempt to pilfer Nancy\'s bird seed. \
+    Bob was born in Northville, Michigan in 1944. He earned his BA degree \
+    from the University of New Mexico in 1967 and his MBA from Syracuse \
+    University in 1975. He retired as a Colonel from the U.S. Marine Corps \
+    in 1996. He served in the Marine Corps for 30 years and proudly represented \
+    his country in the Vietnam War in \'68 and the Gulf War in \'91. His \
+    numerous awards include: the Legion of Merit, Bronze Star with combat \'V\'; \
+    Defense Meritorious Service Medal and Combat Action Ribbon. \
+    His military career took him to the exotic locales of Quantico, VA; \
+    Hawaii; Okinawa; Syracuse, NY; Albany, GA; Camp Lejeune, NC; Bowie, MD; \
+    and Camp Pendleton, CA. After retiring from the Marine Corps, he worked \
+    for SAIC in the Washington, DC area and New Orleans, which he learned to \
+    love. At every stop along the way, he met incredible people and \
+    developed lifelong friendships. In his spare time Bob enjoyed riding his \
+    Harley, fishing with his kids and grandkids, watching sports, tracking \
+    the stock market, working on house projects when he got a "round tuit," \
+    and spending quality time with family. You always knew he was nearby when \
+    you heard his characteristic exclamations: "Yeah-Buddy!", "Good-on-ya!", \
+    "Life is Good!", "Oorah!", and "Semper Fi!"',
+    bioHtml: markdown.toHTML('Robert W. Hansen Colonel, USMC (Ret.) Robert W. Hansen, husband of \
+    Nancy (Eastham) Hansen; father of sons, Robert "Swede" Hansen and Alan \
+    "Alwood" Hansen, father-in-law of Kris (Barry) Hansen and Ashley (Garman) \
+    Hansen, died at home on January 4, 2009 of a sudden heart attack. Bob was \
+    a consummate family man who loved his wife, his sons, his daughters-in-law, \
+    his grandchildren, and his friends with unrelenting passion and care. Bob\'s \
+    huge smile would light up the room when he was with friends and family, \
+    and nothing made him happier than spending time with and hugging his four \
+    grandchildren: Madeline, Evan, Julia, and Travis. Bob had a tender heart \
+    and inspired those around him with his encouraging words and gratitude to \
+    God for all good things. While friends and family of Bob mourn his passing, \
+    his death is anything but sad for the trout of Northern Maryland and pesky \
+    squirrels impertinent enough to attempt to pilfer Nancy\'s bird seed. \
+    Bob was born in Northville, Michigan in 1944. He earned his BA degree \
+    from the University of New Mexico in 1967 and his MBA from Syracuse \
+    University in 1975. He retired as a Colonel from the U.S. Marine Corps \
+    in 1996. He served in the Marine Corps for 30 years and proudly represented \
+    his country in the Vietnam War in \'68 and the Gulf War in \'91. His \
+    numerous awards include: the Legion of Merit, Bronze Star with combat \'V\'; \
+    Defense Meritorious Service Medal and Combat Action Ribbon. \
+    His military career took him to the exotic locales of Quantico, VA; \
+    Hawaii; Okinawa; Syracuse, NY; Albany, GA; Camp Lejeune, NC; Bowie, MD; \
+    and Camp Pendleton, CA. After retiring from the Marine Corps, he worked \
+    for SAIC in the Washington, DC area and New Orleans, which he learned to \
+    love. At every stop along the way, he met incredible people and \
+    developed lifelong friendships. In his spare time Bob enjoyed riding his \
+    Harley, fishing with his kids and grandkids, watching sports, tracking \
+    the stock market, working on house projects when he got a "round tuit," \
+    and spending quality time with family. You always knew he was nearby when \
+    you heard his characteristic exclamations: "Yeah-Buddy!", "Good-on-ya!", \
+    "Life is Good!", "Oorah!", and "Semper Fi!"'),
+    bioPhoto: "/assets/images/03-hansen-bob2.jpg",
+
   },
 
 
@@ -485,7 +691,46 @@ Second Lieutenant Eckenrode is honored on the Vietnam \
     name: "Johnson, Ron",
     date: "02 Oct 2010",
     restingPlace: "Quantico Nat'l Cem, VA",
-    platoon: "3rd"
+    platoon: "3rd",
+    bio: 'Ron Johnson was born in Valley City, North Dakota, on December 1, \
+    1941. He was a graduate of the University of Texas, the Naval Postgraduate \
+    School, and the Assemblies of God Theological Seminary. Major Johnson \
+    proudly served in the United States Marine Corps for 21 years, \
+    including a tour of duty in Vietnam. After retirement he had many \
+    opportunities to use his gifts and intellect, serving as a university \
+    professor, an administrator, and a computer analyst at RAFB. Mr. Johnson \
+    loved to teach the Scripture and was passionate about imprinting the \
+    Word of God into the hearts and minds of youth. He was a mentor to many \
+    people, freely giving of his time and wisdom, and will be greatly missed.  \n\nRon \
+    Johnson was a devoted and loving husband, father, grandfather, brother \
+    and friend. His memory will forever be in the hearts of his wife of \
+    42 years, Earline K. Johnson; children, Dr. Kirsten Johnson (Jonathan Herring), \
+    Oxford, England; Marcae Robertson (Nicholas), Noida, India; \
+    Dr. Paul Johnson (Jennifer), Atlanta; grandchildren, Grace and Hope \
+    Robertson, Laurel, Joanna, and Darcy Herring Johnson, Evelyn and Nathan \
+    Johnson; sister, Eileen Maier; brothers, Dennis Johnson, Stan Johnson, \
+    Doug Johnson, and Alan Johnson. Mr. Johnson was preceded in death by his \
+    parents, Darrell and Marie Johnson, and his sister, Jean Miller-Seidel.',
+    bioHtml: markdown.toHTML('Ron Johnson was born in Valley City, North Dakota, on December 1, \
+    1941. He was a graduate of the University of Texas, the Naval Postgraduate \
+    School, and the Assemblies of God Theological Seminary. Major Johnson \
+    proudly served in the United States Marine Corps for 21 years, \
+    including a tour of duty in Vietnam. After retirement he had many \
+    opportunities to use his gifts and intellect, serving as a university \
+    professor, an administrator, and a computer analyst at RAFB. Mr. Johnson \
+    loved to teach the Scripture and was passionate about imprinting the \
+    Word of God into the hearts and minds of youth. He was a mentor to many \
+    people, freely giving of his time and wisdom, and will be greatly missed.  \n\nRon \
+    Johnson was a devoted and loving husband, father, grandfather, brother \
+    and friend. His memory will forever be in the hearts of his wife of \
+    42 years, Earline K. Johnson; children, Dr. Kirsten Johnson (Jonathan Herring), \
+    Oxford, England; Marcae Robertson (Nicholas), Noida, India; \
+    Dr. Paul Johnson (Jennifer), Atlanta; grandchildren, Grace and Hope \
+    Robertson, Laurel, Joanna, and Darcy Herring Johnson, Evelyn and Nathan \
+    Johnson; sister, Eileen Maier; brothers, Dennis Johnson, Stan Johnson, \
+    Doug Johnson, and Alan Johnson. Mr. Johnson was preceded in death by his \
+    parents, Darrell and Marie Johnson, and his sister, Jean Miller-Seidel.'),
+    bioPhoto: "/assets/images/03-johnson-ron2.jpg",
   },
   {
     photo: "/assets/images/03-jones-bill.png",

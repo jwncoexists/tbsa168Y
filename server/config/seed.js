@@ -864,7 +864,28 @@ Second Lieutenant Eckenrode is honored on the Vietnam \
     name: "McCormack, Orval",
     date: "01 Oct 2002",
     restingPlace: "Quantico Nat'l Cem, VA",
-    platoon: "3rd"
+    platoon: "3rd",
+    bio: 'Colonel Orval Wayne “Mac” McCormack, USMC, Ret. 59, of Spotsylvania \
+    served 30 years in the US Marine Corps. He was a 1967 graduate of the U.S. \
+    Naval Academy and received his masters from George Washington University. \
+     Col McCormack was an active member and Vice-Commander of the Spotsylvania American Legion \
+     Post #320.  \n\nCol McCormack is the husband of Virginia C. McCormack; the \
+     father of son, Chris McCormack of Manassas and daughter, Melissa McCormack \
+     of Stafford.  His mother is Thelma McCormack of Pryor, Oklahoma; brothers, \
+     Terry McCormack of Shalimar, Florida; Tom McCormack of Adair, Okalahoma; \
+     sisters, Norma Callicoat of Stillwater, Oklahoma and Kay Rogers of Pryor, \
+     Oklahoma.',
+    bioHtml: markdown.toHTML('Colonel Orval Wayne “Mac” McCormack, USMC, Ret. 59, of Spotsylvania \
+    served 30 years in the US Marine Corps. He was a 1967 graduate of the U.S. \
+    Naval Academy and received his masters from George Washington University. \
+    Col McCormack was an active member and Vice-Commander of the Spotsylvania American Legion \
+    Post #320.  \n\nCol McCormack is the husband of Virginia C. McCormack; the \
+    father of son, Chris McCormack of Manassas and daughter, Melissa McCormack \
+    of Stafford.  His mother is Thelma McCormack of Pryor, Oklahoma; brothers, \
+    Terry McCormack of Shalimar, Florida; Tom McCormack of Adair, Okalahoma; \
+    sisters, Norma Callicoat of Stillwater, Oklahoma and Kay Rogers of Pryor, \
+    Oklahoma.'),
+    bioPhoto: "/assets/images/03-mccormack-orval2.jpg",
   },
 
   // 4th Platoon
@@ -873,14 +894,56 @@ Second Lieutenant Eckenrode is honored on the Vietnam \
     name: "Muir, Jim",
     date: "19 May 1968",
     restingPlace: "East Lawn Palms & Mort, AZ",
-    platoon: "4th"
+    platoon: "4th",
+    bio: 'First Lieutenant James Muir was born June 7, 1942 in New York City, \
+    the number one son of Thomas & Mary Agnes Muir. In 1946 he moved with \
+    his parents & sister, Janet to Tucson, AZ; a warm dry climate to \
+    benefit his father’s health. Jim was in the first graduating class of \
+    Rincon High School in 1961 & went on to The University of Arizona with a \
+    double major in History & Oriental Studies.  \n\nIn the summer of 1963 he \
+    completed USMC’s Platoon Leader’s course at Quantico, VA. His senior year \
+    he was Vice President of the student body & Yell King. He graduated in \
+    1965 & was commissioned a 2nd Lt. in the Marine Corps. He continued \
+    studies at the East/West Center, University of Hawaii, earning a Master\'s \
+    Degree in 1967. He arrived in Vietnam in 1968 where he served as a \
+    Platoon Leader in Delta 1/4. On April 26, 1968 he was wounded in action \
+    while serving as XO at Con Thien, aka The Hill of Angels. First Lieutenant James Muir passed \
+    away at USNH Guam on May 19, 1968 & was awarded the Bronze Star with V \
+    posthumously. He is missed by all who knew & loved him',
+    bioHtml: markdown.toHTML('First Lieutenant James Muir was born June 7, 1942 in New York City, \
+    the number one son of Thomas & Mary Agnes Muir. In 1946 he moved with \
+    his parents & sister, Janet to Tucson, AZ; a warm dry climate to \
+    benefit his father’s health. Jim was in the first graduating class of \
+    Rincon High School in 1961 & went on to The University of Arizona with a \
+    double major in History & Oriental Studies.  \n\nIn the summer of 1963 he \
+    completed USMC\'s Platoon Leader\'s course at Quantico, VA. His senior year \
+    he was Vice President of the student body & Yell King. He graduated in \
+    1965 & was commissioned a 2nd Lt. in the Marine Corps. He continued \
+    studies at the East/West Center, University of Hawaii, earning a Master\'s \
+    Degree in 1967. He arrived in Vietnam in 1968 where he served as a \
+    Platoon Leader in Delta 1/4. On April 26, 1968 he was wounded in action \
+    while serving as XO at Con Thien, aka The Hill of Angels. First Lieutenant James Muir passed \
+    away at USNH Guam on May 19, 1968 & was awarded the Bronze Star with V \
+    posthumously. He is missed by all who knew & loved him'),
+    bioPhoto: "/assets/images/04-muir-jim2.jpg",
   },
   {
     photo: "/assets/images/04-pearson-tom.png",
     name: "Pearson, Tom",
     date: "23 Jan 1968",
     restingPlace: "Fort Rosecrans Nat'l Cem, SD CA",
-    platoon: "4th"
+    platoon: "4th",
+    bio: 'Second Lieutenant Thomas Rickard Pearson Jr. of San Diego, CA was \
+    born on June 20, 1945. He died on January 23, 1968 at the age of 22 due \
+    to a mortar, rocket, or artillery incident at Quang Tri Province in \
+    South Vietnam. Second Lieutenant Thomas R. Pearson is honored on the \
+    Vietnam Memorial Wall at Panel 35E, Line 17.',
+    bioHtml: markdown.toHTML('Second Lieutenant Thomas Rickard Pearson Jr. of San Diego, CA was \
+    born on June 20, 1945. He died on January 23, 1968 at the age of 22 due \
+    to a mortar, rocket, or artillery incident at Quang Tri Province in \
+    South Vietnam. Second Lieutenant Thomas R. Pearson is honored on the \
+    Vietnam Memorial Wall at Panel 35E, Line 17.'),
+    bioPhoto: "/assets/images/04-pearson-tom2.jpg",
   },
   {
     photo: "/assets/images/04-ranstead-terry.png",
@@ -976,7 +1039,48 @@ Second Lieutenant Eckenrode is honored on the Vietnam \
     name: "Moran, Donald",
     date: "25 Jun 2007",
     restingPlace: "Ft Snelling Nat'l Cem, MN",
-    platoon: "4th"
+    platoon: "4th",
+    bio: 'Captain Donald Martin Moran, age 62, of Burnsville, MN was born on \
+    September 16, 1944. As a boy in Delano, he mopped his parents\' drugstore \
+    floor, played drum and earned his Eagle Scout badge. He graduated \
+    from Delano High in 1962. Don attended the University of Notre Dame \
+    earning a double degree in liberal arts and electrical engineering in \
+    1967. He was a US Marine Corps captain who served in Vietnam until \
+    1970. He earned a Master\'s in Electrical Engineering from the University \
+    of MN in 1972. Don raised a family in Burnsville. He worked 30 years \
+    for Sperry Univac (Lockheed Martin) and has patents to his credit. \
+    After retirement, Don founded Toddler Food Partners, a nonprofit which \
+    supports nutrition for young children in Haiti, Bangladesh and Malawi. \
+    Don treasured the many friends he made while canoeing, sailing, using \
+    ham radio, skiing, woodworking and traveling. He always had a can-do \
+    attitude, a corny joke and loved any analog device with big knobs or an \
+    enormous antenna. He endeavored to live a principled life and taught his \
+    children self-reliance, integrity and how to rebound from one\'s own \
+    mistakes. Don’s parents are Jim & Esther. He has two children, Brian of \
+    Portland, OR, Betsy (Dan) of Delano, and Megan of Minneapolis; \
+    granddaughters Charlotte and Chloe; brothers Tom (Marcia), Bob (Winsome) \
+    and Dick; many nieces, nephews, and dear friends.',
+    bioHtml: markdown.toHTML('Captain Donald Martin Moran, age 62, of Burnsville, MN was born on \
+    September 16, 1944. As a boy in Delano, he mopped his parents\' drugstore \
+    floor, played drum and earned his Eagle Scout badge. He graduated \
+    from Delano High in 1962. Don attended the University of Notre Dame \
+    earning a double degree in liberal arts and electrical engineering in \
+    1967. He was a US Marine Corps captain who served in Vietnam until \
+    1970. He earned a Master\'s in Electrical Engineering from the University \
+    of MN in 1972. Don raised a family in Burnsville. He worked 30 years \
+    for Sperry Univac (Lockheed Martin) and has patents to his credit. \
+    After retirement, Don founded Toddler Food Partners, a nonprofit which \
+    supports nutrition for young children in Haiti, Bangladesh and Malawi. \
+    Don treasured the many friends he made while canoeing, sailing, using \
+    ham radio, skiing, woodworking and traveling. He always had a can-do \
+    attitude, a corny joke and loved any analog device with big knobs or an \
+    enormous antenna. He endeavored to live a principled life and taught his \
+    children self-reliance, integrity and how to rebound from one\'s own \
+    mistakes. Don’s parents are Jim & Esther. He has two children, Brian of \
+    Portland, OR, Betsy (Dan) of Delano, and Megan of Minneapolis; \
+    granddaughters Charlotte and Chloe; brothers Tom (Marcia), Bob (Winsome) \
+    and Dick; many nieces, nephews, and dear friends.'),
+    bioPhoto: "/assets/images/04-moran-donald2.jpg",
   },
   {
     photo: "/assets/images/04-neal-rich.png",
@@ -997,7 +1101,64 @@ Second Lieutenant Eckenrode is honored on the Vietnam \
     name: "Radcliffe, Harry",
     date: "08 Jun 2013",
     restingPlace: "Beachwood Cem, MI",
-    platoon: "4th"
+    platoon: "4th",
+    bio: 'Harry Quentin Radcliffe is the beloved husband of Nancy (Dozier) \
+    devoted father of Amy Byerle (Lee) and Laurel Schwartz (Michael), \
+    loving grandfather of six grandchildren and brother of Robert and Thomas. \
+    Harry was born in Norfolk, VA on May 22, 1945 and lived all over the \
+    world as his father was a Chaplain in the Navy for 32 years. He graduated \
+    from Vanderbilt University on a US Navy scholarship. He received school \
+    honors in academic achievement in engineering and a prestigious award in \
+    military performance while learning how to fly a private plane. \
+    Harry met Nancy at university and they were married December 30, 1968. \
+    After a few years of marriage, Nancy and Harry had daughter Amy and \
+    four years later, daughter Laurel.  \n\nAfter flying A-4 jets in the Marine \
+    Corps for 6 years, Harry became a test pilot with Lockheed Aircraft \
+    International, later known as Lockheed Martin Corporation. Lockheed soon \
+    realized that Harry had other talents besides flying that involved \
+    technical support, contract writing and management skills. The family \
+    followed him as his successful career developed, living all over the world. \
+    He was manager/president of companies in Singapore (6 years), \
+    California (4 years), Malaysia (7 years) and Argentina (3 years). \
+    The family moved to Washington DC in 1997 and Harry retired from Lockheed \
+    after 25 years. Too restless to settle down, he soon found work with two \
+    other companies, finally retired and moved to Philadelphia in 2010. Harry \
+    often volunteered to support his church, friends, family and communities. \
+    In Philadelphia, he continued flying patients needing medical support \
+    with Angel Flight East, as flying and helping others were a lifelong joy. \
+    Harry made a positive impact on countless people all over the world \
+    with his willing attitude to help others “fix” anything that needed \
+    to be done. He loved solving problems and was often seen holding a \
+    shovel or hammer in order to “make the world a better place.”',
+    bioHtml: markdown.toHTML('Harry Quentin Radcliffe is the beloved husband of Nancy (Dozier) \
+    devoted father of Amy Byerle (Lee) and Laurel Schwartz (Michael), \
+    loving grandfather of six grandchildren and brother of Robert and Thomas. \
+    Harry was born in Norfolk, VA on May 22, 1945 and lived all over the \
+    world as his father was a Chaplain in the Navy for 32 years. He graduated \
+    from Vanderbilt University on a US Navy scholarship. He received school \
+    honors in academic achievement in engineering and a prestigious award in \
+    military performance while learning how to fly a private plane. \
+    Harry met Nancy at university and they were married December 30, 1968. \
+    After a few years of marriage, Nancy and Harry had daughter Amy and \
+    four years later, daughter Laurel.  \n\nAfter flying A-4 jets in the Marine \
+    Corps for 6 years, Harry became a test pilot with Lockheed Aircraft \
+    International, later known as Lockheed Martin Corporation. Lockheed soon \
+    realized that Harry had other talents besides flying that involved \
+    technical support, contract writing and management skills. The family \
+    followed him as his successful career developed, living all over the world. \
+    He was manager/president of companies in Singapore (6 years), \
+    California (4 years), Malaysia (7 years) and Argentina (3 years). \
+    The family moved to Washington DC in 1997 and Harry retired from Lockheed \
+    after 25 years. Too restless to settle down, he soon found work with two \
+    other companies, finally retired and moved to Philadelphia in 2010. Harry \
+    often volunteered to support his church, friends, family and communities. \
+    In Philadelphia, he continued flying patients needing medical support \
+    with Angel Flight East, as flying and helping others were a lifelong joy. \
+    Harry made a positive impact on countless people all over the world \
+    with his willing attitude to help others “fix” anything that needed \
+    to be done. He loved solving problems and was often seen holding a \
+    shovel or hammer in order to “make the world a better place.”'),
+    bioPhoto: "/assets/images/04-radcliffe-harry2.jpg"
   },
 
   // 5th Platoon

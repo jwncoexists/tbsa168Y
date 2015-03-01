@@ -684,7 +684,52 @@ Second Lieutenant Eckenrode is honored on the Vietnam \
     name: "Laslie, Joe",
     date: "26 May 1968",
     restingPlace: "Attapulgus Methodist Ch Cem, GA",
-    platoon: "3rd"
+    platoon: "3rd",
+    bio: 'Second Lieutenant Joseph Taylor Laslie Jr from Attapulgus, \
+    Georgia. Service number 0102842. Enlisted in the Marine Corps. \
+    Served during the Vietnam Conflict. Rank of Second Lieutenant. \
+    Served with 9th Marine Amphibious Brigade, 2nd Battalion, 4th Marines, \
+    E Company. Casualty on May 25, 1968. This occurred in or around 7 km NW \
+    of Dong Ha, South Vietnam, Quang Tri province. Circumstances of death \
+    attributed to .. "Died through hostile action .. small arms fire". \
+    In the third week of May the North Vietnamese and Viet Kong forces launched \
+    their third - and as it turned out last major offensive of 1968. \
+    The freshly introduced 403th Division and other NVA/VC forces were active \
+    in Quang Tri Province, and BLT 2/4 was introduced into the fighting. \
+    The BLT 2/4 Marines lost 32 men in the fighting between 17 May and 06 June, \
+    with the majority - 19 men - killed in action in very heavy fighting near \
+    Nhi Ha on 25-29 May 1968. 2ndLt Laslie, who had volunteered for infantry \
+    duty in Basic School was killed while calling in supporting fires during \
+    the time of 25-29 May. He died on a medevec helicopter. Second Lieutenant \
+    Laslie earned the following awards  \n\n\
+    -   National Defense Service Medal  \n\
+    -   Purple Heart  \n\
+    -   Vietnam Campaign Medal  \n\
+    -   Vietnam Service Medal  \n\n\
+    He is honored on the Vietnam Veteran\'s Memorial, VVM Wall, Panel 68w, Line 4.',
+    bioHtml: markdown.toHTML('Second Lieutenant Joseph Taylor Laslie Jr. is from Attapulgus, \
+    Georgia. Service number 0102842. Enlisted in the Marine Corps. \
+    Served during the Vietnam Conflict. Rank of Second Lieutenant. \
+    Served with 9th Marine Amphibious Brigade, 2nd Battalion, 4th Marines, \
+    E Company. Casualty on May 25, 1968. This occurred in or around 7 km NW \
+    of Dong Ha, South Vietnam, Quang Tri province. Circumstances of death \
+    attributed to .. "Died through hostile action .. small arms fire". \
+    In the third week of May the North Vietnamese and Viet Kong forces launched \
+    their third - and as it turned out last major offensive of 1968. \
+    The freshly introduced 403th Division and other NVA/VC forces were active \
+    in Quang Tri Province, and BLT 2/4 was introduced into the fighting. \
+    The BLT 2/4 Marines lost 32 men in the fighting between 17 May and 06 June, \
+    with the majority - 19 men - killed in action in very heavy fighting near \
+    Nhi Ha on 25-29 May 1968. 2ndLt Laslie, who had volunteered for infantry \
+    duty in Basic School was killed while calling in supporting fires during \
+    the time of 25-29 May. He died on a medevec helicopter. Second Lieutenant \
+    Laslie earned the following awards  \n\n\
+-   National Defense Service Medal  \n\
+-   Purple Heart  \n\
+-   Vietnam Campaign Medal  \n\
+-   Vietnam Service Medal  \n\n\
+2Lt Laslie is honored on the Vietnam Veteran\'s Memorial, VVM Wall, Panel 68w, Line 4.'),
+    bioPhoto: "/assets/images/03-laslie-joe2.jpg",
   },
   {
     photo: "/assets/images/03-johnson-ron.png",
@@ -765,7 +810,54 @@ Second Lieutenant Eckenrode is honored on the Vietnam \
     name: "McClung, Mike",
     date: "02 Jul 2013",
     restingPlace: "Arlington Nat'l Cem, VA",
-    platoon: "3rd"
+    platoon: "3rd",
+    bio: 'Captain Michael E. McClung, Sr. was born on July 28, 1944 in \
+    Charleston, W.Va. to Boyd Ervin and Helen Maxine Rice McClung. \
+    He was married to Re McClung for 44 years, and they lived in Coupeville \
+    for his last eight years after retiring there from California.  \
+    Michael has a bachelor of science from Hanover College in Hanover, Ind.; \
+    a master of science from the University of Southern California and a Ph.D. \
+    from Claremont Graduate School in Claremont, Calif. He was a captain in \
+    the U.S. Marine Corps, having served from 1967 to 1979. He was a Vietnam \
+    veteran and earned the Vietnam Service Medal, a Purple Heart, the Vietnam \
+    Gallantry Cross and many other medals. After serving in the Corps, \
+    he worked in aerospace as a project manager and then as Director of \
+    Technology Systems at DayRunner. Michael was Commandant of the Marine \
+    Corps League Detachment 1210 named after his daughter, \
+    Major Megan M. McClung, USMC and coordinator of the Toys \
+    for Tots campaign on the island.  He enjoyed trains, flying model \
+    airplanes, working in his woodshop and helping his beloved Re in the \
+    gardens. He is survived by his wife, Re McClung, of Coupeville; \
+    son Michael Jr. and his wife Suzie; grandchildren Gabrielle and Nolan; \
+    sister Carol and her husband Alan, and; brother Stuart and his wife Becky. He \
+    was preceded in death by his parents, his brother Steven and \
+    his beloved daughter, Megan Malia-Leilani.  Captain McClung was a \
+    proud Marine, a loving husband, a devoted father, an inspirational and \
+    selfless friend, a mentor, a scholar, a leader, a hero.',
+    bioHtml: markdown.toHTML('Captain Michael E. McClung, Sr. was born on July 28, 1944 in \
+    Charleston, W.Va. to Boyd Ervin and Helen Maxine Rice McClung. \
+    He was married to Re McClung for 44 years, and they lived in Coupeville \
+    for his last eight years after retiring there from California.  \
+    Michael has a bachelor of science from Hanover College in Hanover, Ind.; \
+    a master of science from the University of Southern California and a Ph.D. \
+    from Claremont Graduate School in Claremont, Calif. He was a captain in \
+    the U.S. Marine Corps, having served from 1967 to 1979. He was a Vietnam \
+    veteran and earned the Vietnam Service Medal, a Purple Heart, the Vietnam \
+    Gallantry Cross and many other medals. After serving in the Corps, \
+    he worked in aerospace as a project manager and then as Director of \
+    Technology Systems at DayRunner. Michael was Commandant of the Marine \
+    Corps League Detachment 1210 named after his daughter, \
+    Major Megan M. McClung, USMC and coordinator of the Toys \
+    for Tots campaign on the island.  He enjoyed trains, flying model \
+    airplanes, working in his woodshop and helping his beloved Re in the \
+    gardens. He is survived by his wife, Re McClung, of Coupeville; \
+    son Michael Jr. and his wife Suzie; grandchildren Gabrielle and Nolan; \
+    sister Carol and her husband Alan, and; brother Stuart and his wife Becky. He \
+    was preceded in death by his parents, his brother Steven and \
+    his beloved daughter, Megan Malia-Leilani.  Captain McClung was a \
+    proud Marine, a loving husband, a devoted father, an inspirational and \
+    selfless friend, a mentor, a scholar, a leader, a hero.'),
+    bioPhoto: "/assets/images/03-mcclung-mike2.jpg",
   },
   {
     photo: "/assets/images/03-mccormack-orval.png",

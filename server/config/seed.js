@@ -14,11 +14,16 @@ Person.find({}).remove(function() {
   Person.create(
   {
     photo: "/assets/images/01-allen-joe.png",
-    name: "Allen, Joe",
-    date: "24 May 1968",
+    name: "Allen, Joseph Ebert (Joe)",
+    date: "17 July 1945 - 24 May 1968",
     restingPlace: "Long Beach City Cem, MS",
     platoon: "1st",
-    bio: 'Second Lieutenant John Joe Ebert Allen was awarded a  silver star \
+    bio: 'Joseph Allen Ebert arrived in Vietnam on 11 Feb 1968 and was killed on 24 May \
+    1968 by hostile small arms fire during an Operation Houston \
+    night engagement 12 KM south-southeast of the Phu Bai airfield—Thua \
+    Thien Province, UTM Grid YD950050. Joe’s name on The Wall is \
+    at Panel 76E, Line 003. Joe is buried the Long Beach City Cemetery. \
+    Second Lieutenant Allen was awarded a  silver star \
     for gallantry in action during the vietnam war.  \n  \n*"The President of \
     the United States of America takes pride in presenting the Silver Star \
     (Posthumously) to Second Lieutenant Joe Ebert Allen (MCSN: 0-103089), \
@@ -45,7 +50,12 @@ Person.find({}).remove(function() {
     spirit and unwavering devotion to duty, Second Lieutenant Allen upheld \
     the highest traditions of the Marine Corps and of the United States Naval \
     Service. He gallantly gave his life for his country."*',
-    bioHtml: markdown.toHTML('Second Lieutenant John Joe Ebert Allen was awarded a  silver star \
+    bioHtml: markdown.toHTML('Joseph Allen Ebert arrived in Vietnam on 11 Feb 1968 and was killed on 24 May \
+    1968 by hostile small arms fire during an Operation Houston \
+    night engagement 12 KM south-southeast of the Phu Bai airfield—Thua \
+    Thien Province, UTM Grid YD950050. Joe’s name on The Wall is \
+    at Panel 76E, Line 003. Joe is buried the Long Beach City Cemetery. \
+    Second Lieutenant John Joe Ebert Allen was awarded a  silver star \
     for gallantry in action during the vietnam war.  \n  \n*"The President of \
     the United States of America takes pride in presenting the Silver Star \
     (Posthumously) to Second Lieutenant Joe Ebert Allen (MCSN: 0-103089), \
@@ -77,74 +87,150 @@ Person.find({}).remove(function() {
 
   {
     photo: "/assets/images/01-barnes-rob.png",
-    name: "Barnes, Rob",
-    date: "30 May 1968",
+    name: "Barnes, Robert Crozier Jr. (Rob)",
+    date: "4 June 1944 - 30 May 1968",
     restingPlace: "Santa Fe Natl Cem, NM",
     platoon: "1st",
     bio: 'Second Lieutenant Robert Crozier Barnes, Jr. was born June 4th, 1944 in Carmi, Illinois. \
-    Service number 0102667. Enlisted in the Marine Corps. Served during the \
-    Vietnam Conflict. Rank of Second Lieutenant. Served with 1st Marine Division, \
+    Service number 0102667. Enlisted in the Marine Corps. He arrived in Vietnam \
+    on January 27, 1968 and served with 1st Marine Division, \
     1st Recon Battalion, B Company. Service occupation of Basic Infantry Officer. \
-    Casualty on May 30, 1968. This occurred in or around South Vietnam, \
-    Quang Nam province. Circumstances of death attributed to \
-    hostile action .. small arms fire. He earned the following awards: \
+    2nd Lieutenant Barnes was killed by hostile gunfire in Quang Nam Province near \
+    UTM grid AT816862. He was with Recon Team Aldbrook 13 KM SW of Hai Van Bridge. \
+    He earned the following awards: \
     - National Defense Service Medal \
     - Combat Infantryman Badge \
     - Purple Heart \
     - Vietnam Campaign Medal \
     - Vietnam Service Medal \
-    Second Lieutenant Barnes is honored on Panel 63W, Row 14 of the Vietnam Veterans Memorial.',
+    Second Lieutenant Barnes is honored on Panel 63W, Row 14 of the Vietnam Veterans Memorial. \
+    Barnes is also listed on the 1st Reconnaissance Battalion Association \
+    memorial at the Semper Fidelis Memorial Park, National Museum of the \
+    Marine Corps.',
     bioHtml: markdown.toHTML('Second Lieutenant Robert Crozier Barnes, Jr. was born June 4th, 1944 in Carmi, Illinois. \
-    Service number 0102667. Enlisted in the Marine Corps. Served during the \
-    Vietnam Conflict. Rank of Second Lieutenant. Served with 1st Marine Division, \
+    Service number 0102667. Enlisted in the Marine Corps. He arrived in Vietnam \
+    on January 27, 1968 and served with 1st Marine Division, \
     1st Recon Battalion, B Company. Service occupation of Basic Infantry Officer. \
-    Casualty on May 30, 1968. This occurred in or around South Vietnam, \
-    Quang Nam province. Circumstances of death attributed to \
-    hostile action .. small arms fire. He earned the following awards:  \n\n\
+    2nd Lieutenant Barnes was killed by hostile gunfire in Quang Nam Province near \
+    UTM grid AT816862. He was with Recon Team Aldbrook 13 KM SW of Hai Van Bridge. \
+    He earned the following awards:  \n\n\
 -   National Defense Service Medal  \n\
 -   Combat Infantryman Badge  \n\
 -   Purple Heart  \n\
 -   Vietnam Campaign Medal  \n\
 -   Vietnam Service Medal  \n\n\
-Second Lietenant Barnes is honored on Panel 63W, Row 14 of the Vietnam Veterans Memorial.'),
+Second Lietenant Barnes is honored on Panel 63W, Row 14 of the Vietnam Veterans Memorial. \
+Barnes is also listed on the 1st Reconnaissance Battalion Association \
+memorial at the Semper Fidelis Memorial Park, National Museum of the \
+Marine Corps.'),
     bioPhoto: "/assets/images/01-barnes-rob2.jpg",
   },
   {
     photo: "/assets/images/02-cross-terry.png",
-    name: "Cross, Terry",
-    date: "04 Mar 1968",
+    name: "Cross, Herbert Terrell (Terry)",
+    date: "12 January 1944 - 4 March 1968",
     restingPlace: "Oakdale Cem, LA",
-    platoon: "2nd"
+    platoon: "2nd",
+    bio: 'Herbert Terrell Cross is the son of Elbert E. and Hazel T. Cross \
+    and the brother of Kenneth A. Cross of Oakdale LA. He enlisted in \
+    the US Marine Corps on May 27, 1967 in Rustin LA and was later \
+    commissioned as an Officer. He arrived in Vietnam on January 23, 1968 \
+    and was assigned to Company A, 1st Battalion, 7th Marines, \
+    1st MARDIV (Rein) FMF.  \n\nWhile on a patrol along the Song Yen River \
+    in near the village of La Chau in Hieu Duc District Quang Nam \
+    Province (AP) anti-personnel mine was detonated resulting in the \
+    death of three Marines and one who was wounded. Following the \
+    explosion the enemy opened fire, which was returned and continued \
+    until a reaction squad arrived forcing the VC to withdraw. \
+    2dLt Cross was one of the casualties; he was killed in action \
+    as a result of multi fragmentation wounds. 2Lt Cross was presented a \
+    posthumous award of the Bronze Star Medal with "V" device \
+    "For meritorious service from January 27 to April 8 1968." \
+    Second Lieutenant Cross is also honored on the Vietnam Veterans \
+    Memorial Panel 48E - Line 52',
+    bioHtml: markdown.toHTML('Herbert Terrell Cross is the son of Elbert E. and Hazel T. Cross \
+    and the brother of Kenneth A. Cross of Oakdale LA. He enlisted in \
+    the US Marine Corps on May 27, 1967 in Rustin LA and was later \
+    commissioned as an Officer. He arrived in Vietnam on January 23, 1968 \
+    and was assigned to Company A, 1st Battalion, 7th Marines, \
+    1st MARDIV (Rein) FMF.  \n\nWhile on a patrol along the Song Yen River \
+    in near the village of La Chau in Hieu Duc District Quang Nam \
+    Province (AP) anti-personnel mine was detonated resulting in the \
+    death of three Marines and one who was wounded. Following the \
+    explosion the enemy opened fire, which was returned and continued \
+    until a reaction squad arrived forcing the VC to withdraw. \
+    2dLt Cross was one of the casualties; he was killed in action \
+    as a result of multi fragmentation wounds. 2Lt Cross was presented a \
+    posthumous award of the Bronze Star Medal with "V" device \
+    "For meritorious service from January 27 to April 8 1968." \
+    Second Lieutenant Cross is also honored on the Vietnam Veterans \
+    Memorial Panel 48E - Line 52'),
+    bioPhoto: "/assets/images/02-cross-terry2.jpg",
   },
   {
     photo: "/assets/images/01-baker-dave.png",
-    name: "Baker, David",
-    date: "13 Nov 1980",
+    name: "Baker, David L (David)",
+    date: "26 April 1945 - 13 November 1980",
     restingPlace: "Pax River Helo Accid, MD",
-    platoon: "1st"
+    platoon: "1st",
+    bio: '"Flying is so many parts skill, so many parts planning, so many \
+    parts maintenance, and so many parts luck. The trick is to reduce the \
+    luck by increasing the others." — David L. Baker  \n\nSecond Lieutenant \
+    David L. Baker from South \
+    Milwaukee, WI was killed in a November 1980 crash at the military\'s \
+    only test pilot school at Patuxent River. Md., in which both he and \
+    Larry Ammerman were killed.',
+    bioHtml: markdown.toHTML('"Flying is so many parts skill, so many parts planning, so many \
+    parts maintenance, and so many parts luck. The trick is to reduce the \
+    luck by increasing the others." — David L. Baker  \n\nSecond Lieutenant \
+    David L. Baker is from South \
+    Milwaukee, WI and was killed in a November 1980 crash at the military\'s \
+    only test pilot school at Patuxent River. Md., in which both he and \
+    Larry Ammerman were killed.')
   },
   {
     photo: "/assets/images/01-casey-bob.png",
-    name: "Casey, Robert",
-    date: "26 Aug 1969",
+    name: "Casey, Robert Brian (Robert)",
+    date: "13 May 1944 - 26 August 1969",
     restingPlace: "Long Island Nat'l Cem, NY",
-    platoon: "1st"
+    platoon: "1st",
+    bio: 'First Lieutenant Robert Brian Casey from Idaho Falls, \
+    Idaho was killed in an aircraft accident during A6 Intruder \
+    training at Cherry Point MCAS on August 26, 1969.',
+    bioHtml: markdown.toHTML('First Lieutenant Robert Brian Casey from Idaho Falls, \
+    Idaho was killed in an aircraft accident during A6 Intruder \
+    training at Cherry Point MCAS on August 26, 1969.')
   },
   {
     photo: "/assets/images/01-cooper-coop.png",
-    name: "Cooper, Coop",
-    date: "25 Nov 1968",
+    name: "Cooper, C Richard (Coop)",
+    date: "3 October 1945 - 25 November 1968",
     restingPlace: "Arlington Nat'l Cem, VA",
-    platoon: "1st"
+    platoon: "1st",
+    bio: 'First Lieutenant Donald Cooper of Greenburg, Pennsylvania \
+    was born on October 3, 1945.  He was killed in jet training on \
+    November 25, 1968.  First Lieutenant Cooper entered an approach turn \
+    stall and crashed near Forest Sherman Field in Pensacola, Florida.',
+    bioHtml: markdown.toHTML('First Lieutenant Donald Cooper of Greenburg, Pennsylvania \
+    was born on October 3, 1945.  He was killed in jet training on \
+    November 25, 1968.  First Lieutenant Cooper entered an approach turn \
+    stall and crashed near Forest Sherman Field in Pensacola, Florida.')
   },
   {
     photo: "/assets/images/01-banning-john.png",
-    name: "Banning, John",
-    date: "04 Nov 1973",
+    name: "Banning, Johnathon Jacques (John)",
+    date: "22 March 1943 - 4 November 1973",
     restingPlace: "Arlington Nat'l Cem, VA",
     platoon: "1st",
-    bio: 'Second Lieutenant John Jacques Banning was awarded a  silver star \
-    for gallantry in action during the vietnam war.  \n  \n*"The President of \
+    bio: 'Captain John Jacques Banning was born on March 22, 1943 in \
+    Joplin, Missouri.  He was married on November 25, 1967 in North Kansas \
+    City, Missouri to the former Sharon Kay Lucas.  They had two sons, \
+    Matthew and Benjamin together and the couple maintained their \
+    residence in Dale City, Virginia. Captain Banning graduated from \
+    Northwest Missouri State College in June 1967 where he majored in \
+    Biology and Sociology.  Banning died while swimming at \
+    Okinawa.  \n\nJohn Jacques Banning was awarded a silver star \
+    for gallantry in his actions on May 25, 1968.  \n  \n*"The President of \
     the United States of America takes pleasure in presenting the Silver Star \
     to Second Lieutenant John Jacques Banning (MCSN: 0-102452), United States \
     Marine Corps, for conspicuous gallantry and intrepidity in action while \
@@ -170,8 +256,15 @@ Second Lietenant Barnes is honored on Panel 63W, Row 14 of the Vietnam Veterans 
     unwavering devotion to duty in the face of great personal danger, \
     Second Lieutenant Banning upheld the highest traditions of the Marine \
     Corps and of the United States Naval Service."*',
-    bioHtml: markdown.toHTML('Second Lieutenant John Jacques Banning was awarded a  silver star \
-    for gallantry in action during the vietnam war.  \n  \n*"The President of \
+    bioHtml: markdown.toHTML('Captain John Jacques Banning was born on March 22, 1943 in \
+    Joplin, Missouri.  He was married on November 25, 1967 in North Kansas \
+    City, Missouri to the former Sharon Kay Lucas.  They had two sons, \
+    Matthew and Benjamin together and the couple maintained their \
+    residence in Dale City, Virginia. Captain Banning graduated from \
+    Northwest Missouri State College in June 1967 where he majored in \
+    Biology and Sociology.  Banning died while swimming at \
+    Okinawa.  \n\nJohn Jacques Banning was awarded a silver star \
+    for gallantry in his actions on May 25, 1968.  \n  \n*"The President of \
     the United States of America takes pleasure in presenting the Silver Star \
     to Second Lieutenant John Jacques Banning (MCSN: 0-102452), United States \
     Marine Corps, for conspicuous gallantry and intrepidity in action while \
@@ -200,8 +293,8 @@ Second Lietenant Barnes is honored on Panel 63W, Row 14 of the Vietnam Veterans 
   },
   {
     photo: "/assets/images/01-brinson-jim.png",
-    name: "Brinson, Jim",
-    date: "12 Oct 2006",
+    name: "Brinson, James Albert Jr. (Jim)",
+    date: "31 December 1944 - 12 October 2006",
     restingPlace: "Millen Cemetery, GA",
     platoon: "1st",
     bio: 'Colonel James A. Brinson was the son of James A. Brinson Sr. and Frances \
@@ -221,32 +314,54 @@ Second Lietenant Barnes is honored on Panel 63W, Row 14 of the Vietnam Veterans 
   },
   {
     photo: "/assets/images/01-burkhart-joe.png",
-    name: "Burkhart, Joseph",
-    date: "22 May 1995",
+    name: "Burkhart, Joseph J (Joseph)",
+    date: "28 June 1943 - 22 May 1995",
     restingPlace: "unk: res at death, Tampa,  FL",
-    platoon: "1st"
+    platoon: "1st",
+    bio: 'Captain Joseph Burkhart was from Bedford, Indiana and spent \
+    five years with the United States Marine Corps from June 29, 1965 \
+    through March 17, 1970. He was a graduate of Indiana University \
+    and died in Tampa, Florida on May 22, 1995.',
+    bioHtml: markdown.toHTML('Captain Joseph Burkhart was from Bedford, Indiana and spent \
+    five years with the United States Marine Corps from June 29, 1965 \
+    through March 17, 1970. He was a graduate of Indiana University \
+    and died in Tampa, Florida on May 22, 1995.')
   },
   {
     photo: "/assets/images/01-chafey-merritt.png",
-    name: "Chafey, Merritt",
-    date: "26 Jun 2005",
+    name: "Chafey, Merritt Neville, IV (Merritt)",
+    date: "25 June 1946 - 26 June 2005",
     restingPlace: "Arlington Nat'l Cem, VA",
-    platoon: "1st"
+    platoon: "1st",
+    bio:'Second Lieutenant Merritt N. Chafey IV of Scottsdale, Arizona \
+    married wife Kieko Yoshi Chafey in San Diego, California in 1977.  \
+    Second Lieutenant Chafey died at age 59 in San Diego, California.',
+    bioHtml: markdown.toHTML('Second Lieutenant Merritt N. Chafey IV of Scottsdale, Arizona \
+    married wife Kieko Yoshi Chafey in San Diego, California in 1977.  \
+    Second Lieutenant Chafey died at age 59 in San Diego, California.')
   },
   {
     photo: "/assets/images/01-chambers-owen.png",
-    name: "Chambers, Owen",
-    date: "19 Jun 1982",
+    name: "Chambers, Owen Sterling (Owen)",
+    date: "4 July 1941 - 19 June 1982",
     restingPlace: "Unk: Parents @: Beaufort Nat'l Cem, SC",
-    platoon: "1st"
+    platoon: "1st",
+    bio: 'First Lieutenant Owen S. Chambers of Beaufort, South Carolina was \
+    with the United States Marine Corps from June 13, 1965 through June 15, \
+    1970.  1st Lieutenant Chambers passed away on June 19, 1982.',
+    bioHtml: markdown.toHTML('First Lieutenant Owen S. Chambers of Beaufort, South Carolina was \
+    with the United States Marine Corps from June 13, 1965 through June 15, \
+    1970.  1st Lieutenant Chambers passed away on June 19, 1982.')
   },
   {
     photo: "/assets/images/01-champe-randy.png",
-    name: "Champe, Randy",
-    date: "13 Jun 1991",
+    name: "Champe, Charles Randall (Randy)",
+    date: "13 February 1945 - 13 June 1991",
     restingPlace: "Santa Fe Natl Cem, NM",
     platoon: "1st",
-    bio: 'Los Angeles Police Officer Randy Champe was operating \
+    bio: 'Captain Charles Randall Champe served three tours with the USMC \
+    and then left the Marine Corps to join the \
+    Los Angeles Police Department.  Police Officer Randy Champe was operating \
     a police helicopter, "Air 12", when it suffered a mechanical failure and crashed near Vernon Street \
     and Raymond Avenue. Both crew members were killed, as well as a civilian \
     on the ground.  \n\nMore than 2,000 law enforcement officers from throughout \
@@ -264,7 +379,9 @@ Second Lietenant Barnes is honored on Panel 63W, Row 14 of the Vietnam Veterans 
     memory of the two officers, Police Department officials said the unit \
     designation "Air 12," which had been assigned to Champe and Howe, will no \
     longer be used by the department.',
-    bioHtml: markdown.toHTML('Los Angeles Police Officer Randy Champe was operating \
+    bioHtml: markdown.toHTML('Captain Charles Randall Champe served three tours with the USMC \
+    and then left the Marine Corps to join the \
+    Los Angeles Police Department.  Police Officer Randy Champe was operating \
     a police helicopter, "Air 12", when it suffered a mechanical failure and crashed near Vernon Street \
     and Raymond Avenue. Both crew members were killed, as well as a civilian \
     on the ground.  \n\nMore than 2,000 law enforcement officers from throughout \
@@ -286,38 +403,43 @@ Second Lietenant Barnes is honored on Panel 63W, Row 14 of the Vietnam Veterans 
   },
   {
     photo: "/assets/images/01-chisea-robert.png",
-    name: "Chisea, Robert",
-    date: "218 Aug 1991",
+    name: "Chisea, Robert E (Robert)",
+    date: "5 October 1941 - 18 August 1991",
     restingPlace: "Unk: last known address: Adel, IA",
-    platoon: "1st"
+    platoon: "1st",
+    bio: 'Second Lieutenant Robert E. Chisea of Des Moines, Iowa completed a \
+    tour with the United States Marine Corps in Vietnam.  \
+    He passed away at the age of 49 in Adel, Iowa.',
+    bioHtml: markdown.toHTML('Second Lieutenant Robert E. Chisea of Des Moines, Iowa completed a \
+    tour with the United States Marine Corps in Vietnam.  \
+    He passed away at the age of 49 in Adel, Iowa.')
   },
 
   // *** 2nd platoon
   {
     photo: "/assets/images/02-decraene-alan.png",
-    name: "DeCraene, Alan",
-    date: "16 Feb 1970",
+    name: "DeCraene, Alan Charles (Alan)",
+    date: "9 May 1945 - 16 February 1970",
     restingPlace: "Centre County Mem Park, PA",
     platoon: "2nd",
     bio: 'First Lieutenant Alan Charles De Craene was born in Kewanee, \
     Illinois. He enlisted in the Marine Corps and served during the Vietnam Conflict. \
     Rank of First Lieutenant. Served with III Marine Amphibious Force, 1st MAW, \
     Marine Aircraft Group 16, HMM 161. Service occupation of Pilot H M M CH 46. \
-    He died on February 16, 1970. in or around South Vietnam, \
-    Thua Thien province. Circumstances of death are attributed to .. "Died through \
-    non-hostile action .. air crash on land". He earned the following awards:  \n\n\
+    First Lieutenant De Craene died in a helicopter crash on February 16, 1970 in or around South Vietnam, \
+    Thua Thien province while flying a night time emergency resupply mission \
+    in inclement weather. He earned the following awards:  \n\n\
     -   National Defense Service Medal  \n\
     -   Vietnam Campaign Medal  \n\
     -   Vietnam Service Medal  \n\n\
     First Lieutenant De Craene is honored on the Vietnam Veteran\'s Memorial, VVM Wall, Panel 13w, Line 19.',
-
     bioHtml: markdown.toHTML('First Lieutenant Alan Charles De Craene was born in Kewanee, \
     Illinois. He enlisted in the Marine Corps and served during the Vietnam Conflict. \
     Rank of First Lieutenant. Served with III Marine Amphibious Force, 1st MAW, \
     Marine Aircraft Group 16, HMM 161. Service occupation of Pilot H M M CH 46. \
-    He died on February 16, 1970. in or around South Vietnam, \
-    Thua Thien province. Circumstances of his death are attributed to .. "Died through \
-    non-hostile action .. air crash on land". He earned the following awards:  \n\n\
+    First Lieutenant De Craene died in a helicopter crash on February 16, 1970 in or around South Vietnam, \
+    Thua Thien province while flying a night time emergency resupply mission \
+    in inclement weather. He earned the following awards:  \n\n\
 -   National Defense Service Medal  \n\
 -   Vietnam Campaign Medal  \n\
 -   Vietnam Service Medal  \n\n\
@@ -326,8 +448,8 @@ First Lieutenant De Craene is honored on the Vietnam Veteran\'s Memorial, VVM Wa
   },
   {
     photo: "/assets/images/02-eckenrode-dave.png",
-    name: "Eckenrode, Dave",
-    date: "21 Jul 1968",
+    name: "Eckenrode, David John (Dave)",
+    date: "9 May 1945 - 21 July 1968",
     restingPlace: "Centre County Mem Park, PA",
     platoon: "2nd",
     bio:'Second Lieutenant David John Eckenrode was born in Bellefonte, \
@@ -335,8 +457,7 @@ First Lieutenant De Craene is honored on the Vietnam Veteran\'s Memorial, VVM Wa
     served during the Vietnam Conflict. He achieved rank of Second Lieutenant and served \
     with 7th Engineer Battalion, B Company. Second Lieutenant Eckenrode was \
     killed on July 21, 1968 in or around South Vietnam, Quang Nam province. \
-    The circumstances of his death attributed are to .. \
-    "Died through hostile action .. explosive device". He earned the \
+    when he tripped a booby-trap made from a 105mm artillery shell. Second Lieutenant Eckenrode earned the \
     following awards:  \n\n\
     -   National Defense Service Medal  \n\
     -   Purple Heart  \n\
@@ -349,8 +470,7 @@ First Lieutenant De Craene is honored on the Vietnam Veteran\'s Memorial, VVM Wa
     served during the Vietnam Conflict. He achieved rank of Second Lieutenant and served \
     with 7th Engineer Battalion, B Company. Second Lieutenant Eckenrode was \
     killed on July 21, 1968 in or around South Vietnam, Quang Nam province. \
-    The circumstances of his death attributed are to .. \
-    "Died through hostile action .. explosive device". He earned the \
+    when he tripped a booby-trap made from a 105mm artillery shell. Second Lieutenant Eckenrode earned the \
     following awards:  \n\n\
 -   National Defense Service Medal  \n\
 -   Purple Heart  \n\
@@ -362,32 +482,34 @@ Second Lieutenant Eckenrode is honored on the Vietnam \
   },
   {
     photo: "/assets/images/02-gates-albert.png",
-    name: "Gates, Albert",
-    date: "07 Mar 1970",
+    name: "Gates, Albert Henry Jr. (Albert)",
+    date: "1 February 1946 - 7 March 1970",
     restingPlace: "Courts of the MIssing, MIA Mem, HI",
     platoon: "2nd",
-    bio: 'Captain Albert Henry Gates Jr. was a member of the Marine Medium \
+    bio: 'Captain Albert Henry Gates Jr. of East Greenbush, New York \
+    was a member of the Marine Medium \
     Helicopter Squadron 263, Marine Air Group 15, 9th Marine Amphibious \
     Brigade. On March 7, 1970, he was aircraft commander of a Boeing Sea \
     Knight Cargo Helicopter (CH-46D) flying near Da Nang, South Vietnam, \
     when the aircraft crashed into the water killing him. His remains were \
     not recovered. His name is inscribed on the Courts of the Missing at \
-    the Honolulu Memorial.  Captain Albert Henry Gates, Jr is is honored on \
+    the Honolulu Memorial.  Captain Albert Henry Gates, Jr. is is honored on \
     Panel 13W, Row 92 of the Vietnam Veterans Memorial',
-    bioHtml: markdown.toHTML('Captain Albert Henry Gates Jr. was a member of the Marine Medium \
+    bioHtml: markdown.toHTML('Captain Albert Henry Gates Jr. of East Greenbush, New York \
+    was a member of the Marine Medium \
     Helicopter Squadron 263, Marine Air Group 15, 9th Marine Amphibious \
     Brigade. On March 7, 1970, he was aircraft commander of a Boeing Sea \
     Knight Cargo Helicopter (CH-46D) flying near Da Nang, South Vietnam, \
     when the aircraft crashed into the water killing him. His remains were \
     not recovered. His name is inscribed on the Courts of the Missing at \
-    the Honolulu Memorial.  Captain Albert Henry Gates, Jr is is honored on \
+    the Honolulu Memorial.  Captain Albert Henry Gates, Jr. is is honored on \
     Panel 13W, Row 92 of the Vietnam Veterans Memorial'),
     bioPhoto: "/assets/images/02-gates-albert2.jpg",
   },
   {
     photo: "/assets/images/02-gibson-carl.png",
-    name: "Gibson, Carl",
-    date: "30 Apr 1968",
+    name: "Gibson, Carl Reed (Carl)",
+    date: "31 May 1945 - 30 April 1968",
     restingPlace: "Univ of VA Confederate Cem, VA",
     platoon: "2nd",
     bio: 'Second Lieutenant Carl Reed Gibson was an 0801 artillery Forward \
@@ -464,12 +586,13 @@ Second Lieutenant Eckenrode is honored on the Vietnam \
   },
   {
     photo: "/assets/images/02-hagan-bob.png",
-    name: "Hagan, Bob",
-    date: "31 Mar 1978",
+    name: "Hagan, John Robert (Bob)",
+    date: "22 August 1945 - 31 March 1978",
     restingPlace: "Arlington Nat'l Cem, VA",
     platoon: "2nd",
-    bio: 'Major John Robert Hagan born on August 22, 1945. His hometown was Savannah, GA, and he was awarded a  silver star \
-    for gallantry in action during the vietnam war.  \n  \n*"The President of \
+    bio: 'Major John Robert Hagan born on August 22, 1945. His hometown was Savannah, GA, and \
+    he was awarded a  silver star \
+    for gallantry in action during the Vietnam war.  \n  \n*"The President of \
     the United States takes pleasure in presenting the Silver Star Medal to \
     John R. Hagan (257666152), Second Lieutenant, U.S. Marine Corps, for \
     conspicuous gallantry and intrepidity in action while serving with \
@@ -479,8 +602,9 @@ Second Lieutenant Eckenrode is honored on the Vietnam \
     and steadfast devotion to duty in the face of extreme personal danger, \
     Second Lieutenant Hagan upheld the highest traditions of the Marine Corps \
     and the United States Naval Service."*',
-    bioHtml: markdown.toHTML('Major John Robert Hagan born on August 22, 1945. His hometown was Savannah, GA, and he was awarded a  silver star \
-    for gallantry in action during the vietnam war.  \n  \n*"The President of \
+    bioHtml: markdown.toHTML('Major John Robert Hagan born on August 22, 1945. His hometown was Savannah, GA, and \
+    he was awarded a  silver star \
+    for gallantry in action during the Vietnam war.  \n  \n*"The President of \
     the United States takes pleasure in presenting the Silver Star Medal to \
     John R. Hagan (257666152), Second Lieutenant, U.S. Marine Corps, for \
     conspicuous gallantry and intrepidity in action while serving with \
@@ -493,18 +617,95 @@ Second Lieutenant Eckenrode is honored on the Vietnam \
   },
   {
     photo: "/assets/images/02-donnelly-rick.png",
-    name: "Donnelly, Rick",
-    date: "10 Apr 1994",
+    name: "Donnelly, William Richard Jr. (Rick)",
+    date: "15 September 1943 - 10 April 1994",
     restingPlace: "Arlington Nat'l Cem, VA",
-    platoon: "2nd"
+    platoon: "2nd",
+    bio: 'Col. William R. Donnelly, 50, a director of the Marine Corps \
+    War College at Quantico, Va., was born in McMinnville, Oregon. \
+    He enlisted in the Marines in 1961 and was appointed to the Naval \
+    Academy and graduated in 1967. Col. Donnelly later received master\'s \
+    degrees in computer science and military studies.  Col. Donnely was \
+    married to wife Diana "Danny" Donnelly of Woodbridge.  \
+    They had three children, Melissa Donnelly of New York and Kathleen and \
+    Timothy Donnelly, both of Woodbridge; his mother, Lillian G. Donnelly \
+    of Phoenix.  Donnelly also had two sisters, Paula Donnelly Roark \
+    of Takoma Park and Colleen Donnelly Vaz of Silver Spring; and a brother, \
+    Timothy G. Donnelly of Phoenix.  \n\nCol. Donnelly served in Vietnam as a \
+    rifle platoon commander. His personal decorations included the Silver Star, \
+    Legion of Merit and three Purple Heart medals. Below is the excerpt \
+    from his Silver Star.  \n  \n*"The President of the United States of \
+    America takes pleasure in presenting the Silver Star to Second \
+    Lieutenant William R. Donnelly, Jr. (MCSN: 0-101619), United \
+    States Marine Corps, for conspicuous gallantry and intrepidity \
+    in action while serving as a Platoon Commander with Company A, \
+    First Battalion, First Marines, FIRST Marine Division (Rein.), FMF, \
+    in connection with operations against the enemy in the Republic of \
+    Vietnam. On 4 February 1968, during Operation HUE CITY, three Marines \
+    moved forward of their unit\'s defensive perimeter to retrieve a \
+    mortally wounded comrade when they suddenly came under intense small \
+    arms, automatic weapons and rocket fire from a well entrenched \
+    North Vietnamese Army force. The initial burst of fire seriously \
+    wounded all the men and pinned them down. Realizing the seriousness \
+    of the situation, Second Lieutenant Donnelly unhesitatingly ran to \
+    the aid of the injured men. Disregarding the hostile fire around him, \
+    he picked up one of the Marines and carried him to a covered position. \
+    Successfully evacuating a second Marine, he returned to the hazardous \
+    area a third time and picked up the remaining injured man. Although \
+    wounded by fragments from an exploding enemy round, he ignored his \
+    painful injury and continued his determined efforts until he reached \
+    a covered position. By his courage, unfaltering determination and \
+    selfless devotion to duty in the face of extreme personal danger, \
+    Second Lieutenant Donnelly saved the lives of the wounded Marines and \
+    upheld the highest traditions of the Marine Corps and of the United \
+    States Naval Service."*',
+    bioHtml: markdown.toHTML('Col. William R. Donnelly, 50, a director of the Marine Corps \
+    War College at Quantico, Va., was born in McMinnville, Oregon. \
+    He enlisted in the Marines in 1961 and was appointed to the Naval \
+    Academy and graduated in 1967. Col. Donnelly later received master\'s \
+    degrees in computer science and military studies.  Col. Donnely was \
+    married to wife Diana "Danny" Donnelly of Woodbridge.  \
+    They had three children, Melissa Donnelly of New York and Kathleen and \
+    Timothy Donnelly, both of Woodbridge; his mother, Lillian G. Donnelly \
+    of Phoenix.  Donnelly also had two sisters, Paula Donnelly Roark \
+    of Takoma Park and Colleen Donnelly Vaz of Silver Spring; and a brother, \
+    Timothy G. Donnelly of Phoenix.  \n\nCol. Donnelly served in Vietnam as a \
+    rifle platoon commander. His personal decorations included the Silver Star, \
+    Legion of Merit and three Purple Heart medals. Below is the excerpt \
+    from his Silver Star.  \n  \n*"The President of the United States of \
+    America takes pleasure in presenting the Silver Star to Second \
+    Lieutenant William R. Donnelly, Jr. (MCSN: 0-101619), United \
+    States Marine Corps, for conspicuous gallantry and intrepidity \
+    in action while serving as a Platoon Commander with Company A, \
+    First Battalion, First Marines, FIRST Marine Division (Rein.), FMF, \
+    in connection with operations against the enemy in the Republic of \
+    Vietnam. On 4 February 1968, during Operation HUE CITY, three Marines \
+    moved forward of their unit\'s defensive perimeter to retrieve a \
+    mortally wounded comrade when they suddenly came under intense small \
+    arms, automatic weapons and rocket fire from a well entrenched \
+    North Vietnamese Army force. The initial burst of fire seriously \
+    wounded all the men and pinned them down. Realizing the seriousness \
+    of the situation, Second Lieutenant Donnelly unhesitatingly ran to \
+    the aid of the injured men. Disregarding the hostile fire around him, \
+    he picked up one of the Marines and carried him to a covered position. \
+    Successfully evacuating a second Marine, he returned to the hazardous \
+    area a third time and picked up the remaining injured man. Although \
+    wounded by fragments from an exploding enemy round, he ignored his \
+    painful injury and continued his determined efforts until he reached \
+    a covered position. By his courage, unfaltering determination and \
+    selfless devotion to duty in the face of extreme personal danger, \
+    Second Lieutenant Donnelly saved the lives of the wounded Marines and \
+    upheld the highest traditions of the Marine Corps and of the United \
+    States Naval Service."*'),
+    bioPhoto: "/assets/images/02-donnelly-rick2.jpg",
   },
   {
     photo: "/assets/images/02-dopher-robert.png",
-    name: "Dopher, Robert",
-    date: "30 Aug 2010",
+    name: "Dopher, Robert Conrad Jr. (Robert)",
+    date: "16 August 1942 - 30 August 2010",
     restingPlace: "Highland Lawn Cemetery, IN",
     platoon: "2nd",
-    bio: 'Major Robert C. Dopher, Jr. of Satellite Beach, and formerly of \
+    bio: 'Major Robert Conrad Dopher, Jr. of Satellite Beach, and formerly of \
     Rolla, Missouri, passed away on August 30, 2010, at the age of 68 from \
     Pulmonary Fibrosis. Bob was born in Terre Haute, IN, and graduated \
     from Otter Creek High School. Upon graduation, he enlisted in the \
@@ -554,30 +755,51 @@ Second Lieutenant Eckenrode is honored on the Vietnam \
   },
   {
     photo: "/assets/images/02-evans-mike.png",
-    name: "Evans, Mike",
-    date: "16 Mar 2006",
+    name: "Evans, Michael Lee (Mike)",
+    date: "27 July 1945 - 16 March 2006",
     restingPlace: "Evergreen Cem, KY",
-    platoon: "2nd"
+    platoon: "2nd",
+    bio: 'Captain Michael Lee Evans was born on July 27th, 1945 and was a \
+    graduate of the University of Louisville. He served as a Captain \
+    in the Marine Corp for 12 years, serving two consecutive tours in \
+    Vietnam for which he received many high decorations. He was a retired \
+    SPAWARS Department of Navy for 18 years in Crystal City, VA and a member \
+    of Iroquois Presbyterian Church.  Michael passed away on March 16th, \
+    2006 at the age of 60 at the Veterans Administration Hospital.',
+    bioHtml: markdown.toHTML('Captain Michael Lee Evans was born on July 27th, 1945 and was a \
+    graduate of the University of Louisville. He served as a Captain \
+    in the Marine Corp for 12 years, serving two consecutive tours in \
+    Vietnam for which he received many high decorations. He was a retired \
+    SPAWARS Department of Navy for 18 years in Crystal City, VA and a member \
+    of Iroquois Presbyterian Church.  Michael passed away on March 16th, \
+    2006 at the age of 60 at the Veterans Administration Hospital.')
   },
   {
     photo: "/assets/images/02-ferguson-michael.png",
-    name: "Ferguson, Michael",
-    date: "25 Jan 2002",
+    name: "Ferguson, Michael Jeromy (Michael)",
+    date: "11 August 1945 - 25 January 2002",
     restingPlace: "Dallas Ft Worth Nat'l Cem, TX",
-    platoon: "2nd"
+    platoon: "2nd",
+    bio: 'Lieutenant Colonel Michael J. Ferguson of Lakewood, California was \
+    with the Marine Corps from June 7, 1967 until June 30, 1989. He passed \
+    away on January 25, 2002.',
+    bioHtml: markdown.toHTML('Lieutenant Colonel Michael J. Ferguson of Lakewood, California was \
+    with the Marine Corps from June 7, 1967 until June 30, 1989. He passed \
+    away on January 25, 2002.')
   },
   {
     photo: "/assets/images/02-ganter-bill.png",
-    name: "Ganter, Bill",
-    date: "03 Aug 2007",
+    name: "Ganter, William James (Bill)",
+    date: "13 January 1946 - 3 August 2007",
     restingPlace: "Richmond, KY",
     platoon: "2nd",
-    bio: 'Lt. Col. William J. Ganter, Jr. (Ret.), 61, of Jacks Creek Road, \
+    bio: 'Lt. Col. William James Ganter, Jr. (Ret.), 61, of Jacks Creek Road, \
     Richmond, the husband of Sandra, was born January 13, 1946, in Oil City, \
     PA, to Agnes Fiala Ganter Harvey and the late William James Ganter. \
     He was a regional sales manger for ROI RAM Optical Instrumentation, \
-    a U. S. Marine veteran and Purple Heart recipient of Viet Nam and Desert \
-    Storm and a retired Colonel of the U. S. Army. Mr. Ganter was a member \
+    a U. S. Marine veteran and Purple Heart recipient of Vietnam and Desert \
+    Storm and a retired Colonel of the U. S. Army. Mr. Ganter got his MBA from \
+    Rutgers University and was a member \
     of the B P O E Lodge # 776 of Washington, PA, the V.F.W. Post # 2071 of \
     Pennsylvania, the American Legion Post # 0179 of New Jersey and a former \
     volunteer fireman.  \n\nIn addition to his loving wife, Sandra Kehler Ganter, \
@@ -588,12 +810,13 @@ Second Lieutenant Eckenrode is honored on the Vietnam \
     Savannah, GA and Jeffrey Ganter of Yardley, PA; one aunt, Fredia Fischer \
     of Orange City, FL; one uncle Robert (Eleanor) Ganter of Matawan, \
     NJ and several nieces, nephews, cousins and friends.',
-    bioHtml: markdown.toHTML('Lt. Col. William J. Ganter, Jr. (Ret.), 61, of Jacks Creek Road, \
+    bioHtml: markdown.toHTML('Lt. Col. William James Ganter, Jr. (Ret.), 61, of Jacks Creek Road, \
     Richmond, the husband of Sandra, was born January 13, 1946, in Oil City, \
     PA, to Agnes Fiala Ganter Harvey and the late William James Ganter. \
     He was a regional sales manger for ROI RAM Optical Instrumentation, \
-    a U. S. Marine veteran and Purple Heart recipient of Viet Nam and Desert \
-    Storm and a retired Colonel of the U. S. Army. Mr. Ganter was a member \
+    a U. S. Marine veteran and Purple Heart recipient of Vietnam and Desert \
+    Storm and a retired Colonel of the U. S. Army. Mr. Ganter got his MBA from \
+    Rutgers University and was a member \
     of the B P O E Lodge # 776 of Washington, PA, the V.F.W. Post # 2071 of \
     Pennsylvania, the American Legion Post # 0179 of New Jersey and a former \
     volunteer fireman.  \n\nIn addition to his loving wife, Sandra Kehler Ganter, \
@@ -607,8 +830,8 @@ Second Lieutenant Eckenrode is honored on the Vietnam \
   },
   {
     photo: "/assets/images/03-hansen-bob.png",
-    name: "Hansen, Bob",
-    date: "04 Jan 2009",
+    name: "Hansen, Robert William (Bob)",
+    date: "26 January 1944 - 4 January 2009",
     restingPlace: "Arlington Nat'l Cem, VA",
     platoon: "3rd",
     bio: 'Robert W. Hansen Colonel, USMC (Ret.) Robert W. Hansen, husband of \
@@ -677,12 +900,11 @@ Second Lieutenant Eckenrode is honored on the Vietnam \
 
   },
 
-
   // 3rd Platoon
   {
     photo: "/assets/images/03-laslie-joe.png",
-    name: "Laslie, Joe",
-    date: "26 May 1968",
+    name: "Laslie, Joseph Taylor (Joe)",
+    date: "23 December 1944 - 26 May 1968",
     restingPlace: "Attapulgus Methodist Ch Cem, GA",
     platoon: "3rd",
     bio: 'Second Lieutenant Joseph Taylor Laslie Jr from Attapulgus, \
@@ -733,8 +955,8 @@ Second Lieutenant Eckenrode is honored on the Vietnam \
   },
   {
     photo: "/assets/images/03-johnson-ron.png",
-    name: "Johnson, Ron",
-    date: "02 Oct 2010",
+    name: "Johnson, Ronald Paul (Ron)",
+    date: "1 December 1941 - 2 October 2010",
     restingPlace: "Quantico Nat'l Cem, VA",
     platoon: "3rd",
     bio: 'Ron Johnson was born in Valley City, North Dakota, on December 1, \
@@ -779,36 +1001,58 @@ Second Lieutenant Eckenrode is honored on the Vietnam \
   },
   {
     photo: "/assets/images/03-jones-bill.png",
-    name: "Jones, Bill",
-    date: "14 Sep 2002",
+    name: "Jones, William A (Bill)",
+    date: "20 April 1945 - 14 September 2002",
     restingPlace: "unk: Hometown - Morganza, LA",
-    platoon: "3rd"
+    platoon: "3rd",
+    bio: 'Second Lieutenant William Jones of Morganza, Louisiana practiced \
+    law after leaving the Marine Corps up until his death on September \
+    14, 2002.',
+    bioHtml: markdown.toHTML('Second Lieutenant William Jones of Morganza, Louisiana practiced \
+    law after leaving the Marine Corps up until his death on September \
+    14, 2002.')
   },
   {
     photo: "/assets/images/03-jones-stu.png",
-    name: "Jones, Stu",
-    date: "20 Aug 1977",
+    name: "Jones, Stuart Carlisle Jr. (Stu)",
+    date: "16 December 1945 - 20 August 1977",
     restingPlace: "unk: Hometown - Boston, MA",
-    platoon: "3rd"
+    platoon: "3rd",
+    bio: 'Second Lieutenant Stuart Carlisle Jones of Boston, MA passed \
+    away in a mountaineering accident in 1977.',
+    bioHtml: markdown.toHTML('Second Lieutenant Stuart Carlisle Jones of Boston, MA passed \
+    away in a mountaineering accident in 1977.')
   },
   {
     photo: "/assets/images/03-kozobarich-larry.png",
-    name: "Kozobarich, Larry",
-    date: "13 Jun 2007",
+    name: "Kozobarich, Larry L (Larry)",
+    date: "22 April 1945 - 13 June 2007",
     restingPlace: "Resurrection Catholic Cem, OH",
-    platoon: "3rd"
+    platoon: "3rd",
+    bio: 'Captain Larry Kozobarich of Columbus, OH was a professional \
+    musician after his service in the Marine Corps.  \
+    Captain Kozobarich and his wife Jeri lived in Westerville, OH \
+    when he passed away in June 2007.',
+    bioHtml: markdown.toHTML('Captain Larry Kozobarich of Columbus, OH was a professional \
+    musician after his service in the Marine Corps.  \
+    Captain Kozobarich and his wife Jeri lived in Westerville, OH \
+    when he passed away in June 2007.')
   },
   {
     photo: "/assets/images/03-larrison-jack.png",
-    name: "Larrison, Jack",
-    date: "10 Jan 1999",
+    name: "Larrison, John Patrick (Jack)",
+    date: "12 October 1945 - 10 January 1999",
     restingPlace: "Bay Pines Nat'l Cem, FL",
-    platoon: "3rd"
+    platoon: "3rd",
+    bio: 'Captain John Larrison of St. Petersburg, FL was killed in a \
+    parachute accident in Florida in January 1999.',
+    bioHtml: markdown.toHTML('Captain John Larrison of St. Petersburg, FL was killed in a \
+    parachute accident in Florida in January 1999.')
   },
   {
     photo: "/assets/images/03-mcclung-mike.png",
-    name: "McClung, Mike",
-    date: "02 Jul 2013",
+    name: "McClung, Michael Ervin (Mike)",
+    date: "28 July 1944 - 2 July 2013",
     restingPlace: "Arlington Nat'l Cem, VA",
     platoon: "3rd",
     bio: 'Captain Michael E. McClung, Sr. was born on July 28, 1944 in \
@@ -861,8 +1105,8 @@ Second Lieutenant Eckenrode is honored on the Vietnam \
   },
   {
     photo: "/assets/images/03-mccormack-orval.png",
-    name: "McCormack, Orval",
-    date: "01 Oct 2002",
+    name: "McCormack, Orval Wayne (Orval)",
+    date: "18 February 1943 - 1 October 2002",
     restingPlace: "Quantico Nat'l Cem, VA",
     platoon: "3rd",
     bio: 'Colonel Orval Wayne “Mac” McCormack, USMC, Ret. 59, of Spotsylvania \
@@ -891,14 +1135,13 @@ Second Lieutenant Eckenrode is honored on the Vietnam \
   // 4th Platoon
   {
     photo: "/assets/images/04-muir-jim.png",
-    name: "Muir, Jim",
-    date: "19 May 1968",
+    name: "Muir, James (Jim)",
+    date: "7 June 1942 - 19 May 1968",
     restingPlace: "East Lawn Palms & Mort, AZ",
     platoon: "4th",
     bio: 'First Lieutenant James Muir was born June 7, 1942 in New York City, \
     the number one son of Thomas & Mary Agnes Muir. In 1946 he moved with \
-    his parents & sister, Janet to Tucson, AZ; a warm dry climate to \
-    benefit his father’s health. Jim was in the first graduating class of \
+    his parents & sister, Janet to Tucson, AZ. Jim was in the first graduating class of \
     Rincon High School in 1961 & went on to The University of Arizona with a \
     double major in History & Oriental Studies.  \n\nIn the summer of 1963 he \
     completed USMC’s Platoon Leader’s course at Quantico, VA. His senior year \
@@ -929,8 +1172,8 @@ Second Lieutenant Eckenrode is honored on the Vietnam \
   },
   {
     photo: "/assets/images/04-pearson-tom.png",
-    name: "Pearson, Tom",
-    date: "23 Jan 1968",
+    name: "Pearson, Thomas Rickard Jr. (Tom)",
+    date: "20 June 1945 - 23 January 1968",
     restingPlace: "Fort Rosecrans Nat'l Cem, SD CA",
     platoon: "4th",
     bio: 'Second Lieutenant Thomas Rickard Pearson Jr. of San Diego, CA was \
@@ -947,8 +1190,8 @@ Second Lieutenant Eckenrode is honored on the Vietnam \
   },
   {
     photo: "/assets/images/04-ranstead-terry.png",
-    name: "Ranstead, Terry",
-    date: "22 Jan 1968",
+    name: "Ranstead, James Terrance (Terry)",
+    date: "29 January 1943 - 22 January 1968",
     restingPlace: "Fairview Cem, Vinita, OK",
     platoon: "4th",
     bio:'Second Lieutenant James Terry Ranstead from Miami, Oklahoma was \
@@ -958,7 +1201,8 @@ Second Lieutenant Eckenrode is honored on the Vietnam \
     His service occupation was Basic Infantry Officer. On January 22, 1968 \
     James was on a combat patrol when a mine was tripped killing him, \
     5 kilometers south southeast of Tuy Loan Bridge in or around South Vietnam, \
-    Quang Nam province.  He earned the following awards:  \n\n\
+    Quang Nam province.  \n\nSecond Lieutenant Ranstead and his wife, Damla Jean \
+    Ranstead have two children: Terry and Cheri.  Ranstead earned the following decorations:  \n\n\
 -   National Defense Service Medal  \n\
 -   Combat Infantryman Badge  \n\
 -   Purple Heart  \n\
@@ -973,7 +1217,8 @@ VVM Wall, Panel 35e, Line 11.',
     His service occupation was Basic Infantry Officer. On January 22, 1968 \
     James was on a combat patrol when a mine was tripped killing him, \
     5 kilometers south southeast of Tuy Loan Bridge in or around South Vietnam, \
-    Quang Nam province.  He earned the following awards:  \n\n\
+    Quang Nam province.  \n\nSecond Lieutenant Ranstead and his wife, Damla Jean \
+    Ranstead have two children: Terry and Cheri.  Ranstead earned the following decorations:  \n\n\
 -   National Defense Service Medal  \n\
 -   Combat Infantryman Badge  \n\
 -   Purple Heart  \n\
@@ -985,8 +1230,8 @@ Second Lieutenant Ranstead is honored on the Vietnam Veteran\'s Memorial, \
   },
   {
     photo: "/assets/images/04-ross-gray.png",
-    name: "Ross, Gray",
-    date: "15 Jun 1968",
+    name: "Ross, William Gray (Gray)",
+    date: "11 October 1945 - 15 June 1968",
     restingPlace: "Fort Donelson Nat'l Cemetery, TN",
     platoon: "4th",
     bio: 'Second Lieutenant William Gray Ross from Big Rock, Tennessee. \
@@ -996,7 +1241,7 @@ Second Lieutenant Ranstead is honored on the Vietnam Veteran\'s Memorial, \
     I Company. Service occupation of Infantry Officer. Second Lieutenant Ross died on June 15, \
     1968 at the age of 23 in or around Quang Nam in South Vietnam.  \
     Circumstances of his death are attributed to .. "Died through hostile \
-    action". He earned the following awards:  \n\n\
+    action". He earned the following decorations:  \n\n\
 -   National Defense Service Medal  \n\
 -   Combat Infantryman Badge  \n\
 -   Purple Heart  \n\
@@ -1011,7 +1256,7 @@ Second Lieutenant Ross is honored on the Vietnam Veteran\'s Memorial, \
     I Company. Service occupation of Infantry Officer. Second Lieutenant Ross died on June 15, \
     1968 at the age of 23 in or around Quang Nam in South Vietnam.  \
     Circumstances of his death are attributed to .. "Died through hostile \
-    action". He earned the following awards:  \n\n\
+    action". He earned the following decorations:  \n\n\
 -   National Defense Service Medal  \n\
 -   Combat Infantryman Badge  \n\
 -   Purple Heart  \n\
@@ -1023,12 +1268,14 @@ Second Lieutenant Ross is honored on the Vietnam Veteran\'s Memorial, \
   },
   {
     photo: "/assets/images/04-belser-joe.png",
-    name: "Belser, Joe",
-    date: "15 Oct 1989",
+    name: "Belser, Joseph Henry Jr. (Joe)",
+    date: "15 March 1945 - 15 October 1989",
     restingPlace: "Greenlawn Mem Park, W Columbia, SC",
     platoon: "4th",
-    bio: 'First Lieutenant Joseph H. Belser, Jr. was awarded a  silver star \
-    for gallantry in action during the vietnam war.  \n  \n*"The President of the United States of \
+    bio: 'Captain Joseph H. Belser, Jr. was awarded a Silver Star, \
+    Bronze Star, and five Purple Hearts during his career with the Marines. \
+    Captain Belser also lost his right leg just below \
+    the knee.  Following is the excerpt for his Silver Star. \n  \n*"The President of the United States of \
     America takes pleasure in presenting the Silver Star to First Lieutenant \
     Joseph H. Belser, Jr. (MCSN: 0-101738), United States Marine Corps, \
     for conspicuous gallantry and intrepidity in action while serving as a \
@@ -1061,8 +1308,10 @@ Second Lieutenant Ross is honored on the Vietnam Veteran\'s Memorial, \
     personal risk, First Lieutenant Belser inspired all who observed him and \
     upheld the highest traditions of the Marine Corps and of the United States \
     Naval Service."*',
-    bioHtml: markdown.toHTML('First Lieutenant Joseph H. Belser, Jr. was awarded a  silver star \
-    for gallantry in action during the vietnam war.  \n  \n*"The President of the United States of \
+    bioHtml: markdown.toHTML('Captain Joseph H. Belser, Jr. was awarded a Silver Star, \
+    Bronze Star, and five Purple Hearts during his career with the Marines. \
+    Captain Belser also lost his right leg just below \
+    the knee.  Following is the excerpt for his Silver Star. \n  \n*"The President of the United States of \
     America takes pleasure in presenting the Silver Star to First Lieutenant \
     Joseph H. Belser, Jr. (MCSN: 0-101738), United States Marine Corps, \
     for conspicuous gallantry and intrepidity in action while serving as a \
@@ -1098,8 +1347,8 @@ Second Lieutenant Ross is honored on the Vietnam Veteran\'s Memorial, \
   },
   {
     photo: "/assets/images/04-moran-donald.png",
-    name: "Moran, Donald",
-    date: "25 Jun 2007",
+    name: "Moran, Donald Martin (Donald)",
+    date: "16 September 1944 - 25 June 2007",
     restingPlace: "Ft Snelling Nat'l Cem, MN",
     platoon: "4th",
     bio: 'Captain Donald Martin Moran, age 62, of Burnsville, MN was born on \
@@ -1146,22 +1395,43 @@ Second Lieutenant Ross is honored on the Vietnam Veteran\'s Memorial, \
   },
   {
     photo: "/assets/images/04-neal-rich.png",
-    name: "Neal, Rich",
-    date: "30 Jul 2001",
+    name: "Neal, Richard Oren (Rich)",
+    date: "10 April 1945 - 30 July 2001",
     restingPlace: "Bayview Memor Park, FL",
-    platoon: "4th"
+    platoon: "4th",
+    bio: 'Lieutenant Colonel Richard Oren Neal of Rockville, MD served \
+    in the Marine Corps from June 10, 1967 until September 30, 1990.  \
+    He and his wife, Sharon have two Children: Patrick and Meghan.  \
+    Lieutenant Col. Neal earned a Bachelor of electrical engineering from \
+    the Georgia Institute of Technology and a Master of Science in Operations \
+    Research at the Naval Postgraduate School in Monterey, CA.  \
+    Lt. Col Neal passed away on July 30 2001.',
+    bioHtml: markdown.toHTML('Lieutenant Colonel Richard Oren Neal of Rockville, MD served \
+    in the Marine Corps from June 10, 1967 until September 30, 1990.  \
+    He and his wife, Sharon have two Children: Patrick and Meghan.  \
+    Lieutenant Col. Neal earned a Bachelor of electrical engineering from \
+    the Georgia Institute of Technology and a Master of Science in Operations \
+    Research at the Naval Postgraduate School in Monterey, CA.  \
+    Lt. Col Neal passed away on July 30 2001.')
+
   },
   {
     photo: "/assets/images/04-pfeiffer-george.png",
-    name: "Pfeiffer, George",
-    date: "14 Nov 1998",
+    name: "Pfeiffer, George Martin Jr. (George)",
+    date: "25 June 1943 - 14 November 1998",
     restingPlace: "Plano Mutual Cemetery, TX",
-    platoon: "4th"
+    platoon: "4th",
+    bio: 'Captain George Martin Pfeiffer Jr. of Felton, Delaware was married \
+    to Mary Ennis Pfeiffer on June 3, 1966.  They lived in Plano, Texas \
+    when he passed away on November 14, 1998.',
+    bioHtml: markdown.toHTML('Captain George Martin Pfeiffer Jr. of Felton, Delaware was married \
+      to Mary Ennis Pfeiffer on June 3, 1966.  They lived in Plano, Texas \
+      when he passed away on November 14, 1998.')
   },
   {
     photo: "/assets/images/04-radcliffe-harry.png",
-    name: "Radcliffe, Harry",
-    date: "08 Jun 2013",
+    name: "Radcliffe, Harry Quinten (Harry)",
+    date: "22 May 1945 - 8 June 2013",
     restingPlace: "Beachwood Cem, MI",
     platoon: "4th",
     bio: 'Harry Quentin Radcliffe is the beloved husband of Nancy (Dozier) \
@@ -1226,8 +1496,8 @@ Second Lieutenant Ross is honored on the Vietnam Veteran\'s Memorial, \
   // 5th Platoon
   {
     photo: "/assets/images/05-spindler-john.png",
-    name: "Spindler, John",
-    date: "21 Apr 1968",
+    name: "Spindler, John Gates (John)",
+    date: "1 February 1946 - 21 April 1968",
     restingPlace: "Courts of the MIssing, MIA Mem, HI",
     platoon: "5th",
     bio: 'Second Lieutenant John Gates Spindler was born on February 1, 1946 \
@@ -1258,12 +1528,12 @@ Second Lieutenant Ross is honored on the Vietnam Veteran\'s Memorial, \
   },
   {
     photo: "/assets/images/05-sandberg-mike.png",
-    name: "Sandberg, Michael",
-    date: "03 Nov 1973",
+    name: "Sandberg, Michael Bruce (Mike)",
+    date: "5 August 1945 - 3 November 1973",
     restingPlace: "unk: last residence, U of A Tucson, AZ",
     platoon: "5th",
     bio: 'Captain Michael Bruce Sandberg was born on August 5, 1945 in \
-    Watonwan County, Minnesota.  He married Patricia Mays on Jun 1971 in \
+    Watonwan County, Minnesota.  He married Patricia Mays on June 1971 in \
     Kaneohe, Oahu, Hawaii, daughter of Roderick Ainsworth Mays and Dorothy \
     Ellen Perkins. They were married in a military ceremony at Kaneohe, \
     Marine Corps Air Station on Oahu. There was a reception at the officers \
@@ -1286,15 +1556,25 @@ Second Lieutenant Ross is honored on the Vietnam Veteran\'s Memorial, \
   },
   {
     photo: "/assets/images/05-sergo-dick.png",
-    name: "Sergo, Dick",
-    date: "08 Nov 2001",
+    name: "Sergo, Richard A (Dick)",
+    date: "20 March 1944 - 8 November 2001",
     restingPlace: "Arlington Nat'l Cem, VA",
-    platoon: "5th"
+    platoon: "5th",
+    bio: 'Second Lieutenant Richard A. Sergo of Lyons Illinois earned two \
+    purple hearts during his career with the Marine Corps.  \
+    He graduated from Fenwick High in the Chicago and had a successful \
+    career in the computer industry.  2nd Lt. Sergo passed away on \
+    November 8, 2001 while living in Florida.',
+    bioHtml: markdown.toHTML('Second Lieutenant Richard A. Sergo of Lyons Illinois earned two \
+    purple hearts during his career with the Marine Corps.  \
+    He graduated from Fenwick High in the Chicago and had a successful \
+    career in the computer industry.  2nd Lt. Sergo passed away on \
+    November 8, 2001 while living in Florida.')
   },
   {
     photo: "/assets/images/05-stjohn-larry.png",
-    name: "St. John, Larry",
-    date: "05 Dec 2011",
+    name: "St. John, Larry David (Larry)",
+    date: "2 September 1941 - 5 December 2011",
     restingPlace: "CCre: Mem Serv VFW Post 8207, FL",
     platoon: "5th",
     bio: 'Larry David St. John of Longwood, FL was born in Shelby, OH on \
@@ -1324,31 +1604,131 @@ Second Lieutenant Ross is honored on the Vietnam Veteran\'s Memorial, \
   },
   {
     photo: "/assets/images/05-tritsch-john.png",
-    name: "Tritsch, John",
-    date: "03 Nov 1992",
+    name: "Tritsch, John B (John)",
+    date: "21 August 1945 - 3 November 1992",
     restingPlace: "Arlington Nat'l Cem, VA",
-    platoon: "5th"
+    platoon: "5th",
+    bio: 'Second Lieutenant John B. Tritsch of Hockessin, Delaware was the \
+    only son in a large family.  After serving with the Marines, John earned \
+    went on to earn an MBA from Wharton.  He lived in New York and worked \
+    with a large accounting firm.  John passed away November 3, 1992 \
+    at the age of 47.',
+    bioHtml: markdown.toHTML('Second Lieutenant John B. Tritsch of Hockessin, Delaware was the \
+    only son in a large family.  After serving with the Marines, John earned \
+    went on to earn an MBA from Wharton.  He lived in New York and worked \
+    with a large accounting firm.  John passed away November 3, 1992 \
+    at the age of 47.')
   },
   {
     photo: "/assets/images/05-ulrich-carl.png",
-    name: "Ulrich, Carl",
-    date: "10 Dec 2010",
+    name: "Ulrich, Carl William (Carl)",
+    date: "20 September 1944 - 10 December 2010",
     restingPlace: "unk: Belmont United Met Ch, Richmond",
-    platoon: "5th"
+    platoon: "5th",
+    bio: 'Second Lieutenant Carl William Ulrich of Richmond, Va., was born September 30, \
+    1944, in Mount Vernon, N.Y., to Carl A. and Alice B. Ulrich, and he \
+    attended schools in Bethesda and Annapolis, Md. His stepparents, Dorothy M. \
+    Ulrich and Charles W. Winter, each played an influential role in his \
+    early life. He attended Rice University in Houston, Texas, on an \
+    NROTC scholarship and served in Vietnam as an officer of the U.S. Marine \
+    Corps. He received a law degree from Georgetown University and proceeded \
+    to work in energy law for almost three decades. In addition to being a \
+    member of the D.C., Texas and Virginia state bars, Carl was a member of \
+    the Public Utilities Section of the American Bar Association. He served \
+    as both chairman and vice-chairman of the Legal Ethics Committee of the \
+    Energy Bar Association. He also provided pro bono legal counsel to the \
+    Chesapeake Bay Foundation to defend the health of his beloved Chesapeake \
+    Bay. Carl entered Wesley Theological Seminary in 1999 to prepare for a \
+    second career as a Methodist minister. He was ordained an elder of the \
+    United Methodist Church in 2005. He served as minister of Accotink UMC \
+    in Fort Belvoir, Silverbrook UMC in Lorton, Central UMC in Mathews, \
+    and Belmont UMC in Richmond. He was very active in the conference and \
+    served on the boards of the Society of Wesleyan Studies and the \
+    Virginia United Methodist Foundation.  \n\nCarl and his wife, Christine \
+    R. Ulrich of Richmond, Va. had two daughters, Susanna V. and Catherine \
+    L. Ulrich; a grandson, Cassius Corey; two sons-in-law, David Corey \
+    and Pawel Nazarewicz; two stepsisters, Juliette "Archie" \
+    Cooper and Helga Reaves. He was preceded in death by his father, \
+    Carl A. Ulrich; and his mother, Alice B. Hamilton.',
+    bioHtml: markdown.toHTML('Second Lieutenant Carl William Ulrich of Richmond, Va., was born September 30, \
+    1944, in Mount Vernon, N.Y., to Carl A. and Alice B. Ulrich, and he \
+    attended schools in Bethesda and Annapolis, Md. His stepparents, Dorothy M. \
+    Ulrich and Charles W. Winter, each played an influential role in his \
+    early life. He attended Rice University in Houston, Texas, on an \
+    NROTC scholarship and served in Vietnam as an officer of the U.S. Marine \
+    Corps. He received a law degree from Georgetown University and proceeded \
+    to work in energy law for almost three decades. In addition to being a \
+    member of the D.C., Texas and Virginia state bars, Carl was a member of \
+    the Public Utilities Section of the American Bar Association. He served \
+    as both chairman and vice-chairman of the Legal Ethics Committee of the \
+    Energy Bar Association. He also provided pro bono legal counsel to the \
+    Chesapeake Bay Foundation to defend the health of his beloved Chesapeake \
+    Bay. Carl entered Wesley Theological Seminary in 1999 to prepare for a \
+    second career as a Methodist minister. He was ordained an elder of the \
+    United Methodist Church in 2005. He served as minister of Accotink UMC \
+    in Fort Belvoir, Silverbrook UMC in Lorton, Central UMC in Mathews, \
+    and Belmont UMC in Richmond. He was very active in the conference and \
+    served on the boards of the Society of Wesleyan Studies and the \
+    Virginia United Methodist Foundation.  \n\nCarl and his wife, Christine \
+    R. Ulrich of Richmond, Va. have two daughters, Susanna V. and Catherine \
+    L. Ulrich; a grandson, Cassius Corey; two sons-in-law, David Corey \
+    and Pawel Nazarewicz; two stepsisters, Juliette "Archie" \
+    Cooper and Helga Reaves. He was preceded in death by his father, \
+    Carl A. Ulrich; and his mother, Alice B. Hamilton.'),
+    bioPhoto: "/assets/images/05-ulrich-carl2.jpg"
   },
   {
     photo: "/assets/images/05-wilbur-dave.png",
-    name: "Wilbur, Dave",
-    date: "21 Apr 2001",
+    name: "Wilbur, David E (Dave)",
+    date: "28 September 1944 - 21 April 2001",
     restingPlace: "unk: Hometown - Claremont, NH",
-    platoon: "5th"
+    platoon: "5th",
+    bio: 'Captain David E. Wilbur of Claremont, New Hampshire was born on \
+    September 28, 1994 and passed away on April 21, 2001.',
+    bioHtml: markdown.toHTML('Captain David E. Wilbur of Claremont, New Hampshire was born on \
+    September 28, 1994 and passed away on April 21, 2001.')
   },
   {
-    photo: "/assets/images/no-photo.png",
-    name: "Wright, Hank",
-    date: "06 Feb 1968",
+    photo: "/assets/images/05-wright-hank.jpg",
+    name: "Wright, Henry Arthur (Hank)",
+    date: "9 June 1946 - 06 February 1968",
     restingPlace: "Mountain View Cem, CA",
-    platoon: "5th"
+    platoon: "5th",
+    bio: 'Second Lieutenant Henry Arthur Wright of Oakland, California \
+    was a platoon commander in Delta Company, 1/7. He died on 6 February 1968 \
+    during an enemy attack on the Combined Action Platoon B-4 that \
+    was located 3 kilometers south of the Tuy Loan bridge in Quang Nam Province \
+    in South Vietnam.  Marine 2nd Lt. Henry A. Wright of Oakland was \
+    awarded a posthumous Bronze Star Medal for valor for the Feb 6 action \
+    which cost him his life in Vietnam.  His parents, Mr. and Mrs. Roy E. \
+    Wright, 2932 Nicol Ave, received the medal from Col. Donald Kennedy, \
+    director of the 12th Marine Corps District Headquarters in San Francisco. \
+    Second Lieutenant Wright earned the following decorations:  \n\n\
+    -   National Defense Service Medal  \n\
+    -   Combat Infantryman Badge  \n\
+    -   Purple Heart  \n\
+    -   Vietnam Campaign Medal  \n\
+    -   Vietnam Service Medal  \n\n\
+    Second Lieutenant Wright is honored on the Vietnam Veteran\'s Memorial, \
+    VVM Wall, Panel 37e, Line 76',
+    bioHtml: markdown.toHTML('Second Lieutenant Henry Arthur Wright of Oakland, California \
+    was a platoon commander in Delta Company, 1/7. He died on 6 February 1968 \
+    during an enemy attack on the Combined Action Platoon B-4 that \
+    was located 3 kilometers south of the Tuy Loan bridge in Quang Nam Province \
+    in South Vietnam.  Marine 2nd Lt. Henry A. Wright of Oakland was \
+    awarded a posthumous Bronze Star Medal for valor for the Feb 6 action \
+    which cost him his life in Vietnam.  His parents, Mr. and Mrs. Roy E. \
+    Wright, 2932 Nicol Ave, received the medal from Col. Donald Kennedy, \
+    director of the 12th Marine Corps District Headquarters in San Francisco. \
+    Second Lieutenant Wright earned the following decorations:  \n\n\
+-   National Defense Service Medal  \n\
+-   Combat Infantryman Badge  \n\
+-   Purple Heart  \n\
+-   Vietnam Campaign Medal  \n\
+-   Vietnam Service Medal  \n\n\
+Second Lieutenant Wright is honored on the Vietnam Veteran\'s Memorial, \
+    VVM Wall, Panel 37e, Line 76'),
+    bioPhoto: "/assets/images/05-wright-hank2.jpg"
   }
 
 

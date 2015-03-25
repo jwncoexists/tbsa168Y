@@ -103,16 +103,15 @@ angular.module('tbsa168App')
       incrementLoginCnt: function(callback) {
         var user = currentUser;
         var cb = callback || angular.noop;
-        var loginCnt = user.loginCnt || 0;
+
 
         if (user) {
-          if (!user.loginCnt) {
-            user.loginCnt = 0;
-          };
-          user.loginCnt ++;
-          $http.put("api/users/" + user._id +"/logincnt", {loginCnt: user.loginCnt}).
+          console.log("cur login cnt: ", user.loginCnt);
+          var loginCnt = user.loginCnt || 0;
+          loginCnt += 1;
+          $http.put("api/users/" + user._id +"/logincnt", {loginCnt: loginCnt}).
           success(function() {
-            console.log('successfully incremented loginCnt');
+            console.log('successfully incremented loginCnt to:', loginCnt);
             return cb(user);
           }).
           error(function() {

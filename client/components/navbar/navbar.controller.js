@@ -10,6 +10,11 @@ angular.module('tbsa168App')
       'membersOnly': false
     },
     {
+      'title': 'REGISTER FOR REUNION',
+      'link': 'http://tbs1-68usmc.com/reunion-signup.html',
+      'membersOnly': true
+    },
+    {
       'title': 'PHOTOS',
       'link': '/photos',
       'membersOnly': true

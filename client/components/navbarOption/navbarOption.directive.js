@@ -14,7 +14,7 @@ app.directive('navbarOption', ['$location', 'Auth', function ($location, Auth) {
         $scope.clickIt = function(nextLink) {
           if(nextLink.indexOf('http') > -1) {
             window.open(nextLink, "newwindow", "width=400, height=400");
-            toastr.info('Classmate Map opened in a separate browser window.');
+            toastr.info( 'You request was opened in separate browser window.');
           } else {
             $location.path(nextLink);
           }

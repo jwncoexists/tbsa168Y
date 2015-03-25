@@ -1608,16 +1608,40 @@ Second Lieutenant Ross is honored on the Vietnam Veteran\'s Memorial, \
     date: "21 August 1945 - 3 November 1992",
     restingPlace: "Arlington Nat'l Cem, VA",
     platoon: "5th",
-    bio: 'Second Lieutenant John B. Tritsch of Hockessin, Delaware was the \
-    only son in a large family.  After serving with the Marines, John earned \
-    went on to earn an MBA from Wharton.  He lived in New York and worked \
-    with a large accounting firm.  John passed away November 3, 1992 \
-    at the age of 47.',
-    bioHtml: markdown.toHTML('Second Lieutenant John B. Tritsch of Hockessin, Delaware was the \
-    only son in a large family.  After serving with the Marines, John earned \
-    went on to earn an MBA from Wharton.  He lived in New York and worked \
-    with a large accounting firm.  John passed away November 3, 1992 \
-    at the age of 47.')
+    bio: "Our dear classmate John Ballou Tritsch died Nov. 3, 1992, of heart disease \
+    in Narberth, Penn. While at Princeton, John was commander of the navy \
+    R.O.T.C. drill team and a member of Elm Club. Following graduation, he was \
+    commissioned as a second lieutenant in the marines and served in Vietnam. \
+    John was severely wounded in combat and sustained shrapnel wounds over most \
+    of his body. He spent many months in a hospital in Japan until he could \
+    return to the U.S., where he spent another six months in an Annapolis hospital. \
+    Upon his recovery, he went to interrogators' school and language school, and was \
+    honorably discharged in 1975 with the rank of captain. John then went on \
+    to receive a master's degree from the Wharton School and became a C.P.A. \
+    while working with Arthur Young. He also worked with FMC, CertainTeed, \
+    Sperry Univac, and Movie Exchange, before starting his own business, \
+    Cornerstone Business Solutions, which specialized in designing computer \
+    business systems. John was interred at Arlington Cemetery with full \
+    military honors. He is survived by his mother, Grace B.; father, John G. '42; \
+    and five Sisters, Grace Dehel, Catherine Olsen, Jean Baskin, Irene Grubb, \
+    and Margaret McNulty.",
+    bioHtml: markdown.toHTML("Our dear classmate John Ballou Tritsch died \
+    Nov. 3, 1992, of heart disease in Narberth, Penn. While at Princeton, \
+    John was commander of the navy R.O.T.C. drill team and a member of Elm Club. \
+    Following graduation, he was commissioned as a second lieutenant in the marines \
+    and served in Vietnam. \n\nJohn was severely wounded in combat and sustained \
+    shrapnel wounds over most of his body. He spent many months in a hospital \
+    in Japan until he could return to the U.S., where he spent another six months \
+    in an Annapolis hospital. Upon his recovery, he went to interrogators' \
+    school and language school, and was honorably discharged in 1975 with the \
+    rank of captain. John then went on to receive a master's degree \
+    from the Wharton School and became a C.P.A. while working with Arthur Young. \
+    He also worked with FMC, CertainTeed, Sperry Univac, and Movie Exchange, \
+    before starting his own business, Cornerstone Business Solutions, which \
+    specialized in designing computer business systems. John was interred \
+    at Arlington Cemetery with full military honors. He is survived by his mother, \
+    Grace B.; father, John G. '42; and five Sisters, Grace Dehel, Catherine Olsen, \
+    Jean Baskin, Irene Grubb, and Margaret McNulty.")
   },
   {
     photo: "/assets/images/05-ulrich-carl.png",

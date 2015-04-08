@@ -19,6 +19,12 @@ label {
   // width: 90%;
   // margin-left: 40px;
 }
+.edit-person {
+  &:hover {
+    cursor: pointer;
+    color: mediumblue;
+  }
+}
 .image-col {
   width: 75px;
   img {

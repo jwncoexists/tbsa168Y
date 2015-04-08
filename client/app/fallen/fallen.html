@@ -57,7 +57,14 @@
     <tr ng-repeat="person in fallenList | filter:fallen.filterStr" class="person">
       <td class="image-col"><img ng-src="{{ person.photo }}" /></td>
       <td class="info-col">
-        <strong>{{ person.name }}, {{ person.platoon }} Platoon</strong><br>
+        <span ng-show="!isAdmin()">
+          <strong>{{ person.name }}, {{ person.platoon }} Platoon</strong>
+        </span>
+        <span class="edit-person" ng-show="isAdmin()" ng-click="editPerson($index)">
+          <strong>{{ person.name }}, {{ person.platoon }} Platoon</strong>
+          <span class="fa fa-pencil"></span>
+        </span>
+        <br>
         {{ person.date }}<br>
         {{ person.restingPlace}}
         <br><br>

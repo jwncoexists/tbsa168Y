@@ -28,6 +28,6 @@ app.controller('FallenIdCtrl', ['$scope', 'Auth', 'TbsData', '$stateParams', '$l
       });
     };
     $scope.cancel = function() {
-      location.path('/fallen');
+      $location.path('/fallen');
     };
   }]);

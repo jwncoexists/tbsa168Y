@@ -51,16 +51,16 @@
   </div>
   <div class="form-group fallen-filter">
     <label for="fallen-input">Find: </label>
-    <input type="text" id="fallen-input" placeholder="Enter search critera such as name or platoon" class="fallen-input" data-ng-model="fallen.filterStr" />
+    <input type="text" id="fallen-input" placeholder="Enter search critera such as name or platoon, e.g. 1st" class="fallen-input" data-ng-model="fallen.filterStr" />
   </div>
   <table class="table table-bordered person-table">
-    <tr ng-repeat="person in fallenList | filter:fallen.filterStr" class="person">
+    <tr ng-repeat="person in fallenList | filter:filterList" class="person">
       <td class="image-col"><img ng-src="{{ person.photo }}" /></td>
       <td class="info-col">
         <span ng-show="!isAdmin()">
           <strong>{{ person.name }}, {{ person.platoon }} Platoon</strong>
         </span>
-        <span class="edit-person" ng-show="isAdmin()" ng-click="editPerson($index)">
+        <span class="edit-person" ng-show="isAdmin()" ng-click="editPerson(person._id)">
           <strong>{{ person.name }}, {{ person.platoon }} Platoon</strong>
           <span class="fa fa-pencil"></span>
         </span>

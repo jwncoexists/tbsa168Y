@@ -22,9 +22,7 @@ app.service('TbsData', ['$http', function ($http) {
 
       // update a person
       updatePerson: function(person, callback) {
-        console.log('TbsData.updatePerson');
         $http.put('/api/persons/' + person._id, person).success(function(data) {
-          console.log('successfully updated person');
           callback(data);
         });
       }

@@ -68,8 +68,10 @@
         {{ person.date }}<br>
         {{ person.restingPlace}}
         <br><br>
-        <img ng-src="{{person.bioPhoto}}" ng-show="person.bioPhoto">
-        <span ng-bind-html="person.bioHtml"></span>
+        <img ng-src="{{person.bioPhoto}}" ng-show="person.bioPhoto && displayFull[person._id]">
+        <span ng-bind-html="getBio(person)"></span>
+        <span class="show-less" ng-show="showLessLink(person)" ng-click="toggleMore(person._id)"><strong> [show less]</strong></span>
+        <span class="show-more" ng-show="showMoreLink(person)" ng-click="toggleMore(person._id)"><strong> [...show more]</strong></span>
       </td>
     </tr>
   </table>

@@ -32,6 +32,21 @@ label {
     float:left;
   }
 }
+
+.show-more {
+  // color: #8590C6;
+  color: #A25193;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.show-less {
+  // color: #8590C6;
+  color: #A25193;
+  &:hover {
+    cursor: pointer;
+  }
+}
 .info-col {
   img {
     float: right;

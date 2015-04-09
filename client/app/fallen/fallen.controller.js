@@ -8,19 +8,35 @@ app.controller('FallenCtrl', ['$scope', 'Auth', 'TbsData', '$location',
     $scope.isAdmin= Auth.isAdmin;
     $scope.fallen = {};
     $scope.fallen.filterStr = "";
+    $scope.displayFull = {};
     $scope.fallenList = [];
+    var minBioChars = 450;
     TbsData.getPersons( function(data) {
       $scope.fallenList = data;
-      console.log('fallenList =', $scope.fallenList);
+      // turn off full display for everyone to start
+      for (var i=0; i < $scope.fallenList.length; i++) {
+        $scope.displayFull[$scope.fallenList[i]._id] = false;
+      }
+
     });
     $scope.editPerson = function(id) {
       // go to the edit fallen form
       $location.path('/fallen/' + id);
     }
+    $scope.toggleMore = function(id) {
+      console.log('toggling more, id =', id);
+      $scope.apply($scope.displayFull[id] = !$scope.displayFull[id]);
+    }
+    $scope.showMoreLink = function(person) {
+      return ((person.bioHtml.length > minBioChars) &&
+             ($scope.displayFull[person._id] === false));
+    }
+    $scope.showLessLink = function(person) {
+      return ((person.bioHtml.length > minBioChars) &&
+             ($scope.displayFull[person._id] === true));
+    }
     $scope.filterList = function(person) {
-      console.log ('filterList, filterStr, person:', $scope.fallen.filterStr, person);
       if (!$scope.fallen.filterStr || $scope.fallen.filterStr === "") {
-        console.log('returning true');
         return true;
       }
       var filter = $scope.fallen.filterStr.toLowerCase();
@@ -35,6 +51,18 @@ app.controller('FallenCtrl', ['$scope', 'Auth', 'TbsData', '$location',
            return true;
       } else {
         return false;
+      }
+    }
+    $scope.getBio = function(person) {
+      if ($scope.displayFull[person._id] || person.bioHtml.length <= minBioChars) {
+        return person.bioHtml;
+      } else {
+        // shorten bio and strip out HTML tags so won't mess up display
+        var shortenedBio = person.bioHtml.slice(0,minBioChars);
+        var strippedBio = shortenedBio.replace(/(<([^>]+)>)/ig,"");
+        strippedBio = strippedBio.replace(/[<>\/]/ig,"");
+        // strippedBio = strippedBio.replace(/>/ig,"");
+        return strippedBio;
       }
     }
 

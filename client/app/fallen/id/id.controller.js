@@ -19,6 +19,7 @@ app.controller('FallenIdCtrl', ['$scope', 'Auth', 'TbsData', '$stateParams', '$l
       $scope.person.bioHtml = data.bioHtml;
       $scope.person.bio = data.bio;
       $scope.person.bioPhoto  = data.bioPhoto;
+      $scope.person.bioPhoto2  = data.bioPhoto2;
     });
     $scope.submit = function() {
       console.log('$scope.submit');

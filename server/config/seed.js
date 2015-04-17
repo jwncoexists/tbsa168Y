@@ -1,6 +1,6 @@
 /**
  * Populate DB with sample data on server start
- * to disable, edit config/environment/index.js, and set `seedDB: false`
+ * to disable, edit config/environment/index.js, and set `DB: false`
  */
 
 'use strict';
@@ -846,7 +846,7 @@ var markdown = require( "markdown" ).markdown;
 //     and inspired those around him with his encouraging words and gratitude to \
 //     God for all good things. While friends and family of Bob mourn his passing, \
 //     his death is anything but sad for the trout of Northern Maryland and pesky \
-//     squirrels impertinent enough to attempt to pilfer Nancy\'s bird seed. \
+//     squirrels impertinent enough to attempt to pilfer Nancy\'s bird . \
 //     Bob was born in Northville, Michigan in 1944. He earned his BA degree \
 //     from the University of New Mexico in 1967 and his MBA from Syracuse \
 //     University in 1975. He retired as a Colonel from the U.S. Marine Corps \
@@ -877,7 +877,7 @@ var markdown = require( "markdown" ).markdown;
 //     and inspired those around him with his encouraging words and gratitude to \
 //     God for all good things. While friends and family of Bob mourn his passing, \
 //     his death is anything but sad for the trout of Northern Maryland and pesky \
-//     squirrels impertinent enough to attempt to pilfer Nancy\'s bird seed. \
+//     squirrels impertinent enough to attempt to pilfer Nancy\'s bird . \
 //     Bob was born in Northville, Michigan in 1944. He earned his BA degree \
 //     from the University of New Mexico in 1967 and his MBA from Syracuse \
 //     University in 1975. He retired as a Colonel from the U.S. Marine Corps \
@@ -1754,10 +1754,10 @@ var markdown = require( "markdown" ).markdown;
 //     VVM Wall, Panel 37e, Line 76'),
 //     bioPhoto: "/assets/images/05-wright-hank2.jpg"
 //   }
-//
-//
-//   );
-// });
+
+
+  );
+});
 
 // Thing.find({}).remove(function() {
 //   Thing.create({

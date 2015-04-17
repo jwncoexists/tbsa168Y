@@ -9,6 +9,7 @@ angular.module('tbsa168App')
      * @return {Object}            - the instance $modal.open() returns
      */
     function openModal(scope, modalClass) {
+      console.log('Modal factory, openModal');
       var modalScope = $rootScope.$new();
       scope = scope || {};
       modalClass = modalClass || 'modal-default';
@@ -34,6 +35,7 @@ angular.module('tbsa168App')
          * @return {Function}     - the function to open the modal (ex. myModalFn)
          */
         delete: function(del) {
+          console.log('modal factory delete');
           del = del || angular.noop;
 
           /**
@@ -72,6 +74,34 @@ angular.module('tbsa168App')
             });
           };
         }
+      },  // confirm
+      add: function(reflectionBody) {
+        var addModal = openModal({
+          modal: {
+            dismissable: true,
+            title: 'Add a Reflection',
+            getInput: 'true',
+            buttons: [{
+              classes: 'btn-success',
+              text: 'Add',
+              click: function(e) {
+                addModal.close(e);
+              }
+            }, {
+              classes: 'btn-default',
+              text: 'Cancel',
+              click: function(e) {
+                addModal.dismiss(e);
+              }
+            }]
+          }
+        }, 'modal-default');
+
+        addModal.result.then(function(event) {
+          console.log('add modal result, event =', event);
+          // del.apply(event, args);
+        });
+
       }
     };
   });

@@ -33,25 +33,29 @@ label {
   }
 }
 
-.show-more {
+.show-more, .show-less, .add-reflection-link {
   color: mediumblue;
   // color: #A25193;
   &:hover {
     cursor: pointer;
   }
 }
-.show-less {
-  color: mediumblue;
-  // color: #A25193;
-  &:hover {
-    cursor: pointer;
-  }
-}
+// .show-less {
+//   color: mediumblue;
+//   // color: #A25193;
+//   &:hover {
+//     cursor: pointer;
+//   }
+// }
 .info-col {
-  img {
-    float: right;
-    margin-left: 10px;
-    border: 1px solid black;
+  .bio-photos {
+    img {
+      float: right;
+      clear: right;
+      margin-left: 10px;
+      margin-bottom: 10px;
+      border: 1px solid black;
+    }
   }
 }
 .fallen-filter {

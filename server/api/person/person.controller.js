@@ -51,8 +51,6 @@ exports.update = function(req, res) {
     if (err) { return handleError(res, err); }
     if(!person) { return res.send(404); }
     var updated = _.merge(person, req.body);
-    console.log('updated req.body= ', req.body);
-    console.log('updated = ', updated);
     // convert markdown to HTML
     if (updated.bio) {
       updated.bioHtml = markdown.toHTML(updated.bio);

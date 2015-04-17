@@ -2,14 +2,17 @@
 
 var app = angular.module('tbsa168App');
 
-app.controller('FallenCtrl', ['$scope', 'Auth', 'TbsData', '$location',
-  function ($scope, Auth, TbsData, $location)  {
+app.controller('FallenCtrl', ['$scope', 'Auth', 'TbsData', '$location', 'Modal',
+  function ($scope, Auth, TbsData, $location, Modal)  {
     $scope.isLoggedIn = Auth.isLoggedIn;
     $scope.isAdmin= Auth.isAdmin;
     $scope.fallen = {};
     $scope.fallen.filterStr = "";
     $scope.displayFull = {};
     $scope.fallenList = [];
+    $scope.showModal = false;
+    $scope.reflection = {};
+    $scope.reflectionBody = "";
     var minBioChars = 450;
     TbsData.getPersons( function(data) {
       $scope.fallenList = data;
@@ -24,15 +27,14 @@ app.controller('FallenCtrl', ['$scope', 'Auth', 'TbsData', '$location',
       $location.path('/fallen/' + id);
     }
     $scope.toggleMore = function(id) {
-      console.log('toggling more, id =', id);
       $scope.apply($scope.displayFull[id] = !$scope.displayFull[id]);
     }
     $scope.showMoreLink = function(person) {
-      return ((person.bioHtml.length > minBioChars) &&
+      return ((person.bioHtml.length > minBioChars || person.bioPhoto) &&
              ($scope.displayFull[person._id] === false));
     }
     $scope.showLessLink = function(person) {
-      return ((person.bioHtml.length > minBioChars) &&
+      return ((person.bioHtml.length > minBioChars || person.bioPhoto) &&
              ($scope.displayFull[person._id] === true));
     }
     $scope.filterList = function(person) {
@@ -64,6 +66,10 @@ app.controller('FallenCtrl', ['$scope', 'Auth', 'TbsData', '$location',
         // strippedBio = strippedBio.replace(/>/ig,"");
         return strippedBio;
       }
+    }
+
+    $scope.showReflectionModal = function() {
+      Modal.add($scope.reflectionBody);
     }
 
 

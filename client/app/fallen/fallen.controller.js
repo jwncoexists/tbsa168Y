@@ -79,7 +79,7 @@ app.controller('ModalDemoCtrl', function ($scope, $modal, $log) {
 
   $scope.open = function (size, person) {
     $scope.person = person;
-    $scope.reflection = person.
+    $scope.reflection = "";
     var modalInstance = $modal.open({
       templateUrl: 'myModalContent.html',
       controller: 'ModalInstanceCtrl',

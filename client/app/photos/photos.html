@@ -8,7 +8,7 @@
   <!-- <masonry ng-hide="!galleryMode" > -->
     <div ng-repeat="photo in photos" class="masonry-brick" >
       <!-- <img ng-src="{{photo.path}}" ng-click="goToState(photo._id, photo.stateName, photo.stateParams)"> -->
-      <img ng-src="{{photo.thumb}}" ng-click="clickGalleryImage($event, $index)">
+      <img ng-src="{{photo.thumb}}" image-on-load ng-click="clickGalleryImage($event, $index)">
     </div>
   </div>
   <!-- </masonry> -->

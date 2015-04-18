@@ -1886,6 +1886,13 @@ app.controller('PhotosCtrl', ['$scope', 'Auth',
       name: "Staff",
       regions: []
     });
+    $scope.photos.push ({
+      image: "/assets/images/02-gates-al3.png",
+      thumb: "/assets/images/02-gates-al3-thumb.png",
+      info: "Quantico, VA",
+      name: "Staff",
+      regions: []
+    });
 
     //
     $scope.clickGalleryImage = function (event, ind) {

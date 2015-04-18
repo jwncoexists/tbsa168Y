@@ -10,9 +10,6 @@ app.controller('FallenCtrl', ['$scope', 'Auth', 'TbsData', '$location', 'Modal',
     $scope.fallen.filterStr = "";
     $scope.displayFull = {};
     $scope.fallenList = [];
-    $scope.showModal = false;
-    $scope.reflection = {};
-    $scope.reflectionBody = "";
     var minBioChars = 450;
     TbsData.getPersons( function(data) {
       $scope.fallenList = data;
@@ -27,7 +24,7 @@ app.controller('FallenCtrl', ['$scope', 'Auth', 'TbsData', '$location', 'Modal',
       $location.path('/fallen/' + id);
     }
     $scope.toggleMore = function(id) {
-      $scope.apply($scope.displayFull[id] = !$scope.displayFull[id]);
+      $scope.displayFull[id] = !$scope.displayFull[id];
     }
     $scope.showMoreLink = function(person) {
       return ((person.bioHtml.length > minBioChars || person.bioPhoto) &&
@@ -68,9 +65,55 @@ app.controller('FallenCtrl', ['$scope', 'Auth', 'TbsData', '$location', 'Modal',
       }
     }
 
-    $scope.showReflectionModal = function() {
-      Modal.add($scope.reflectionBody);
+    $scope.openModal = function(person) {
+      Modal.add();
     }
 
-
 }]);
+
+
+
+app.controller('ModalDemoCtrl', function ($scope, $modal, $log) {
+
+  $scope.items = ['item1', 'item2', 'item3'];
+
+  $scope.open = function (size, person) {
+    $scope.person = person;
+    $scope.reflection = person.
+    var modalInstance = $modal.open({
+      templateUrl: 'myModalContent.html',
+      controller: 'ModalInstanceCtrl',
+      size: size,
+      resolve: {
+        person: function () {
+          return $scope.person;
+        }
+      }
+    });
+
+    modalInstance.result.then(function (selectedItem) {
+      $scope.selected = selectedItem;
+    }, function () {
+      $log.info('Modal dismissed at: ' + new Date());
+    });
+  };
+});
+
+// Please note that $modalInstance represents a modal window (instance) dependency.
+// It is not the same as the $modal service used above.
+
+app.controller('ModalInstanceCtrl', function ($scope, $modalInstance, items) {
+
+  $scope.items = items;
+  $scope.selected = {
+    item: $scope.items[0]
+  };
+
+  $scope.ok = function () {
+    $modalInstance.close($scope.selected.item);
+  };
+
+  $scope.cancel = function () {
+    $modalInstance.dismiss('cancel');
+  };
+});

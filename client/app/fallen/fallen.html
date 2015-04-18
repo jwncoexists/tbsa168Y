@@ -75,13 +75,35 @@
         <span ng-bind-html="getBio(person)"></span>
         <span class="show-less" ng-show="showLessLink(person)" ng-click="toggleMore(person._id)"><strong> [show less]</strong></span>
         <span class="show-more" ng-show="showMoreLink(person)" ng-click="toggleMore(person._id)"><strong> [...show more]</strong></span>
-        <!-- <span class="add-reflection-link" ng-click="showReflectionModal()"><strong> | [add reflection]</strong></span> -->
+        <span class="add-reflection-link" ng-controller="ModalDemoCtrl" ng-click="open('lg', person)"><strong> | [add reflection]</strong></span>
+        <!-- <button class="btn btn-default"  ng-controller="ModalDemoCtrl" ng-click="open('lg')">Large modal</button> -->
+
+        <div ng-controller="ModalDemoCtrl">
+          <script type="text/ng-template" id="myModalContent.html">
+              <div class="modal-header">
+                  <h3 class="modal-title">Enter your reflection for: {{person.name}}</h3>
+              </div>
+              <div class="modal-body">
+                  <textarea class="reflection-input" rows="23" ng-bind="curReflection"></textarea>
+                  Reflection: <b>{{ curReflection }}</b>
+              </div>
+              <div class="modal-footer">
+                  <button class="btn btn-primary" ng-click="ok()">OK</button>
+                  <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+              </div>
+          </script>
+
+          <!-- <button class="btn btn-default" ng-click="open('lg')">Large modal</button> -->
+          <div ng-show="selected">Selection from a modal: {{ selected }}</div>
+      </div>
+
+
+
 
       </td>
     </tr>
   </table>
 
 </div>
-
 
 <div ng-include="'components/footer/footer.html'"></div>

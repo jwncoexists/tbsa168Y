@@ -8,6 +8,7 @@ angular.module('tbsa168App')
      * @param  {String} modalClass - (optional) class(es) to be applied to the modal
      * @return {Object}            - the instance $modal.open() returns
      */
+     $rootScope.reflectionBody = "";
     function openModal(scope, modalClass) {
       console.log('Modal factory, openModal');
       var modalScope = $rootScope.$new();
@@ -75,12 +76,15 @@ angular.module('tbsa168App')
           };
         }
       },  // confirm
+
+      // add reflection modal
       add: function(reflectionBody) {
         var addModal = openModal({
           modal: {
             dismissable: true,
             title: 'Add a Reflection',
             getInput: 'true',
+            reflectionBody: reflectionBody,
             buttons: [{
               classes: 'btn-success',
               text: 'Add',
@@ -95,10 +99,10 @@ angular.module('tbsa168App')
               }
             }]
           }
-        }, 'modal-default');
+        }, 'modal-lg');
 
         addModal.result.then(function(event) {
-          console.log('add modal result, event =', event);
+          console.log('add modal addModal =', addModal);
           // del.apply(event, args);
         });
 

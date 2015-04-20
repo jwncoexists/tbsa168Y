@@ -1,6 +1,21 @@
 'use strict';
 
+// angular.module(__filename, [
+//
+// ])
+// module.exports = __filename
+// browserify
+// ngAnnotate
+
 var app = angular.module('tbsa168App');
+
+app.factory('Person', ['$resource', function ($resource) {
+    return $resource('/api/persons/:_id', {_id:'@_id'}, {
+      'query':  {method:'GET', isArray:true},
+      'get':    {method:'GET'},
+      'update':   {method:'PUT'}
+    })
+}]);
 
 app.service('TbsData', ['$http', function ($http) {
     // AngularJS will instantiate a singleton by calling "new" on this function

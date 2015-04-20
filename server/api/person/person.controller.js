@@ -17,7 +17,7 @@ var markdown = require( "markdown" ).markdown;
 
 // Get list of persons
 exports.index = function(req, res) {
-  Person.find().sort({name: 'asc'}).exec(function (err, persons) {
+  Person.find().populate({path: 'reflections.user', select: 'name'}).sort({name: 'asc'}).exec(function (err, persons) {
     if(err) { return handleError(res, err); }
     return res.json(200, persons);
   });
@@ -47,18 +47,17 @@ exports.create = function(req, res) {
 // Updates an existing person in the DB.
 exports.update = function(req, res) {
   if(req.body._id) { delete req.body._id; }
-  Person.findById(req.params.id, function (err, person) {
+  req.body.reflections.forEach(function(reflection) {
+    if (reflection.user._id) {
+      reflection.user = reflection.user._id
+    }
+  })
+  req.body.bioHtml = markdown.toHTML(req.body.bio);
+  Person.findByIdAndUpdate(req.params.id, req.body, function (err, person) {
     if (err) { return handleError(res, err); }
     if(!person) { return res.send(404); }
-    var updated = _.merge(person, req.body);
     // convert markdown to HTML
-    if (updated.bio) {
-      updated.bioHtml = markdown.toHTML(updated.bio);
-    }
-    updated.save(function (err) {
-      if (err) { return handleError(res, err); }
-      return res.json(200, person);
-    });
+    return res.json(200, person);
   });
 };
 

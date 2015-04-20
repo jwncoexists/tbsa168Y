@@ -66,44 +66,54 @@
         </span>
         <br>
         {{ person.date }}<br>
-        {{ person.restingPlace}}
+        {{ person.restingPlace }}
         <br><br>
         <div class="bio-photos">
           <img ng-src="{{person.bioPhoto}}" ng-show="person.bioPhoto && displayFull[person._id]">
           <img ng-src="{{person.bioPhoto2}}" ng-show="person.bioPhoto2 && displayFull[person._id]">
         </div>
         <span ng-bind-html="getBio(person)"></span>
+
+        <!-- reflection display for admins -->
+        <div class="reflection reflection-admin" ng-show="isAdmin()" ng-repeat="reflection in person.reflections" ng-show="displayFull[person._id]">
+          <pre><code>
+<!-- Important!! - dont't indent the following line - it will cause text to be indented in display -->
+<strong><em><span ng-if="reflection.by">{{reflection.by}} says: </span></em></strong>{{reflection.reflection}}
+           </code></pre>
+            <span class="fa fa-trash" ng-click="deleteReflection(person, reflection)"></span>
+        </div>
+
+        <!-- reflection display for non-admins -->
+        <div class="reflection" ng-repeat="reflection in person.reflections" ng-show="displayFull[person._id]">
+          <pre><code>
+<!-- Important!! - dont't indent the following line - it will cause text to be indented in display -->
+<strong><em><span ng-if="reflection.by">{{reflection.by}} says: "</span></em></strong>{{reflection.reflection}}"
+           </code></pre>
+        </div>
+
         <span class="show-less" ng-show="showLessLink(person)" ng-click="toggleMore(person._id)"><strong> [show less]</strong></span>
         <span class="show-more" ng-show="showMoreLink(person)" ng-click="toggleMore(person._id)"><strong> [...show more]</strong></span>
-        <span class="add-reflection-link" ng-controller="ModalDemoCtrl" ng-click="open('lg', person)"><strong> | [add reflection]</strong></span>
-        <!-- <button class="btn btn-default"  ng-controller="ModalDemoCtrl" ng-click="open('lg')">Large modal</button> -->
-
-        <div ng-controller="ModalDemoCtrl">
-          <script type="text/ng-template" id="myModalContent.html">
-              <div class="modal-header">
-                  <h3 class="modal-title">Enter your reflection for: {{person.name}}</h3>
-              </div>
-              <div class="modal-body">
-                  <textarea class="reflection-input" rows="23" ng-bind="curReflection"></textarea>
-                  Reflection: <b>{{ curReflection }}</b>
-              </div>
-              <div class="modal-footer">
-                  <button class="btn btn-primary" ng-click="ok()">OK</button>
-                  <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
-              </div>
-          </script>
-
-          <!-- <button class="btn btn-default" ng-click="open('lg')">Large modal</button> -->
-          <div ng-show="selected">Selection from a modal: {{ selected }}</div>
-      </div>
-
-
-
-
+        <span class="add-reflection-link" ng-show="showReflectionLink(person)" ng-click="open(person)"><strong> [add a reflection]</strong></span>
       </td>
     </tr>
   </table>
 
+</div>
+
+<div>
+  <script type="text/ng-template" id="myModalContent.html">
+    <div class="modal-header">
+        <h3 class="modal-title">Enter your reflection for: {{ person.name }}</h3>
+    </div>
+    <div class="modal-body">
+        <textarea class="reflection-input" rows="23" ng-model="reflection"></textarea>
+        Reflection: <b>{{ reflection }}</b>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" ng-click="save()">OK</button>
+        <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+    </div>
+  </script>
 </div>
 
 <div ng-include="'components/footer/footer.html'"></div>

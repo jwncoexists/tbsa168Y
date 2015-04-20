@@ -6,6 +6,13 @@ angular.module('tbsa168App')
       .state('fallen', {
         url: '/fallen',
         templateUrl: 'app/fallen/fallen.html',
-        controller: 'FallenCtrl'
+        controller: 'FallenCtrl',
+        resolve: {
+          fallenList: ['Person', function(Person) {
+            // the following makes sure fallenList is resolved before controller
+            // executes by returning $promise
+            return Person.query().$promise;
+          }]
+        }
       });
   });

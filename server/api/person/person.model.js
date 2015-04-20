@@ -3,12 +3,6 @@
 var mongoose = require('mongoose'),
     Schema = mongoose.Schema;
 
-// create subdoc for user-specified reflections
-var reflectionSchema = new Schema ({
-  reflection: String,
-  user: [{ type: Schema.Types.ObjectId, ref: 'User' }]
-});
-
 var PersonSchema = new Schema({
   name: String,
   platoon: String,
@@ -19,7 +13,11 @@ var PersonSchema = new Schema({
   bioHtml: String,
   bioPhoto: String,
   bioPhoto2: String,
-  reflections: [reflectionSchema],
+  reflections: [{
+    by: String,
+    reflection: String,
+    user: { type: Schema.Types.ObjectId, ref: 'User' }
+  }],
   active: Boolean
 });
 

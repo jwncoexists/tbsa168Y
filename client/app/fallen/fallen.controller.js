@@ -2,23 +2,17 @@
 
 var app = angular.module('tbsa168App');
 
-app.controller('FallenCtrl', ['$scope', 'Auth', 'TbsData', '$location', 'Modal',
-  function ($scope, Auth, TbsData, $location, Modal)  {
+app.controller('FallenCtrl', ['$scope', 'Auth', 'TbsData', '$location', 'fallenList', 'Person', '$modal',
+  function ($scope, Auth, TbsData, $location, fallenList, Person, $modal
+  )  {
     $scope.isLoggedIn = Auth.isLoggedIn;
     $scope.isAdmin= Auth.isAdmin;
     $scope.fallen = {};
     $scope.fallen.filterStr = "";
     $scope.displayFull = {};
-    $scope.fallenList = [];
+    $scope.fallenList = fallenList;
     var minBioChars = 450;
-    TbsData.getPersons( function(data) {
-      $scope.fallenList = data;
-      // turn off full display for everyone to start
-      for (var i=0; i < $scope.fallenList.length; i++) {
-        $scope.displayFull[$scope.fallenList[i]._id] = false;
-      }
 
-    });
     $scope.editPerson = function(id) {
       // go to the edit fallen form
       $location.path('/fallen/' + id);
@@ -27,12 +21,16 @@ app.controller('FallenCtrl', ['$scope', 'Auth', 'TbsData', '$location', 'Modal',
       $scope.displayFull[id] = !$scope.displayFull[id];
     }
     $scope.showMoreLink = function(person) {
-      return ((person.bioHtml.length > minBioChars || person.bioPhoto) &&
-             ($scope.displayFull[person._id] === false));
+      return ((person.bioHtml.length > minBioChars || person.bioPhoto || person.reflections.length > 0) &&
+             (!$scope.displayFull[person._id]));
     }
     $scope.showLessLink = function(person) {
-      return ((person.bioHtml.length > minBioChars || person.bioPhoto) &&
+      return ((person.bioHtml.length > minBioChars || person.bioPhoto || person.reflections.length > 0) &&
              ($scope.displayFull[person._id] === true));
+    }
+    $scope.showReflectionLink = function(person) {
+      // show reflection link if text has been expanded
+      return ($scope.displayFull[person._id] === true);
     }
     $scope.filterList = function(person) {
       if (!$scope.fallen.filterStr || $scope.fallen.filterStr === "") {
@@ -64,53 +62,45 @@ app.controller('FallenCtrl', ['$scope', 'Auth', 'TbsData', '$location', 'Modal',
         return strippedBio;
       }
     }
+    $scope.open = function (person) {
 
-    $scope.openModal = function(person) {
-      Modal.add();
-    }
+      $modal.open({
+        templateUrl: 'app/fallen/modaltemplate.html',
+        controller: 'ModalInstanceCtrl',
+        size: 'lg',
+        resolve: {
+          person: function() {
+            return person;
+          }
+        }
+      }).result.then(function() {
+        Person.query().$promise.then(function(updatedPersons) {
+          $scope.fallenList = updatedPersons;
+          $scope.displayFull[person._id] = true;
+
+        })
+      });
+    };
 
 }]);
 
-
-
-app.controller('ModalDemoCtrl', function ($scope, $modal, $log) {
-
-  $scope.items = ['item1', 'item2', 'item3'];
-
-  $scope.open = function (size, person) {
-    $scope.person = person;
-    $scope.reflection = "";
-    var modalInstance = $modal.open({
-      templateUrl: 'myModalContent.html',
-      controller: 'ModalInstanceCtrl',
-      size: size,
-      resolve: {
-        person: function () {
-          return $scope.person;
-        }
-      }
-    });
-
-    modalInstance.result.then(function (selectedItem) {
-      $scope.selected = selectedItem;
-    }, function () {
-      $log.info('Modal dismissed at: ' + new Date());
-    });
-  };
-});
-
-// Please note that $modalInstance represents a modal window (instance) dependency.
+// $modalInstance represents a modal window (instance) dependency.
 // It is not the same as the $modal service used above.
+app.controller('ModalInstanceCtrl', function ($scope, $modal, $modalInstance, person, Auth) {
 
-app.controller('ModalInstanceCtrl', function ($scope, $modalInstance, items) {
-
-  $scope.items = items;
-  $scope.selected = {
-    item: $scope.items[0]
+  $scope.reflection = {
+    body: '',
+    by: ''
   };
+  $scope.person = person;
 
-  $scope.ok = function () {
-    $modalInstance.close($scope.selected.item);
+  $scope.save = function () {
+    debugger;
+    person.reflections.push({user: Auth.getCurrentUser()._id, reflection: $scope.reflection.body, by: $scope.reflection.by});
+    // Person.update({instance}, {queryParams})
+    person.$update().then(function(updatedPerson) {
+      $modalInstance.close(updatedPerson);
+    })
   };
 
   $scope.cancel = function () {

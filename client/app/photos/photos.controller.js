@@ -1897,7 +1897,6 @@ app.controller('PhotosCtrl', ['$scope', 'Auth',
     //
     $scope.clickGalleryImage = function (event, ind) {
       // set the x & y of the full-size-photo div for a nice animation
-      console.log('clickGalleryImage event: ', event);
       var $pictureDiv = $(".animate-show-hide");
       var x = event.pageX;
       var y = Math.max(0, event.pageY - 100);
@@ -1905,7 +1904,6 @@ app.controller('PhotosCtrl', ['$scope', 'Auth',
       $scope.toggleGalleryMode(ind);
     };
     $scope.toggleGalleryMode = function (ind) {
-      console.log('toggleGalleryMode ind: ', ind);
       $scope.galleryMode = !$scope.galleryMode;
       // if an index is passed in, set scope.clickedPhoto
       if (ind >= 0) {
@@ -1938,11 +1936,9 @@ app.controller('PhotosCtrl', ['$scope', 'Auth',
     }
 
     $scope.setRegionActive = function(region) {
-      console.log('entering setRegionActive ', region);
       region.active = true;
     }
     $scope.setRegionInactive = function(region) {
-      console.log('entering setRegionInactive ', region);
       region.active = false;
     }
 

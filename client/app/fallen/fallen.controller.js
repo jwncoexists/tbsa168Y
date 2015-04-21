@@ -78,7 +78,7 @@ app.controller('FallenCtrl', ['$scope', 'Auth', 'TbsData', '$location', 'fallenL
 
         $http.post('api/emails',
           {
-            sender: 'administrator@tbs.com',
+            sender: 'jwncoexists@gmail.com',
             subject: 'New TBSA-1-68 Reflection added for: ' + person.name,
             msg: $scope.currentUser.email + ', by: ' +
             person.reflections[person.reflections.length-1].by + ': ' +

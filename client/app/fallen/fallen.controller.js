@@ -2,8 +2,8 @@
 
 var app = angular.module('tbsa168App');
 
-app.controller('FallenCtrl', ['$scope', 'Auth', 'TbsData', '$location', 'fallenList', 'Person', '$modal',
-  function ($scope, Auth, TbsData, $location, fallenList, Person, $modal
+app.controller('FallenCtrl', ['$scope', 'Auth', 'TbsData', '$location', 'fallenList', 'Person', '$modal', 'Modal',
+  function ($scope, Auth, TbsData, $location, fallenList, Person, $modal, Modal
   )  {
     $scope.isLoggedIn = Auth.isLoggedIn;
     $scope.isAdmin= Auth.isAdmin;
@@ -11,6 +11,7 @@ app.controller('FallenCtrl', ['$scope', 'Auth', 'TbsData', '$location', 'fallenL
     $scope.fallen.filterStr = "";
     $scope.displayFull = {};
     $scope.fallenList = fallenList;
+
     var minBioChars = 450;
 
     $scope.editPerson = function(id) {
@@ -82,6 +83,25 @@ app.controller('FallenCtrl', ['$scope', 'Auth', 'TbsData', '$location', 'fallenL
       });
     };
 
+    $scope.deleteReflection = function(person, reflection) {
+      console.log('deleteReflection', person, reflection);
+      if (confirm('Are you sure you want to delete reflection for: ' +
+          person.name + ' by: ' + reflection.by +'?')) {
+        for (var i = 0; i < person.reflections.length; i++) {
+          if (person.reflections[i]._id === reflection._id) {
+            // remove the reflection
+            person.reflections.splice(i, 1);
+            // update the database
+            person.$update().then(function(updatedPerson) {
+              // now update the person in the fallenList
+              toastr.info('Reflection for ' + person.name + ' has been deleted.');
+            });
+            break;
+          }  // if
+        }; // for
+      }; // if confirm
+    }; // deleteReflection
+
 }]);
 
 // $modalInstance represents a modal window (instance) dependency.
@@ -100,7 +120,7 @@ app.controller('ModalInstanceCtrl', function ($scope, $modal, $modalInstance, pe
     // Person.update({instance}, {queryParams})
     person.$update().then(function(updatedPerson) {
       $modalInstance.close(updatedPerson);
-    })
+    });
   };
 
   $scope.cancel = function () {

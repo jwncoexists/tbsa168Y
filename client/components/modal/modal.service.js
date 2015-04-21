@@ -49,6 +49,7 @@ angular.module('tbsa168App')
                 name = args.shift(),
                 deleteModal;
 
+            debugger
             deleteModal = openModal({
               modal: {
                 dismissable: true,

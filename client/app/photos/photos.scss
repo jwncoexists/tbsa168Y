@@ -25,6 +25,8 @@ masonry {
   background: url('/assets/images/silver.jpg') no-repeat center/cover;
 }
 
+// ********** Full-Size Photo Styles
+
 .full-size-photo {
   img {
     max-width: 100%;
@@ -67,6 +69,8 @@ masonry {
   border-radius: 10%;
 
 }
+
+// ********** Animation between gallery & full-size photos
 
 .animate-show-hide.ng-hide-add,
 .animate-show-hide.ng-hide-remove {

@@ -1,17 +1,19 @@
-<div>
+<div >
   <div class="modal-header">
     <h3 class="modal-title">Enter your reflection for: {{ person.name }}</h3>
-    <p>Add a memory of {{ person.name }} below, and let us know who this
-      memory is from.
-    </p>
   </div>
   <div class="modal-body">
-    <label></label>
-    <input class="reflection-by"type="text" name="from" ng-model="reflection.by" required="required" placeholder="Name of who this reflection is from">
-    <textarea class="reflection-body" rows="23" ng-model="reflection.body" required="required" placeholder="Add reflection or memory here"></textarea>
+    <form class="modal-form" role="form" name="userForm" novalidate>
+      <div class="form-group">
+        <span ng-show="userForm.from.$dirty && userForm.from.$error.required" class="modal-input-err" >Please specify who this is from!</span>
+        <input class="modal-reflection-by"type="text" name="from" class="form-control" ng-model="reflection.by" placeholder="Specify who this reflection is from" required>
+        <span ng-show="userForm.body.$dirty && userForm.body.$error.required" class="modal-input-err" >Please type your reflection!</span>
+        <textarea class="modal-reflection-body" name="body" rows="23" class="form-control" ng-model="reflection.body" placeholder="Add reflection or memory here" required></textarea>
+      </div>
+    </form>
   </div>
   <div class="modal-footer">
-      <button class="btn btn-primary" ng-click="save()">OK</button>
+      <button class="btn btn-primary" ng-click="save()" ng-disabled="userForm.$invalid">OK</button>
       <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
   </div>
 </div>

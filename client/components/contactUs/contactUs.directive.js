@@ -35,8 +35,6 @@ angular.module('tbsa168App')
             });
             // toastr.info('Your message has been sent to the reunion committee!');
             $location.path('/');
-
-
           }; // sendMsg
 
       } // link

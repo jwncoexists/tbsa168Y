@@ -2,11 +2,12 @@
 
 var app = angular.module('tbsa168App');
 
-app.controller('FallenCtrl', ['$scope', 'Auth', 'TbsData', '$location', 'fallenList', 'Person', '$modal', 'Modal',
-  function ($scope, Auth, TbsData, $location, fallenList, Person, $modal, Modal
+app.controller('FallenCtrl', ['$scope', 'Auth', 'TbsData', '$location', 'fallenList', 'Person', '$modal', 'Modal', '$http',
+  function ($scope, Auth, TbsData, $location, fallenList, Person, $modal, Modal, $http
   )  {
     $scope.isLoggedIn = Auth.isLoggedIn;
     $scope.isAdmin= Auth.isAdmin;
+    $scope.currentUser = Auth.getCurrentUser();
     $scope.fallen = {};
     $scope.fallen.filterStr = "";
     $scope.displayFull = {};
@@ -31,7 +32,7 @@ app.controller('FallenCtrl', ['$scope', 'Auth', 'TbsData', '$location', 'fallenL
     }
     $scope.showReflectionLink = function(person) {
       // show reflection link if text has been expanded
-      return ($scope.displayFull[person._id] === true);
+      return ($scope.displayFull[person._id] === true || person.bioHtml.length <= minBioChars);
     }
     $scope.filterList = function(person) {
       if (!$scope.fallen.filterStr || $scope.fallen.filterStr === "") {
@@ -64,7 +65,6 @@ app.controller('FallenCtrl', ['$scope', 'Auth', 'TbsData', '$location', 'fallenL
       }
     }
     $scope.open = function (person) {
-
       $modal.open({
         templateUrl: 'app/fallen/modaltemplate.html',
         controller: 'ModalInstanceCtrl',
@@ -75,32 +75,23 @@ app.controller('FallenCtrl', ['$scope', 'Auth', 'TbsData', '$location', 'fallenL
           }
         }
       }).result.then(function() {
+
+        $http.post('api/emails',
+          {
+            sender: 'administrator@tbs.com',
+            subject: 'New TBSA-1-68 Reflection added for: ' + person.name,
+            msg: $scope.currentUser.email + ', by: ' +
+            person.reflections[person.reflections.length-1].by + ': ' +
+              person.reflections[person.reflections.length-1].reflection
+          }).success(function(data) {
+          }).error(function(data, status, headers, config) {
+          });
         Person.query().$promise.then(function(updatedPersons) {
           $scope.fallenList = updatedPersons;
           $scope.displayFull[person._id] = true;
-
         })
       });
     };
-
-    $scope.deleteReflection = function(person, reflection) {
-      console.log('deleteReflection', person, reflection);
-      if (confirm('Are you sure you want to delete reflection for: ' +
-          person.name + ' by: ' + reflection.by +'?')) {
-        for (var i = 0; i < person.reflections.length; i++) {
-          if (person.reflections[i]._id === reflection._id) {
-            // remove the reflection
-            person.reflections.splice(i, 1);
-            // update the database
-            person.$update().then(function(updatedPerson) {
-              // now update the person in the fallenList
-              toastr.info('Reflection for ' + person.name + ' has been deleted.');
-            });
-            break;
-          }  // if
-        }; // for
-      }; // if confirm
-    }; // deleteReflection
 
 }]);
 

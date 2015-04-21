@@ -29,6 +29,18 @@
       <textarea type="text" id="bio" rows="25" class="form-control" ng-model="person.bio"></textarea>
     </div>
 
+    <!-- reflection display for admins -->
+    <!-- Important!! - dont't indent the following line - it will cause text to be indented in display -->
+    <div class="form-group">
+      <div class="reflection reflection-admin" ng-repeat="reflection in person.reflections" ng-click="deleteReflection(person, reflection)">
+      <pre><code>
+<strong><em><span ng-if="reflection.by">{{reflection.by}}: </span></em></strong>{{reflection.reflection}}
+
+<span class="fa fa-trash">[click to reflection to delete]</span>
+      </code></pre>
+    </div>
+  </div>
+
     <div class="form-group">
       <label for="small-photo">Small Photo</label>
       <input type="string" id="small-photo" class="form-control" ng-model="person.photo">

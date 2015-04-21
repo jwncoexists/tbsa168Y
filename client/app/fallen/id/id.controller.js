@@ -18,6 +18,7 @@ app.controller('FallenIdCtrl', ['$scope', 'Auth', 'TbsData', '$stateParams', '$l
       $scope.person.platoon = data.platoon;
       $scope.person.bioHtml = data.bioHtml;
       $scope.person.bio = data.bio;
+      $scope.person.reflections = data.reflections.slice();
       $scope.person.bioPhoto  = data.bioPhoto;
       $scope.person.bioPhoto2  = data.bioPhoto2;
     });
@@ -27,8 +28,29 @@ app.controller('FallenIdCtrl', ['$scope', 'Auth', 'TbsData', '$stateParams', '$l
         toastr.info( $scope.person.name + ' successfully updated.');
         $location.path('/fallen');
       });
+      // $scope.person.$update().then(function(updatedPerson) {
+      //   toastr.info( $scope.person.name + ' successfully updated.');
+      //   $location.path('/fallen');
+      // });
     };
     $scope.cancel = function() {
       $location.path('/fallen');
     };
+    $scope.deleteReflection = function(person, reflection) {
+      console.log('deleteReflection', person, reflection);
+      if (confirm('Are you sure you want to delete reflection for: ' +
+          person.name + ' by: ' + reflection.by +'?')) {
+        for (var i = 0; i < person.reflections.length; i++) {
+          if (person.reflections[i]._id === reflection._id) {
+            // remove the reflection
+            person.reflections.splice(i, 1);
+            // update the database
+            // person.$update().then(function(updatedPerson) {
+            //   toastr.info('Reflection for ' + person.name + ' has been deleted.');
+            // });
+            break;
+          }  // if
+        }; // for
+      }; // if confirm
+    }; // deleteReflection
   }]);

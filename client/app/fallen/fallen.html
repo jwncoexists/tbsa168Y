@@ -74,20 +74,9 @@
         </div>
         <span ng-bind-html="getBio(person)"></span>
 
-        <!-- reflection display for admins -->
-        <!-- Important!! - dont't indent the following line - it will cause text to be indented in display -->
-        <div class="reflection reflection-admin" ng-show="isAdmin() && displayFull[person._id]"
-             ng-repeat="reflection in person.reflections" ng-click="deleteReflection(person, reflection)">
-          <pre><code>
-<strong><em><span ng-if="reflection.by">{{reflection.by}}: </span></em></strong>{{reflection.reflection}}
-
-<span class="fa fa-trash">[click to reflection to delete]</span>
-          </code></pre>
-        </div>
-
         <!-- reflection display for non-admins -->
         <!-- Important!! - dont't change indentation on <strong> line - it will cause text to be indented in display -->
-        <div class="reflection" ng-repeat="reflection in person.reflections" ng-show="displayFull[person._id] && !isAdmin()">
+        <div class="reflection" ng-repeat="reflection in person.reflections" ng-show="displayFull[person._id]">
           <pre>
 <strong><em><span ng-if="reflection.by">{{reflection.by}}: "</span></em></strong>{{reflection.reflection}}"
           </pre>

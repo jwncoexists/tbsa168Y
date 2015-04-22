@@ -1,20 +1,18 @@
 // ********** Photo Gallery
-masonry {
-  column-width: 100;
-  margin-top: 100px;
+.photo-grid {
+  margin: 100px;
 }
 .masonry-brick {
   img {
-    max-width: 100%;
+    min-width: 100%;
     &:hover {
       cursor: pointer;
       opacity: .8;
     }
   }
   float: left; // !important
-  width: 20%;
-  margin-bottom: 10px;
-  margin-right: 10px;
+  width: 300px;
+  margin: 10px;
   border-color: $text-color-light;
   border: 1px solid;
 }

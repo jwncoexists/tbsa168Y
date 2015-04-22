@@ -4,7 +4,7 @@
   <div class="section-header">
     <h3><a href="/">> Home</a><a href="/photos"> > Photos</a></h3>
   </div>
-  <div masonry ng-hide="!galleryMode" >
+  <div class="photo-grid" masonry ng-hide="!galleryMode" >
   <!-- <masonry ng-hide="!galleryMode" > -->
     <div ng-repeat="photo in photos" class="masonry-brick" >
       <!-- <img ng-src="{{photo.path}}" ng-click="goToState(photo._id, photo.stateName, photo.stateParams)"> -->

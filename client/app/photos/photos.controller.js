@@ -1894,6 +1894,7 @@ app.controller('PhotosCtrl', ['$scope', 'Auth',
       regions: []
     });
 
+
     //
     $scope.clickGalleryImage = function (event, ind) {
       // set the x & y of the full-size-photo div for a nice animation

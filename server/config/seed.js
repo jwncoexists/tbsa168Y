@@ -1794,7 +1794,7 @@ User.find({}).remove(function() {
     name: 'Dave Peters',
     role: 'admin',
     email: 'dwpeters@san.rr.com',
-    password: '0109999'
+    password: '1969511'
   },
   {
     provider: 'local',
@@ -1871,7 +1871,7 @@ User.find({}).remove(function() {
   {
     provider: 'local',
     name: 'Black',
-    email: 'Bback@tbs',
+    email: 'black@tbs',
     password: '0109999'
   },
   {

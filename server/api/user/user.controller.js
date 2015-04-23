@@ -92,6 +92,7 @@ exports.updateLoginCnt = function(req, res) {
     });
   });
 };
+
 /**
  * Get my info
  */

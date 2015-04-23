@@ -32,7 +32,9 @@ app.controller('FallenCtrl', ['$scope', 'Auth', 'TbsData', '$location', 'fallenL
     }
     $scope.showReflectionLink = function(person) {
       // show reflection link if text has been expanded
-      return ($scope.displayFull[person._id] === true || person.bioHtml.length <= minBioChars);
+      // return ($scope.displayFull[person._id] === true || person.bioHtml.length <= minBioChars);
+      // always show the add reflection link
+      return true;
     }
     $scope.filterList = function(person) {
       if (!$scope.fallen.filterStr || $scope.fallen.filterStr === "") {
@@ -53,9 +55,10 @@ app.controller('FallenCtrl', ['$scope', 'Auth', 'TbsData', '$location', 'fallenL
       }
     }
     $scope.getBio = function(person) {
-      if ($scope.displayFull[person._id] || person.bioHtml.length <= minBioChars) {
+      if ($scope.displayFull[person._id]) {
         return person.bioHtml;
-      } else {
+      }
+      else {
         // shorten bio and strip out HTML tags so won't mess up display
         var shortenedBio = person.bioHtml.slice(0,minBioChars);
         var strippedBio = shortenedBio.replace(/(<([^>]+)>)/ig,"");
@@ -106,7 +109,6 @@ app.controller('ModalInstanceCtrl', function ($scope, $modal, $modalInstance, pe
   $scope.person = person;
 
   $scope.save = function () {
-    debugger;
     person.reflections.push({user: Auth.getCurrentUser()._id, reflection: $scope.reflection.body, by: $scope.reflection.by});
     // Person.update({instance}, {queryParams})
     person.$update().then(function(updatedPerson) {

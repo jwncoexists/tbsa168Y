@@ -36,7 +36,6 @@ angular.module('tbsa168App')
          * @return {Function}     - the function to open the modal (ex. myModalFn)
          */
         delete: function(del) {
-          console.log('modal factory delete');
           del = del || angular.noop;
 
           /**
@@ -49,7 +48,6 @@ angular.module('tbsa168App')
                 name = args.shift(),
                 deleteModal;
 
-            debugger
             deleteModal = openModal({
               modal: {
                 dismissable: true,

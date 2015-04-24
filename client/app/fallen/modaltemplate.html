@@ -6,7 +6,7 @@
     <form class="modal-form" role="form" name="userForm" novalidate>
       <div class="form-group">
         <span ng-show="userForm.from.$dirty && userForm.from.$error.required" class="modal-input-err" >Please specify who this is from!</span>
-        <input class="modal-reflection-by"type="text" name="from" class="form-control" ng-model="reflection.by" placeholder="Specify who this reflection is from" required>
+        <input class="modal-reflection-by"type="text" name="from" class="form-control" ng-model="reflection.by" placeholder="Specify who this reflection is from" required autofocus />
         <span ng-show="userForm.body.$dirty && userForm.body.$error.required" class="modal-input-err" >Please type your reflection!</span>
         <textarea class="modal-reflection-body" name="body" rows="23" class="form-control" ng-model="reflection.body" placeholder="Add reflection or memory here" required></textarea>
       </div>

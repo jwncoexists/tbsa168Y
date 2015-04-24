@@ -15,13 +15,13 @@
     </p>
     <div class="form-group" ng-class="{error: contactForm.name.$invalid}">
       <label>Full Name</label>
-      <input class="form-control" type="text" name="name" ng-model="user.name" required="required" placeholder="Your name">
+      <input class="form-control" type="text" name="name" ng-model="user.name" required="required" placeholder="Your name" autofocus />
       <span class="help-block" ng-show="contactForm.name.$error.required">Required</span>
     </div>
 
     <div class="form-group" ng-class="{error: contactForm.email.$invalid}">
       <label>Email</label>
-      <input class="form-control" type="email" name="email" ng-model="user.email" required="required" placeholder="Your email address">
+      <input class="form-control" type="email" name="email" ng-model="user.email" required="required" placeholder="Your email address" />
       <span class="help-block" ng-show="contactForm.email.$error.required">Required</span>
       <span class="help-block" ng-show="contactForm.email.$error.email">Invalid email address</span>
     </div>

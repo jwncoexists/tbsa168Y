@@ -13,6 +13,7 @@ var PersonSchema = new Schema({
   bioHtml: String,
   bioPhoto: String,
   bioPhoto2: String,
+  pdf: String,
   reflections: [{
     by: String,
     reflection: String,

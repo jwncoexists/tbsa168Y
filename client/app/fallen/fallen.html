@@ -85,6 +85,8 @@
         <span class="show-less" ng-show="showLessLink(person)" ng-click="toggleMore(person._id)"><strong> [show less]</strong></span>
         <span class="show-more" ng-show="showMoreLink(person)" ng-click="toggleMore(person._id)"><strong> [...show more]</strong></span>
         <span class="add-reflection-link" ng-show="showReflectionLink(person)" ng-click="open(person)"><strong> [add a reflection]</strong></span>
+        <!-- <span class="view-pdf-link" ng-click="showPdf(person)"><strong> [print, view or download PDF]</strong></span> -->
+        <a ng-click="showPdf(person)" class="view-pdf-link" ng-show="person.pdf"><strong> [download bio PDF]</strong></span>
       </td>
     </tr>
   </table>

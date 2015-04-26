@@ -19,6 +19,9 @@ app.controller('FallenCtrl', ['$scope', 'Auth', 'TbsData', '$location', 'fallenL
       // go to the edit fallen form
       $location.path('/fallen/' + id);
     }
+    $scope.pdfLink = function(person) {
+      return '/fallen/pdf/' + person._id;
+    }
     $scope.toggleMore = function(id) {
       $scope.displayFull[id] = !$scope.displayFull[id];
     }
@@ -95,6 +98,17 @@ app.controller('FallenCtrl', ['$scope', 'Auth', 'TbsData', '$location', 'fallenL
         })
       });
     };
+
+    // $scope.showPdf = function(person) {
+    //   // go to the edit fallen form
+    //   $location.path('/fallen/pdf/' + person._id);
+    // };
+
+    $scope.showPdf= function(person) {
+      console.log('showPdf file =', person.pdf);
+      window.open(person.pdf, person.name, "width=600, height=800");
+      toastr.info('Downloadable & Printable Bio opened in a separate browser window.');
+    }
 
 }]);
 

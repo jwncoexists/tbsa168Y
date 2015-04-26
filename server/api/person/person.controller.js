@@ -11,8 +11,8 @@
 
 var _ = require('lodash');
 var Person = require('./person.model');
-var request = require('request');
-var appRoot = require('app-root-path');
+// var request = require('request');
+// var appRoot = require('app-root-path');
 
 // support markdown for person.bio
 var markdown = require( "markdown" ).markdown;

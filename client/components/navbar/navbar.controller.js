@@ -7,26 +7,36 @@ angular.module('tbsa168App')
     {
       'title': 'HOME',
       'link': '/',
+      'state': 'main',
       'membersOnly': false
     },
     {
-      'title': 'REGISTER FOR REUNION',
-      'link': 'http://tbs1-68usmc.com/reunion-signup.html',
-      'membersOnly': true
+      'title': 'MAIN WEBSITE',
+      'link': 'http://tbs1-68usmc.com/index.html',
+      'membersOnly': false
     },
     {
       'title': 'PHOTOS',
       'link': '/photos',
+      'state': 'photos',
       'membersOnly': true
     },
     {
       'title': 'NEWSLETTERS',
       'link': '/newsletters',
+      'state': 'newsletters',
       'membersOnly': true
     },
     {
       'title': 'OUR FALLEN',
       'link': '/fallen',
+      'state': 'fallen',
+      'membersOnly': true
+    },
+    {
+      'title': 'ROSTER',
+      'link': '/roster',
+      'state': 'roster',
       'membersOnly': true
     },
     {
@@ -38,6 +48,7 @@ angular.module('tbsa168App')
     {
       'title': 'CONTACT',
       'link': '/contact',
+      'state': 'contact',
       'membersOnly': false
     }
 

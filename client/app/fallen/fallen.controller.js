@@ -40,6 +40,11 @@ app.controller('FallenCtrl', ['$scope', 'Auth', 'TbsData', '$location', 'fallenL
       return true;
     }
     $scope.filterList = function(person) {
+      // only list deceased
+      if (person.living) {
+        return false;
+      }
+      // if no filter, return true
       if (!$scope.fallen.filterStr || $scope.fallen.filterStr === "") {
         return true;
       }

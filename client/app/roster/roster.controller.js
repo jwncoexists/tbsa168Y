@@ -1,0 +1,63 @@
+'use strict';
+
+var app = angular.module('tbsa168App');
+
+app.controller('RosterCtrl', ['$scope', 'Auth', 'TbsData', 'personList', 'Person',
+  function ($scope, Auth, TbsData, personList, Person)  {
+
+    $scope.isLoggedIn = Auth.isLoggedIn;
+    $scope.isAdmin= Auth.isAdmin;
+    $scope.currentUser = Auth.getCurrentUser();
+    $scope.roster = {}; // object for controller variables
+    $scope.roster.filterStr = "";
+    $scope.personList = personList;
+
+    $scope.curSort = {
+      field: "name",
+      order: "asc"
+    };
+
+    var atReunion = function(person, year) {
+      if (person.reunions) {
+        return (person.reunions.indexOf(year) >= 0);
+      } else {
+        return false;
+      }
+    };
+    $scope.getReunionClass = function(person) {
+      if (atReunion(person, '2015')) {
+        return "roster-reunion-cell";
+      }
+      else {
+        return "";
+      }
+    }
+
+    $scope.updatePerson = function(person) {
+      person.$update(function (){});
+    };
+
+    $scope.getCellClass = function(person, property) {
+      var cellClass = "";
+      if (!person[property] || person[property] == "" || person[property] == undefined) {
+        cellClass += "roster-empty-cell "
+      } else {
+        cellClass += "roster-data-cell "
+      }
+
+      if (!person.living) {
+        cellClass += "roster-deceased-cell "
+      }
+      return cellClass;
+    }
+
+    $scope.getLocation = function(person) {
+      if (person.living === true) {
+        return person.location;
+      } else {
+        return "At Rest: " + person.restingPlace;
+      }
+    }
+
+
+}]); // RosterCtrl

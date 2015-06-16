@@ -1,0 +1,35 @@
+.route-loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: 400;
+
+}
+
+@-webkit-keyframes webkit-spin {
+  from {
+    -webkit-transform: scale(1) rorate(0deg);
+  }
+  to {
+    -webkit-transform: scale(1) rotate(359deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-icon {
+  position: relative;
+  -ms-animation: spin .7s infinite linear;
+  -moz-animation: spin .7s infinite linear;
+  -webkit-animation: webkit-spin .7s infinite linear;
+  font-size: 2.5em;
+  z-index: 600;
+
+}

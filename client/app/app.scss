@@ -104,9 +104,12 @@ h1, h2, h3, h4, h5 {
 @import 'main/main.scss';
 @import 'newsletters/newsletters.scss';
 @import 'photos/photos.scss';
+@import 'roster/roster.scss';
 @import 'contactUs/contactUs.scss';
 @import 'footer/footer.scss';
 @import 'modal/modal.scss';
+@import 'navbar/navbar.navbar.scss';
+@import 'routeLoadingIndicator/routeLoadingIndicator.scss';
 @import 'showName/showName.scss';
 @import 'viewPdf/viewPdf.scss';
 // endinjector

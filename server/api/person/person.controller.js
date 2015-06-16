@@ -19,7 +19,11 @@ var markdown = require( "markdown" ).markdown;
 
 // Get list of persons
 exports.index = function(req, res) {
-  Person.find().populate({path: 'reflections.user', select: 'name'}).sort({name: 'asc'}).exec(function (err, persons) {
+  Person.find()
+        // only populate the name field
+        .populate({path: 'reflections.user', select: 'name'})
+        .sort({name: 'asc'})
+        .exec(function (err, persons) {
     if(err) { return handleError(res, err); }
     return res.json(200, persons);
   });
@@ -55,7 +59,9 @@ exports.update = function(req, res) {
       reflection.user = reflection.user._id
     }
   })
-  req.body.bioHtml = markdown.toHTML(req.body.bio);
+  if (req.body.bioHtml){
+    req.body.bioHtml = markdown.toHTML(req.body.bio);
+  }
   Person.findByIdAndUpdate(req.params.id, req.body, function (err, person) {
     if (err) { return handleError(res, err); }
     if(!person) { return res.send(404); }

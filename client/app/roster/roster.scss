@@ -1,0 +1,33 @@
+table.roster-grid, .table-striped.roster-grid {
+  font-size: 0.8em;
+  a {
+    text-decoration: none;
+  }
+  .editable-click, a.editable-click {
+    border-bottom: none;
+  }
+  .roster-empty-cell {
+    background-color: rgba(yellow, 0.2);
+  }
+  .roster-data-cell {
+  }
+  .roster-deceased-cell {
+    color: red;
+    a {
+      color: red;
+    }
+  }
+  .roster-reunion-cell {
+    background-color: rgba(green, 0.5);
+  }
+}
+
+
+th {
+  background-color: rgba($text-color-highlight, 0.8);
+  color: white;
+}
+
+input.roster-input {
+  width: 40%;
+}

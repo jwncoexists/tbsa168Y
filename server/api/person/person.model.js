@@ -19,6 +19,16 @@ var PersonSchema = new Schema({
     reflection: String,
     user: { type: Schema.Types.ObjectId, ref: 'User' }
   }],
+  living: Boolean,
+  officer: Boolean,
+  reunions: [String],
+  sm: String,
+  location: String,
+  school: String,
+  commission: String,
+  mos: Number,
+  career: String,
+  decorations: String,
   active: Boolean
 });
 

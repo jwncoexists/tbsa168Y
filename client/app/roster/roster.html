@@ -1,0 +1,116 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<div class="container-fluid roster-list" ng-show="isLoggedIn()">
+  <h2 class="subsection-header">TBSA1-68 Class Roster ({{personList.length}})</h2>
+  <div class="form-group roster-filter">
+    <label for="roster-input">Find: </label>
+    <input type="text" id="roster-input" placeholder="Enter search criteria such as name" class="roster-input" data-ng-model="roster.filterStr" />
+  </div>
+
+  <div class="table-responsive" ng-show="!isAdmin">
+    <table class="table table-bordered table-striped roster-grid">
+      <thead>
+        <th></th>
+        <th>Name</th>
+        <th>S/M at TBS</th>
+        <th>Location</th>
+        <th>Platoon</th>
+        <th>School</th>
+        <th>Commission Source</th>
+        <th>MOS</th>
+        <th>Career</th>
+      </thead>
+      <tbody>
+        <tr ng-repeat="person in personList | filter:roster.filterStr" class="person-row">
+          <td ng-class="getReunionClass(person)"></td>
+          <td ng-class="getCellClass(person, 'name')">{{person.name}}</td>
+          <td ng-class="getCellClass(person, 'sm')">{{person.sm}}</td>
+          <td ng-show="!person.living" ng-class="getCellClass(person, 'restingPlace')">{{ person.restingPlace }}</td>
+          <td ng-show="person.living" ng-class="getCellClass(person, 'location')">{{ person.location }}</td>
+          <td ng-class="getCellClass(person, 'platoon')">{{person.platoon}}</td>
+          <td ng-class="getCellClass(person, 'school')">{{person.school}}</td>
+          <td ng-class="getCellClass(person, 'commission')">{{person.commission}}</td>
+          <td ng-class="getCellClass(person, 'mos')">{{person.mos}}</td>
+          <td ng-class="getCellClass(person, 'career')"><p>{{person.career}}</p></td>
+        </tr>
+      </tbody>
+    </table>
+  </div> <!-- table !isAdmin -->
+
+  <div class="table-responsive" ng-show="isAdmin">
+    <table class="table table-bordered table-striped roster-grid">
+      <thead>
+        <th></th>
+        <th>Name</th>
+        <th>S/M at TBS</th>
+        <th>Location</th>
+        <th>Platoon</th>
+        <th>School</th>
+        <th>Commission Source</th>
+        <th>MOS</th>
+        <th>Career</th>
+      </thead>
+      <tbody>
+        <tr ng-repeat="person in personList | filter:roster.filterStr" class="person-row">
+          <td ng-class="getReunionClass(person)">
+          </td>
+
+          <td ng-class="getCellClass(person, 'name')">
+            <a ng-href="#" editable-text="person.name" onaftersave="updatePerson(person)">
+                {{person.name}}
+            </a>
+          </td>
+
+          <td ng-class="getCellClass(person, 'sm')">
+            <a ng-href="#" editable-text="person.sm" onaftersave="updatePerson(person)">
+                {{person.sm}}
+            </a>
+          </td>
+
+          <td ng-show="!person.living" ng-class="getCellClass(person, 'restingPlace')">
+            <a ng-href="#" editable-text="person.restingPlace" onaftersave="updatePerson(person)">
+              At rest:&nbsp {{ person.restingPlace }}
+            </a>
+          </td>
+          <td ng-show="person.living" ng-class="getCellClass(person, 'location')">
+            <a ng-href="#" editable-text="person.location" onaftersave="updatePerson(person)">
+              {{ person.location }}
+            </a>
+          </td>
+
+          <td ng-class="getCellClass(person, 'platoon')">
+            <a ng-href="#" editable-text="person.platoon" onaftersave="updatePerson(person)">
+                {{person.platoon}}
+            </a>
+          </td>
+
+          <td ng-class="getCellClass(person, 'school')">
+            <a ng-href="#" editable-text="person.school" onaftersave="updatePerson(person)">
+                {{person.school}}
+            </a>
+          </td>
+
+          <td ng-class="getCellClass(person, 'commission')">
+            <a ng-href="#" editable-text="person.commission" onaftersave="updatePerson(person)">
+                {{person.commission}}
+            </a>
+          </td>
+
+          <td ng-class="getCellClass(person, 'mos')">
+            <a ng-href="#" editable-number="person.mos" onaftersave="updatePerson(person)">
+                {{person.mos}}
+            </a>
+          </td>
+
+          <td ng-class="getCellClass(person, 'career')">
+            <a ng-href="#" editable-text="person.career" onaftersave="updatePerson(person)">
+                {{person.career}}
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div> <!-- table isAdmin -->
+</div>
+
+<div ng-include="'components/footer/footer.html'"></div>

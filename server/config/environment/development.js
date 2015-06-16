@@ -8,5 +8,5 @@ module.exports = {
     uri: 'mongodb://localhost/tbsa168-dev'
   },
 
-  seedDB: false
+  seedDB: true
 };

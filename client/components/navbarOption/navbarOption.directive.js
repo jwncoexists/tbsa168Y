@@ -2,7 +2,7 @@
 
 var app = angular.module('tbsa168App');
 
-app.directive('navbarOption', ['$location', 'Auth', function ($location, Auth) {
+app.directive('navbarOption', ['$state', 'Auth', function ($state, Auth) {
     return {
       template: '',
       restrict: 'EA',
@@ -11,12 +11,12 @@ app.directive('navbarOption', ['$location', 'Auth', function ($location, Auth) {
       }, // link
       controller: function($scope) {
         $scope.isLoggedIn = Auth.isLoggedIn;
-        $scope.clickIt = function(nextLink) {
+        $scope.clickIt = function(nextLink, state) {
           if(nextLink.indexOf('http') > -1) {
             window.open(nextLink, "newwindow", "width=400, height=400");
             toastr.info( 'You request was opened in separate browser window.');
           } else {
-            $location.path(nextLink);
+            $state.go(state, {notify: true});
           }
         }
       } // controller

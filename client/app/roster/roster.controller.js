@@ -17,7 +17,7 @@ app.controller('RosterCtrl', ['$scope', 'Auth', 'TbsData', 'personList', 'Person
       order: "asc"
     };
 
-    var atReunion = function(person, year) {
+    $scope.atReunion = function(person, year) {
       if (person.reunions) {
         return (person.reunions.indexOf(year) >= 0);
       } else {
@@ -25,11 +25,11 @@ app.controller('RosterCtrl', ['$scope', 'Auth', 'TbsData', 'personList', 'Person
       }
     };
     $scope.getReunionClass = function(person) {
-      if (atReunion(person, '2015')) {
+      if ($scope.atReunion(person, '2015')) {
         return "roster-reunion-cell";
       }
       else {
-        return "";
+        return "roster-no-reunions";
       }
     }
 
@@ -48,6 +48,7 @@ app.controller('RosterCtrl', ['$scope', 'Auth', 'TbsData', 'personList', 'Person
       if (!person.living) {
         cellClass += "roster-deceased-cell "
       }
+
       return cellClass;
     }
 

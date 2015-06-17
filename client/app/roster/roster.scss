@@ -7,7 +7,7 @@ table.roster-grid, .table-striped.roster-grid {
     border-bottom: none;
   }
   .roster-empty-cell {
-    background-color: rgba(yellow, 0.2);
+    background-color: rgba(yellow, 0.3);
   }
   .roster-data-cell {
   }
@@ -18,7 +18,16 @@ table.roster-grid, .table-striped.roster-grid {
     }
   }
   .roster-reunion-cell {
-    background-color: rgba(green, 0.5);
+    text-align: center;
+    background-color: rgba(LawnGreen, 0.3);
+  }
+
+  .roster-no-reunions {
+    color: white;
+    text-align:center;
+    .editable-click, a.editable-click {
+      color: white;
+    }
   }
 }
 

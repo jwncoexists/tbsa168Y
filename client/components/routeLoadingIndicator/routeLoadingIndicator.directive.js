@@ -33,22 +33,13 @@ angular.module('tbsa168App')
           viewportHeight = document.getElementsByTagName('body')[0].clientHeight;
         }
 
-        console.log('viewportwidth, height=', viewportWidth, viewportHeight);
-
         var loadingElement = $(".route-loading");
         loadingElement.css("width", viewportWidth);
         loadingElement.css("height", viewportHeight);
-        console.log('loading element width,height =', loadingElement.width(), loadingElement.height());
 
         var loadingIcon = $(".loading-icon");
         loadingIcon.css("top", viewportHeight/2);
         loadingIcon.css("left", viewportWidth/2);
-
-        console.log('loading message top,left =', loadingIcon);
-
-        var unregister = $rootScope.$on('$routeChangeStart', function() {
-          element.removeClass('ng-hide');
-        });
 
         $rootScope.$on('$stateChangeStart', function(){
           scope.isStateLoading = true;
@@ -57,6 +48,7 @@ angular.module('tbsa168App')
 
         $rootScope.$on('$stateChangeSuccess', function(){
           scope.isStateLoading = false;
+          element.addClass('ng-hide');
         });
       }
     };

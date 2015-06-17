@@ -10,7 +10,7 @@
   <div class="table-responsive" ng-show="!isAdmin">
     <table class="table table-bordered table-striped roster-grid">
       <thead>
-        <th></th>
+        <th>2015 Reunion</th>
         <th>Name</th>
         <th>S/M at TBS</th>
         <th>Location</th>
@@ -40,7 +40,7 @@
   <div class="table-responsive" ng-show="isAdmin">
     <table class="table table-bordered table-striped roster-grid">
       <thead>
-        <th></th>
+        <th>2015 Reunion</th>
         <th>Name</th>
         <th>S/M at TBS</th>
         <th>Location</th>
@@ -53,6 +53,10 @@
       <tbody>
         <tr ng-repeat="person in personList | filter:roster.filterStr" class="person-row">
           <td ng-class="getReunionClass(person)">
+            <a ng-href="#" editable-text="person.reunions" onaftersave="updatePerson(person)">
+              <i class="fa fa-check fa-lg" ng-show="atReunion(person,'2015')"></i>
+              <i class="fa fa-close fa-lg" ng-show="!atReunion(person,'2015')"></i>
+            </a>
           </td>
 
           <td ng-class="getCellClass(person, 'name')">

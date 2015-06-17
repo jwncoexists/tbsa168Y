@@ -15,7 +15,8 @@
         <th>S/M at TBS</th>
         <th>Location</th>
         <th>Platoon</th>
-        <th>School</th>
+        <th>School & State</th>
+        <th></th>
         <th>Commission Source</th>
         <th>MOS</th>
         <th>Career</th>
@@ -29,6 +30,7 @@
           <td ng-show="person.living" ng-class="getCellClass(person, 'location')">{{ person.location }}</td>
           <td ng-class="getCellClass(person, 'platoon')">{{person.platoon}}</td>
           <td ng-class="getCellClass(person, 'school')">{{person.school}}</td>
+          <td ng-class="getCellClass(person, 'schoolState')">{{person.schoolState}}</td>
           <td ng-class="getCellClass(person, 'commission')">{{person.commission}}</td>
           <td ng-class="getCellClass(person, 'mos')">{{person.mos}}</td>
           <td ng-class="getCellClass(person, 'career')"><p>{{person.career}}</p></td>
@@ -45,7 +47,8 @@
         <th>S/M at TBS</th>
         <th>Location</th>
         <th>Platoon</th>
-        <th>School</th>
+        <th>School & State</th>
+        <th></th>
         <th>Commission Source</th>
         <th>MOS</th>
         <th>Career</th>
@@ -91,6 +94,12 @@
           <td ng-class="getCellClass(person, 'school')">
             <a ng-href="#" editable-text="person.school" onaftersave="updatePerson(person)">
                 {{person.school}}
+            </a>
+          </td>
+
+          <td ng-class="getCellClass(person, 'schoolState')">
+            <a ng-href="#" editable-text="person.schoolState" onaftersave="updatePerson(person)">
+                {{person.schoolState}}
             </a>
           </td>
 

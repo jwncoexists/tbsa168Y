@@ -25,6 +25,7 @@ var PersonSchema = new Schema({
   sm: String,
   location: String,
   school: String,
+  schoolState: String,
   commission: String,
   mos: Number,
   career: String,

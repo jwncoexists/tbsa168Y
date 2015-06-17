@@ -2670,6 +2670,32 @@ function seedLiving() {
   });
 } // seedLiving
 
+/************************************
+*
+* getDeceased
+*
+*************************************/
+function getDeceased() {
+  var promise = Person.find({living: undefined}).exec();
+  return promise;
+}
+
+/************************************
+*
+* updateDeceased
+*
+*************************************/
+function updateDeceased() {
+  var promise = getDeceased();
+  promise.then( function(deceasedList) {
+    for (var i=0; i < deceasedList.length; i++ ) {
+      var person = deceasedList[i];
+      person.officer = false;
+      person.save();
+    };
+  });
+}
+
 
 /************************************
 *
@@ -5789,3 +5815,4 @@ function seedUsers() {
 *
 *************************************/
 seedLiving();
+updateDeceased();

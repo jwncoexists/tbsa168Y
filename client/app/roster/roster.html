@@ -1,7 +1,11 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
 
 <div class="container-fluid roster-list" ng-show="isLoggedIn()">
-  <h2 class="subsection-header">TBSA1-68 Class Roster</h2>
+  <h2 class="subsection-header">TBS-A1-68 Class Roster</h2>
+  <p class="roster-intro">Can you fill in any of the blanks below, or do you see something that needs changing? <a ng-href="/contact">Click here </a>
+    to send us a message with your updates.
+  </p><br>
+
   <div class="form-group roster-filter">
     <label for="roster-input">Find: </label>
     <input type="text" id="roster-input" placeholder="Enter search criteria such as name" class="roster-input" data-ng-model="roster.filterStr" />
@@ -10,7 +14,7 @@
   <div class="table-responsive" ng-show="!isAdmin">
     <table class="table table-bordered table-striped roster-grid">
       <thead>
-        <th>2015 Reunion</th>
+        <th>2015 Reunion?</th>
         <th>Name</th>
         <th>S/M at TBS</th>
         <th>Location</th>
@@ -42,7 +46,7 @@
   <div class="table-responsive" ng-show="isAdmin">
     <table class="table table-bordered table-striped roster-grid">
       <thead>
-        <th>2015 Reunion</th>
+        <th>2015 Reunion?</th>
         <th>Name</th>
         <th>S/M at TBS</th>
         <th>Location</th>

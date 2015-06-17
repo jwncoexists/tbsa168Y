@@ -6,6 +6,10 @@ angular.module('tbsa168App')
     return {
       templateUrl: 'components/contactUs/contactUs.html',
       restrict: 'EA',
+      scope: {
+        msgtitle: '=msgtitle',
+        msgintro: '=msgintro'
+      },
       link: function (scope, element, attrs) {
         scope.isLoggedIn = Auth.userLoggedIn;
         scope.success = false;
@@ -15,6 +19,7 @@ angular.module('tbsa168App')
           email: "",
           body: ""
         };
+        console.log('msgtitle, msgintro = ', scope.msgtitle, scope.msgintro);
 
         scope.sendMsg = function () {
           $http.post('api/emails',
@@ -25,7 +30,7 @@ angular.module('tbsa168App')
             }).success(function(data) {
               scope.success = true;
               scope.error = false;
-              toastr.info('Your message has been sent to the reunion committee!');
+              toastr.info('Your message has been sent to the TBS-A-1-68 reunion committee!');
             }).error(function(data, status, headers, config) {
               // called asynchronously if an error occurs
               // or server returns response with an error status.

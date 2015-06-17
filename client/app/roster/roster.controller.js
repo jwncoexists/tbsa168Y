@@ -45,9 +45,14 @@ app.controller('RosterCtrl', ['$scope', 'Auth', 'TbsData', 'personList', 'Person
         cellClass += "roster-data-cell "
       }
 
+      if (person.officer) {
+        cellClass += "roster-officer-cell "
+      }
+
       if (!person.living) {
         cellClass += "roster-deceased-cell "
       }
+
 
       return cellClass;
     }

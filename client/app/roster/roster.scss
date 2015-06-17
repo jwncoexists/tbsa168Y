@@ -2,12 +2,13 @@ table.roster-grid, .table-striped.roster-grid {
   font-size: 0.8em;
   a {
     text-decoration: none;
+    color: DarkOliveGreen;
   }
   .editable-click, a.editable-click {
     border-bottom: none;
   }
   .roster-empty-cell {
-    background-color: rgba(yellow, 0.3);
+    background-color: rgba(Khaki, 0.3);
   }
   .roster-data-cell {
   }
@@ -19,7 +20,7 @@ table.roster-grid, .table-striped.roster-grid {
   }
   .roster-reunion-cell {
     text-align: center;
-    background-color: rgba(LawnGreen, 0.3);
+    background-color: rgba(OliveDrab, 0.4);
   }
 
   .roster-no-reunions {
@@ -27,6 +28,15 @@ table.roster-grid, .table-striped.roster-grid {
     text-align:center;
     .editable-click, a.editable-click {
       color: white;
+    }
+  }
+
+  .roster-officer-cell {
+    color: DarkSlateBlue;
+    font-weight: bold;
+    .editable-click, a.editable-click {
+      color: DarkSlateBlue;
+      font-weight: bold;
     }
   }
 }
@@ -38,5 +48,5 @@ th {
 }
 
 input.roster-input {
-  width: 40%;
+  width: 50%;
 }

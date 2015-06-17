@@ -22,7 +22,7 @@ exports.index = function(req, res) {
   Person.find()
         // only populate the name field
         .populate({path: 'reflections.user', select: 'name'})
-        .sort({name: 'asc'})
+        .sort({officer: -1, name: 1})
         .exec(function (err, persons) {
     if(err) { return handleError(res, err); }
     return res.json(200, persons);

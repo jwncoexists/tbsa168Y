@@ -57,6 +57,14 @@ app.controller('RosterCtrl', ['$scope', 'Auth', 'TbsData', 'personList', 'Person
       return cellClass;
     }
 
+    $scope.getFormattedName = function(person) {
+      if (person.decorations) {
+        return person.name + ", " + person.decorations;
+      } else {
+        return person.name;
+      }
+    }
+
     $scope.getLocation = function(person) {
       if (person.living === true) {
         return person.location;

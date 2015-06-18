@@ -6,6 +6,10 @@
 
 table.roster-grid, .table-striped.roster-grid {
   font-size: 0.8em;
+  td {
+    text-align: center;
+    vertical-align: middle;
+  }
   a {
     text-decoration: none;
     color: DarkOliveGreen;
@@ -15,6 +19,10 @@ table.roster-grid, .table-striped.roster-grid {
   }
   .roster-empty-cell {
     background-color: rgba(Khaki, 0.3);
+  }
+  span.decorations, a.decorations {
+    color: FireBrick;
+    font-weight: bold;
   }
   .roster-data-cell {
   }
@@ -59,6 +67,7 @@ th {
   background-color: rgba($text-color-highlight, 0.8);
   color: white;
 }
+
 
 input.roster-input {
   width: 50%;

@@ -11,7 +11,7 @@ angular.module('tbsa168App')
       'membersOnly': false
     },
     {
-      'title': 'MAIN WEBSITE',
+      'title': 'OFFICIAL A1-68 WEBSITE',
       'link': 'http://tbs1-68usmc.com/index.html',
       'membersOnly': false
     },

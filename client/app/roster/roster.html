@@ -16,6 +16,7 @@
       <thead>
         <th>2015 Reunion?</th>
         <th>Name</th>
+        <th>Decorations</th>
         <th>S/M at TBS</th>
         <th>Location</th>
         <th>Platoon</th>
@@ -29,6 +30,7 @@
         <tr ng-repeat="person in personList | filter:roster.filterStr" class="person-row">
           <td ng-class="getReunionClass(person)"></td>
           <td ng-class="getCellClass(person, 'name')">{{person.name}}</td>
+          <td ng-class="getCellClass(person, 'decorations')">{{person.decorations}}</td>
           <td ng-class="getCellClass(person, 'sm')">{{person.sm}}</td>
           <td ng-show="!person.living" ng-class="getCellClass(person, 'restingPlace')">{{ person.restingPlace }}</td>
           <td ng-show="person.living" ng-class="getCellClass(person, 'location')">{{ person.location }}</td>
@@ -48,6 +50,7 @@
       <thead>
         <th>2015 Reunion?</th>
         <th>Name</th>
+        <th>Decorations</th>
         <th>S/M at TBS</th>
         <th>Location</th>
         <th>Platoon</th>
@@ -70,6 +73,12 @@
           <td ng-class="getCellClass(person, 'name')">
             <a ng-href="#" editable-text="person.name" onaftersave="updatePerson(person)">
                 {{person.name || "empty" }}
+            </a>
+          </td>
+
+          <td ng-class="getCellClass(person, 'decorations')">
+            <a ng-href="#" editable-text="person.decorations" onaftersave="updatePerson(person)">
+                {{person.decorations || "empty" }}
             </a>
           </td>
 

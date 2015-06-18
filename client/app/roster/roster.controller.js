@@ -57,11 +57,9 @@ app.controller('RosterCtrl', ['$scope', 'Auth', 'TbsData', 'personList', 'Person
       return cellClass;
     }
 
-    $scope.getFormattedName = function(person) {
-      if (person.decorations) {
-        return person.name + ", " + person.decorations;
-      } else {
-        return person.name;
+    $scope.formatMos = function(person) {
+      if (person.mos) {
+        return ("0" + person.mos).slice (-2);
       }
     }
 

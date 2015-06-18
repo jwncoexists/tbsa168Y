@@ -39,7 +39,7 @@
           <td ng-class="getCellClass(person, 'school')">{{person.school}}</td>
           <td ng-class="getCellClass(person, 'schoolState')">{{person.schoolState}}</td>
           <td ng-class="getCellClass(person, 'commission')">{{person.commission}}</td>
-          <td ng-class="getCellClass(person, 'mos')">{{person.mos}}</td>
+          <td ng-class="getCellClass(person, 'mos')">{{formatMos(person)}}</td>
           <td ng-class="getCellClass(person, 'career')"><p>{{person.career}}</p></td>
         </tr>
       </tbody>
@@ -123,7 +123,7 @@
 
           <td ng-class="getCellClass(person, 'mos')">
             <a ng-href="#" editable-number="person.mos" onaftersave="updatePerson(person)">
-                {{person.mos || "empty" }}
+                {{formatMos(person) || "empty" }}
             </a>
           </td>
 

@@ -60,6 +60,7 @@
       <tbody>
         <tr ng-repeat="person in personList | filter:roster.filterStr" class="person-row">
           <td ng-class="getReunionClass(person)">
+
             <a ng-href="#" editable-text="person.reunions" onaftersave="updatePerson(person)">
               <i class="fa fa-check fa-lg" ng-show="atReunion(person,'2015')"></i>
               <i class="fa fa-close fa-lg" ng-show="!atReunion(person,'2015')"></i>
@@ -68,60 +69,60 @@
 
           <td ng-class="getCellClass(person, 'name')">
             <a ng-href="#" editable-text="person.name" onaftersave="updatePerson(person)">
-                {{person.name}}
+                {{person.name || "empty" }}
             </a>
           </td>
 
           <td ng-class="getCellClass(person, 'sm')">
             <a ng-href="#" editable-text="person.sm" onaftersave="updatePerson(person)">
-                {{person.sm}}
+                {{person.sm || "empty" }}
             </a>
           </td>
 
           <td ng-show="!person.living" ng-class="getCellClass(person, 'restingPlace')">
             <a ng-href="#" editable-text="person.restingPlace" onaftersave="updatePerson(person)">
-              At rest:&nbsp {{ person.restingPlace }}
+              At rest:&nbsp {{ person.restingPlace || "empty"  }}
             </a>
           </td>
           <td ng-show="person.living" ng-class="getCellClass(person, 'location')">
             <a ng-href="#" editable-text="person.location" onaftersave="updatePerson(person)">
-              {{ person.location }}
+              {{ person.location || "empty"  }}
             </a>
           </td>
 
           <td ng-class="getCellClass(person, 'platoon')">
             <a ng-href="#" editable-text="person.platoon" onaftersave="updatePerson(person)">
-                {{person.platoon}}
+                {{person.platoon || "empty" }}
             </a>
           </td>
 
           <td ng-class="getCellClass(person, 'school')">
             <a ng-href="#" editable-text="person.school" onaftersave="updatePerson(person)">
-                {{person.school}}
+                {{person.school || "empty" }}
             </a>
           </td>
 
           <td ng-class="getCellClass(person, 'schoolState')">
             <a ng-href="#" editable-text="person.schoolState" onaftersave="updatePerson(person)">
-                {{person.schoolState}}
+                {{person.schoolState || "empty" }}
             </a>
           </td>
 
           <td ng-class="getCellClass(person, 'commission')">
             <a ng-href="#" editable-text="person.commission" onaftersave="updatePerson(person)">
-                {{person.commission}}
+                {{person.commission || "empty" }}
             </a>
           </td>
 
           <td ng-class="getCellClass(person, 'mos')">
             <a ng-href="#" editable-number="person.mos" onaftersave="updatePerson(person)">
-                {{person.mos}}
+                {{person.mos || "empty" }}
             </a>
           </td>
 
           <td ng-class="getCellClass(person, 'career')">
             <a ng-href="#" editable-text="person.career" onaftersave="updatePerson(person)">
-                {{person.career}}
+                {{person.career || "empty" }}
             </a>
           </td>
         </tr>

@@ -44,6 +44,13 @@ table.roster-grid, .table-striped.roster-grid {
       color: DarkSlateBlue;
       font-weight: bold;
     }
+
+  }
+}
+
+table.roster-grid {
+  .editable.editable-click.editable-empty {
+    color: rgba(Khaki, 0.3);
   }
 }
 

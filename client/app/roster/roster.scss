@@ -54,6 +54,13 @@ table.roster-grid, .table-striped.roster-grid {
     }
 
   }
+
+  .roster-blank-row {
+    color: $text-color-very-light;
+    text-align: left;
+    font-size: 1.2em;
+    background-color: rgba($text-color-highlight, 0.1);
+  }
 }
 
 table.roster-grid {

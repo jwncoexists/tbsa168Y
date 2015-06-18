@@ -26,7 +26,32 @@
         <th>Career</th>
       </thead>
       <tbody>
-        <tr ng-repeat="person in personList | filter:roster.filterStr" class="person-row">
+        <!-- ************ display staff list first ************** -->
+        <tr>
+          <td class="roster-blank-row" colspan=10><em>STAFF</em></td>
+        </tr>
+        <tr ng-repeat="person in personList | filter:{officer: true} | filter:roster.filterStr" class="person-row">
+          <td ng-class="getReunionClass(person)"></td>
+          <td ng-class="getCellClass(person, 'name')">
+            {{person.name}}
+            <br><span class="decorations" ng-show="person.decorations">**{{ person.decorations }}</span>
+          </td>
+          <td ng-class="getCellClass(person, 'sm')">{{person.sm}}</td>
+          <td ng-show="!person.living" ng-class="getCellClass(person, 'restingPlace')">{{ person.restingPlace }}</td>
+          <td ng-show="person.living" ng-class="getCellClass(person, 'location')">{{ person.location }}</td>
+          <td ng-class="getCellClass(person, 'platoon')">{{person.platoon}}</td>
+          <td ng-class="getCellClass(person, 'school')">{{person.school}}</td>
+          <td ng-class="getCellClass(person, 'schoolState')">{{person.schoolState}}</td>
+          <td ng-class="getCellClass(person, 'commission')">{{person.commission}}</td>
+          <td ng-class="getCellClass(person, 'mos')">{{formatMos(person)}}</td>
+          <td ng-class="getCellClass(person, 'career')"><p>{{person.career}}</p></td>
+        </tr>
+
+        <!-- ************ display classmates ************** -->
+        <tr>
+          <td class="roster-blank-row" colspan=10><em>CLASSMATES</em></td>
+        </tr>
+        <tr ng-repeat="person in personList | filter:{officer: false} | filter:roster.filterStr" class="person-row">
           <td ng-class="getReunionClass(person)"></td>
           <td ng-class="getCellClass(person, 'name')">
             {{person.name}}
@@ -47,6 +72,8 @@
   </div> <!-- table !isAdmin -->
 
   <div class="table-responsive" ng-show="isAdmin">
+
+    <!-- ************ display staff list first ************** -->
     <table class="table table-bordered table-striped roster-grid">
       <thead>
         <th>2015 Reunion?</th>
@@ -61,7 +88,86 @@
         <th>Career</th>
       </thead>
       <tbody>
-        <tr ng-repeat="person in personList | filter:roster.filterStr" class="person-row">
+        <tr>
+          <td class="roster-blank-row" colspan=10><em>STAFF</em></td>
+        </tr>
+        <tr ng-repeat="person in personList | filter:{officer: true} | filter:roster.filterStr" class="person-row">
+          <td ng-class="getReunionClass(person)">
+            <a ng-href="#" editable-text="person.reunions" onaftersave="updatePerson(person)">
+              <i class="fa fa-check fa-lg" ng-show="atReunion(person,'2015')"></i>
+              <i class="fa fa-close fa-lg" ng-show="!atReunion(person,'2015')"></i>
+            </a>
+          </td>
+
+          <td ng-class="getCellClass(person, 'name')">
+            <a ng-href="#" editable-text="person.name" onaftersave="updatePerson(person)">
+                {{ person.name }}
+            </a>
+            <br>
+            <a ng-href="#" editable-text="person.decorations" class="decorations" onaftersave="updatePerson(person)" ng-show="person.decorations">
+                **{{ person.decorations }}
+            </a>
+          </td>
+
+          <td ng-class="getCellClass(person, 'sm')">
+            <a ng-href="#" editable-text="person.sm" onaftersave="updatePerson(person)">
+                {{person.sm || "empty" }}
+            </a>
+          </td>
+
+          <td ng-show="!person.living" ng-class="getCellClass(person, 'restingPlace')">
+            <a ng-href="#" editable-text="person.restingPlace" onaftersave="updatePerson(person)">
+              At rest:&nbsp {{ person.restingPlace || "empty"  }}
+            </a>
+          </td>
+          <td ng-show="person.living" ng-class="getCellClass(person, 'location')">
+            <a ng-href="#" editable-text="person.location" onaftersave="updatePerson(person)">
+              {{ person.location || "empty"  }}
+            </a>
+          </td>
+
+          <td ng-class="getCellClass(person, 'platoon')">
+            <a ng-href="#" editable-text="person.platoon" onaftersave="updatePerson(person)">
+                {{person.platoon || "empty" }}
+            </a>
+          </td>
+
+          <td ng-class="getCellClass(person, 'school')">
+            <a ng-href="#" editable-text="person.school" onaftersave="updatePerson(person)">
+                {{person.school || "empty" }}
+            </a>
+          </td>
+
+          <td ng-class="getCellClass(person, 'schoolState')">
+            <a ng-href="#" editable-text="person.schoolState" onaftersave="updatePerson(person)">
+                {{person.schoolState || "empty" }}
+            </a>
+          </td>
+
+          <td ng-class="getCellClass(person, 'commission')">
+            <a ng-href="#" editable-text="person.commission" onaftersave="updatePerson(person)">
+                {{person.commission || "empty" }}
+            </a>
+          </td>
+
+          <td ng-class="getCellClass(person, 'mos')">
+            <a ng-href="#" editable-number="person.mos" onaftersave="updatePerson(person)">
+                {{formatMos(person) || "empty" }}
+            </a>
+          </td>
+
+          <td ng-class="getCellClass(person, 'career')">
+            <a ng-href="#" editable-text="person.career" onaftersave="updatePerson(person)">
+                {{person.career || "empty" }}
+            </a>
+          </td>
+        </tr>
+
+        <!-- ************ display blank row, then the classmates ************** -->
+        <tr>
+          <td class="roster-blank-row" colspan=10><em>CLASSMATES</em></td>
+        </tr>
+        <tr ng-repeat="person in personList | filter:{officer: false} | filter:roster.filterStr" class="person-row">
 
           <td ng-class="getReunionClass(person)">
             <a ng-href="#" editable-text="person.reunions" onaftersave="updatePerson(person)">
@@ -133,9 +239,11 @@
             </a>
           </td>
         </tr>
+
       </tbody>
     </table>
-  </div> <!-- table isAdmin -->
+
+  </div> <!-- div isAdmin -->
 </div>
 
 <div ng-include="'components/footer/footer.html'"></div>

@@ -107,6 +107,9 @@
             <a ng-href="#" editable-text="person.decorations" class="decorations" onaftersave="updatePerson(person)" ng-show="person.decorations">
                 **{{ person.decorations }}
             </a>
+            <a ng-href="#" editable-text="person.decorations" class="decorations" onaftersave="updatePerson(person)" ng-show="!person.decorations">
+              <i class="fa fa-close fa-lg"></i>
+            </a>
           </td>
 
           <td ng-class="getCellClass(person, 'sm')">
@@ -182,7 +185,10 @@
             </a>
             <br>
             <a ng-href="#" editable-text="person.decorations" class="decorations" onaftersave="updatePerson(person)" ng-show="person.decorations">
-                **{{ person.decorations }}
+                **{{ person.decorations || empty }}
+            </a>
+            <a ng-href="#" editable-text="person.decorations" class="decorations" onaftersave="updatePerson(person)" ng-show="!person.decorations">
+              <i class="fa fa-close fa-lg"></i>
             </a>
           </td>
 

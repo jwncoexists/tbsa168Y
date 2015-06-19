@@ -6,8 +6,14 @@
 
 table.roster-grid, .table-striped.roster-grid {
   font-size: 0.8em;
-  td, th {
+  th {
+    background-color: rgba($text-color-highlight, 0.8);
+    color: white;
     text-align: center;
+    vertical-align: middle;
+  }
+  td {
+    text-align: left;
     vertical-align: middle;
   }
   a {
@@ -16,6 +22,9 @@ table.roster-grid, .table-striped.roster-grid {
   }
   .editable-click, a.editable-click {
     border-bottom: none;
+  }
+  .centered-text {
+    text-align: center;
   }
   .roster-empty-cell {
     background-color: rgba(Khaki, 0.3);
@@ -69,11 +78,6 @@ table.roster-grid {
   }
 }
 
-
-th {
-  background-color: rgba($text-color-highlight, 0.8);
-  color: white;
-}
 
 
 input.roster-input {

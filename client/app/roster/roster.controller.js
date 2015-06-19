@@ -39,7 +39,9 @@ app.controller('RosterCtrl', ['$scope', 'Auth', 'TbsData', 'personList', 'Person
 
     $scope.getCellClass = function(person, property) {
       var cellClass = "";
-      if (!person[property] || person[property] == "" || person[property] == undefined) {
+      var val = person[property];
+
+      if (!val || val === "" || val == undefined) {
         cellClass += "roster-empty-cell "
       } else {
         cellClass += "roster-data-cell "
@@ -52,7 +54,10 @@ app.controller('RosterCtrl', ['$scope', 'Auth', 'TbsData', 'personList', 'Person
       if (!person.living) {
         cellClass += "roster-deceased-cell "
       }
-
+      // center the following text
+      if (property === "platoon" || property ===  "schoolState" || property === "mos") {
+        cellClass += "centered-text "
+      }
 
       return cellClass;
     }

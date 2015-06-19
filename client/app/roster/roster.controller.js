@@ -6,7 +6,7 @@ app.controller('RosterCtrl', ['$scope', 'Auth', 'TbsData', 'personList', 'Person
   function ($scope, Auth, TbsData, personList, Person)  {
 
     $scope.isLoggedIn = Auth.isLoggedIn;
-    $scope.isAdmin= Auth.isAdmin;
+    $scope.isAdmin = Auth.isAdmin;
     $scope.currentUser = Auth.getCurrentUser();
     $scope.roster = {}; // object for controller variables
     $scope.roster.filterStr = "";

@@ -17,7 +17,7 @@ angular.module('tbsa168App')
           // update login count
           Auth.incrementLoginCnt();
           // Logged in, redirect to home
-          $location.path('/fallen');
+          $location.path('/roster');
           toastr.info('Welcome to the TBS A-1-68 Reunion Members-Only Area.');
         })
         .catch( function(err) {

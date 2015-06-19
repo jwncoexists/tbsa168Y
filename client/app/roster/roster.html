@@ -11,7 +11,7 @@
     <input type="text" id="roster-input" placeholder="Enter search criteria such as name" class="roster-input" data-ng-model="roster.filterStr" />
   </div>
 
-  <div class="table-responsive" ng-show="!isAdmin">
+  <div class="table-responsive" ng-show="!isAdmin()">
     <table class="table table-bordered table-striped roster-grid">
       <thead>
         <th>2015 Reunion?</th>
@@ -71,8 +71,7 @@
     </table>
   </div> <!-- table !isAdmin -->
 
-  <div class="table-responsive" ng-show="isAdmin">
-
+  <div class="table-responsive" ng-show="isAdmin()">
     <!-- ************ display staff list first ************** -->
     <table class="table table-bordered table-striped roster-grid">
       <thead>

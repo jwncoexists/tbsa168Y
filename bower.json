@@ -20,7 +20,8 @@
     "angular-animate": "latest",
     "angular-masonry": "latest",
     "toastr": "2.1.0",
-    "angular-xeditable": "~0.1.9"
+    "angular-xeditable": "~0.1.9",
+    "pdfmake": "~0.1.18"
   },
   "devDependencies": {
     "angular-mocks": ">=1.2.*",

@@ -2,14 +2,17 @@
 
 <div class="container-fluid roster-list" ng-show="isLoggedIn()">
   <h2 class="subsection-header">TBS-A1-68 Class Roster</h2>
-  <p class="roster-intro">Can you fill in any of the blanks below, or do you see something that needs changing? <a ng-href="/contact">Click here </a>
+  <p class="roster-intro">Below is a roster of all of our TSB-A1-68 class members.  Browse the list and let us know
+    if you can fill in any of the blanks, or if you see something that needs changing. <a ng-href="/contact">Click here </a>
     to send us a message with your updates.
   </p><br>
 
   <div class="form-group roster-filter">
     <label for="roster-input">Find: </label>
     <input type="text" id="roster-input" placeholder="Enter search criteria such as name" class="roster-input" data-ng-model="roster.filterStr" />
+    <button class="btn btn-primary pdf-btn" ng-click="downloadPDF()">Download this Roster</button>
   </div>
+
 
   <div class="table-responsive" ng-show="!isAdmin()">
     <table class="table table-bordered table-striped roster-grid">
@@ -19,8 +22,8 @@
         <th class="col-md-1">S/M at TBS</th>
         <th class="col-md-1">Location</th>
         <th class="col-md-1">Platoon</th>
-        <th class="col-md-1">School & State</th>
-        <th class="col-md-1"></th>
+        <th class="col-md-1">School</th>
+        <th class="col-md-1">State</th>
         <th class="col-md-1">Commission Source</th>
         <th class="col-md-1">MOS</th>
         <th class="col-md-1">Career</th>
@@ -73,15 +76,15 @@
 
   <div class="table-responsive" ng-show="isAdmin()">
     <!-- ************ display staff list first ************** -->
-    <table class="table table-bordered table-striped roster-grid">
+    <table class="table table-bordered table-striped admin-roster-grid">
       <thead>
         <th class="col-md-1">2015 Reunion?</th>
         <th class="col-md-3">Name</th>
         <th class="col-md-1">S/M at TBS</th>
         <th class="col-md-1">Location</th>
         <th class="col-md-1">Platoon</th>
-        <th class="col-md-1">School & State</th>
-        <th class="col-md-1"></th>
+        <th class="col-md-1">School</th>
+        <th class="col-md-1">State</th>
         <th class="col-md-1">Commission Source</th>
         <th class="col-md-1">MOS</th>
         <th class="col-md-1">Career</th>

@@ -23,6 +23,7 @@
     <!-- build:css({.tmp,client}) app/app.css -->
     <link rel="stylesheet" href="app/app.css">
       <!-- injector:css -->
+
       <!-- endinjector -->
     <!-- endbuild -->
 
@@ -76,9 +77,12 @@
       <script src="bower_components/angular-masonry/angular-masonry.js"></script>
       <script src="bower_components/toastr/toastr.js"></script>
       <script src="bower_components/angular-xeditable/dist/js/xeditable.js"></script>
+      <script src="bower_components/pdfmake/build/pdfmake.js"></script>
+      <script src="bower_components/pdfmake/build/vfs_fonts.js"></script>
       <!-- endbower -->
       <script src="socket.io-client/socket.io.js"></script>
     <!-- endbuild -->
+
 
         <!-- build:js({.tmp,client}) app/app.js -->
         <script src="app/app.js"></script>
@@ -117,6 +121,7 @@
           <script src="components/routeLoadingIndicator/routeLoadingIndicator.directive.js"></script>
           <script src="components/showName/showName.directive.js"></script>
           <script src="components/socket/socket.service.js"></script>
+          <script src="components/tableExport/jspdf/jspdf.js"></script>
           <script src="components/viewPdf/viewPdf.directive.js"></script>
           <!-- endinjector -->
         <!-- endbuild -->

@@ -13,27 +13,22 @@
     <button class="btn btn-primary pdf-btn" ng-click="downloadPDF()">Download this Roster</button>
   </div>
 
-
+  <!-- ************ Non Admins Table ************** -->
   <div class="table-responsive" ng-show="!isAdmin()">
+
     <table class="table table-bordered table-striped roster-grid">
       <thead>
-        <th class="col-md-1">2015 Reunion?</th>
-        <th class="col-md-3">Name</th>
-        <th class="col-md-1">S/M at TBS</th>
-        <th class="col-md-1">Location</th>
-        <th class="col-md-1">Platoon</th>
-        <th class="col-md-1">School</th>
-        <th class="col-md-1">State</th>
-        <th class="col-md-1">Commission Source</th>
-        <th class="col-md-1">MOS</th>
-        <th class="col-md-1">Career</th>
+        <th ng-repeat="header in headerList" ng-class="header.class" ng-click="toggleSort($event)">
+          {{header.text}} &nbsp
+          <span ng-class="curSort.class" ng-show="header.text === curSort.hdrText" ></span>
+        </th>
       </thead>
       <tbody>
         <!-- ************ display staff list first ************** -->
         <tr>
-          <td class="roster-blank-row" colspan=10><em>STAFF</em></td>
+          <td class="roster-blank-row" colspan=10><em>STAFF LIST</em></td>
         </tr>
-        <tr ng-repeat="person in personList | filter:{officer: true} | filter:roster.filterStr" class="person-row">
+        <tr ng-repeat="person in personList | filter:{officer: true} | filter:roster.filterStr | orderBy:[getOrderByString(), 'name']" class="person-row">
           <td ng-class="getReunionClass(person)"></td>
           <td ng-class="getCellClass(person, 'name')">
             {{person.name}}
@@ -52,9 +47,9 @@
 
         <!-- ************ display classmates ************** -->
         <tr>
-          <td class="roster-blank-row" colspan=10><em>CLASSMATES</em></td>
+          <td class="roster-blank-row" colspan=10><em>CLASS LIST</em></td>
         </tr>
-        <tr ng-repeat="person in personList | filter:{officer: false} | filter:roster.filterStr" class="person-row">
+        <tr ng-repeat="person in personList | filter:{officer: false} | filter:roster.filterStr | orderBy:[getOrderByString(), 'name']" class="person-row">
           <td ng-class="getReunionClass(person)"></td>
           <td ng-class="getCellClass(person, 'name')">
             {{person.name}}
@@ -74,26 +69,22 @@
     </table>
   </div> <!-- table !isAdmin -->
 
+  <!--  ************ Admins Table - have editable fields ************* -->
   <div class="table-responsive" ng-show="isAdmin()">
-    <!-- ************ display staff list first ************** -->
+
     <table class="table table-bordered table-striped admin-roster-grid">
       <thead>
-        <th class="col-md-1">2015 Reunion?</th>
-        <th class="col-md-3">Name</th>
-        <th class="col-md-1">S/M at TBS</th>
-        <th class="col-md-1">Location</th>
-        <th class="col-md-1">Platoon</th>
-        <th class="col-md-1">School</th>
-        <th class="col-md-1">State</th>
-        <th class="col-md-1">Commission Source</th>
-        <th class="col-md-1">MOS</th>
-        <th class="col-md-1">Career</th>
+        <th ng-repeat="header in headerList" ng-class="header.class" ng-click="toggleSort($event)">
+          {{header.text}} &nbsp
+          <span ng-class="curSort.class" ng-show="header.text === curSort.hdrText" ></span>
+        </th>
       </thead>
       <tbody>
+        <!-- ************ display staff list first ************** -->
         <tr>
-          <td class="roster-blank-row" colspan=10><em>STAFF</em></td>
+          <td class="roster-blank-row" colspan=10><em>STAFF LIST</em></td>
         </tr>
-        <tr ng-repeat="person in personList | filter:{officer: true} | filter:roster.filterStr" class="person-row">
+        <tr ng-repeat="person in personList | filter:{officer: true} | filter:roster.filterStr | orderBy:[getOrderByString(), 'name']" class="person-row">
           <td ng-class="getReunionClass(person)">
             <a ng-href="#" editable-text="person.reunions" onaftersave="updatePerson(person)">
               <i class="fa fa-check fa-lg" ng-show="atReunion(person,'2015')"></i>
@@ -170,9 +161,9 @@
 
         <!-- ************ display blank row, then the classmates ************** -->
         <tr>
-          <td class="roster-blank-row" colspan=10><em>CLASSMATES</em></td>
+          <td class="roster-blank-row" colspan=10><em>CLASS LIST</em></td>
         </tr>
-        <tr ng-repeat="person in personList | filter:{officer: false} | filter:roster.filterStr" class="person-row">
+        <tr ng-repeat="person in personList | filter:{officer: false} | filter:roster.filterStr |  orderBy:[getOrderByString(), 'name']" class="person-row">
 
           <td ng-class="getReunionClass(person)">
             <a ng-href="#" editable-text="person.reunions" onaftersave="updatePerson(person)">

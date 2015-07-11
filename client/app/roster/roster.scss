@@ -82,7 +82,13 @@ table.roster-grid, table.admin-roster-grid {
   margin-left: 100px;
 }
 
-
+.roster-grid, .admin-roster-grid {
+  th {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
 
 input.roster-input {
   width: 50%;

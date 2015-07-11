@@ -20,12 +20,18 @@ var markdown = require( "markdown" ).markdown;
 // Get list of persons
 exports.index = function(req, res) {
   Person.find()
-        // only populate the name field
-        .populate({path: 'reflections.user', select: 'name'})
-        .sort({officer: -1, name: 1})
-        .exec(function (err, persons) {
-    if(err) { return handleError(res, err); }
-    return res.json(200, persons);
+    // only populate the name field
+    .populate({path: 'reflections.user', select: 'name'})
+    .sort({officer: -1, name: 1})
+    .exec(function (err, persons) {
+      if(err) { return handleError(res, err); }
+      // populate location field for deceased
+      for (var i=0; i<persons.length; i++) {
+        if (!persons[i].living && !persons[i].location) {
+          persons[i].location = persons[i].restingPlace;
+        }
+      }
+      return res.json(200, persons);
   });
 };
 

@@ -13,7 +13,7 @@
     <button class="btn btn-primary pdf-btn" ng-click="downloadPDF()">Download this Roster</button>
   </div>
 
-  <!-- ************ Non Admins Table ************** -->
+  <!-- ************ Non-Admins Table - No editing allowed ************** -->
   <div class="table-responsive" ng-show="!isAdmin()">
 
     <table class="table table-bordered table-striped roster-grid">
@@ -45,7 +45,7 @@
           <td ng-class="getCellClass(person, 'career')"><p>{{person.career}}</p></td>
         </tr>
 
-        <!-- ************ display classmates ************** -->
+        <!-- ************ display class list ************** -->
         <tr>
           <td class="roster-blank-row" colspan=10><em>CLASS LIST</em></td>
         </tr>
@@ -69,7 +69,7 @@
     </table>
   </div> <!-- table !isAdmin -->
 
-  <!--  ************ Admins Table - have editable fields ************* -->
+  <!--  ************ Admins Table - allow editing ************* -->
   <div class="table-responsive" ng-show="isAdmin()">
 
     <table class="table table-bordered table-striped admin-roster-grid">
@@ -159,7 +159,7 @@
           </td>
         </tr>
 
-        <!-- ************ display blank row, then the classmates ************** -->
+        <!-- ************ display blank row, then the class list ************** -->
         <tr>
           <td class="roster-blank-row" colspan=10><em>CLASS LIST</em></td>
         </tr>

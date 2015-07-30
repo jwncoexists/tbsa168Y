@@ -2,18 +2,19 @@
 
 var app = angular.module('tbsa168App');
 
-app.controller('RosterCtrl', ['$scope', 'Auth', 'TbsData', 'personList', 'Person',
-  function ($scope, Auth, TbsData, personList, Person)  {
+app.controller('RosterCtrl', ['Auth', 'TbsData', 'personList', 'Person',
+  function (Auth, TbsData, personList, Person)  {
 
-    $scope.isLoggedIn = Auth.isLoggedIn; // this points to a function, so need to call $scope.isLggedIn()
-    $scope.isAdmin = Auth.isAdmin;
-    $scope.currentUser = Auth.getCurrentUser();
-    $scope.roster = {}; // object for controller variables
-    $scope.roster.filterStr = "";
-    $scope.personList = personList;
+    var self = this;
+    self.isLoggedIn = Auth.isLoggedIn; // this points to a function, so need to call self.isLggedIn()
+    self.isAdmin = Auth.isAdmin;
+    self.currentUser = Auth.getCurrentUser();
+    self.roster = {}; // object for controller variables
+    self.roster.filterStr = "";
+    self.personList = personList;
 
     /* list of column headers in the roster table */
-    $scope.headerList = [
+    self.headerList = [
       { text: '2015 Reunion?', class:"col-md-1", property: "reunions" },
       { text: 'Name', class:"col-md-3", property: "name"},
       { text: 'S/M at TBS', class:"col-md-1", property: "sm"},
@@ -27,7 +28,7 @@ app.controller('RosterCtrl', ['$scope', 'Auth', 'TbsData', 'personList', 'Person
     ];
 
     /* sort options for the roster table */
-    $scope.curSort = {
+    self.curSort = {
       hdrText: "Name",
       property: "name",
       order: "+",
@@ -47,10 +48,10 @@ app.controller('RosterCtrl', ['$scope', 'Auth', 'TbsData', 'personList', 'Person
       var found = false,
           i = 0,
           property;
-      while (i < $scope.headerList.length && !found) {
-        if (hdrText === $scope.headerList[i].text) {
+      while (i < self.headerList.length && !found) {
+        if (hdrText === self.headerList[i].text) {
           found = true;
-          property = $scope.headerList[i].property;
+          property = self.headerList[i].property;
         }
         i++;
       }
@@ -67,21 +68,21 @@ app.controller('RosterCtrl', ['$scope', 'Auth', 'TbsData', 'personList', 'Person
     *   monitored by angular to sort the table.
     *
     ***********************************************************/
-    $scope.toggleSort = function(event) {
+    self.toggleSort = function(event) {
 
       // get the header that was clicked on
       var clickedHeader = event.currentTarget.firstChild.data.trim();
 
       // determine whether to sort ascending or descending
-      if (($scope.curSort.order === "+") && ($scope.curSort.hdrText === clickedHeader)) {
+      if ((self.curSort.order === "+") && (self.curSort.hdrText === clickedHeader)) {
         // only time we set descending order is if they click on same property 2x
-        $scope.curSort.order = "-"
-        $scope.curSort.class = "fa fa-caret-up";
+        self.curSort.order = "-"
+        self.curSort.class = "fa fa-caret-up";
       } else {
-        $scope.curSort.order = "+";
-        $scope.curSort.hdrText = clickedHeader;
-        $scope.curSort.property = findClickedProperty(clickedHeader);
-        $scope.curSort.class = "fa fa-caret-down";
+        self.curSort.order = "+";
+        self.curSort.hdrText = clickedHeader;
+        self.curSort.property = findClickedProperty(clickedHeader);
+        self.curSort.class = "fa fa-caret-down";
       }
     }
 
@@ -94,8 +95,8 @@ app.controller('RosterCtrl', ['$scope', 'Auth', 'TbsData', 'personList', 'Person
     *   sort personList according to curSort attributes
     *
     ***********************************************************/
-    $scope.getOrderByString = function() {
-      var returnStr = $scope.curSort.order + $scope.curSort.property;
+    self.getOrderByString = function() {
+      var returnStr = self.curSort.order + self.curSort.property;
       return returnStr;
     }
 
@@ -108,7 +109,7 @@ app.controller('RosterCtrl', ['$scope', 'Auth', 'TbsData', 'personList', 'Person
     *   returns true if that person attended that reunion
     *
     ***********************************************************/
-    $scope.atReunion = function(person, year) {
+    self.atReunion = function(person, year) {
       if (person.reunions) {
         return (person.reunions.indexOf(year) >= 0);
       } else {
@@ -124,8 +125,8 @@ app.controller('RosterCtrl', ['$scope', 'Auth', 'TbsData', 'personList', 'Person
     *   Returns css classname indicating whether person attended reunion
     *
     ***********************************************************/
-    $scope.getReunionClass = function(person) {
-      if ($scope.atReunion(person, '2015')) {
+    self.getReunionClass = function(person) {
+      if (self.atReunion(person, '2015')) {
         return "roster-reunion-cell";
       }
       else {
@@ -135,25 +136,25 @@ app.controller('RosterCtrl', ['$scope', 'Auth', 'TbsData', 'personList', 'Person
 
     /**********************************************************
     *
-    * $scope.updatePerson(person)
+    * self.updatePerson(person)
     *
     * Description:
     *   Updates the person record in the database
     *
     ***********************************************************/
-    $scope.updatePerson = function(person) {
+    self.updatePerson = function(person) {
       person.$update(function (){});
     };
 
     /**********************************************************
     *
-    * $scope.getCellClass(person, property)
+    * self.getCellClass(person, property)
     *
     * Description:
     *   returns a css classname for the property
     *
     ***********************************************************/
-    $scope.getCellClass = function(person, property) {
+    self.getCellClass = function(person, property) {
       var cellClass = "";
       var val = person[property];
 
@@ -180,13 +181,13 @@ app.controller('RosterCtrl', ['$scope', 'Auth', 'TbsData', 'personList', 'Person
 
     /**********************************************************
     *
-    * $scope.formatMos(person)
+    * self.formatMos(person)
     *
     * Description:
     *   Returns the mos attribute formatted with leading zero
     *
     ***********************************************************/
-    $scope.formatMos = function(person) {
+    self.formatMos = function(person) {
       if (person.mos) {
         return ("0" + person.mos).slice (-2);
       }
@@ -194,13 +195,13 @@ app.controller('RosterCtrl', ['$scope', 'Auth', 'TbsData', 'personList', 'Person
 
     /**********************************************************
     *
-    * $scope.getLocation(person)
+    * self.getLocation(person)
     *
     * Description:
     *   Returns the location string to be displayed in the roster table
     *
     ***********************************************************/
-    $scope.getLocation = function(person) {
+    self.getLocation = function(person) {
       if (person.living === true) {
         return person.location;
       } else {
@@ -210,14 +211,14 @@ app.controller('RosterCtrl', ['$scope', 'Auth', 'TbsData', 'personList', 'Person
 
     /**********************************************************
     *
-    * $scope.downloadPDF()
+    * self.downloadPDF()
     *
     * Description:
     *   downloads a pdf version of the roster, sorted according
     *   to current sort parameters
     *
     ***********************************************************/
-    $scope.downloadPDF = function() {
+    self.downloadPDF = function() {
 
       var person;
       var emptyRow =
@@ -234,27 +235,25 @@ app.controller('RosterCtrl', ['$scope', 'Auth', 'TbsData', 'personList', 'Person
       ];
 
       // sort personList according to parameters stored in curSort object
-      $scope.personList.sort( function(a,b) {
-        console.log('sorting personList, a[property] =', a[$scope.curSort.property]);
+      self.personList.sort( function(a,b) {
         var returnVal = 0;
-        if ($scope.curSort.order === "-"){
-          if (a[$scope.curSort.property] < b[$scope.curSort.property] ) {
+        if (self.curSort.order === "-"){
+          if (a[self.curSort.property] < b[self.curSort.property] ) {
             returnVal = 1;
-          } else if (a[$scope.curSort.property] > b[$scope.curSort.property]) {
+          } else if (a[self.curSort.property] > b[self.curSort.property]) {
             returnVal = -1;
           }
         } else {
-          if (a[$scope.curSort.property] > b[$scope.curSort.property] ) {
+          if (a[self.curSort.property] > b[self.curSort.property] ) {
             returnVal = 1;
-          } else if (a[$scope.curSort.property] < b[$scope.curSort.property]) {
+          } else if (a[self.curSort.property] < b[self.curSort.property]) {
             returnVal = -1;
           }
         }
         // if values are equal, then do a secondary sort by name
 
         if (returnVal === 0) {
-          console.log('primary sort values equal, doing a secondary sort');
-          if ($scope.curSort.order === "-"){
+          if (self.curSort.order === "-"){
             if (a.name < b.name) {
               returnVal = 1;
             } else if (a.name > b.name) {
@@ -382,7 +381,7 @@ app.controller('RosterCtrl', ['$scope', 'Auth', 'TbsData', 'personList', 'Person
         var newRow = [],
             location,
             mos;
-        if ($scope.atReunion(person,'2015')) {
+        if (self.atReunion(person,'2015')) {
           newRow.push( {text: 'Y', style: 'tableRowCtr'} );
         } else {
           newRow.push({text: '', style: 'tableRowCtr'} );
@@ -393,13 +392,13 @@ app.controller('RosterCtrl', ['$scope', 'Auth', 'TbsData', 'personList', 'Person
           newRow.push({text: person.name, style: 'tableRowDeceased'});
         }
         newRow.push({text: person.sm || '', style: 'tableRowCtr'});
-        location = $scope.getLocation(person);
+        location = self.getLocation(person);
         newRow.push({text: location || '', style: 'tableRowLeft'});
         newRow.push({text: person.platoon || '', style: 'tableRowCtr'});
         newRow.push({text: person.school || '', style: 'tableRowLeft'});
         newRow.push({text: person.schoolState || '', style: 'tableRowCtr'});
         newRow.push({text: person.commission || '', style: 'tableRowLeft'});
-        mos = $scope.formatMos(person);
+        mos = self.formatMos(person);
         newRow.push({text: mos || '', style: 'tableRowCtr'});
         newRow.push({text: person.career || '', style: 'tableRowLeft'});
 
@@ -410,7 +409,7 @@ app.controller('RosterCtrl', ['$scope', 'Auth', 'TbsData', 'personList', 'Person
 
       // print out the officers first
       for (var i=0; i < personList.length; i++) {
-        person = $scope.personList[i];
+        person = self.personList[i];
         if (person.officer) {
           addRowToTable(docDefinition, person);
         }
@@ -421,7 +420,7 @@ app.controller('RosterCtrl', ['$scope', 'Auth', 'TbsData', 'personList', 'Person
 
       // print out classmates
       for (var i=0; i < personList.length; i++) {
-        person = $scope.personList[i];
+        person = self.personList[i];
         if (!person.officer) {
           addRowToTable(docDefinition, person);
         }

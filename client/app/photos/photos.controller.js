@@ -2,18 +2,19 @@
 
 var app = angular.module('tbsa168App');
 
-app.controller('PhotosCtrl', ['$scope', 'Auth',
-  function ($scope, Auth) {
-    $scope.isLoggedIn = Auth.isLoggedIn;
-    $scope.photos = [];
-    $scope.galleryMode = true; // show gallery of photos to start
+app.controller('PhotosCtrl', ['Auth',
+  function (Auth) {
+    var self = this;
+    self.isLoggedIn = Auth.isLoggedIn;
+    self.photos = [];
+    self.galleryMode = true; // show gallery of photos to start
 
     // initialize values used to display person's name
-    $scope.name = "";
-    $scope.xmin = 0;
-    $scope.xmax = 0;
-    $scope.ymin = 0;
-    $scope.ymax = 0;
+    self.name = "";
+    self.xmin = 0;
+    self.xmax = 0;
+    self.ymin = 0;
+    self.ymax = 0;
 
     // initialize list of photos
     var item = {
@@ -380,7 +381,7 @@ app.controller('PhotosCtrl', ['$scope', 'Auth',
         }
       ]
     };
-    $scope.photos.push (item);
+    self.photos.push (item);
     item = {
       image: "/assets/images/photos/TBS A1-68 2nd Platoon-edited.jpg",
       thumb: "/assets/images/photos/TBS A1-68 2nd Platoon-edited-thumb.jpg",
@@ -761,8 +762,8 @@ app.controller('PhotosCtrl', ['$scope', 'Auth',
         },
       ]
     };
-    $scope.photos.push (item);
-    $scope.photos.push ({
+    self.photos.push (item);
+    self.photos.push ({
       image: "/assets/images/photos/TBS A1-68 3rd Platoon-edited.jpg",
       thumb: "/assets/images/photos/TBS A1-68 3rd Platoon-edited-thumb.jpg",
       info: "Quantico, VA",
@@ -1143,7 +1144,7 @@ app.controller('PhotosCtrl', ['$scope', 'Auth',
         }
       ]
     });
-    $scope.photos.push ({
+    self.photos.push ({
       image: "/assets/images/photos/TBS A1-68 4th Platoon-edited.jpg",
       thumb: "/assets/images/photos/TBS A1-68 4th Platoon-edited-thumb.jpg",
       info: "Quantico, VA",
@@ -1532,7 +1533,7 @@ app.controller('PhotosCtrl', ['$scope', 'Auth',
         },
       ]
     });
-    $scope.photos.push ({
+    self.photos.push ({
       image: "/assets/images/photos/TBS A1-68 5th Platoon-edited.jpg",
       thumb: "/assets/images/photos/TBS A1-68 5th Platoon-edited-thumb.jpg",
       info: "Quantico, VA",
@@ -1872,21 +1873,21 @@ app.controller('PhotosCtrl', ['$scope', 'Auth',
         },
       ]
     });
-    $scope.photos.push ({
+    self.photos.push ({
       image: "/assets/images/photos/TBS A1-68 Staff-1.jpg",
       thumb: "/assets/images/photos/TBS A1-68 Staff-1-thumb.jpg",
       info: "Quantico, VA",
       name: "Staff",
       regions: []
     });
-    $scope.photos.push ({
+    self.photos.push ({
       image: "/assets/images/photos/TBS A1-68 Staff-2.jpg",
       thumb: "/assets/images/photos/TBS A1-68 Staff-2-thumb.jpg",
       info: "Quantico, VA",
       name: "Staff",
       regions: []
     });
-    $scope.photos.push ({
+    self.photos.push ({
       image: "/assets/images/02-gates-al3.png",
       thumb: "/assets/images/02-gates-al3-thumb.png",
       info: "Quantico, VA",
@@ -1896,31 +1897,31 @@ app.controller('PhotosCtrl', ['$scope', 'Auth',
 
 
     //
-    $scope.clickGalleryImage = function (event, ind) {
+    self.clickGalleryImage = function (event, ind) {
       // set the x & y of the full-size-photo div for a nice animation
       var $pictureDiv = $(".animate-show-hide");
       var x = event.pageX;
       var y = Math.max(0, event.pageY - 100);
       $pictureDiv.css("transform-origin", x + "px " + y + "px");
-      $scope.toggleGalleryMode(ind);
+      self.toggleGalleryMode(ind);
     };
-    $scope.toggleGalleryMode = function (ind) {
-      $scope.galleryMode = !$scope.galleryMode;
+    self.toggleGalleryMode = function (ind) {
+      self.galleryMode = !self.galleryMode;
       // if an index is passed in, set scope.clickedPhoto
       if (ind >= 0) {
-        $scope.clickedPhoto = $scope.photos[ind];
-        $scope.clickedIndex = ind;
+        self.clickedPhoto = self.photos[ind];
+        self.clickedIndex = ind;
       }
     };
-    $scope.goToNext = function() {
-      $scope.clickedIndex = ($scope.clickedIndex + 1) % $scope.photos.length;
-      $scope.clickedPhoto = $scope.photos[$scope.clickedIndex];
+    self.goToNext = function() {
+      self.clickedIndex = (self.clickedIndex + 1) % self.photos.length;
+      self.clickedPhoto = self.photos[self.clickedIndex];
     };
-    $scope.goToPrevious = function() {
-      $scope.clickedIndex = ($scope.clickedIndex == 0) ? $scope.photos.length : ($scope.clickedIndex - 1);
-      $scope.clickedPhoto = $scope.photos[$scope.clickedIndex];
+    self.goToPrevious = function() {
+      self.clickedIndex = (self.clickedIndex == 0) ? self.photos.length : (self.clickedIndex - 1);
+      self.clickedPhoto = self.photos[self.clickedIndex];
     };
-    $scope.getRegionStyle = function(region) {
+    self.getRegionStyle = function(region) {
       var style = {
         'position': 'absolute',
         // 'display': 'inline',
@@ -1936,10 +1937,10 @@ app.controller('PhotosCtrl', ['$scope', 'Auth',
       return style;
     }
 
-    $scope.setRegionActive = function(region) {
+    self.setRegionActive = function(region) {
       region.active = true;
     }
-    $scope.setRegionInactive = function(region) {
+    self.setRegionInactive = function(region) {
       region.active = false;
     }
 

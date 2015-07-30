@@ -6,6 +6,7 @@ angular.module('tbsa168App')
       .state('photos', {
         url: '/photos',
         templateUrl: 'app/photos/photos.html',
-        controller: 'PhotosCtrl'
+        controller: 'PhotosCtrl',
+        controllerAs: 'controller'
       });
   });

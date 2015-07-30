@@ -7,6 +7,7 @@ angular.module('tbsa168App')
         url: '/roster',
         templateUrl: 'app/roster/roster.html',
         controller: 'RosterCtrl',
+        controllerAs: 'controller',
         resolve: {
           personList: ['Person', function(Person) {
             // the following makes sure personList is resolved before controller

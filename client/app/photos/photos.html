@@ -1,34 +1,34 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
 
-<div class="container-fluid photo-container" ng-show="isLoggedIn()">
+<div class="container-fluid photo-container" ng-show="controller.isLoggedIn()">
   <div class="section-header">
     <h3><a href="/">> Home</a><a href="/photos"> > Photos</a></h3>
   </div>
-  <div class="photo-grid" masonry ng-hide="!galleryMode" >
+  <div class="photo-grid" masonry ng-hide="!controller.galleryMode" >
   <!-- <masonry ng-hide="!galleryMode" > -->
-    <div ng-repeat="photo in photos" class="masonry-brick" >
+    <div ng-repeat="photo in controller.photos" class="masonry-brick" >
       <!-- <img ng-src="{{photo.path}}" ng-click="goToState(photo._id, photo.stateName, photo.stateParams)"> -->
-      <img ng-src="{{photo.thumb}}" image-on-load ng-click="clickGalleryImage($event, $index)">
+      <img ng-src="{{photo.thumb}}" image-on-load ng-click="controller.clickGalleryImage($event, $index)">
     </div>
   </div>
   <!-- </masonry> -->
 
-  <div class="full-size-photo animate-show-hide" ng-hide="galleryMode">
+  <div class="full-size-photo animate-show-hide" ng-hide="controller.galleryMode">
     <p class="next-prev-controls">
-      <span class="fa fa-chevron-left" ng-click="goToPrevious()"></span>
-      <span ng-click="goToPrevious()">Previous</span>
+      <span class="fa fa-chevron-left" ng-click="controller.goToPrevious()"></span>
+      <span ng-click="controller.goToPrevious()">Previous</span>
       <span>  |  </span>
-      <span ng-click="toggleGalleryMode(-1)"> Return to Gallery </span>
+      <span ng-click="controller.toggleGalleryMode(-1)"> Return to Gallery </span>
       <span>  |  </span>
-      <span ng-click="goToNext()">Next</span>
-      <span class="fa fa-chevron-right" ng-click="goToNext()"></span>
+      <span ng-click="controller.goToNext()">Next</span>
+      <span class="fa fa-chevron-right" ng-click="controller.goToNext()"></span>
     </p>
     <div class="image">
-      <img ng-src="{{clickedPhoto.image}}">
+      <img ng-src="{{controller.clickedPhoto.image}}">
       <!-- divs for all the peoples names in the photos -->
-      <div ng-repeat="region in clickedPhoto.regions">
-        <div ng-mouseenter="setRegionActive(region)"
-             ng-mouseleave="setRegionInactive(region)" ng-style="getRegionStyle(region)" >
+      <div ng-repeat="region in controller.clickedPhoto.regions">
+        <div ng-mouseenter="controller.setRegionActive(region)"
+             ng-mouseleave="controller.setRegionInactive(region)" ng-style="controller.getRegionStyle(region)" >
           <div class="photo-names">{{region.name}}</span>
         </div>
       </div>
@@ -36,7 +36,7 @@
   </div>
 </div>
 
-<div class="container-fluid" ng-show="!isLoggedIn()">
+<div class="container-fluid" ng-show="!controller.isLoggedIn()">
   <p>Please log in to view the TBS Reunion Photographs.</p>
 </div>
 

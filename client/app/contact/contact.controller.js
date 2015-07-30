@@ -2,7 +2,8 @@
 
 var app = angular.module('tbsa168App');
 
-app.controller('ContactCtrl', ['$scope', 'Auth',
-  function ($scope, Auth){
-    $scope.isLoggedIn = Auth.isLoggedIn;
+app.controller('ContactCtrl', ['Auth',
+  function (Auth){
+    var self = this;
+    self.isLoggedIn = Auth.isLoggedIn;
 }]);

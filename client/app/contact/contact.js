@@ -6,6 +6,7 @@ angular.module('tbsa168App')
       .state('contact', {
         url: '/contact',
         templateUrl: 'app/contact/contact.html',
-        controller: 'ContactCtrl'
+        controller: 'ContactCtrl',
+        controllerAs: 'controller'
       });
   });

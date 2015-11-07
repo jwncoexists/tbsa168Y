@@ -3,25 +3,22 @@
 <div class="hero-unit home">
   <div class="container">
     <h1>USMC The Basic School<br>Company A1-68</h1>
-    <p class="lead" ng-show="!isLoggedIn()">
+    <p class="lead" ng-show="!controller.isLoggedIn()">
       Alpha Company, The Basic School Class of 1-68 gathered in Quantico, Virginia in July 1967.
       &nbsp 219 Lieutenants graduated at the end of the year, receiving their assigned military occupational specialties
       and orders to duty.
       Those assigned to the infantry went directly to Vietnam, or to recon training, and then to Vietnam.
+      <br>Login below to browse photos and learn more about your classmates.
     <br>
     <a class="btn btn-lg btn-success btn-contact" href="/login">Login <span class="fa fa-angle-right"></span></a>
-    <br><br>
-    After logging in and browsing this site, be sure to also visit the Official A1-68 Website:<br>
-      <a class="btn btn-lg btn-success btn-contact" ng-click="clickOfficialSite()">A1-68 Official Website <span class="fa fa-angle-right"></span></a>
+
     </p>
 
-    <p class="lead" ng-show="isLoggedIn()">
+    <p class="lead" ng-show="controller.isLoggedIn()">
       Alpha Company, The Basic School Class of 1-68 gathered in Quantico, Virginia in July 1967.
       &nbsp 219 Lieutenants graduated at the end of the year, receiving their assigned military occupational specialties
       and orders to duty.
       Those assigned to the infantry went directly to Vietnam, or to recon training, and then to Vietnam.<br><br>
-      After browsing this site, be sure to also visit the Official A1-68 Website:&nbsp
-        <a class="btn btn-lg btn-success btn-contact" ng-click="clickOfficialSite()">A1-68 Official Website <span class="fa fa-angle-right"></span></a>
     </p>
   </div>
 </div>
@@ -43,7 +40,7 @@ Rappahannock River in Fredericksburg, VA  |  Photograph by <a href="http://www.f
       <h2>2015 Reunion</h2>
       <p>
         April 28th through May 3rd, 2015 many classmates came together in Fredericksburg, Virginia for our first reunion.
-        This was a special occasion indeed. Numerous special events were held, including a memorial service at the Vietnam Wall.
+        This was a special occasion indeed. Numerous special events were held, including a memorial service at the Vietnam Wall.  Be sure to login and browse or upload your reunion photos!
       </p>
     </div>
     <div class="point col-md-4">

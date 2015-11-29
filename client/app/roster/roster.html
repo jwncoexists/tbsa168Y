@@ -49,8 +49,13 @@
         <tr>
           <td class="roster-blank-row" colspan=10><em>CLASS LIST</em></td>
         </tr>
-        <tr ng-repeat="person in personList | filter:{officer: false} | filter:controller.roster.filterStr | orderBy:[controller.getOrderByString(), 'name']" class="person-row">
-          <td ng-class="controller.getReunionClass(person)"></td>
+        <tr ng-repeat="person in controller.personList | filter:{officer: false} | filter:controller.roster.filterStr | orderBy:[controller.getOrderByString(), 'name']" class="person-row">
+          <td ng-class="controller.getReunionClass(person)">
+            <span>
+              <i class="fa fa-check fa-lg" ng-show="controller.atReunion(person,'2015')"></i>
+              <!-- <i class="fa fa-close fa-lg" ng-show="!controller.atReunion(person,'2015')"></i> -->
+            </span>
+          </td>
           <td ng-class="controller.getCellClass(person, 'name')">
             {{person.name}}
             <br><span class="decorations" ng-show="person.decorations">**{{ person.decorations }}</span>

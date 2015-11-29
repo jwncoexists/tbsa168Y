@@ -3,36 +3,36 @@
 var app = angular.module('tbsa168App');
 
 app.controller('RosterCtrl', ['Auth', 'TbsData', 'personList', 'Person',
-  function (Auth, TbsData, personList, Person)  {
+  function (Auth, TbsData, personList, Person)  { // jshint ignore:line
 
     var self = this;
     self.isLoggedIn = Auth.isLoggedIn; // this points to a function, so need to call self.isLggedIn()
     self.isAdmin = Auth.isAdmin;
     self.currentUser = Auth.getCurrentUser();
     self.roster = {}; // object for controller variables
-    self.roster.filterStr = "";
+    self.roster.filterStr = '';
     self.personList = personList;
 
     /* list of column headers in the roster table */
     self.headerList = [
-      { text: '2015 Reunion?', class:"col-md-1", property: "reunions" },
-      { text: 'Name', class:"col-md-3", property: "name"},
-      { text: 'S/M at TBS', class:"col-md-1", property: "sm"},
-      { text: 'Location', class:"col-md-1", property: "location"},
-      { text: 'Platoon', class:"col-md-1", property: "platoon"},
-      { text: 'School', class:"col-md-1", property: "school"},
-      { text: 'State', class:"col-md-1", property: "schoolState"},
-      { text: 'Commission Source', class:"col-md-1", property: "commission"},
-      { text: 'MOS', class:"col-md-1", property: "mos"},
-      { text: 'Career', class:"col-md-1", property: "career"}
+      { text: '2015 Reunion?', class:'col-md-1', property: 'reunions' },
+      { text: 'Name', class:'col-md-3', property: 'name'},
+      { text: 'S/M at TBS', class:'col-md-1', property: 'sm'},
+      { text: 'Location', class:'col-md-1', property: 'location'},
+      { text: 'Platoon', class:'col-md-1', property: 'platoon'},
+      { text: 'School', class:'col-md-1', property: 'school'},
+      { text: 'State', class:'col-md-1', property: 'schoolState'},
+      { text: 'Commission Source', class:'col-md-1', property: 'commission'},
+      { text: 'MOS', class:'col-md-1', property: 'mos'},
+      { text: 'Career', class:'col-md-1', property: 'career'}
     ];
 
     /* sort options for the roster table */
     self.curSort = {
-      hdrText: "Name",
-      property: "name",
-      order: "+",
-      class: "fa fa-caret-down"
+      hdrText: 'Name',
+      property: 'name',
+      order: '+',
+      class: 'fa fa-caret-down'
     };
 
     /**********************************************************
@@ -74,17 +74,17 @@ app.controller('RosterCtrl', ['Auth', 'TbsData', 'personList', 'Person',
       var clickedHeader = event.currentTarget.firstChild.data.trim();
 
       // determine whether to sort ascending or descending
-      if ((self.curSort.order === "+") && (self.curSort.hdrText === clickedHeader)) {
+      if ((self.curSort.order === '+') && (self.curSort.hdrText === clickedHeader)) {
         // only time we set descending order is if they click on same property 2x
-        self.curSort.order = "-"
-        self.curSort.class = "fa fa-caret-up";
+        self.curSort.order = '-';
+        self.curSort.class = 'fa fa-caret-up';
       } else {
-        self.curSort.order = "+";
+        self.curSort.order = '+';
         self.curSort.hdrText = clickedHeader;
         self.curSort.property = findClickedProperty(clickedHeader);
-        self.curSort.class = "fa fa-caret-down";
+        self.curSort.class = 'fa fa-caret-down';
       }
-    }
+    };
 
     /**********************************************************
     *
@@ -98,7 +98,7 @@ app.controller('RosterCtrl', ['Auth', 'TbsData', 'personList', 'Person',
     self.getOrderByString = function() {
       var returnStr = self.curSort.order + self.curSort.property;
       return returnStr;
-    }
+    };
 
     /**********************************************************
     *
@@ -127,12 +127,12 @@ app.controller('RosterCtrl', ['Auth', 'TbsData', 'personList', 'Person',
     ***********************************************************/
     self.getReunionClass = function(person) {
       if (self.atReunion(person, '2015')) {
-        return "roster-reunion-cell";
+        return 'roster-reunion-cell';
       }
       else {
-        return "roster-no-reunions";
+        return 'roster-no-reunions';
       }
-    }
+    };
 
     /**********************************************************
     *
@@ -155,29 +155,29 @@ app.controller('RosterCtrl', ['Auth', 'TbsData', 'personList', 'Person',
     *
     ***********************************************************/
     self.getCellClass = function(person, property) {
-      var cellClass = "";
+      var cellClass = '';
       var val = person[property];
 
-      if (!val || val === "" || val == undefined) {
-        cellClass += "roster-empty-cell "
+      if (!val || val === '' || val == undefined) { // jshint ignore:line
+        cellClass += 'roster-empty-cell ';
       } else {
-        cellClass += "roster-data-cell "
+        cellClass += 'roster-data-cell ';
       }
 
       if (person.officer) {
-        cellClass += "roster-officer-cell "
+        cellClass += 'roster-officer-cell ';
       }
 
       if (!person.living) {
-        cellClass += "roster-deceased-cell "
+        cellClass += 'roster-deceased-cell ';
       }
       // center the following text
-      if (property === "platoon" || property ===  "schoolState" || property === "mos") {
-        cellClass += "centered-text "
+      if (property === 'platoon' || property ===  'schoolState' || property === 'mos') {
+        cellClass += 'centered-text ';
       }
 
       return cellClass;
-    }
+    };
 
     /**********************************************************
     *
@@ -189,9 +189,9 @@ app.controller('RosterCtrl', ['Auth', 'TbsData', 'personList', 'Person',
     ***********************************************************/
     self.formatMos = function(person) {
       if (person.mos) {
-        return ("0" + person.mos).slice (-2);
+        return ('0' + person.mos).slice (-2);
       }
-    }
+    };
 
     /**********************************************************
     *
@@ -205,9 +205,9 @@ app.controller('RosterCtrl', ['Auth', 'TbsData', 'personList', 'Person',
       if (person.living === true) {
         return person.location;
       } else {
-        return "At Rest: " + person.restingPlace;
+        return 'At Rest: ' + person.restingPlace;
       }
-    }
+    };
 
     /**********************************************************
     *
@@ -237,7 +237,7 @@ app.controller('RosterCtrl', ['Auth', 'TbsData', 'personList', 'Person',
       // sort personList according to parameters stored in curSort object
       self.personList.sort( function(a,b) {
         var returnVal = 0;
-        if (self.curSort.order === "-"){
+        if (self.curSort.order === '-'){
           if (a[self.curSort.property] < b[self.curSort.property] ) {
             returnVal = 1;
           } else if (a[self.curSort.property] > b[self.curSort.property]) {
@@ -253,7 +253,7 @@ app.controller('RosterCtrl', ['Auth', 'TbsData', 'personList', 'Person',
         // if values are equal, then do a secondary sort by name
 
         if (returnVal === 0) {
-          if (self.curSort.order === "-"){
+          if (self.curSort.order === '-'){
             if (a.name < b.name) {
               returnVal = 1;
             } else if (a.name > b.name) {
@@ -275,7 +275,7 @@ app.controller('RosterCtrl', ['Auth', 'TbsData', 'personList', 'Person',
             pageSize: 'LETTER', // a string or { width: number, height: number }
             pageOrientation: 'landscape', // default is portrait
             pageMargins: [ 20, 50, 20, 50 ], // [left, top, right, bottom] or [horizontal, vertical] or just a number for equal margins
-            header: function(currentPage, pageCount) { return { text: 'TBS-A1-68 Roster', style: 'headerStyle', margin: [ 0, 20 ] }; },
+            header: function(currentPage, pageCount) { return { text: 'TBS-A1-68 Roster', style: 'headerStyle', margin: [ 0, 20 ] }; },  // jshint ignore:line
             fontsize: 8,
             footer: function(currentPage, pageCount) { return { text: 'Page ' + currentPage.toString() + ' of ' + pageCount, style: 'footerStyle' }; },
             content: [
@@ -303,19 +303,19 @@ app.controller('RosterCtrl', ['Auth', 'TbsData', 'personList', 'Person',
                 ]
               }, // table
               layout: {
-												hLineWidth: function(i, node) {
+												hLineWidth: function(i, node) {  // jshint ignore:line
 														// return (i === 0 || i === node.table.body.length) ? 2 : 1;
                             return 1;
 												},
-												vLineWidth: function(i, node) {
+												vLineWidth: function(i, node) {   // jshint ignore:line
 														// return (i === 0 || i === node.table.widths.length) ? 2 : 1;
                             return 1;
 												},
-												hLineColor: function(i, node) {
+												hLineColor: function(i, node) {  // jshint ignore:line
 														// return (i === 0 || i === node.table.body.length) ? 'gray' : 'gray';
                             return 'gray';
 												},
-												vLineColor: function(i, node) {
+												vLineColor: function(i, node) {  // jshint ignore:line
 														// return (i === 0 || i === node.table.widths.length) ? 'gray' : 'gray';
                             return 'gray';
 												},
@@ -380,6 +380,7 @@ app.controller('RosterCtrl', ['Auth', 'TbsData', 'personList', 'Person',
       function addRowToTable(docDefinition, person) {
         var newRow = [],
             location,
+            name= person.decorations ? person.name + ' **' + person.decorations : person.name,
             mos;
         if (self.atReunion(person,'2015')) {
           newRow.push( {text: 'Y', style: 'tableRowCtr'} );
@@ -387,9 +388,9 @@ app.controller('RosterCtrl', ['Auth', 'TbsData', 'personList', 'Person',
           newRow.push({text: '', style: 'tableRowCtr'} );
         }
         if (person.living) {
-          newRow.push({text: person.name, style: 'tableRowLeft'});
+          newRow.push({text: name, style: 'tableRowLeft'});
         } else {
-          newRow.push({text: person.name, style: 'tableRowDeceased'});
+          newRow.push({text: name, style: 'tableRowDeceased'});
         }
         newRow.push({text: person.sm || '', style: 'tableRowCtr'});
         location = self.getLocation(person);
@@ -405,7 +406,7 @@ app.controller('RosterCtrl', ['Auth', 'TbsData', 'personList', 'Person',
         docDefinition.content[0].table.body.push(newRow);
       }
 
-      var person = {};
+      person = {};
 
       // print out the officers first
       for (var i=0; i < personList.length; i++) {
@@ -419,7 +420,7 @@ app.controller('RosterCtrl', ['Auth', 'TbsData', 'personList', 'Person',
       docDefinition.content[0].table.body.push(emptyRow);
 
       // print out classmates
-      for (var i=0; i < personList.length; i++) {
+      for (i=0; i < personList.length; i++) {
         person = self.personList[i];
         if (!person.officer) {
           addRowToTable(docDefinition, person);
@@ -430,9 +431,9 @@ app.controller('RosterCtrl', ['Auth', 'TbsData', 'personList', 'Person',
       // pdfMake.createPdf(docDefinition).open();
 
       // download the PDF
-      pdfMake.createPdf(docDefinition).download();
+      pdfMake.createPdf(docDefinition).download();  // jshint ignore:line
 
-    }
+    };
 
 
 }]); // RosterCtrl

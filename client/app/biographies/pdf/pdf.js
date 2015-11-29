@@ -3,7 +3,7 @@
 angular.module('tbsa168App')
   .config(function ($stateProvider) {
     $stateProvider
-      .state('biopdf', {
+      .state('pdf', {
         url: '/biographies/pdf/{id}',
         templateUrl: 'app/biographies/pdf/pdf.html',
         controller: 'PdfCtrl'

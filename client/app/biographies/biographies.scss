@@ -167,11 +167,12 @@ textarea.ng-valid.ng-dirty {
   padding-top: 0;
 }
 
-.nav-tabs > li > a {
+#bio-tabs.nav-tabs > li > a {
   text-decoration: none;
   color: $text-color;
 
 }
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+
+#bio-tabs.nav-tabs > li.active > a, #bio-tabs.nav-tabs > li.active > a:hover, #bio-tabs.nav-tabs > li.active > a:focus {
   color: $logo-main-color;
 }

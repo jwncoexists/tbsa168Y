@@ -7,10 +7,8 @@ app.controller('FallenIdCtrl', ['$scope', 'Auth', 'TbsData', '$stateParams', '$l
     $scope.isLoggedIn = Auth.isLoggedIn;
     $scope.isAdmin = Auth.isAdmin;
     $scope.person = {};
-    console.log('stateParams = ', $stateParams);
     $scope.person._id = $stateParams.id;
     TbsData.getPerson($scope.person._id, function(data) {
-      console.log('back from getPerson: ', data);
       $scope.person.photo = data.photo;
       $scope.person.name = data.name;
       $scope.person.date = data.date;
@@ -24,7 +22,6 @@ app.controller('FallenIdCtrl', ['$scope', 'Auth', 'TbsData', '$stateParams', '$l
       $scope.person.pdf  = data.pdf;
     });
     $scope.submit = function() {
-      console.log('$scope.submit');
       TbsData.updatePerson($scope.person, function(data) {
         toastr.info( $scope.person.name + ' successfully updated.');
         $location.path('/fallen');

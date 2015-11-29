@@ -10,11 +10,11 @@ angular.module('tbsa168App')
       'state': 'main',
       'membersOnly': false
     },
-    {
-      'title': 'OFFICIAL A1-68 WEBSITE',
-      'link': 'http://tbs1-68usmc.com/index.html',
-      'membersOnly': false
-    },
+    // {
+    //   'title': 'OFFICIAL A1-68 WEBSITE',
+    //   'link': 'http://tbs1-68usmc.com/index.html',
+    //   'membersOnly': false
+    // },
     {
       'title': 'PHOTOS',
       'link': '/photos',
@@ -28,9 +28,9 @@ angular.module('tbsa168App')
       'membersOnly': true
     },
     {
-      'title': 'OUR FALLEN',
-      'link': '/fallen',
-      'state': 'fallen',
+      'title': 'BIOGRAPHIES',
+      'link': '/biographies',
+      'state': 'biographies',
       'membersOnly': true
     },
     {

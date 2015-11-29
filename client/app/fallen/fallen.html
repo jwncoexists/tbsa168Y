@@ -54,13 +54,13 @@
     <input type="text" id="fallen-input" placeholder="Enter search critera such as name or platoon, e.g. 1st" class="fallen-input" data-ng-model="fallen.filterStr" />
   </div>
   <table class="table table-bordered person-table">
-    <tr ng-repeat="person in fallenList | filter:filterList" class="person">
+    <tr ng-repeat="person in fallenList | filter:ctrl.filterList" class="person">
       <td class="image-col"><img ng-src="{{ person.photo }}" /></td>
       <td class="info-col">
         <span ng-show="!isAdmin()">
           <strong>{{ person.name }}, {{ person.platoon }} Platoon</strong>
         </span>
-        <span class="edit-person" ng-show="isAdmin()" ng-click="editPerson(person._id)">
+        <span class="edit-person" ng-show="isAdmin()" ng-click="ctrl.editPerson(person._id)">
           <strong>{{ person.name }}, {{ person.platoon }} Platoon</strong>
           <span class="fa fa-pencil"></span>
         </span>
@@ -72,21 +72,21 @@
           <img ng-src="{{person.bioPhoto}}" ng-show="person.bioPhoto && displayFull[person._id]">
           <img ng-src="{{person.bioPhoto2}}" ng-show="person.bioPhoto2 && displayFull[person._id]">
         </div>
-        <span ng-bind-html="getBio(person)"></span>
+        <span ng-bind-html="ctrl.getBio(person)"></span>
 
         <!-- reflection display for non-admins -->
         <!-- Important!! - dont't change indentation on <strong> line - it will cause text to be indented in display -->
         <div class="reflection" ng-repeat="reflection in person.reflections" ng-show="displayFull[person._id]">
-          <pre>
+          <pre> <!-- don't indent the following line! -->
 <strong><em><span ng-if="reflection.by">{{reflection.by}}: "</span></em></strong>{{reflection.reflection}}"
           </pre>
         </div>
 
-        <span class="show-less" ng-show="showLessLink(person)" ng-click="toggleMore(person._id)"><strong> [show less]</strong></span>
-        <span class="show-more" ng-show="showMoreLink(person)" ng-click="toggleMore(person._id)"><strong> [...show more]</strong></span>
-        <span class="add-reflection-link" ng-show="showReflectionLink(person)" ng-click="open(person)"><strong> [add a reflection]</strong></span>
+        <span class="show-less" ng-show="ctrl.showLessLink(person)" ng-click="ctrl.toggleMore(person._id)"><strong> [show less]</strong></span>
+        <span class="show-more" ng-show="ctrl.showMoreLink(person)" ng-click="ctrl.toggleMore(person._id)"><strong> [...show more]</strong></span>
+        <span class="add-reflection-link" ng-show="ctrl.showReflectionLink(person)" ng-click="ctrl.open(person)"><strong> [add a reflection]</strong></span>
         <!-- <span class="view-pdf-link" ng-click="showPdf(person)"><strong> [print, view or download PDF]</strong></span> -->
-        <a ng-click="showPdf(person)" class="view-pdf-link" ng-show="person.pdf"><strong> [download bio PDF]</strong></span>
+        <a class="view-pdf-link" ng-show="person.pdf" ng-click="ctrl.showPdf(person)"><strong> [download bio PDF]</strong></span>
       </td>
     </tr>
   </table>

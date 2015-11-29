@@ -28,9 +28,9 @@ angular.module('tbsa168App')
       'membersOnly': true
     },
     {
-      'title': 'OUR FALLEN',
-      'link': '/fallen',
-      'state': 'fallen',
+      'title': 'BIOGRAPHIES',
+      'link': '/biographies',
+      'state': 'biographies',
       'membersOnly': true
     },
     {

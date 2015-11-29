@@ -10,7 +10,7 @@ app.controller('PhotosCtrl', ['Auth',
     self.galleryMode = true; // show gallery of photos to start
 
     // initialize values used to display person's name
-    self.name = "";
+    self.name = '';
     self.xmin = 0;
     self.xmax = 0;
     self.ymin = 0;
@@ -202,7 +202,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Peter Ackly",
+          name: "Peter Acly",
           xmin: 109,
           width: 38,
           ymin: 209,
@@ -1297,7 +1297,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Dave Moran",
+          name: "Donald Moran",
           xmin: 485,
           width: 58,
           ymin: 196,

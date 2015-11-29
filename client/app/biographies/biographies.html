@@ -1,0 +1,95 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<div class="container-fluid bios">
+
+  <div class="section-header">
+    <h3><a href="/">> Home</a><a href="/biographies"> > Classmate Biographies</a></h3>
+  </div>
+
+  <ul class="nav nav-tabs">
+    <li role="presentation" class="{{ctrl.getTabClass('fallen')}}">
+      <a href="#" ng-click="ctrl.setClassFilter('fallen')">Our Fallen</a>
+    </li>
+    <li role="presentation" class="{{ctrl.getTabClass('1st Platoon')}}">
+      <a href="#" ng-click="ctrl.setClassFilter('1st Platoon')">1st Platoon</a>
+    </li>
+    <li role="presentation" class="{{ctrl.getTabClass('2nd Platoon')}}">
+      <a href="#" ng-click="ctrl.setClassFilter('2nd Platoon')">2nd Platoon</a>
+    </li>
+    <li role="presentation" class="{{ctrl.getTabClass('3rd Platoon')}}">
+      <a href="#" ng-click="ctrl.setClassFilter('3rd Platoon')">3rd Platoon</a>
+    </li>
+    <li role="presentation" class="{{ctrl.getTabClass('4th Platoon')}}">
+      <a href="#" ng-click="ctrl.setClassFilter('4th Platoon')">4th Platoon</a>
+    </li>
+    <li role="presentation" class="{{ctrl.getTabClass('5th Platoon')}}">
+      <a href="#" ng-click="ctrl.setClassFilter('5th Platoon')">5th Platoon</a>
+    </li>
+  </ul>
+
+<div class="container-fluid bios-list" ng-show="isLoggedIn()">
+  <!-- <div ng-show="isLoggedIn()">
+    <h2 class="subsection-header">Classmate Biographies</h2>
+  </div> -->
+
+  <div class="form-group bios-filter">
+    <label for="bios-input">Find: </label>
+    <input type="text" id="bios-input" placeholder="Enter search critera such as name or platoon, e.g. 1st" class="bios-input" data-ng-model="bios.filterStr" />
+  </div>
+  <table class="table table-bordered person-table">
+    <tr ng-repeat="person in personList | filter:ctrl.filterClass | filter:ctrl.filterList" class="person">
+      <td class="image-col"><img ng-src="{{ person.photo }}" /></td>
+      <td class="info-col">
+        <span ng-show="!isAdmin()">
+          <strong>{{ person.name }}, {{ person.platoon }} Platoon</strong>
+        </span>
+        <span class="edit-person" ng-show="isAdmin()" ng-click="ctrl.editPerson(person._id)">
+          <strong>{{ person.name }}, {{ person.platoon }} Platoon</strong>
+          <span class="fa fa-pencil"></span>
+        </span>
+        <br>
+        {{ person.date }}<br>
+        {{ person.restingPlace }}
+        <br><br>
+        <div class="bio-photos">
+          <img ng-src="{{person.bioPhoto}}" ng-show="person.bioPhoto && displayFull[person._id]">
+          <img ng-src="{{person.bioPhoto2}}" ng-show="person.bioPhoto2 && displayFull[person._id]">
+        </div>
+        <span ng-bind-html="ctrl.getBio(person)"></span>
+
+        <!-- reflection display for non-admins -->
+        <!-- Important!! - dont't change indentation on <strong> line - it will cause text to be indented in display -->
+        <div class="reflection" ng-repeat="reflection in person.reflections" ng-show="displayFull[person._id]">
+          <pre> <!-- don't indent the following line! -->
+<strong><em><span ng-if="reflection.by">{{reflection.by}}: "</span></em></strong>{{reflection.reflection}}"
+          </pre>
+        </div>
+
+        <span class="show-less" ng-show="ctrl.showLessLink(person)" ng-click="ctrl.toggleMore(person._id)"><strong> [show less]</strong></span>
+        <span class="show-more" ng-show="ctrl.showMoreLink(person)" ng-click="ctrl.toggleMore(person._id)"><strong> [...show more]</strong></span>
+        <span class="add-reflection-link" ng-show="ctrl.showReflectionLink(person)" ng-click="ctrl.open(person)"><strong> [add a reflection]</strong></span>
+        <!-- <span class="view-pdf-link" ng-click="showPdf(person)"><strong> [print, view or download PDF]</strong></span> -->
+        <a class="view-pdf-link" ng-show="person.pdf" ng-click="ctrl.showPdf(person)"><strong> [download bio PDF]</strong></span>
+      </td>
+    </tr>
+  </table>
+
+</div>
+
+<div>
+  <script type="text/ng-template" id="myModalContent.html">
+    <div class="modal-header">
+        <h3 class="modal-title">Enter your reflection for: {{ person.name }}</h3>
+    </div>
+    <div class="modal-body">
+        <textarea class="reflection-input" rows="23" ng-model="reflection"></textarea>
+        Reflection: <b>{{ reflection }}</b>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" ng-click="save()">OK</button>
+        <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+    </div>
+  </script>
+</div>
+
+<div ng-include="'components/footer/footer.html'"></div>

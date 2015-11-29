@@ -18,13 +18,13 @@ app.controller('PhotosCtrl', ['Auth',
 
     // initialize list of photos
     var item = {
-      image: "/assets/images/photos/TBS A1-68 1st Platoon-edited.jpg",
-      thumb: "/assets/images/photos/TBS A1-68 1st Platoon-edited-thumb.jpg",
-      name: "1st Platoon",
+      image: '/assets/images/photos/TBS A1-68 1st Platoon-edited.jpg',
+      thumb: '/assets/images/photos/TBS A1-68 1st Platoon-edited-thumb.jpg',
+      name: '1st Platoon',
       regions: [
         // ***** row 1 *******
         {
-          name: "Ron Burton",
+          name: 'Ron Burton',
           xmin: 73,
           width: 64,
           ymin: 294,
@@ -32,7 +32,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Jim Brinson",
+          name: 'Jim Brinson',
           xmin: 138,
           width: 62,
           ymin: 294,
@@ -40,7 +40,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "John Banning",
+          name: 'John Banning',
           xmin: 201,
           width: 55,
           ymin: 294,
@@ -48,7 +48,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Bern Bradstreet",
+          name: 'Bern Bradstreet',
           xmin: 257,
           width: 57,
           ymin: 294,
@@ -56,7 +56,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Les Amick",
+          name: 'Les Amick',
           xmin: 315,
           width: 65,
           ymin: 294,
@@ -64,7 +64,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Capt Sid Chapin",
+          name: 'Capt Sid Chapin',
           xmin: 381,
           width: 60,
           ymin: 294,
@@ -72,7 +72,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Merritt Chafey",
+          name: 'Merritt Chafey',
           xmin: 441,
           width: 71,
           ymin: 294,
@@ -80,7 +80,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Joe Allen",
+          name: 'Joe Allen',
           xmin: 513,
           width: 55,
           ymin: 294,
@@ -88,7 +88,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "John Carlin",
+          name: 'Phil Carlin',
           xmin: 569,
           width: 65,
           ymin: 294,
@@ -96,7 +96,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Bob Casey",
+          name: 'Bob Casey',
           xmin: 635,
           width: 60,
           ymin: 294,
@@ -104,7 +104,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Gary Andresen",
+          name: 'Gary Andresen',
           xmin: 696,
           width: 62,
           ymin: 294,
@@ -113,7 +113,7 @@ app.controller('PhotosCtrl', ['Auth',
         },
         // ***** row 2 *******
         {
-          name: "Rod Arena",
+          name: 'Rod Arena',
           xmin: 61,
           width: 64,
           ymin: 226,
@@ -121,7 +121,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Randy Champe",
+          name: 'Randy Champe',
           xmin: 126,
           width: 64,
           ymin: 226,
@@ -129,7 +129,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Dave Baker",
+          name: 'Dave Baker',
           xmin: 191,
           width: 65,
           ymin: 236,
@@ -137,7 +137,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Jim Beaver",
+          name: 'Jim Beaver',
           xmin: 257,
           width: 56,
           ymin: 236,
@@ -145,7 +145,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "John Ames (Anuszewski)",
+          name: 'John Ames (Anuszewski)',
           xmin: 314,
           width: 66,
           ymin: 206,
@@ -153,7 +153,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Dave Boillot",
+          name: 'Dave Boillot',
           xmin: 381,
           width: 62,
           ymin: 236,
@@ -161,7 +161,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Ken Bruner",
+          name: 'Ken Bruner',
           xmin: 444,
           width: 59,
           ymin: 236,
@@ -169,7 +169,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Rick Brasch",
+          name: 'Rick Brasch',
           xmin: 504,
           width: 56,
           ymin: 236,
@@ -177,7 +177,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "John Basel",
+          name: 'John Basel',
           xmin: 572,
           width: 66,
           ymin: 220,
@@ -185,7 +185,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Paul Budd",
+          name: 'Paul Budd',
           xmin: 658,
           width: 70,
           ymin: 208,
@@ -194,7 +194,7 @@ app.controller('PhotosCtrl', ['Auth',
         },
         // ***** row 3 *******
         {
-          name: "Rufus Artmann",
+          name: 'Rufus Artmann',
           xmin: 25,
           width: 50,
           ymin: 209,
@@ -202,7 +202,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Peter Acly",
+          name: 'Peter Acly',
           xmin: 109,
           width: 38,
           ymin: 209,
@@ -210,7 +210,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Peter Colt",
+          name: 'Peter Colt',
           xmin: 174,
           width: 36,
           ymin: 209,
@@ -218,7 +218,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Cliff Brahmstad",
+          name: 'Cliff Brahmstad',
           xmin: 237,
           width: 36,
           ymin: 209,
@@ -226,7 +226,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Joel Brummel",
+          name: 'Joel Brummel',
           xmin: 303,
           width: 33,
           ymin: 195,
@@ -234,7 +234,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Bill Black",
+          name: 'Bill Black',
           xmin: 362,
           width: 38,
           ymin: 200,
@@ -242,7 +242,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Robert Chisea",
+          name: 'Robert Chisea',
           xmin: 426,
           width: 36,
           ymin: 185,
@@ -250,7 +250,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Mike Barretti",
+          name: 'Mike Barretti',
           xmin: 488,
           width: 33,
           ymin: 195,
@@ -258,7 +258,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Chuck Collins",
+          name: 'Chuck Collins',
           xmin: 549,
           width: 42,
           ymin: 209,
@@ -266,7 +266,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Mark Byrd",
+          name: 'Mark Byrd',
           xmin: 620,
           width: 46,
           ymin: 195,
@@ -275,7 +275,7 @@ app.controller('PhotosCtrl', ['Auth',
         },
         // ***** row 4 *******
         {
-          name: "Rob Barnes",
+          name: 'Rob Barnes',
           xmin: 80,
           width: 35,
           ymin: 194,
@@ -283,7 +283,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "John Cochenour",
+          name: 'John Cochenour',
           xmin: 146,
           width: 33,
           ymin: 188,
@@ -291,7 +291,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Bruce Cheever",
+          name: 'Bruce Cheever',
           xmin: 209,
           width: 32,
           ymin: 182,
@@ -299,7 +299,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Chuck Carver",
+          name: 'Chuck Carver',
           xmin: 271,
           width: 38,
           ymin: 193,
@@ -307,7 +307,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "John Clark",
+          name: 'John Clark',
           xmin: 335,
           width: 33,
           ymin: 180,
@@ -315,7 +315,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Paul Caswell",
+          name: 'Paul Caswell',
           xmin: 398,
           width: 32,
           ymin: 185,
@@ -323,7 +323,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Dick Averitt",
+          name: 'Dick Averitt',
           xmin: 459,
           width: 40,
           ymin: 168,
@@ -331,7 +331,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Owen Chambers",
+          name: 'Owen Chambers',
           xmin: 518,
           width: 44,
           ymin: 162,
@@ -339,7 +339,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "C. Richard Cooper",
+          name: 'C. Richard Cooper',
           xmin: 587,
           width: 38,
           ymin: 165,
@@ -348,7 +348,7 @@ app.controller('PhotosCtrl', ['Auth',
         },
         // ***** row 5 *******
         {
-          name: "Joe Burkhart",
+          name: 'Joe Burkhart',
           xmin: 116,
           width: 31,
           ymin: 160,
@@ -356,7 +356,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Mike Connor",
+          name: 'Mike Connor',
           xmin: 177,
           width: 34,
           ymin: 174,
@@ -364,7 +364,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Don Buzney",
+          name: 'Don Buzney',
           xmin: 239,
           width: 39,
           ymin: 178,
@@ -372,7 +372,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Dave Collins",
+          name: 'Dave Collins',
           xmin: 305,
           width: 36,
           ymin: 170,
@@ -383,13 +383,13 @@ app.controller('PhotosCtrl', ['Auth',
     };
     self.photos.push (item);
     item = {
-      image: "/assets/images/photos/TBS A1-68 2nd Platoon-edited.jpg",
-      thumb: "/assets/images/photos/TBS A1-68 2nd Platoon-edited-thumb.jpg",
-      name: "2nd Platoon",
+      image: '/assets/images/photos/TBS A1-68 2nd Platoon-edited.jpg',
+      thumb: '/assets/images/photos/TBS A1-68 2nd Platoon-edited-thumb.jpg',
+      name: '2nd Platoon',
       regions: [
         // ***** row 1 *******
         {
-          name: "Jim Ehmer",
+          name: 'Jim Ehmer',
           xmin: 75,
           width: 65,
           ymin: 300,
@@ -397,7 +397,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Bill Friese",
+          name: 'Bill Friese',
           xmin: 142,
           ymin: 300,
           width: 65,
@@ -405,7 +405,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Mike Ferguson",
+          name: 'Mike Ferguson',
           xmin: 208,
           ymin: 300,
           width: 62,
@@ -413,7 +413,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Reed Gibson",
+          name: 'Reed Gibson',
           xmin: 271,
           ymin: 300,
           width: 56,
@@ -421,7 +421,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Kent Dobbins",
+          name: 'Kent Dobbins',
           xmin: 328,
           ymin: 300,
           width: 60,
@@ -429,7 +429,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Jack Gies",
+          name: 'Jack Gies',
           xmin: 389,
           ymin: 300,
           width: 64,
@@ -437,7 +437,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Adrian Gordon",
+          name: 'Adrian Gordon',
           xmin: 454,
           ymin: 300,
           width: 51,
@@ -445,7 +445,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Jim Gettman",
+          name: 'Jim Gettman',
           xmin: 505,
           ymin: 300,
           width: 66,
@@ -453,7 +453,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Len Fuchs",
+          name: 'Len Fuchs',
           xmin: 572,
           ymin: 300,
           width: 63,
@@ -461,7 +461,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Jeff Hansen",
+          name: 'Jeff Hansen',
           xmin: 636,
           ymin: 300,
           width: 61,
@@ -469,7 +469,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Rob Dopher",
+          name: 'Rob Dopher',
           xmin: 698,
           ymin: 300,
           width: 66,
@@ -478,7 +478,7 @@ app.controller('PhotosCtrl', ['Auth',
         },
         // ***** row 2 *******
         {
-          name: "Capt. Daniel McMahon",
+          name: 'Capt. Daniel McMahon',
           xmin: 35,
           ymin: 215,
           width: 80,
@@ -486,7 +486,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Dalton Ellis",
+          name: 'Dalton Ellis',
           xmin: 116,
           ymin: 230,
           width: 64,
@@ -494,7 +494,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Pat Finneran",
+          name: 'Pat Finneran',
           xmin: 181,
           ymin: 225,
           width: 74,
@@ -502,7 +502,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Jon Feltner",
+          name: 'Jon Feltner',
           xmin: 242,
           ymin: 240,
           width: 58,
@@ -510,7 +510,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "John Fogg",
+          name: 'John Fogg',
           xmin: 301,
           ymin: 230,
           width: 54,
@@ -518,7 +518,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Sam Easton",
+          name: 'Sam Easton',
           xmin: 356,
           ymin: 230,
           width: 59,
@@ -526,7 +526,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Mike DeLong",
+          name: 'Mike DeLong',
           xmin: 416,
           ymin: 230,
           width: 68,
@@ -534,7 +534,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Mike Evans",
+          name: 'Mike Evans',
           xmin: 485,
           ymin: 230,
           width: 60,
@@ -542,7 +542,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Bill Etter",
+          name: 'Bill Etter',
           xmin: 546,
           ymin: 240,
           width: 59,
@@ -550,7 +550,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Terry Cross",
+          name: 'Terry Cross',
           xmin: 606,
           ymin: 240,
           width: 59,
@@ -558,7 +558,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Al Gates",
+          name: 'Al Gates',
           xmin: 666,
           ymin: 240,
           width: 69,
@@ -567,7 +567,7 @@ app.controller('PhotosCtrl', ['Auth',
         },
         // ***** row 3 *******
         {
-          name: "Buck Deggendorf",
+          name: 'Buck Deggendorf',
           xmin: 160,
           ymin: 210,
           width: 41,
@@ -575,7 +575,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Steve Freiherr",
+          name: 'Steve Freiherr',
           xmin: 227,
           ymin: 210,
           width: 32,
@@ -583,7 +583,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Kevin Doyle",
+          name: 'Kevin Doyle',
           xmin: 282,
           ymin: 220,
           width: 37,
@@ -591,7 +591,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Fraser Getgood",
+          name: 'Fraser Getgood',
           xmin: 343,
           ymin: 200,
           width: 32,
@@ -599,7 +599,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Rick Donnelly",
+          name: 'Rick Donnelly',
           xmin: 399,
           ymin: 200,
           width: 35,
@@ -607,7 +607,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Ike Eisenbach",
+          name: 'Ike Eisenbach',
           xmin: 466,
           ymin: 200,
           width: 34,
@@ -615,7 +615,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Ted Hammett",
+          name: 'Ted Hammett',
           xmin: 525,
           ymin: 210,
           width: 31,
@@ -623,7 +623,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "David Gee",
+          name: 'David Gee',
           xmin: 586,
           ymin: 210,
           width: 34,
@@ -631,7 +631,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Bill Ganter",
+          name: 'Bill Ganter',
           xmin: 648,
           ymin: 210,
           width: 34,
@@ -639,7 +639,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Steve Hadar",
+          name: 'Steve Hadar',
           xmin: 713,
           ymin: 210,
           width: 54,
@@ -648,7 +648,7 @@ app.controller('PhotosCtrl', ['Auth',
         },
         // ***** row 4 *******
         {
-          name: "Paul Daigle",
+          name: 'Paul Daigle',
           xmin: 125,
           ymin: 190,
           width: 40,
@@ -656,7 +656,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Al Greishaber",
+          name: 'Al Greishaber',
           xmin: 190,
           ymin: 190,
           width: 42,
@@ -664,7 +664,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Fred Emmett",
+          name: 'Fred Emmett',
           xmin: 250,
           ymin: 190,
           width: 38,
@@ -672,7 +672,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Rich Cronin",
+          name: 'Rich Cronin',
           xmin: 290,
           ymin: 190,
           width: 40,
@@ -680,7 +680,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Jim Foresman",
+          name: 'Jim Foresman',
           xmin: 370,
           ymin: 190,
           width: 33,
@@ -688,7 +688,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Randy Crew",
+          name: 'Randy Crew',
           xmin: 428,
           ymin: 190,
           width: 33,
@@ -696,7 +696,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Bob Gleisberg",
+          name: 'Bob Gleisberg',
           xmin: 489,
           ymin: 180,
           width: 33,
@@ -704,7 +704,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Crane Davis",
+          name: 'Crane Davis',
           xmin: 545,
           ymin: 190,
           width: 40,
@@ -712,7 +712,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Al DeCraene",
+          name: 'Al DeCraene',
           xmin: 608,
           ymin: 190,
           width: 42,
@@ -720,7 +720,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Rick Franzen",
+          name: 'Rick Franzen',
           xmin: 675,
           ymin: 190,
           width: 40,
@@ -729,7 +729,7 @@ app.controller('PhotosCtrl', ['Auth',
         },
         // ***** row 5 *******
         {
-          name: "Charles Greenfield",
+          name: 'Charles Greenfield',
           xmin: 330,
           ymin: 160,
           width: 40,
@@ -737,7 +737,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Bill Dakin",
+          name: 'Bill Dakin',
           xmin: 390,
           ymin: 160,
           width: 30,
@@ -745,7 +745,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Bob Hagan",
+          name: 'Bob Hagan',
           xmin: 450,
           ymin: 160,
           width: 40,
@@ -753,7 +753,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Dave Eckenrode",
+          name: 'Dave Eckenrode',
           xmin: 518,
           ymin: 160,
           width: 40,
@@ -764,14 +764,14 @@ app.controller('PhotosCtrl', ['Auth',
     };
     self.photos.push (item);
     self.photos.push ({
-      image: "/assets/images/photos/TBS A1-68 3rd Platoon-edited.jpg",
-      thumb: "/assets/images/photos/TBS A1-68 3rd Platoon-edited-thumb.jpg",
-      info: "Quantico, VA",
-      name: "3rd Platoon",
+      image: '/assets/images/photos/TBS A1-68 3rd Platoon-edited.jpg',
+      thumb: '/assets/images/photos/TBS A1-68 3rd Platoon-edited-thumb.jpg',
+      info: 'Quantico, VA',
+      name: '3rd Platoon',
       regions: [
         // ***** row 1 *******
         {
-          name: "Butch Holden",
+          name: 'Butch Holden',
           xmin: 100,
           width: 70,
           ymin: 305,
@@ -779,7 +779,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Tom Igoe",
+          name: 'Tom Igoe',
           xmin: 171,
           width: 56,
           ymin: 305,
@@ -787,7 +787,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Jay Jacobson",
+          name: 'Jay Jacobson',
           xmin: 228,
           width: 50,
           ymin: 305,
@@ -795,7 +795,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "John Hudock",
+          name: 'John Hudock',
           xmin: 279,
           width: 52,
           ymin: 305,
@@ -803,7 +803,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Victor Hebert",
+          name: 'Victor Hebert',
           xmin: 334,
           width: 55,
           ymin: 305,
@@ -811,7 +811,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Dan Indgjer",
+          name: 'Dan Indgjer',
           xmin: 390,
           width: 57,
           ymin: 305,
@@ -819,7 +819,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Floyd Henry",
+          name: 'Floyd Henry',
           xmin: 448,
           width: 57,
           ymin: 305,
@@ -827,7 +827,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "JJ Huber",
+          name: 'JJ Huber',
           xmin: 506,
           width: 59,
           ymin: 305,
@@ -835,7 +835,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Rick Huntington",
+          name: 'Rick Huntington',
           xmin: 566,
           width: 59,
           ymin: 305,
@@ -843,7 +843,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Carl Hasdovic",
+          name: 'Carl Hasdovic',
           xmin: 626,
           width: 54,
           ymin: 305,
@@ -851,7 +851,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Bob Hansen",
+          name: 'Bob Hansen',
           xmin: 681,
           width: 57,
           ymin: 305,
@@ -860,7 +860,7 @@ app.controller('PhotosCtrl', ['Auth',
         },
         // ***** row 2 *******
         {
-          name: "Capt Timothy McTigue",
+          name: 'Capt Timothy McTigue',
           xmin: 45,
           width: 60,
           ymin: 235,
@@ -868,7 +868,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Ivan Jones",
+          name: 'Ivan Jones',
           xmin: 106,
           width: 59,
           ymin: 250,
@@ -876,7 +876,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "John Masters",
+          name: 'John Masters',
           xmin: 166,
           width: 59,
           ymin: 250,
@@ -884,7 +884,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Al Kyle",
+          name: 'Al Kyle',
           xmin: 226,
           width: 59,
           ymin: 250,
@@ -892,7 +892,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Ron Kapchus",
+          name: 'Ron Kapchus',
           xmin: 286,
           width: 55,
           ymin: 250,
@@ -900,7 +900,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Bill Keefe",
+          name: 'Bill Keefe',
           xmin: 336,
           width: 55,
           ymin: 240,
@@ -908,7 +908,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "John Kispert",
+          name: 'John Kispert',
           xmin: 391,
           width: 54,
           ymin: 240,
@@ -916,7 +916,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Stu Jones",
+          name: 'Stu Jones',
           xmin: 450,
           width: 58,
           ymin: 250,
@@ -924,7 +924,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Dave Kiser",
+          name: 'Dave Kiser',
           xmin: 516,
           width: 60,
           ymin: 245,
@@ -932,7 +932,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Jack Kemeny",
+          name: 'Jack Kemeny',
           xmin: 585,
           width: 56,
           ymin: 235,
@@ -940,7 +940,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Bob Koury",
+          name: 'Bob Koury',
           xmin: 645,
           width: 61,
           ymin: 225,
@@ -948,7 +948,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Capt Dave Downing",
+          name: 'Capt Dave Downing',
           xmin: 725,
           width: 55,
           ymin: 225,
@@ -957,7 +957,7 @@ app.controller('PhotosCtrl', ['Auth',
         },
         // ***** row 3 *******
         {
-          name: "Jack Larrison",
+          name: 'Jack Larrison',
           xmin: 145,
           width: 35,
           ymin: 235,
@@ -965,7 +965,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Russ Johnson",
+          name: 'Russ Johnson',
           xmin: 206,
           width: 36,
           ymin: 230,
@@ -973,7 +973,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Bill Jones",
+          name: 'Bill Jones',
           xmin: 266,
           width: 32,
           ymin: 230,
@@ -981,7 +981,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Rich Liebler",
+          name: 'Rich Liebler',
           xmin: 323,
           width: 30,
           ymin: 230,
@@ -989,7 +989,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Orval McCormack",
+          name: 'Orval McCormack',
           xmin: 380,
           width: 28,
           ymin: 218,
@@ -997,7 +997,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Eric Lewis",
+          name: 'Eric Lewis',
           xmin: 433,
           width: 37,
           ymin: 230,
@@ -1005,7 +1005,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Larry Kosobarich",
+          name: 'Larry Kosobarich',
           xmin: 495,
           width: 38,
           ymin: 225,
@@ -1013,7 +1013,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "John Karch",
+          name: 'John Karch',
           xmin: 558,
           width: 36,
           ymin: 225,
@@ -1021,7 +1021,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Drew Ley",
+          name: 'Drew Ley',
           xmin: 624,
           width: 31,
           ymin: 225,
@@ -1030,7 +1030,7 @@ app.controller('PhotosCtrl', ['Auth',
         },
         // ***** row 4 *******
         {
-          name: "Gerald Keys",
+          name: 'Gerald Keys',
           xmin: 120,
           width: 33,
           ymin: 210,
@@ -1038,7 +1038,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Ed Kenney",
+          name: 'Ed Kenney',
           xmin: 172,
           width: 37,
           ymin: 210,
@@ -1046,7 +1046,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Jerry Lamp",
+          name: 'Jerry Lamp',
           xmin: 235,
           width: 33,
           ymin: 210,
@@ -1054,7 +1054,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Joe Laslie",
+          name: 'Joe Laslie',
           xmin: 296,
           width: 33,
           ymin: 205,
@@ -1062,7 +1062,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "John Lancaster",
+          name: 'John Lancaster',
           xmin: 356,
           width: 28,
           ymin: 195,
@@ -1070,7 +1070,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Jim Lewis",
+          name: 'Jim Lewis',
           xmin: 411,
           width: 32,
           ymin: 205,
@@ -1078,7 +1078,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Mike McClung",
+          name: 'Mike McClung',
           xmin: 465,
           width: 43,
           ymin: 195,
@@ -1086,7 +1086,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Dick Kurth",
+          name: 'Dick Kurth',
           xmin: 527,
           width: 46,
           ymin: 190,
@@ -1094,7 +1094,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Dave Hauntz",
+          name: 'Dave Hauntz',
           xmin: 589,
           width: 56,
           ymin: 185,
@@ -1103,7 +1103,7 @@ app.controller('PhotosCtrl', ['Auth',
         },
         // ***** row 5 *******
         {
-          name: "Bill Kenerly",
+          name: 'Bill Kenerly',
           xmin: 261,
           width: 31,
           ymin: 190,
@@ -1111,7 +1111,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Bob Lloyd",
+          name: 'Bob Lloyd',
           xmin: 325,
           width: 30,
           ymin: 190,
@@ -1119,7 +1119,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Russ Johnson",
+          name: 'Russ Johnson',
           xmin: 382,
           width: 33,
           ymin: 180,
@@ -1127,7 +1127,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Ron Johnson",
+          name: 'Ron Johnson',
           xmin: 439,
           width: 32,
           ymin: 180,
@@ -1135,7 +1135,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Beirne Lovely",
+          name: 'Beirne Lovely',
           xmin: 498,
           width: 40,
           ymin: 180,
@@ -1145,14 +1145,14 @@ app.controller('PhotosCtrl', ['Auth',
       ]
     });
     self.photos.push ({
-      image: "/assets/images/photos/TBS A1-68 4th Platoon-edited.jpg",
-      thumb: "/assets/images/photos/TBS A1-68 4th Platoon-edited-thumb.jpg",
-      info: "Quantico, VA",
-      name: "4th Platoon",
+      image: '/assets/images/photos/TBS A1-68 4th Platoon-edited.jpg',
+      thumb: '/assets/images/photos/TBS A1-68 4th Platoon-edited-thumb.jpg',
+      info: 'Quantico, VA',
+      name: '4th Platoon',
       regions: [
       // ***** row 1 *******
         {
-          name: "Dave Ralston",
+          name: 'Dave Ralston',
           xmin: 110,
           width: 76,
           ymin: 257,
@@ -1160,7 +1160,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Greg McDonough",
+          name: 'Greg McDonough',
           xmin: 182,
           width: 52,
           ymin: 257,
@@ -1168,7 +1168,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Jerry Paccassi",
+          name: 'Jerry Paccassi',
           xmin: 234,
           width: 61,
           ymin: 257,
@@ -1176,7 +1176,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Dave Raper",
+          name: 'Dave Raper',
           xmin: 298,
           width: 56,
           ymin: 257,
@@ -1184,7 +1184,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "George McGaughey",
+          name: 'George McGaughey',
           xmin: 358,
           width: 60,
           ymin: 247,
@@ -1192,7 +1192,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "JJ O'Brien",
+          name: 'JJ O\'Brien',
           xmin: 419,
           width: 57,
           ymin: 257,
@@ -1200,7 +1200,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Jim O’Brien",
+          name: 'Jim O’Brien',
           xmin: 477,
           width: 59,
           ymin: 257,
@@ -1208,7 +1208,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Bob O’Rourke",
+          name: 'Bob O’Rourke',
           xmin: 537,
           width: 62,
           ymin: 257,
@@ -1216,7 +1216,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Matt Parker",
+          name: 'Matt Parker',
           xmin: 600,
           width: 53,
           ymin: 257,
@@ -1224,7 +1224,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "George Philip",
+          name: 'George Philip',
           xmin: 654,
           width: 58,
           ymin: 257,
@@ -1232,7 +1232,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Skip Ringo",
+          name: 'Skip Ringo',
           xmin: 713,
           width: 64,
           ymin: 257,
@@ -1241,7 +1241,7 @@ app.controller('PhotosCtrl', ['Auth',
         },
         // ***** row 2 *******
         {
-          name: "Captain Eaton",
+          name: 'Captain Eaton',
           xmin: 31,
           width: 69,
           ymin: 182,
@@ -1249,7 +1249,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Jack Powers",
+          name: 'Jack Powers',
           xmin: 113,
           width: 61,
           ymin: 188,
@@ -1257,7 +1257,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Terry Ranstead",
+          name: 'Terry Ranstead',
           xmin: 175,
           width: 61,
           ymin: 193,
@@ -1265,7 +1265,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Tom Nunziato",
+          name: 'Tom Nunziato',
           xmin: 237,
           width: 63,
           ymin: 188,
@@ -1273,7 +1273,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Dave Purvis",
+          name: 'Dave Purvis',
           xmin: 301,
           width: 49,
           ymin: 188,
@@ -1281,7 +1281,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Tom McEntire",
+          name: 'Tom McEntire',
           xmin: 360,
           width: 52,
           ymin: 196,
@@ -1289,7 +1289,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Monty Nelson",
+          name: 'Monty Nelson',
           xmin: 419,
           width: 55,
           ymin: 190,
@@ -1297,7 +1297,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Donald Moran",
+          name: 'Donald Moran',
           xmin: 485,
           width: 58,
           ymin: 196,
@@ -1305,7 +1305,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Mike Morrow",
+          name: 'Mike Morrow',
           xmin: 551,
           width: 51,
           ymin: 194,
@@ -1313,7 +1313,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Gray Ross",
+          name: 'Gray Ross',
           xmin: 609,
           width: 53,
           ymin: 198,
@@ -1321,7 +1321,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Jim McIntire",
+          name: 'Jim McIntire',
           xmin: 670,
           width: 56,
           ymin: 194,
@@ -1330,7 +1330,7 @@ app.controller('PhotosCtrl', ['Auth',
         },
         // ***** row 3 *******
         {
-          name: "John Narney",
+          name: 'John Narney',
           xmin: 158,
           width: 34,
           ymin: 182,
@@ -1338,7 +1338,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "George Pfeiffer",
+          name: 'George Pfeiffer',
           xmin: 217,
           width: 41,
           ymin: 175,
@@ -1346,7 +1346,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Paul Parker",
+          name: 'Paul Parker',
           xmin: 281,
           width: 32,
           ymin: 182,
@@ -1354,7 +1354,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Dan McMurray",
+          name: 'Dan McMurray',
           xmin: 339,
           width: 36,
           ymin: 175,
@@ -1362,7 +1362,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Jim Muir",
+          name: 'Jim Muir',
           xmin: 401,
           width: 34,
           ymin: 182,
@@ -1370,7 +1370,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Harry Radcliffe",
+          name: 'Harry Radcliffe',
           xmin: 461,
           width: 35,
           ymin: 175,
@@ -1378,7 +1378,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Dave Peters",
+          name: 'Dave Peters',
           xmin: 523,
           width: 37,
           ymin: 180,
@@ -1386,7 +1386,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Duncan Ragsdale",
+          name: 'Duncan Ragsdale',
           xmin: 586,
           width: 35,
           ymin: 172,
@@ -1394,7 +1394,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Rich Neal",
+          name: 'Rich Neal',
           xmin: 646,
           width: 38,
           ymin: 182,
@@ -1403,7 +1403,7 @@ app.controller('PhotosCtrl', ['Auth',
         },
         // ***** row 4 *******
         {
-          name: "Bob Reid",
+          name: 'Bob Reid',
           xmin: 184,
           width: 38,
           ymin: 152,
@@ -1411,7 +1411,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Tony Pesavento",
+          name: 'Tony Pesavento',
           xmin: 254,
           width: 36,
           ymin: 144,
@@ -1419,7 +1419,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Dave Peake",
+          name: 'Dave Peake',
           xmin: 313,
           width: 33,
           ymin: 152,
@@ -1427,7 +1427,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Jim McKelligon",
+          name: 'Jim McKelligon',
           xmin: 374,
           width: 30,
           ymin: 152,
@@ -1435,7 +1435,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Doug O’Connor",
+          name: 'Doug O’Connor',
           xmin: 437,
           width: 34,
           ymin: 150,
@@ -1443,7 +1443,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Travis Piper",
+          name: 'Travis Piper',
           xmin: 502,
           width: 27,
           ymin: 160,
@@ -1451,7 +1451,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Rich Metli",
+          name: 'Rich Metli',
           xmin: 549,
           width: 24,
           ymin: 157,
@@ -1459,7 +1459,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Ray Norton",
+          name: 'Ray Norton',
           xmin: 611,
           width: 29,
           ymin: 152,
@@ -1467,7 +1467,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Robert Newlin",
+          name: 'Robert Newlin',
           xmin: 673,
           width: 28,
           ymin: 155,
@@ -1476,7 +1476,7 @@ app.controller('PhotosCtrl', ['Auth',
         },
         // ***** row 4 *******
         {
-          name: "Bob Packard",
+          name: 'Bob Packard',
           xmin: 221,
           width: 30,
           ymin: 145,
@@ -1484,7 +1484,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Joe Belser",
+          name: 'Joe Belser',
           xmin: 288,
           width: 29,
           ymin: 139,
@@ -1492,7 +1492,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Tom Pearson",
+          name: 'Tom Pearson',
           xmin: 350,
           width: 29,
           ymin: 138,
@@ -1500,7 +1500,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Joe Renaghan",
+          name: 'Joe Renaghan',
           xmin: 410,
           width: 30,
           ymin: 148,
@@ -1508,7 +1508,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Nat Reed",
+          name: 'Nat Reed',
           xmin: 479,
           width: 25,
           ymin: 154,
@@ -1516,7 +1516,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Joe Milum",
+          name: 'Joe Milum',
           xmin: 574,
           width: 34,
           ymin: 131,
@@ -1524,7 +1524,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Chip Mills",
+          name: 'Chip Mills',
           xmin: 641,
           width: 33,
           ymin: 144,
@@ -1534,14 +1534,14 @@ app.controller('PhotosCtrl', ['Auth',
       ]
     });
     self.photos.push ({
-      image: "/assets/images/photos/TBS A1-68 5th Platoon-edited.jpg",
-      thumb: "/assets/images/photos/TBS A1-68 5th Platoon-edited-thumb.jpg",
-      info: "Quantico, VA",
-      name: "5th Platoon",
+      image: '/assets/images/photos/TBS A1-68 5th Platoon-edited.jpg',
+      thumb: '/assets/images/photos/TBS A1-68 5th Platoon-edited-thumb.jpg',
+      info: 'Quantico, VA',
+      name: '5th Platoon',
       regions: [
         // ***** row 1 *******
         {
-          name: "Mike Williams",
+          name: 'Mike Williams',
           xmin: 98,
           width: 73,
           ymin: 295,
@@ -1549,7 +1549,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Mike Sandberg",
+          name: 'Mike Sandberg',
           xmin: 172,
           width: 53,
           ymin: 295,
@@ -1557,7 +1557,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Denny Rydstrom",
+          name: 'Denny Rydstrom',
           xmin: 226,
           width: 66,
           ymin: 295,
@@ -1565,7 +1565,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Jim Sanborn",
+          name: 'Jim Sanborn',
           xmin: 293,
           width: 53,
           ymin: 295,
@@ -1573,7 +1573,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Chuck Steele",
+          name: 'Chuck Steele',
           xmin: 347,
           width: 62,
           ymin: 295,
@@ -1581,7 +1581,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Jim Williams",
+          name: 'Jim Williams',
           xmin: 410,
           width: 47,
           ymin: 295,
@@ -1589,7 +1589,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Larry St. John",
+          name: 'Larry St. John',
           xmin: 458,
           width: 63,
           ymin: 295,
@@ -1597,7 +1597,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Moe Trail",
+          name: 'Moe Trail',
           xmin: 522,
           width: 53,
           ymin: 295,
@@ -1605,7 +1605,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Jules Selden",
+          name: 'Jules Selden',
           xmin: 578,
           width: 50,
           ymin: 295,
@@ -1613,7 +1613,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Al Woods",
+          name: 'Al Woods',
           xmin: 639,
           width: 59,
           ymin: 295,
@@ -1621,7 +1621,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "John Tritsch",
+          name: 'John Tritsch',
           xmin: 699,
           width: 65,
           ymin: 295,
@@ -1630,7 +1630,7 @@ app.controller('PhotosCtrl', ['Auth',
         },
         // ***** row 2 *******
         {
-          name: "Capt James D. Jones",
+          name: 'Capt James D. Jones',
           xmin: 34,
           width: 65,
           ymin: 207,
@@ -1638,7 +1638,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Bruce Wiggins",
+          name: 'Bruce Wiggins',
           xmin: 99,
           width: 53,
           ymin: 225,
@@ -1646,7 +1646,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Ed Wietecha",
+          name: 'Ed Wietecha',
           xmin: 155,
           width: 60,
           ymin: 225,
@@ -1654,7 +1654,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Jack Sammons",
+          name: 'Jack Sammons',
           xmin: 216,
           width: 58,
           ymin: 225,
@@ -1662,7 +1662,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Jim Seagraves",
+          name: 'Jim Seagraves',
           xmin: 275,
           width: 62,
           ymin: 225,
@@ -1670,7 +1670,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Ben Warren",
+          name: 'Ben Warren',
           xmin: 338,
           width: 65,
           ymin: 225,
@@ -1678,7 +1678,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Dick Sergo",
+          name: 'Dick Sergo',
           xmin: 404,
           width: 55,
           ymin: 225,
@@ -1686,7 +1686,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Carl Ulrich",
+          name: 'Carl Ulrich',
           xmin: 460,
           width: 60,
           ymin: 225,
@@ -1694,7 +1694,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "John Schmid",
+          name: 'John Schmid',
           xmin: 521,
           width: 69,
           ymin: 225,
@@ -1702,7 +1702,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Mike/Duke Wenzel",
+          name: 'Mike/Duke Wenzel',
           xmin: 591,
           width: 65,
           ymin: 225,
@@ -1710,7 +1710,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "(Wild) Bill Tehan",
+          name: '(Wild) Bill Tehan',
           xmin: 657,
           width: 63,
           ymin: 225,
@@ -1718,7 +1718,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Ken Shackelford",
+          name: 'Ken Shackelford',
           xmin: 721,
           width: 70,
           ymin: 225,
@@ -1727,7 +1727,7 @@ app.controller('PhotosCtrl', ['Auth',
         },
         // ***** row 3 *******
         {
-          name: "Bob Waller",
+          name: 'Bob Waller',
           xmin: 135,
           width: 40,
           ymin: 207,
@@ -1735,7 +1735,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Wazzo Wzorek",
+          name: 'Wazzo Wzorek',
           xmin: 204,
           width: 27,
           ymin: 212,
@@ -1743,7 +1743,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Jeff Zimmerman",
+          name: 'Jeff Zimmerman',
           xmin: 255,
           width: 31,
           ymin: 200,
@@ -1751,7 +1751,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "JT Williamson",
+          name: 'JT Williamson',
           xmin: 316,
           width: 39,
           ymin: 212,
@@ -1759,7 +1759,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Andy Solum",
+          name: 'Andy Solum',
           xmin: 383,
           width: 31,
           ymin: 207,
@@ -1767,7 +1767,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "John Spindler",
+          name: 'John Spindler',
           xmin: 444,
           width: 32,
           ymin: 200,
@@ -1775,7 +1775,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Mike Smith",
+          name: 'Mike Smith',
           xmin: 505,
           width: 36,
           ymin: 207,
@@ -1783,7 +1783,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Bob Stocker",
+          name: 'Bob Stocker',
           xmin: 573,
           width: 40,
           ymin: 212,
@@ -1791,7 +1791,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Dave Wilbur",
+          name: 'Dave Wilbur',
           xmin: 639,
           width: 39,
           ymin: 212,
@@ -1799,7 +1799,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Tom Wilkerson",
+          name: 'Tom Wilkerson',
           xmin: 703,
           width: 36,
           ymin: 204,
@@ -1808,7 +1808,7 @@ app.controller('PhotosCtrl', ['Auth',
         },
         // ***** row 4 *******
         {
-          name: "Ben Trout",
+          name: 'Ben Trout',
           xmin: 225,
           width: 31,
           ymin: 183,
@@ -1816,7 +1816,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Ed Shore",
+          name: 'Ed Shore',
           xmin: 280,
           width: 38,
           ymin: 183,
@@ -1824,7 +1824,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Courtney Tucker",
+          name: 'Courtney Tucker',
           xmin: 350,
           width: 35,
           ymin: 173,
@@ -1832,7 +1832,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Clint Smith",
+          name: 'Clint Smith',
           xmin: 417,
           width: 30,
           ymin: 183,
@@ -1840,7 +1840,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Bob Winn",
+          name: 'Bob Winn',
           xmin: 475,
           width: 33,
           ymin: 183,
@@ -1848,7 +1848,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Tom Trompeter",
+          name: 'Tom Trompeter',
           xmin: 537,
           width: 42,
           ymin: 175,
@@ -1856,7 +1856,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Larry Webster",
+          name: 'Larry Webster',
           xmin: 605,
           width: 36,
           ymin: 180,
@@ -1864,7 +1864,7 @@ app.controller('PhotosCtrl', ['Auth',
           active: false
         },
         {
-          name: "Bob Sook",
+          name: 'Bob Sook',
           xmin: 670,
           width: 35,
           ymin: 183,
@@ -1874,24 +1874,24 @@ app.controller('PhotosCtrl', ['Auth',
       ]
     });
     self.photos.push ({
-      image: "/assets/images/photos/TBS A1-68 Staff-1.jpg",
-      thumb: "/assets/images/photos/TBS A1-68 Staff-1-thumb.jpg",
-      info: "Quantico, VA",
-      name: "Staff",
+      image: '/assets/images/photos/TBS A1-68 Staff-1.jpg',
+      thumb: '/assets/images/photos/TBS A1-68 Staff-1-thumb.jpg',
+      info: 'Quantico, VA',
+      name: 'Staff',
       regions: []
     });
     self.photos.push ({
-      image: "/assets/images/photos/TBS A1-68 Staff-2.jpg",
-      thumb: "/assets/images/photos/TBS A1-68 Staff-2-thumb.jpg",
-      info: "Quantico, VA",
-      name: "Staff",
+      image: '/assets/images/photos/TBS A1-68 Staff-2.jpg',
+      thumb: '/assets/images/photos/TBS A1-68 Staff-2-thumb.jpg',
+      info: 'Quantico, VA',
+      name: 'Staff',
       regions: []
     });
     self.photos.push ({
-      image: "/assets/images/02-gates-al3.png",
-      thumb: "/assets/images/02-gates-al3-thumb.png",
-      info: "Quantico, VA",
-      name: "Staff",
+      image: '/assets/images/02-gates-al3.png',
+      thumb: '/assets/images/02-gates-al3-thumb.png',
+      info: 'Quantico, VA',
+      name: 'Staff',
       regions: []
     });
 
@@ -1899,10 +1899,10 @@ app.controller('PhotosCtrl', ['Auth',
     //
     self.clickGalleryImage = function (event, ind) {
       // set the x & y of the full-size-photo div for a nice animation
-      var $pictureDiv = $(".animate-show-hide");
+      var $pictureDiv = $('.animate-show-hide');
       var x = event.pageX;
       var y = Math.max(0, event.pageY - 100);
-      $pictureDiv.css("transform-origin", x + "px " + y + "px");
+      $pictureDiv.css('transform-origin', x + 'px ' + y + 'px');
       self.toggleGalleryMode(ind);
     };
     self.toggleGalleryMode = function (ind) {
@@ -1918,7 +1918,7 @@ app.controller('PhotosCtrl', ['Auth',
       self.clickedPhoto = self.photos[self.clickedIndex];
     };
     self.goToPrevious = function() {
-      self.clickedIndex = (self.clickedIndex == 0) ? self.photos.length : (self.clickedIndex - 1);
+      self.clickedIndex = (self.clickedIndex === 0) ? self.photos.length : (self.clickedIndex - 1);
       self.clickedPhoto = self.photos[self.clickedIndex];
     };
     self.getRegionStyle = function(region) {
@@ -1931,25 +1931,26 @@ app.controller('PhotosCtrl', ['Auth',
         'height': region.height + 'px',
         'color': 'yellow',
         'border': 'solid 1px black',
-        'opacity': region.active == true ? 1 : 0,
+        'opacity': region.active === true ? 1 : 0,
         'font-size': '1em',
         'z-index': 500 };
       return style;
-    }
+    };
 
     self.setRegionActive = function(region) {
       region.active = true;
-    }
+    };
+
     self.setRegionInactive = function(region) {
       region.active = false;
-    }
+    };
 
 }]);
 
 app.animation('.animate-show-hide', function() {
   return {
     beforeAddClass : function(element, className, done) {
-      if(className == 'ng-hide') {
+      if(className === 'ng-hide') {
         jQuery(element).animate({
           opacity:0
         }, done);
@@ -1959,7 +1960,7 @@ app.animation('.animate-show-hide', function() {
       }
     },
     removeClass : function(element, className, done) {
-      if(className == 'ng-hide') {
+      if(className === 'ng-hide') {
         element.css('opacity',0);
         jQuery(element).animate({
           opacity:1

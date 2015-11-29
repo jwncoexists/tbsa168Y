@@ -91,7 +91,7 @@ angular.module('tbsa168App')
             platoon1 = person.platoon.toLowerCase(),
             platoon2 = platoon1 + ' platoon',
             name = person.name.toLowerCase(),
-            resting = person.restingPlace.toLowerCase();
+            resting = person.restingPlace ? person.restingPlace.toLowerCase() : '';
 
         if ((name.indexOf(filter) > -1) ||
            (platoon1.indexOf(filter) > -1) ||

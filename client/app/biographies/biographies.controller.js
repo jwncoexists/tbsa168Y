@@ -106,7 +106,6 @@ angular.module('tbsa168App')
       self.getBio = function(person) {
         var strippedBio = '',
             shortenedBio = '';
-
         if ($scope.displayFull[person._id]) {
           return person.bioHtml;
         }
@@ -118,6 +117,8 @@ angular.module('tbsa168App')
             strippedBio = shortenedBio.replace(/(<([^>]+)>)/ig,'');
             strippedBio = strippedBio.replace(/[<>\/]/ig,'');
             // strippedBio = strippedBio.replace(/>/ig,'');
+          } else if (person.bio) {
+            strippedBio = person.bio.slice(0,minBioChars);
           }
           return strippedBio;
         }

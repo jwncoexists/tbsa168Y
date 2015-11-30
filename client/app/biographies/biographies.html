@@ -47,8 +47,8 @@
           <strong>{{ person.name }}, {{ person.platoon }} Platoon</strong>
           <span class="fa fa-pencil"></span>
         </span>
-        <br>
-        {{ person.date }}<br>
+        <br ng-if="!person.living">
+        {{ person.date }}<br ng-if="!person.living">
         {{ person.restingPlace }}
         <br><br>
         <div class="bio-photos">

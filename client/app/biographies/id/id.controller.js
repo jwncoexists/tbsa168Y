@@ -22,6 +22,7 @@ angular.module('tbsa168App')
       });
       $scope.submit = function() {
         TbsData.updatePerson($scope.person, function(data) {
+          $scope.person = data;
           toastr.info( $scope.person.name + ' successfully updated.');
           $location.path('/biographies');
         });

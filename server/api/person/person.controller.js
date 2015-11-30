@@ -65,7 +65,7 @@ exports.update = function(req, res) {
       reflection.user = reflection.user._id
     }
   })
-  if (req.body.bioHtml){
+  if (req.body.bio){
     req.body.bioHtml = markdown.toHTML(req.body.bio);
   }
   Person.findByIdAndUpdate(req.params.id, req.body, function (err, person) {

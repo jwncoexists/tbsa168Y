@@ -6,7 +6,7 @@ angular.module('tbsa168App')
     return {
       templateUrl: 'components/viewPdf/viewPdf.html',
       restrict: 'EA',
-      link: function (scope, element, attrs) {
+      link: function (scope, element, attrs) { //jshint ignore:line
         console.log('view-pdf personId:', scope.personId);
         TbsData.getPerson(scope.personId, function(data) {
           console.log('back from getPerson: ', data);

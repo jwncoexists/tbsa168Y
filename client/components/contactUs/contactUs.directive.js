@@ -10,14 +10,14 @@ angular.module('tbsa168App')
         msgtitle: '=msgtitle',
         msgintro: '=msgintro'
       },
-      link: function (scope, element, attrs) {
+      link: function (scope, element, attrs) { //jshint ignore:line
         scope.isLoggedIn = Auth.userLoggedIn;
         scope.success = false;
         scope.error = false;
         scope.user = {
-          name: "",
-          email: "",
-          body: ""
+          name: '',
+          email: '',
+          body: ''
         };
         console.log('msgtitle, msgintro = ', scope.msgtitle, scope.msgintro);
 
@@ -27,11 +27,11 @@ angular.module('tbsa168App')
               sender: scope.user.email,
               subject: 'TBS-A-1-68 Reunion Website Inquiry from ' + scope.user.name,
               msg: scope.user.body
-            }).success(function(data) {
+            }).success(function() {
               scope.success = true;
               scope.error = false;
               toastr.info('Your message has been sent to the TBS-A-1-68 reunion committee!');
-            }).error(function(data, status, headers, config) {
+            }).error(function() {
               // called asynchronously if an error occurs
               // or server returns response with an error status.
               scope.success = false;

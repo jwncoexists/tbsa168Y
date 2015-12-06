@@ -11,5 +11,6 @@
   "undef": true,
   "smarttabs": true,
   "asi": true,
+  "confirm": true,
   "debug": true
 }

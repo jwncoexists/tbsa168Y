@@ -35,7 +35,7 @@ angular.module('tbsa168App')
         $location.path('/biographies');
       };
       $scope.deleteReflection = function(person, reflection) {
-        if (confirm('Are you sure you want to delete reflection for: ' +
+        if (confirm('Are you sure you want to delete reflection for: ' +  //jshint ignore:line
             person.name + ' by: ' + reflection.by +'?')) {
           for (var i = 0; i < person.reflections.length; i++) {
             if (person.reflections[i]._id === reflection._id) {

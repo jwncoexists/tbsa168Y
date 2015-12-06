@@ -14,7 +14,7 @@ app.factory('Person', ['$resource', function ($resource) {
       'query':  {method:'GET', isArray:true},
       'get':    {method:'GET'},
       'update':   {method:'PUT'}
-    })
+    });
 }]);
 
 app.service('TbsData', ['$http', function ($http) {
@@ -41,5 +41,5 @@ app.service('TbsData', ['$http', function ($http) {
           callback(data);
         });
       }
-    }
+    };
 }]);

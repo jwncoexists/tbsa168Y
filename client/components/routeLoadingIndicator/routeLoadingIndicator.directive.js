@@ -5,7 +5,7 @@ angular.module('tbsa168App')
     return {
       templateUrl: 'components/routeLoadingIndicator/routeLoadingIndicator.html',
       restrict: 'EA',
-      link: function (scope, element, attrs) {
+      link: function (scope, element, attrs) { //jshint ignore:line
         scope.isSateLoading = false;
         element.addClass('ng-hide');
 
@@ -13,15 +13,15 @@ angular.module('tbsa168App')
         var viewportHeight;
 
         // the more standards compliant browsers (mozilla/netscape/opera/IE7) use window.innerWidth and window.innerHeight
-        if (typeof window.innerWidth != 'undefined')
+        if (typeof window.innerWidth !== 'undefined')
         {
           viewportWidth = window.innerWidth;
           viewportHeight = window.innerHeight;
         }
         // IE6 in standards compliant mode (i.e. with a valid doctype as the first line in the document)
-        else if (typeof document.documentElement != 'undefined'
-             && typeof document.documentElement.clientWidth !=
-             'undefined' && document.documentElement.clientWidth != 0)
+        else if (typeof document.documentElement !== 'undefined'  &&
+             typeof document.documentElement.clientWidth !==
+             'undefined' && document.documentElement.clientWidth !== 0)
         {
           viewportWidth = document.documentElement.clientWidth;
           viewportHeight = document.documentElement.clientHeight;
@@ -33,13 +33,13 @@ angular.module('tbsa168App')
           viewportHeight = document.getElementsByTagName('body')[0].clientHeight;
         }
 
-        var loadingElement = $(".route-loading");
-        loadingElement.css("width", viewportWidth);
-        loadingElement.css("height", viewportHeight);
+        var loadingElement = $('.route-loading');
+        loadingElement.css('width', viewportWidth);
+        loadingElement.css('height', viewportHeight);
 
-        var loadingIcon = $(".loading-icon");
-        loadingIcon.css("top", viewportHeight/2);
-        loadingIcon.css("left", viewportWidth/2);
+        var loadingIcon = $('.loading-icon');
+        loadingIcon.css('top', viewportHeight/2);
+        loadingIcon.css('left', viewportWidth/2);
 
         $rootScope.$on('$stateChangeStart', function(){
           scope.isStateLoading = true;

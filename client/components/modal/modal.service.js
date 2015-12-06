@@ -8,7 +8,7 @@ angular.module('tbsa168App')
      * @param  {String} modalClass - (optional) class(es) to be applied to the modal
      * @return {Object}            - the instance $modal.open() returns
      */
-     $rootScope.reflectionBody = "";
+     $rootScope.reflectionBody = '';
     function openModal(scope, modalClass) {
       console.log('Modal factory, openModal');
       var modalScope = $rootScope.$new();
@@ -100,7 +100,7 @@ angular.module('tbsa168App')
           }
         }, 'modal-lg');
 
-        addModal.result.then(function(event) {
+        addModal.result.then(function() {
           console.log('add modal addModal =', addModal);
           // del.apply(event, args);
         });

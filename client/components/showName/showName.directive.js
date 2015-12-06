@@ -12,10 +12,10 @@ angular.module('tbsa168App')
         ymin: '=ymin',
         ymax: '=ymax',
       },
-      link: function (scope, element, attrs) {
-        $(".show-name").css({top: scope.xmin, left: scope.ymin, position:'relative'});
+      link: function (scope, element, attrs) { //jshint ignore:line
+        $('.show-name').css({top: scope.xmin, left: scope.ymin, position:'relative'});
       },
-      controller: function($scope) {
+      controller: function($scope) { //jshint ignore:line
       }
     };
   });

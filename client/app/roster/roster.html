@@ -37,12 +37,12 @@
           <td ng-class="getCellClass(person, 'sm')">{{person.sm}}</td>
           <td ng-show="!person.living" ng-class="controller.getCellClass(person, 'restingPlace')">{{ person.restingPlace }}</td>
           <td ng-show="person.living" ng-class="controller.getCellClass(person, 'location')">{{ person.location }}</td>
-          <td ng-class="controller.getCellClass(person, 'platoon')">{{person.platoon}}</td>
-          <td ng-class="controller.getCellClass(person, 'school')">{{person.school}}</td>
-          <td ng-class="controller.getCellClass(person, 'schoolState')">{{person.schoolState}}</td>
-          <td ng-class="controller.getCellClass(person, 'commission')">{{person.commission}}</td>
-          <td ng-class="controller.getCellClass(person, 'mos')">{{formatMos(person)}}</td>
-          <td ng-class="controller.getCellClass(person, 'career')"><p>{{person.career}}</p></td>
+          <td ng-class="controller.getCellClass(person, 'platoon')">{{ person.platoon }}</td>
+          <td ng-class="controller.getCellClass(person, 'school')">{{ person.school }}</td>
+          <td ng-class="controller.getCellClass(person, 'schoolState')">{{ person.schoolState }}</td>
+          <td ng-class="controller.getCellClass(person, 'commission')">{{ person.commission }}</td>
+          <td ng-class="controller.getCellClass(person, 'mos')">{{ controller.formatMos(person) }}</td>
+          <td ng-class="controller.getCellClass(person, 'career')"><p>{{ person.career }}</p></td>
         </tr>
 
         <!-- ************ display class list ************** -->
@@ -67,7 +67,7 @@
           <td ng-class="controller.getCellClass(person, 'school')">{{person.school}}</td>
           <td ng-class="controller.getCellClass(person, 'schoolState')">{{person.schoolState}}</td>
           <td ng-class="controller.getCellClass(person, 'commission')">{{person.commission}}</td>
-          <td ng-class="controller.getCellClass(person, 'mos')">{{formatMos(person)}}</td>
+          <td ng-class="controller.getCellClass(person, 'mos')">{{controller.formatMos(person)}}</td>
           <td ng-class="controller.getCellClass(person, 'career')"><p>{{person.career}}</p></td>
         </tr>
       </tbody>
@@ -233,7 +233,7 @@
 
           <td ng-class="controller.getCellClass(person, 'mos')">
             <a ng-href="#" editable-number="person.mos" onaftersave="controller.updatePerson(person)">
-                {{formatMos(person) || "empty" }}
+                {{controller.formatMos(person) || "empty" }}
             </a>
           </td>
 

@@ -188,9 +188,12 @@ app.controller('RosterCtrl', ['Auth', 'TbsData', 'personList', 'Person',
     *
     ***********************************************************/
     self.formatMos = function(person) {
-      if (person.mos) {
-        return ('0' + person.mos).slice (-2);
+      var returnStr='';
+      if (person && person.mos) {
+        returnStr =  ('0' + person.mos).slice (-2);
       }
+      console.log('formatMos = ', returnStr, person.mos);
+      return returnStr;
     };
 
     /**********************************************************
